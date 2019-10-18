@@ -1,0 +1,21 @@
+.x-blackfriday-link {
+    width: 173px;
+    display: flex;
+    background: #ffb400;
+    justify-content: space-around;
+    align-items: center
+}
+
+.x-blackfriday-link a {
+    font-size: 14px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none
+}
+
+.x-blackfriday-link a i {
+    margin-right: 10px;
+    font-size: 20px
+}

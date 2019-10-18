@@ -1,0 +1,1788 @@
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: none
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: ''
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir='rtl'] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+body.black-week-2017 .slick-dots {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 13px;
+    position: relative;
+    width: 100%
+}
+
+body.black-week-2017 .slick-dots li {
+    display: inline-block;
+    height: 22px;
+    margin: 0 5px;
+    opacity: .6;
+    width: 22px;
+    background: transparent
+}
+
+body.black-week-2017 .slick-dots li button {
+    color: transparent;
+    background: #181818;
+    border: none;
+    border-radius: 29px;
+    box-shadow: inset 0 0 0 4px #fdcf09, inset 0 0 0 7px #181818;
+    font-size: 0;
+    outline: none;
+    height: 22px;
+    width: 22px;
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    transition: background 500ms linear
+}
+
+body.black-week-2017 .slick-dots li:hover button,
+body.black-week-2017 .slick-dots li:focus button {
+    background: #fdcf09;
+    outline: none
+}
+
+body.black-week-2017 .slick-dots li.slick-active {
+    opacity: 1
+}
+
+body.black-week-2017 .slick-dots li.slick-active button {
+    background: #fdcf09
+}
+
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots {
+    background: black;
+    bottom: 0;
+    margin: 0;
+    padding: 3px 0 4px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 32px;
+    zoom: 0.7
+}
+
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots li {
+    display: inline-block;
+    height: 10px;
+    margin: 0 3px;
+    opacity: .6;
+    width: 10px
+}
+
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots li button {
+    color: transparent;
+    background: white;
+    border: none;
+    border-radius: 29px;
+    font-size: 0;
+    outline: none;
+    height: 10px;
+    padding: 0;
+    width: 10px;
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    transition: background 500ms linear
+}
+
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots li:hover button,
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots li:focus button {
+    background: #fdcf09;
+    outline: none
+}
+
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots li.slick-active {
+    opacity: 1
+}
+
+body.black-week-2017 .blackweek-shipping .slider-shipping .slick-dots li.slick-active button {
+    background: #fdcf09
+}
+
+.rotate-loading {
+    -webkit-animation: rotate-loading 4s linear infinite;
+    -moz-animation: rotate-loading 4s linear infinite;
+    animation: rotate-loading 4s linear infinite
+}
+
+@-moz-keyframes rotate-loading {
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotate-loading {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate-loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+body.black-week-2017 {
+    background: url("https://b2bnaweb.vteximg.com.br/arquivos/net-blackweek-bg-pattern.jpg?v=2") repeat #2e2e2e
+}
+
+body.black-week-2017 main h2.black-week-2017-title {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1.2rem;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+body.black-week-2017 main h2.black-week-2017-title span {
+    color: inherit;
+    display: inline-block;
+    max-width: 530px;
+    position: relative
+}
+
+body.black-week-2017 main h2.black-week-2017-title span:before,
+body.black-week-2017 main h2.black-week-2017-title span:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: calc(50% - 1.5px);
+    width: 80px
+}
+
+body.black-week-2017 main h2.black-week-2017-title span:before {
+    left: -90px
+}
+
+body.black-week-2017 main h2.black-week-2017-title span:after {
+    right: -90px
+}
+
+body.black-week-2017 main h2.blue-version {
+    color: #3bb6e8
+}
+
+body.black-week-2017 main h2.blue-version span:before,
+body.black-week-2017 main h2.blue-version span:after {
+    background: #3bb6e8
+}
+
+body.black-week-2017 main h2.yellow-version {
+    color: #fdcf09
+}
+
+body.black-week-2017 main h2.yellow-version span:before,
+body.black-week-2017 main h2.yellow-version span:after {
+    background: #fdcf09
+}
+
+body.black-week-2017 main h2.white-version {
+    color: white
+}
+
+body.black-week-2017 main h2.white-version span:before,
+body.black-week-2017 main h2.white-version span:after {
+    background: white
+}
+
+body.black-week-2017 main p.black-week-2017-paragraph {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6rem
+}
+
+body.black-week-2017 main .black-week-2017-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    position: relative
+}
+
+body.black-week-2017 main section.black-week-2017-header {
+    padding-top: 20px;
+    margin-bottom: 0px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo {
+    margin-bottom: 10px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header {
+    background: #ffde00
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 49%
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 {
+    position: relative
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-left-days,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-left-days-2,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-calendar {
+    display: inline-flex;
+    justify-content: initial;
+    align-content: initial;
+    flex-direction: column;
+    vertical-align: top
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days-2 {
+    padding-right: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 40px;
+    margin-left: 20px;
+    background: #e92025;
+    text-shadow: 1px 1px 11px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 16px;
+    position: relative;
+    min-height: 94px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days:before,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days-2:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 94px 36px;
+    border-color: transparent transparent #e92025 transparent;
+    position: absolute;
+    left: -35px;
+    top: 0px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days:after,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days-2:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 94px 36px 0 0;
+    border-color: #e92025 transparent transparent transparent;
+    position: absolute;
+    right: -36px;
+    top: 0px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days small,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days-2 small {
+    display: block
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days strong,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days-2 strong {
+    font-size: 2rem;
+    display: block
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days .count small.hours,
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days-2 .count small.hours {
+    font-size: 1rem
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-calendar {
+    color: white;
+    text-shadow: 1px 1px 11px rgba(159, 80, 4, 0.5);
+    padding: .5rem 0
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-calendar small {
+    display: block;
+    font-size: 1.3rem
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-calendar strong {
+    font-size: 2.4rem;
+    display: block
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing {
+    position: absolute;
+    background: #111;
+    padding: 20px;
+    bottom: 0px;
+    right: 0px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: white;
+    min-width: 460px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing h2 {
+    color: #fdcf09;
+    font-size: 1.5rem
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing h3 {
+    font-size: 1rem;
+    font-weight: normal
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .black-week-mailing-title {
+    margin-bottom: 13px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .form-group {
+    position: relative
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing input.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #d7d7d7;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-bottom: 9px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing label.error {
+    font-size: .6rem;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: crimson;
+    padding: 1px 6px;
+    line-height: 1rem;
+    border-radius: 4px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #111;
+    background-color: #ffde00;
+    border-color: #fdcf09
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .btn:hover {
+    background-color: #fdcf09;
+    border-color: #fdcf09
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .alert {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: .7rem;
+    padding: 2px 5px;
+    margin-bottom: 0px;
+    line-height: 1rem;
+    margin-top: 7px
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .alert.alert-success {
+    background: #01b43f;
+    color: white
+}
+
+body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing .alert.alert-error {
+    background: #E8600C;
+    color: white
+}
+
+body.black-week-2017 main section.black-week-2017-about-us {
+    background: white;
+    margin-bottom: 0px;
+    padding: 1rem 0 2rem
+}
+
+body.black-week-2017 main section.black-week-2017-brands {
+    background: white;
+    margin-bottom: 0px;
+    padding: 1rem 0 2rem;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-brands h2.black-week-2017-title span {
+    max-width: 450px
+}
+
+body.black-week-2017 main section.black-week-2017-brands ul.black-week-2017-brands-list {
+    display: inline-block;
+    list-style: none;
+    margin: .6rem 0;
+    text-align: center;
+    max-width: 780px
+}
+
+body.black-week-2017 main section.black-week-2017-brands ul.black-week-2017-brands-list li.black-week-2017-brands-item-list {
+    max-width: 186px;
+    background: white;
+    vertical-align: text-bottom;
+    margin-right: 8px;
+    border: 1px solid #e5e5e5;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color: white;
+    margin-bottom: 8px
+}
+
+body.black-week-2017 main section.black-week-2017-brands ul.black-week-2017-brands-list li.black-week-2017-brands-item-list a {
+    border: none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+body.black-week-2017 main section.black-week-2017-features {
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+    padding: 1rem 0 2rem;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list {
+    display: inline-block;
+    list-style: none;
+    margin: .6rem 0;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list {
+    max-width: 186px;
+    min-height: 172px;
+    background: rgba(0, 0, 0, 0.2);
+    vertical-align: text-bottom;
+    margin-right: 4px;
+    border-top: 4px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color: white
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list:nth-child(1) {
+    border-top-color: #578AFF
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list:nth-child(2) {
+    border-top-color: #930CE8
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list:nth-child(3) {
+    border-top-color: #FF0062
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list:nth-child(4) {
+    border-top-color: #E8600C
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list:nth-child(5) {
+    border-top-color: #FFCC0D
+}
+
+body.black-week-2017 main section.black-week-2017-features ul.black-week-2017-features-list li.black-week-2017-features-item-list:nth-child(6) {
+    border-top-color: #A8FF0D
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list {
+    display: inline-block;
+    list-style: none;
+    margin: .6rem 0;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color: white;
+    padding: 10px;
+    max-width: 150px;
+    margin: 10px 25px
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list a {
+    color: inherit
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list .black-week-2017-categories-item-circle {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px black;
+    display: block;
+    height: 85px;
+    margin: 0 auto 8px;
+    position: relative;
+    width: 85px;
+    -webkit-transition: .6s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: .6s;
+    -moz-transition: .6s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: .6s;
+    transform-style: preserve-3d
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list .black-week-2017-categories-item-circle span {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: .6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: .6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: .6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: .6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: .6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg)
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list .black-week-2017-categories-item-circle span.out {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg)
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list .black-week-2017-categories-item-circle span.hover {
+    background-color: #fdcf09;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list .black-week-2017-categories-item-circle i {
+    font-size: 3rem;
+    line-height: 4.5rem
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list:hover .black-week-2017-categories-item-circle span.out {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-categories-list li.black-week-2017-categories-item-list:hover .black-week-2017-categories-item-circle span.hover {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg)
+}
+
+body.black-week-2017 main section.black-week-2017-tips {
+    background: #008bc1
+}
+
+body.black-week-2017 main section.black-week-2017-tips ul.black-week-2017-tips-list {
+    display: inline-block;
+    list-style: none;
+    margin: .6rem 0 0;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-tips ul.black-week-2017-tips-list li.black-week-2017-tips-item-list {
+    display: inline-flex;
+    justify-content: initial;
+    align-content: initial;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    background: #ebebeb;
+    min-height: 296px;
+    max-width: 280px;
+    margin: 0 2px
+}
+
+body.black-week-2017 main section.black-week-2017-tips ul.black-week-2017-tips-list li.black-week-2017-tips-item-list span {
+    color: #111111;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-top: 38px;
+    padding: 0 30px
+}
+
+body.black-week-2017 main section.black-week-2017-menu {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 4px 0;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 0px;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul {
+    margin: 0;
+    padding: 0
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li {
+    background: -moz-linear-gradient(top, #161616 0, #161616 1%, rgba(22, 22, 22, 0.2) 100%);
+    background: -webkit-linear-gradient(top, #161616 0, #161616 1%, rgba(22, 22, 22, 0.2) 100%);
+    background: linear-gradient(to bottom, #161616 0, #161616 1%, rgba(22, 22, 22, 0.2) 100%);
+    border: 1px solid #232323;
+    border-radius: 4px;
+    color: #f1f1f1;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    margin: 0 2px
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 8px 13px;
+    display: block
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li a:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:nth-child(1) {
+    background: #A72723
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:nth-child(2) {
+    background: #5D33FF
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:nth-child(3) {
+    background: #005295
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:nth-child(4) {
+    background: #4DA711
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:nth-child(5) {
+    background: #FFCC0D
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:nth-child(6) {
+    background: #A8FF0D
+}
+
+body.black-week-2017 main section.black-week-2017-menu nav ul li:hover a {
+    background: #fdcf09
+}
+
+body.black-week-2017 main .black-week-2017-menu nav ul li a .black-week-2017-menu nav ul li span {
+    color: #f1f1f1;
+    text-decoration: none
+}
+
+body.black-week-2017 main .black-week-2017-menu nav ul li span strong {
+    color: #fdcf09
+}
+
+body.black-week-2017 main .black-week-2017-menu nav ul li:hover,
+body.black-week-2017 main .black-week-2017-menu nav ul lifocus {
+    background: #fdcf09;
+    color: #000
+}
+
+body.black-week-2017 main .black-week-2017-menu nav ul li:hover a,
+body.black-week-2017 main .black-week-2017-menu nav ul lifocus a,
+body.black-week-2017 main .black-week-2017-menu nav ul li:hover span,
+body.black-week-2017 main .black-week-2017-menu nav ul lifocus span,
+body.black-week-2017 main .black-week-2017-menu nav ul li:hover strong,
+body.black-week-2017 main .black-week-2017-menu nav ul lifocus strong {
+    color: #000
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping {
+    float: right;
+    margin: 3px 0 0;
+    display: none
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .shipping-icon-black-week {
+    background: url(//b2bnaweb.vteximg.com.br/arquivos/net-blackweek-icon-shipping.png) no-repeat transparent;
+    display: inline-block;
+    height: 20px;
+    margin-top: 6px;
+    position: relative;
+    width: 38px
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping {
+    width: 330px;
+    display: inline-block;
+    height: 30px;
+    overflow: hidden;
+    vertical-align: top
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots {
+    background: black;
+    bottom: 0;
+    margin: 0;
+    padding: 3px 0 4px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 32px;
+    zoom: 0.7
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots li {
+    display: inline-block;
+    height: 10px;
+    margin: 0 3px;
+    opacity: .6;
+    width: 10px
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots li button {
+    color: transparent;
+    background: white;
+    border: none;
+    border-radius: 29px;
+    font-size: 0;
+    outline: none;
+    height: 10px;
+    padding: 0;
+    width: 10px;
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    transition: background 500ms linear
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots li:hover button,
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots li:focus button {
+    background: #fdcf09;
+    outline: none
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots li.slick-active {
+    opacity: 1
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .slider-shipping .slick-dots li.slick-active button {
+    background: #fdcf09
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .item-shipping {
+    color: #f1f1f1;
+    display: inline-block;
+    margin-left: 7px
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .item-shipping span {
+    display: block;
+    font-size: 14px;
+    line-height: 17px
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .item-shipping small {
+    display: block;
+    font-size: 9px;
+    line-height: 12px;
+    margin: 0;
+    padding: 0
+}
+
+body.black-week-2017 main .black-week-2017-menu .blackweek-shipping .item-shipping strong {
+    color: #fdcf09
+}
+
+body.black-week-2017 main .slider-blackweek {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 20px;
+    background: #122D46
+}
+
+body.black-week-2017 main .slider-blackweek .slick-slider .slick-track,
+body.black-week-2017 main .slider-blackweek .slick-slider .slick-list {
+    overflow: visible !important
+}
+
+body.black-week-2017 main .slider-blackweek .slick-slide {
+    opacity: .3;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out
+}
+
+body.black-week-2017 main .slider-blackweek .slick-slide.slide-active,
+body.black-week-2017 main .slider-blackweek .slick-slide.slick-current {
+    filter: alpha(opacity=100);
+    opacity: 1
+}
+
+body.black-week-2017 main .slider-blackweek .slick-slide .botao-comprar-assync {
+    background: #5EC205;
+    display: inline-block;
+    padding: .9rem 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-top: 17px;
+    text-shadow: 2px 1px rgba(64, 157, 11, 0.75)
+}
+
+body.black-week-2017 main .slider-blackweek button.slick-next.slick-arrow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: -90%;
+    background: transparent;
+    z-index: 2
+}
+
+body.black-week-2017 main .slider-blackweek button.slick-prev.slick-arrow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -90%;
+    background: transparent;
+    z-index: 2
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    position: relative
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item {
+    display: inline-block
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item * {
+    outline: none;
+    border: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item a {
+    color: white;
+    text-decoration: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item a:hover {
+    text-decoration: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .flags {
+    display: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .banner-bw-left {
+    display: inline-flex;
+    width: 50%;
+    max-width: 300px;
+    vertical-align: top
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .banner-bw-right {
+    width: 49%;
+    vertical-align: text-bottom;
+    margin-right: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color: white
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .bloco.imagem {
+    display: inline-flex;
+    text-align: left;
+    flex: auto;
+    background: white;
+    padding: 10px;
+    position: relative
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .bloco.imagem:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 320px 66px 0 0;
+    border-color: white transparent transparent transparent;
+    position: absolute;
+    right: -66px;
+    top: 0px
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .bloco.imagem:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 0px 320px 65px;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    left: -65px;
+    top: 0px
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .bloco.imagem span.brand {
+    display: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item b.product-name {
+    display: block;
+    color: white;
+    vertical-align: top;
+    padding-left: 90px;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    position: relative;
+    text-align: left
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item b.product-name a {
+    color: inherit;
+    text-decoration: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .ratePrat {
+    display: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item span.price {
+    display: block;
+    color: white;
+    vertical-align: top;
+    padding-left: 90px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item span.price span.old-price {
+    font-size: 1rem;
+    line-height: 1rem;
+    opacity: .7
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item span.price span.best-price {
+    color: #fdcf09;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: block;
+    font-weight: 600
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item span.price span.installment {
+    font-size: 1rem;
+    line-height: 1rem
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .box-item .quant {
+    display: none
+}
+
+body.black-week-2017 main .slider-blackweek .slider-banner-produto .slick-dots {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 13px;
+    position: relative;
+    width: 100%;
+    padding-top: 10px
+}
+
+body.black-week-2017 main .black-week-2017-prateleira {
+    overflow-x: hidden
+}
+
+body.black-week-2017 main .black-week-2017-prateleira .prateleira ul.slick-slide {
+    opacity: 1;
+    padding: 6px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out
+}
+
+body.black-week-2017 main .black-week-2017-prateleira .prateleira ul.slick-slide.slick-active {
+    opacity: 1
+}
+
+body.black-week-2017 main .black-week-2017-prateleira .prateleira ul.slick-slide li {
+    width: 100%
+}
+
+body.black-week-2017 main .black-week-2017-prateleira+.slider-blackweek {
+    background: #122D46;
+    padding-top: 20px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .blackweek-title {
+    color: #fdcf09;
+    font-size: 24px;
+    margin: 0;
+    padding: 16px 0;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs {
+    border: none;
+    padding-bottom: 40px;
+    text-align: center
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li {
+    color: #f1f1f1;
+    display: inline-block;
+    float: none;
+    font-size: 18px;
+    margin: 6px;
+    position: relative
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li:nth-child(1) a {
+    background: #A72723
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li:nth-child(2) a {
+    background: #5D33FF
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li:nth-child(3) a {
+    background: #005295
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li:nth-child(4) a {
+    background: #4DA711
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li:nth-child(5) a {
+    background: #FFCC0D
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li:nth-child(6) a {
+    background: #A8FF0D
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a {
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-weight: 700;
+    padding: 30px 50px 20px;
+    display: block;
+    text-decoration: none
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a:hover {
+    text-decoration: none
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a .number {
+    color: #fdcf09;
+    display: block;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s all
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a .number small {
+    font-size: 17px;
+    margin-left: 10px;
+    position: absolute;
+    left: 40px;
+    top: -2px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a:before {
+    content: "";
+    bottom: -9px;
+    border-style: solid;
+    border-width: 17px 20px 0;
+    border-color: #fdcf09 transparent transparent;
+    display: block;
+    left: calc(50% - 10px);
+    position: absolute;
+    height: 0;
+    width: 0;
+    transform: rotateX(-90deg)
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a:hover,
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a:focus {
+    background: #fdcf09;
+    border: none;
+    color: #181818
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a:hover .number,
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li>a:focus .number {
+    color: #181818
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li.active>a {
+    background: #fdcf09;
+    border: none;
+    color: #181818
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li.active>a .number {
+    color: #181818
+}
+
+body.black-week-2017 main section.black-week-2017-percents .nav-tabs>li.active>a:before {
+    content: "";
+    bottom: -16px;
+    border-style: solid;
+    border-width: 17px 20px 0;
+    border-color: #fdcf09 transparent transparent;
+    display: block;
+    left: calc(50% - 10px);
+    position: absolute;
+    height: 0;
+    width: 0;
+    transform: rotateX(0deg)
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek {
+    padding: 0 50px;
+    position: relative
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira h2 {
+    display: none
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .owl-item {
+    padding: 0 4px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .flags {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .box-item {
+    height: 398px !important
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .box-item .botao-comprar {
+    width: calc(100% - 16px);
+    display: block;
+    bottom: 9px;
+    left: 8px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .box-item .botao-comprar .botao-comprar-assync {
+    width: 100% !important
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .box-item .quant {
+    display: none
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .prateleira .product-name a {
+    height: 53px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-track .slick-slide {
+    display: block;
+    height: auto;
+    padding: 3px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow {
+    background: none;
+    border: none;
+    position: absolute;
+    font-size: 0;
+    opacity: .5;
+    text-indent: -9999px;
+    top: calc(50% - 10px);
+    z-index: 2
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow:before {
+    color: white;
+    font-size: 30px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow:hover,
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow:focus {
+    opacity: 1
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow.slick-prev {
+    left: -40px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow.slick-prev:before {
+    content: "\f053";
+    display: block;
+    font-family: FontAwesome;
+    text-indent: 0
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow.slick-next {
+    right: -40px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek button.slick-arrow.slick-next:before {
+    content: "\f054";
+    display: block;
+    font-family: FontAwesome;
+    text-indent: 0
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 13px;
+    position: relative;
+    width: 100%
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots li {
+    display: inline-block;
+    height: 22px;
+    margin: 0 5px;
+    opacity: .6;
+    width: 22px;
+    background: transparent
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots li button {
+    color: transparent;
+    background: #181818;
+    border: none;
+    border-radius: 29px;
+    box-shadow: inset 0 0 0 4px #fdcf09, inset 0 0 0 7px #181818;
+    font-size: 0;
+    outline: none;
+    height: 22px;
+    width: 22px;
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    transition: background 500ms linear
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots li:hover button,
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots li:focus button {
+    background: #fdcf09;
+    outline: none
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots li.slick-active {
+    opacity: 1
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .slick-dots li.slick-active button {
+    background: #fdcf09
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .blackweek-showall {
+    background: rgba(253, 207, 9, 0.9);
+    color: black;
+    display: none;
+    height: 401px;
+    position: absolute;
+    right: 50px;
+    text-decoration: none;
+    top: 0;
+    width: 201px;
+    z-index: 2
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .blackweek-showall:hover,
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .blackweek-showall:focus {
+    background: #fdcf09
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .blackweek-showall i.fa {
+    display: block;
+    font-size: 60px;
+    text-align: center;
+    opacity: .8;
+    margin-top: 120px
+}
+
+body.black-week-2017 main section.black-week-2017-percents .vitrine-blackweek .blackweek-showall span {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 23px;
+    opacity: .8;
+    text-decoration: none
+}
+
+body.black-week-2017 main section.black-week-2017-percents.blackweek-colecao-porcentagem {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+body.black-week-2017 main section.black-week-2017-percents.blackweek-colecao-seller {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+body.black-week-2017 main section.black-week-2017-percents.blackweek-colecao-seller .nav-tabs>li>a {
+    padding: 20px 50px;
+    font-size: 26px
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands {
+    overflow: hidden
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands .slick-list.draggable {
+    overflow: visible
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands .slick-slide {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands .slick-slide.slick-active {
+    opacity: 1
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands .slick-dots {
+    position: absolute;
+    bottom: -37px;
+    left: 0px
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands .slick-dots li button {
+    background: white;
+    box-shadow: inset 0 0 0 4px #fdcf09, inset 0 0 0 7px white
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands .slick-dots li.slick-active button {
+    background: #fdcf09;
+    box-shadow: inset 0 0 0 4px #fdcf09, inset 0 0 0 7px white
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands ul.black-week-2017-brands-list {
+    width: 100%
+}
+
+body.black-week-2017.landing main section.black-week-2017-brands ul.black-week-2017-brands-list .slick-slide img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo {
+    display: inline-block
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo img {
+    width: 100%;
+    max-width: 320px
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo h4 {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 7px
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo h4 strong {
+    color: #fdcf09
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: right
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 {
+    display: inline-block;
+    list-style: none;
+    margin: .6rem 0;
+    text-align: center
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li {
+    max-width: 226px;
+    min-height: 102px;
+    background: rgba(0, 0, 0, 0.2);
+    vertical-align: text-bottom;
+    margin-right: 4px;
+    border-top: 4px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color: white
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li:nth-child(1) {
+    border-top-color: #578AFF
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li:nth-child(2) {
+    border-top-color: #930CE8
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li:nth-child(3) {
+    border-top-color: #FF0062
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li:nth-child(4) {
+    border-top-color: #E8600C
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li:nth-child(5) {
+    border-top-color: #FFCC0D
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li:nth-child(6) {
+    border-top-color: #A8FF0D
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 ul.features-black-week-2017 li strong {
+    color: #ffde00;
+    font-size: 1.2rem
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 .black-week-2017-regulamento {
+    text-align: right;
+    color: #aaa;
+    display: block;
+    padding: 0px 0;
+    font-size: 1rem;
+    font-weight: 400
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col2 .black-week-2017-regulamento a {
+    color: inherit;
+    text-decoration: none
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .black-week-2017-bottom-header {
+    display: none
+}
+
+body.black-week-2017.landing main section.black-week-2017-header .blackweek-shipping {
+    display: none
+}
+
+body.black-week-2017.landing main section.black-week-2017-categories ul.black-week-2017-categories-list {
+    display: block
+}
+
+@media screen and (max-width: 1030px) {
+    body.black-week-2017 main#main {
+        margin-top: 0px !important
+    }
+}
+
+@media screen and (max-width: 990px) {
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo {
+        text-align: center
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo img {
+        width: 100%;
+        max-width: 480px
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-container {
+        padding-left: 0px;
+        padding-right: 0px
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1,
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 {
+        width: 100%
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days {
+        text-align: center;
+        margin-left: -50px
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing {
+        text-align: center;
+        position: relative;
+        min-width: auto
+    }
+}
+
+@media screen and (max-width: 455px) {
+    body.black-week-2017 {
+        overflow-x: hidden
+    }
+
+    body.black-week-2017 main h2.black-week-2017-title {
+        width: auto;
+        margin: 0 auto 10px;
+        display: block
+    }
+
+    body.black-week-2017 main h2.black-week-2017-title span {
+        font-size: 1.3rem
+    }
+
+    body.black-week-2017 main h2.black-week-2017-title span:before,
+    body.black-week-2017 main h2.black-week-2017-title span:after {
+        display: none
+    }
+
+    body.black-week-2017 main p.black-week-2017-paragraph {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.4rem
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days {
+        width: 100%
+    }
+
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days:before,
+    body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days:after {
+        display: none
+    }
+
+    body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item {
+        display: block;
+        text-align: center;
+        width: auto
+    }
+
+    body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item .banner-bw-left,
+    body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item .banner-bw-right {
+        display: block;
+        text-align: center;
+        width: auto
+    }
+
+    body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item b.product-name {
+        padding-left: 0px
+    }
+
+    body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item span.price {
+        padding-left: 0px
+    }
+}
+
+/*# sourceMappingURL=netsuprimentos-black-week-2017.min.css.map */

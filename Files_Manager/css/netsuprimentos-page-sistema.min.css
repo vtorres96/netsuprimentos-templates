@@ -1,0 +1,506 @@
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#target {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    background: #7d0;
+    box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.2), inset -1px -1px 0 0 rgba(0, 0, 0, 0.05)
+}
+
+[class^="animated-"],
+[class*=" animated-"] {
+    animation-fill-mode: both
+}
+
+@keyframes tada {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.8) rotate(-4deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.2) rotate(4deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.2) rotate(-4deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tada {
+    animation: tada 1s
+}
+
+@keyframes tadaSmall {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.9) rotate(-2deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.1) rotate(2deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1) rotate(-2deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tadaSmall {
+    animation: tadaSmall 1s
+}
+
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1
+    }
+
+    25%,
+    75% {
+        opacity: 0
+    }
+}
+
+.animated-flash {
+    animation: flash .5s
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    20%,
+    60% {
+        transform: translateX(-6px)
+    }
+
+    40%,
+    80% {
+        transform: translateX(6px)
+    }
+}
+
+.animated-shake {
+    animation: shake .4s
+}
+
+@keyframes pulseUp {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.15)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseUp {
+    animation: pulseUp .25s
+}
+
+@keyframes pulseDown {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(0.85)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseDown {
+    animation: pulseDown .25s
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-popIn {
+    animation: popIn 1.2s
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+.animated-popOut {
+    animation: popOut .25s
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.animated-fadeIn {
+    animation: fadeIn .2s
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.animated-fadeOut {
+    animation: fadeOut .2s
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    30% {
+        transform: scale(1)
+    }
+
+    40% {
+        transform: scale(1.08)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(1)
+    }
+
+    70% {
+        transform: scale(1.05)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.blur {
+    -webkit-animation: blur 1s
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        -o-filter: blur(8px);
+        -ms-filter: blur(8px);
+        filter: blur(8px)
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightIn {
+    0% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightOut {
+    0% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+body.pag404 main .tpl-content .tpl-center .search-header {
+    display: block;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ffb400;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+body.pag404 main .tpl-content .tpl-center .search-header p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px
+}
+
+body.pag404 main .tpl-content .tpl-center .search-header p strong span#termo-buscado {
+    color: #ffb400
+}
+
+body.pag404 main .tpl-content .tpl-center .search-header small {
+    font-size: 16px
+}
+
+body.pag404 main .tpl-content .tpl-center .search-header ul {
+    margin-top: 20px
+}
+
+body.pag404 main .tpl-content .tpl-center .search-header ul li {
+    line-height: 22px
+}
+
+body.error .tpl-wrapper main .tpl-content .titulo {
+    text-align: center;
+    margin-top: 40px
+}
+
+body.error .tpl-wrapper main .tpl-content .titulo h2 {
+    font-size: 48px
+}
+
+body.error .tpl-wrapper main .tpl-content .titulo h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #494d4d;
+    margin-top: 10px
+}
+
+body.error .tpl-wrapper main .tpl-content .imagem {
+    background-position: center center;
+    height: 320px;
+    margin-top: 40px
+}
+
+body.error .tpl-wrapper main .tpl-content .botao {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center
+}
+
+body.error .tpl-wrapper main .tpl-content .botao button {
+    width: auto;
+    background-color: #000;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px
+}
+
+body.error .tpl-wrapper main .tpl-content .botao button:hover {
+    background-color: #01838e
+}
+
+@media screen and (max-width: 900px) {
+    body.sistema404 .wrapperPrateleiraHome .prateleira li {
+        width: 32.3%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body.sistema404 .wrapperPrateleiraHome .prateleira li {
+        min-height: 330px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.sistema404 .wrapperPrateleiraHome .prateleira li {
+        width: 49%;
+        min-height: 390px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body.sistema404 .wrapperPrateleiraHome .prateleira li {
+        min-height: 345px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body.sistema404 .wrapperPrateleiraHome .prateleira li {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0
+    }
+}
+
+/*# sourceMappingURL=netsuprimentos-page-sistema.min.css.map */

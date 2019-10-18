@@ -1,0 +1,1344 @@
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#target {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    background: #7d0;
+    box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.2), inset -1px -1px 0 0 rgba(0, 0, 0, 0.05)
+}
+
+[class^="animated-"],
+[class*=" animated-"] {
+    animation-fill-mode: both
+}
+
+@keyframes tada {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.8) rotate(-4deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.2) rotate(4deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.2) rotate(-4deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tada {
+    animation: tada 1s
+}
+
+@keyframes tadaSmall {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.9) rotate(-2deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.1) rotate(2deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1) rotate(-2deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tadaSmall {
+    animation: tadaSmall 1s
+}
+
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1
+    }
+
+    25%,
+    75% {
+        opacity: 0
+    }
+}
+
+.animated-flash {
+    animation: flash .5s
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    20%,
+    60% {
+        transform: translateX(-6px)
+    }
+
+    40%,
+    80% {
+        transform: translateX(6px)
+    }
+}
+
+.animated-shake {
+    animation: shake .4s
+}
+
+@keyframes pulseUp {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.15)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseUp {
+    animation: pulseUp .25s
+}
+
+@keyframes pulseDown {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(0.85)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseDown {
+    animation: pulseDown .25s
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-popIn {
+    animation: popIn 1.2s
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+.animated-popOut {
+    animation: popOut .25s
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.animated-fadeIn {
+    animation: fadeIn .2s
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.animated-fadeOut {
+    animation: fadeOut .2s
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    30% {
+        transform: scale(1)
+    }
+
+    40% {
+        transform: scale(1.08)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(1)
+    }
+
+    70% {
+        transform: scale(1.05)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.blur {
+    -webkit-animation: blur 1s
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        -o-filter: blur(8px);
+        -ms-filter: blur(8px);
+        filter: blur(8px)
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightIn {
+    0% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightOut {
+    0% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+.vendananet .nt-box.nt-about-net {
+    margin-top: 0px
+}
+
+.vendananet main {
+    background: #f5f4f4;
+    overflow-x: hidden
+}
+
+.vendananet .bg_venda_com_a_net {
+    background: url("/arquivos/_netsuprimentos--venda-com-a-gente--bg.jpg");
+    background-color: #373839;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    height: 70vh;
+    min-height: 330px
+}
+
+.vendananet .bg_venda_com_a_net .bg_venda_com_a_net_stripes {
+    background: url("/arquivos/_netsuprimentos--venda-com-a-gente--bg-stripes.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    min-height: 330px;
+    position: relative
+}
+
+.vendananet .bg_venda_com_a_net .tpl-content,
+.vendananet .bg_venda_com_a_net .tpl-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%
+}
+
+.vendananet .bg_venda_com_a_net .tpl-content h1,
+.vendananet .bg_venda_com_a_net .tpl-center h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 73px;
+    margin: 0 auto;
+    max-width: 1120px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    font-weight: 500
+}
+
+.vendananet .bg_venda_com_a_net .tpl-content h1 strong,
+.vendananet .bg_venda_com_a_net .tpl-center h1 strong {
+    color: #fdb400;
+    font-weight: 500
+}
+
+.vendananet .bg_venda_com_a_net .tpl-content h2,
+.vendananet .bg_venda_com_a_net .tpl-center h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18)
+}
+
+.vendananet .bg_venda_com_a_net .round {
+    left: 50%;
+    transform: rotate(90deg) translate(0%, 50%);
+    bottom: -80px;
+    position: absolute
+}
+
+.vendananet .porque_vender_na_net {
+    background: url("/arquivos/_netsuprimentos--venda-com-a-gente--bg-white.jpg");
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #3c3c3c;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 0px
+}
+
+.vendananet .porque_vender_na_net h2 {
+    font-size: 48px;
+    text-align: center
+}
+
+.vendananet .porque_vender_na_net h2 strong {
+    color: #fdb400;
+    display: block;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    counter-reset: page;
+    margin-top: 96px;
+    z-index: 0
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image {
+    height: 470px;
+    position: relative;
+    width: 470px;
+    z-index: 1
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image:after {
+    background: white;
+    counter-increment: page;
+    content: counter(page);
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    height: 84px;
+    line-height: 82px;
+    text-align: center;
+    position: absolute;
+    width: 84px;
+    z-index: 2
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img,
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img {
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    border: 2px solid #fdb400;
+    z-index: 0
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_content {
+    position: relative;
+    z-index: 2
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+    color: #909090;
+    background: white;
+    padding: 30px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt strong {
+    color: #3c3c3c
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step1 {
+    margin-right: 480px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step1 .porque_vender_na_net_list_item_image:after {
+    top: -14px;
+    left: -12px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step1 .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    top: 21px;
+    left: -17px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step1 .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+    font-size: 40px;
+    left: -70px;
+    line-height: 40px;
+    position: absolute;
+    top: -100px;
+    width: 620px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2 {
+    flex-direction: column;
+    margin-top: -110px;
+    margin-left: 560px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2 .porque_vender_na_net_list_item_image {
+    width: 364px;
+    height: 364px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2 .porque_vender_na_net_list_item_image:after {
+    left: -17px;
+    top: -15px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2 .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    top: -14px;
+    left: -12px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2 .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+    font-size: 30px;
+    line-height: 32px;
+    max-width: 390px;
+    margin-top: -60px;
+    margin-left: 130px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3 {
+    flex-direction: column;
+    margin-left: -370px;
+    margin-top: -210px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3 .porque_vender_na_net_list_item_image {
+    width: 364px;
+    height: 364px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3 .porque_vender_na_net_list_item_image:after {
+    top: -14px;
+    left: -18px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3 .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    top: 21px;
+    left: -17px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3 .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+    font-size: 30px;
+    line-height: 32px;
+    max-width: 390px;
+    margin-top: -80px;
+    margin-left: 130px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step4 {
+    flex-direction: row-reverse;
+    margin-left: 480px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step4 .porque_vender_na_net_list_item_image:after {
+    top: -10px;
+    left: -10px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step4 .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    top: 18px;
+    left: 21px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step4 .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+    font-size: 40px;
+    right: -70px;
+    line-height: 40px;
+    position: absolute;
+    top: -100px;
+    width: 540px;
+    text-align: right
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step5 {
+    margin-right: 480px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step5 .porque_vender_na_net_list_item_image {
+    width: 364px;
+    height: 364px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step5 .porque_vender_na_net_list_item_image:after {
+    top: -14px;
+    left: -12px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step5 .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_border {
+    top: 21px;
+    left: -17px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step5 .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+    font-size: 30px;
+    left: -70px;
+    line-height: 32px;
+    position: absolute;
+    top: -80px;
+    width: 620px
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.micro_pequena_empresa .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img {
+    background-image: url("/arquivos/_netsuprimentos--venda-com-a-gente--image-micro-media-empresa.jpg?v=2")
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.marcas_lideres .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img {
+    background-image: url("/arquivos/_netsuprimentos--venda-com-a-gente--image-metas.jpg?v=2")
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.equipe_dedicada .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img {
+    background-image: url("/arquivos/_netsuprimentos--venda-com-a-gente--image-equipe-dedicada.jpg")
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.especialistas_online .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img {
+    background-image: url("/arquivos/_netsuprimentos--venda-com-a-gente--image-atendimento-profissional.jpg")
+}
+
+.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.integracao .porque_vender_na_net_list_item_image .porque_vender_na_net_list_item_img {
+    background-image: url("/arquivos/_netsuprimentos--venda-com-a-gente--image-integracao-vtex.jpg")
+}
+
+.vendananet .seja_parceiro {
+    background-color: #333333;
+    background-image: url("/arquivos/_netsuprimentos--venda-com-a-gente--bg-parceiros.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    color: white;
+    padding-bottom: 90px
+}
+
+.vendananet .seja_parceiro svg {
+    width: 100%
+}
+
+.vendananet .seja_parceiro h2 {
+    font-size: 48px;
+    text-align: center;
+    color: white
+}
+
+.vendananet .seja_parceiro h2 strong {
+    color: #fdb400;
+    display: block;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.vendananet .seja_parceiro ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    counter-reset: page;
+    margin-top: 90px
+}
+
+.vendananet .seja_parceiro ul li {
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    padding-top: 160px;
+    max-width: 300px;
+    margin: 0 40px
+}
+
+.vendananet .seja_parceiro ul li:after {
+    display: block;
+    counter-increment: page;
+    content: counter(page);
+    color: #333333;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 38px
+}
+
+.vendananet .seja_parceiro ul li:before {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fdb400;
+    content: "";
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg) translate(-70%, 0%);
+    top: 62px
+}
+
+.vendananet .seja_parceiro ul li strong {
+    display: block;
+    font-size: 20px;
+    color: #fdb400
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form>p {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 80px;
+    margin-bottom: 30px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form .round {
+    margin: 0 auto 30px;
+    border: none
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 10px)
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label {
+    display: block;
+    padding: 0 15px;
+    position: relative
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-transform: uppercase
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label small {
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 10px;
+    display: block
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label input,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label select,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label textarea {
+    border: 2px solid #fdb400;
+    background: #333333;
+    margin-bottom: 23px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label input:hover,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label input:focus,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label select:hover,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label select:focus,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label textarea:hover,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label textarea:focus {
+    background: #292929
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label input[name="plataforma"] {
+    display: none
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label input[name="plataforma"]+label#plataforma-error {
+    position: absolute;
+    left: 6px;
+    margin-top: 0px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField label.error {
+    font-size: 10px;
+    color: #fdb400;
+    position: absolute;
+    left: 7px;
+    bottom: 10px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.nomeFantasia,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.email {
+    flex-basis: calc(100% - 10px)
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma {
+    margin-bottom: 10px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label>p,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label small {
+    flex-basis: calc(100% - 10px)
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup {
+    background-color: #333;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    flex-basis: calc(33% - 10px)
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup+.inputGroup {
+    margin-left: 20px
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    .vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup {
+        flex-basis: calc(100% - 10px)
+    }
+
+    .vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup+.inputGroup {
+        margin-left: 0
+    }
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label {
+    padding: 12px 18px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: white;
+    border: 2px solid #fdb400;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label:hover,
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label:focus {
+    background: #292929
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+    background-color: #fdb400;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    z-index: -1
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label:after {
+    width: 32px;
+    height: 32px;
+    content: '';
+    border: 2px solid #555;
+    background-color: #333;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label[for="vtex"] {
+    border-color: #F71963 !important
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label[for="vtex"]:before {
+    background-color: #F71963
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label[for="dmCommerce"] {
+    border-color: #90b224 !important
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup label[for="dmCommerce"]:before {
+    background-color: #90b224
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup input:checked~label {
+    color: #fff
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup input:checked~label:before {
+    transform: translate(-50%, -50%) scale3d(125, 56, 1);
+    opacity: 1
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup input:checked~label:after {
+    background-color: #00b4ff;
+    border-color: #00b4ff
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label.error {
+    display: block;
+    position: relative;
+    margin-top: 3px;
+    left: -9px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons {
+    margin: 0 auto;
+    outline: none
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button {
+    align-items: center;
+    background: #fdb400;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    height: 66px;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    font-size: 24px;
+    color: #333333;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 300ms;
+    outline: none
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button span.text {
+    position: absolute;
+    transition: opacity 300ms
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button i.fa.fa-spinner {
+    opacity: 0;
+    position: absolute;
+    font-size: 30px;
+    transition: opacity 300ms;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button svg.ok {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 300ms
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.active {
+    width: 80px;
+    border-radius: 40px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.active svg.ok {
+    opacity: 0
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.active span.text {
+    opacity: 0
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.active i.fa.fa-spinner {
+    opacity: 1
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.finish {
+    width: 80px;
+    border-radius: 40px
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.finish span.text {
+    opacity: 0
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.finish i.fa.fa-spinner {
+    opacity: 0
+}
+
+.vendananet .seja_parceiro .seja_parceiro_form form .inputButtons button.finish svg.ok {
+    opacity: 1
+}
+
+.vendananet .round {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transform: rotate(90deg)
+}
+
+.vendananet .round #cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute
+}
+
+.vendananet .round #cta .arrow {
+    left: 30%
+}
+
+.vendananet .round .arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: 12px;
+    border: none
+}
+
+.vendananet .round .primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.vendananet .round .segunda {
+    margin-left: 8px;
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.vendananet .round .next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==)
+}
+
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1)
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9)
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9)
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1)
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item {
+        flex-direction: column;
+        width: 100%;
+        max-width: 470px
+    }
+
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image {
+        width: 100% !important;
+        height: 320px !important
+    }
+
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step1,
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2,
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3,
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step4,
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step5 {
+        flex-direction: column !important;
+        margin: 0px !important
+    }
+
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+        font-size: 30px !important;
+        line-height: 31px !important;
+        left: 20% !important;
+        position: relative !important;
+        top: -60px !important;
+        width: 80% !important;
+        padding: 18px !important;
+        margin: 0 !important
+    }
+
+    body.vendananet .seja_parceiro {
+        margin-top: -170px
+    }
+
+    body.vendananet .seja_parceiro ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        counter-reset: page;
+        margin-top: 20px
+    }
+
+    body.vendananet .seja_parceiro ul li {
+        margin-bottom: 40px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body.vendananet .bg_venda_com_a_net {
+        height: 80vh
+    }
+
+    body.vendananet .bg_venda_com_a_net .bg_venda_com_a_net_stripes {
+        height: 80vh
+    }
+
+    body.vendananet .bg_venda_com_a_net .tpl-center h1 {
+        font-size: 40px;
+        line-height: 50px
+    }
+
+    body.vendananet .bg_venda_com_a_net .tpl-center h2 {
+        font-size: 14px
+    }
+
+    body.vendananet .porque_vender_na_net h2 {
+        font-size: 36px;
+        line-height: 46px
+    }
+
+    body.vendananet .porque_vender_na_net h2 strong {
+        font-size: 42px
+    }
+
+    body.vendananet .seja_parceiro h2 {
+        font-size: 36px;
+        line-height: 46px
+    }
+
+    body.vendananet .seja_parceiro h2 strong {
+        font-size: 42px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body.vendananet .bg_venda_com_a_net .tpl-center h1 {
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    body.vendananet .bg_venda_com_a_net .tpl-center h2 {
+        font-size: 12px
+    }
+
+    body.vendananet .porque_vender_na_net h2 {
+        font-size: 26px;
+        line-height: 36px
+    }
+
+    body.vendananet .porque_vender_na_net h2 strong {
+        font-size: 32px
+    }
+
+    body.vendananet .seja_parceiro h2 {
+        font-size: 26px;
+        line-height: 36px
+    }
+
+    body.vendananet .seja_parceiro h2 strong {
+        font-size: 32px
+    }
+
+    body.vendananet .seja_parceiro ul li {
+        font-size: 20px;
+        line-height: 30px
+    }
+
+    body.vendananet .seja_parceiro .seja_parceiro_form>p {
+        text-align: center;
+        font-size: 26px;
+        margin-top: 50px;
+        margin-bottom: 20px
+    }
+
+    body.vendananet .seja_parceiro .seja_parceiro_form form .inputField {
+        flex-basis: calc(100% - 10px) !important
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
+        font-size: 6vw !important;
+        line-height: 7vw !important;
+        left: 20% !important;
+        position: relative !important;
+        top: -60px !important;
+        width: 80% !important;
+        padding: 5vw !important;
+        margin: 0 !important
+    }
+}
+
+/*# sourceMappingURL=netsuprimentos-page-venda-na-net.min.css.map */

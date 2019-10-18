@@ -1,0 +1,1350 @@
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#target {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    background: #7d0;
+    box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.2), inset -1px -1px 0 0 rgba(0, 0, 0, 0.05)
+}
+
+[class^="animated-"],
+[class*=" animated-"] {
+    animation-fill-mode: both
+}
+
+@keyframes tada {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.8) rotate(-4deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.2) rotate(4deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.2) rotate(-4deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tada {
+    animation: tada 1s
+}
+
+@keyframes tadaSmall {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.9) rotate(-2deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.1) rotate(2deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1) rotate(-2deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tadaSmall {
+    animation: tadaSmall 1s
+}
+
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1
+    }
+
+    25%,
+    75% {
+        opacity: 0
+    }
+}
+
+.animated-flash {
+    animation: flash .5s
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    20%,
+    60% {
+        transform: translateX(-6px)
+    }
+
+    40%,
+    80% {
+        transform: translateX(6px)
+    }
+}
+
+.animated-shake {
+    animation: shake .4s
+}
+
+@keyframes pulseUp {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.15)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseUp {
+    animation: pulseUp .25s
+}
+
+@keyframes pulseDown {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(0.85)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseDown {
+    animation: pulseDown .25s
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-popIn {
+    animation: popIn 1.2s
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+.animated-popOut {
+    animation: popOut .25s
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.animated-fadeIn {
+    animation: fadeIn .2s
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.animated-fadeOut {
+    animation: fadeOut .2s
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    30% {
+        transform: scale(1)
+    }
+
+    40% {
+        transform: scale(1.08)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(1)
+    }
+
+    70% {
+        transform: scale(1.05)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.blur {
+    -webkit-animation: blur 1s
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        -o-filter: blur(8px);
+        -ms-filter: blur(8px);
+        filter: blur(8px)
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightIn {
+    0% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightOut {
+    0% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+.aplicativo .nt-box.nt-about-net {
+    margin-top: 0px
+}
+
+.aplicativo main {
+    background: #f5f4f4;
+    overflow: hidden
+}
+
+.aplicativo main .tpl-content {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18)
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--bg-yellow.png");
+    background-repeat: no-repeat;
+    background-position: top center
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center {
+    padding-top: 100px
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content .app_text h1,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_text h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 73px;
+    margin: 0 auto;
+    max-width: 1100px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    font-weight: bold
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content .app_text h2,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_text h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    font-weight: 400
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content .app_text h2 strong,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_text h2 strong {
+    font-weight: 400
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content .app_buttons,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 36px 0
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content .app_buttons>div,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_buttons>div {
+    margin: 0 10px
+}
+
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-content .app_content .app_smartphone span.app_img_smartphone,
+.aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 482px;
+    height: 876px;
+    display: block;
+    margin: 56px auto 0
+}
+
+.aplicativo .app_rapido_facil_pratico .tpl-content .app_content,
+.aplicativo .app_rapido_facil_pratico .tpl-center .app_content {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.aplicativo .app_rapido_facil_pratico .tpl-content .app_content .app_text h2,
+.aplicativo .app_rapido_facil_pratico .tpl-center .app_content .app_text h2 {
+    color: #0492ff;
+    font-size: 60px;
+    line-height: 73px;
+    margin: 0 auto;
+    max-width: 1100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold
+}
+
+.aplicativo .app_rapido_facil_pratico .tpl-content .app_content .app_text p,
+.aplicativo .app_rapido_facil_pratico .tpl-center .app_content .app_text p {
+    font-size: 20px;
+    text-align: center;
+    color: #040707;
+    margin-top: 10px;
+    font-weight: 400
+}
+
+.aplicativo .app_rapido_facil_pratico .tpl-content .app_content .app_text p strong,
+.aplicativo .app_rapido_facil_pratico .tpl-center .app_content .app_text p strong {
+    font-weight: 400
+}
+
+.aplicativo .app_navegue_por_categoria {
+    padding-top: 80px
+}
+
+.aplicativo .app_navegue_por_categoria .bg {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--bg-blue.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 969px;
+    padding-top: 80px
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center {
+    margin-top: -160px
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_smartphone span.app_img_smartphone,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 422px;
+    height: 763px;
+    display: block;
+    margin: 0px 48px 0
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_text h2,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text h2 {
+    color: #040707;
+    font-size: 48px;
+    line-height: 59px;
+    min-width: 460px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_text h2:after,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text h2:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 68px;
+    background: #ff9200;
+    margin: 20px 0 28px
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_text p,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text p {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_text p strong,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text p strong {
+    font-weight: 400
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_text button,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text button {
+    background: #ff9500;
+    font-size: 18px;
+    color: white;
+    width: 311px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    margin: 22px 0
+}
+
+.aplicativo .app_navegue_por_categoria .bg .tpl-content .app_content .app_text button i.fa,
+.aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text button i.fa {
+    font-size: 24px;
+    margin-right: 5px;
+    line-height: 24px;
+    position: relative
+}
+
+.aplicativo .app_carrinho_compras {
+    margin-bottom: 0px;
+    margin-top: -220px
+}
+
+.aplicativo .app_carrinho_compras .bg {
+    background: transparent
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_text h2,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text h2 {
+    color: #0495ff;
+    font-size: 48px;
+    line-height: 59px;
+    max-width: 450px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_text h2:after,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text h2:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 68px;
+    background: #ff9200;
+    margin: 20px 0 28px
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_text p,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text p {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    color: #393939;
+    margin-top: 10px;
+    font-weight: 400
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_text p strong,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text p strong {
+    font-weight: 400
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_text button,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text button {
+    background: #ff9500;
+    font-size: 18px;
+    color: white;
+    width: 311px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    margin: 22px 0
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_text button i.fa,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text button i.fa {
+    font-size: 24px;
+    margin-right: 5px;
+    line-height: 24px;
+    position: relative
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_smartphone span.app_img_smartphone,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-3.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 726px;
+    height: 677px;
+    display: block;
+    margin-right: -100px;
+    margin-left: 70px;
+    transform: translate(0%, -20%);
+    opacity: 0;
+    transition: all 800ms ease-in-out
+}
+
+.aplicativo .app_carrinho_compras .bg .tpl-content .app_content .app_smartphone span.app_img_smartphone.show,
+.aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone.show {
+    transform: translate(0%, 0%);
+    opacity: 1
+}
+
+.aplicativo .app_busca {
+    margin-bottom: 0px;
+    margin-top: -170px
+}
+
+.aplicativo .app_busca .bg {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--bg-black.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 1033px
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content,
+.aplicativo .app_busca .bg .tpl-center .app_content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding-top: 360px
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content .app_smartphone span.app_img_smartphone,
+.aplicativo .app_busca .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-4.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 378px;
+    height: 719px;
+    display: block;
+    margin: 0px 78px 0 48px
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content .app_text h2,
+.aplicativo .app_busca .bg .tpl-center .app_content .app_text h2 {
+    color: white;
+    font-size: 48px;
+    line-height: 59px;
+    min-width: 460px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content .app_text h2:after,
+.aplicativo .app_busca .bg .tpl-center .app_content .app_text h2:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 68px;
+    background: #ff9200;
+    margin: 20px 0 28px
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content .app_text p,
+.aplicativo .app_busca .bg .tpl-center .app_content .app_text p {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content .app_text p strong,
+.aplicativo .app_busca .bg .tpl-center .app_content .app_text p strong {
+    font-weight: 400
+}
+
+.aplicativo .app_busca .bg .tpl-content .app_content .app_text button,
+.aplicativo .app_busca .bg .tpl-center .app_content .app_text button {
+    background: #ff9500;
+    font-size: 18px;
+    color: white;
+    width: 311px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    margin: 22px 0;
+    position: relative;
+    cursor: pointer
+}
+
+.aplicativo .app_baixe_o_app {
+    margin-bottom: 0px;
+    padding-top: 330px;
+    padding-bottom: 340px;
+    background: -moz-linear-gradient(top, rgba(217, 217, 217, 0) 1%, rgba(217, 217, 217, 0) 52%, #d9d9d9 100%);
+    background: -webkit-linear-gradient(top, rgba(217, 217, 217, 0) 1%, rgba(217, 217, 217, 0) 52%, #d9d9d9 100%);
+    background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 1%, rgba(217, 217, 217, 0) 52%, #d9d9d9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00d9d9d9', endColorstr='#d9d9d9', GradientType=0)
+}
+
+.aplicativo .app_baixe_o_app .bg {
+    background: transparent
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text h2,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text h2 {
+    color: #0495ff;
+    font-size: 48px;
+    line-height: 59px;
+    max-width: 470px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text h2 strong,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text h2 strong {
+    color: #ff9500;
+    font-weight: bold
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text h2:after,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text h2:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 68px;
+    background: #ff9200;
+    margin: 20px 0 28px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text p,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text p {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    color: #393939;
+    margin-top: 10px;
+    font-weight: 400
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text p strong,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text p strong {
+    font-weight: 400
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text .app_buttons,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text .app_buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 36px 0 36px -10px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_text .app_buttons>div,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text .app_buttons>div {
+    margin: 0 10px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone {
+    width: 990px;
+    height: 0px;
+    position: relative
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_1,
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_2,
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_3,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_1,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_2,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_3 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    transition: all 800ms ease-in-out
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_1,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_1 {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-5a.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 515px;
+    height: 718px;
+    display: block;
+    z-index: 2;
+    left: -7px;
+    top: 0px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_1.show,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_1.show {
+    left: -203px;
+    top: 40px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_2,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_2 {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-5b.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 516px;
+    height: 737px;
+    display: block;
+    z-index: 1;
+    top: -15px;
+    left: 0px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_3,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_3 {
+    background-image: url("/arquivos/_netsuprimentos--aplicativo--android-ios-5c.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 516px;
+    height: 660px;
+    display: block;
+    z-index: 0;
+    top: 6px;
+    left: 12px
+}
+
+.aplicativo .app_baixe_o_app .bg .tpl-content .app_content .app_smartphone .app_img_smartphone_3.show,
+.aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_3.show {
+    top: -37px;
+    left: 192px
+}
+
+.aplicativo .round {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 14px;
+    top: 14px
+}
+
+.aplicativo .round #cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute
+}
+
+.aplicativo .round #cta .arrow {
+    left: 30%
+}
+
+.aplicativo .round .arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: 12px;
+    border: none
+}
+
+.aplicativo .round .primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.aplicativo .round .segunda {
+    margin-left: 8px;
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.aplicativo .round .next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==)
+}
+
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1)
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9)
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9)
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1)
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg {
+        background-position: center 140%
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center {
+        padding-top: 12vw
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_text h1 {
+        font-size: 7vw;
+        line-height: 8.2vw
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_text h2 {
+        font-size: 4vw;
+        line-height: 5vw;
+        padding: 0vw 2vw
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_smartphone {
+        height: 492px;
+        width: 100%
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+        background-size: auto 100%;
+        width: 100%;
+        height: 100%;
+        margin: 2vw auto 0
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_buttons {
+        width: 100%;
+        max-width: 442px
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_buttons>div.android {
+        width: 50%
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_buttons>div.ios {
+        width: 57%
+    }
+
+    .aplicativo .app_tudo_que_sua_empresa_precisa .bg .tpl-center .app_content .app_buttons>div img {
+        width: 100%
+    }
+
+    .aplicativo .app_rapido_facil_pratico .tpl-center .app_content {
+        margin: 12vw 0 5vw
+    }
+
+    .aplicativo .app_rapido_facil_pratico .tpl-center .app_content .app_text h2 {
+        font-size: 6vw;
+        line-height: 7vw
+    }
+
+    .aplicativo .app_rapido_facil_pratico .tpl-center .app_content .app_text p {
+        font-size: 4vw;
+        line-height: 5vw;
+        padding: 0vw 4vw
+    }
+
+    .aplicativo .app_navegue_por_categoria {
+        padding-top: 6vw;
+        padding-bottom: 7vw
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg {
+        padding-top: 14vw;
+        min-height: auto;
+        padding-bottom: 8vw;
+        background-position: -560px top
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center {
+        margin-top: 0px
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content {
+        flex-direction: column-reverse
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text {
+        text-align: center
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text h2 {
+        font-size: 7vw;
+        line-height: 8.2vw;
+        min-width: 100%;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text h2:after {
+        margin: 4vw auto 6vw
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text p {
+        font-size: 4vw;
+        line-height: 5vw;
+        padding: 0vw 2vw;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_text button {
+        display: none
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_smartphone {
+        height: 492px;
+        width: 100%
+    }
+
+    .aplicativo .app_navegue_por_categoria .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+        background-size: auto 100%;
+        width: 100%;
+        height: 100%;
+        margin: 2vw auto 0
+    }
+
+    .aplicativo .app_carrinho_compras {
+        padding-top: 0px;
+        margin: 0px
+    }
+
+    .aplicativo .app_carrinho_compras .bg {
+        padding-top: 0px
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center {
+        margin: 0px;
+        width: 100%
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content {
+        flex-direction: column
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text {
+        text-align: center
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text h2 {
+        font-size: 7vw;
+        line-height: 8.2vw;
+        min-width: 100%;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text h2:after {
+        margin: 4vw auto 6vw
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text p {
+        font-size: 4vw;
+        line-height: 5vw;
+        padding: 0vw 2vw;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_text button {
+        display: none
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_smartphone {
+        height: 434px;
+        width: 100%
+    }
+
+    .aplicativo .app_carrinho_compras .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+        background-size: auto 100%;
+        width: 100%;
+        height: 100%;
+        margin: 7vw auto 0
+    }
+
+    .aplicativo .app_busca {
+        padding-top: 0px;
+        padding-bottom: 7vw;
+        margin-top: -290px
+    }
+
+    .aplicativo .app_busca .bg {
+        padding-top: 80px;
+        min-height: auto;
+        padding-bottom: 8vw;
+        background-position: top
+    }
+
+    .aplicativo .app_busca .bg .tpl-center {
+        margin-top: 0px
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content {
+        flex-direction: column-reverse;
+        padding-top: 410px
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_text {
+        text-align: center
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_text h2 {
+        font-size: 7vw;
+        line-height: 8.2vw;
+        min-width: 100%;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_text h2:after {
+        margin: 4vw auto 6vw
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_text p {
+        font-size: 4vw;
+        line-height: 5vw;
+        padding: 0vw 2vw;
+        text-align: center;
+        padding: 0 14vw 6vw
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_text button {
+        display: none
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_smartphone {
+        height: 492px;
+        width: 100%
+    }
+
+    .aplicativo .app_busca .bg .tpl-center .app_content .app_smartphone span.app_img_smartphone {
+        background-size: auto 100%;
+        width: 100%;
+        height: 100%;
+        margin: 2vw auto 0
+    }
+
+    .aplicativo .app_baixe_o_app {
+        padding-top: 0px;
+        margin: 0px
+    }
+
+    .aplicativo .app_baixe_o_app .bg {
+        padding-top: 0px
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center {
+        margin: 0px;
+        width: 100%
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content {
+        flex-direction: column
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text {
+        text-align: center
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text h2 {
+        font-size: 7vw;
+        line-height: 8.2vw;
+        min-width: 100%;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text h2:after {
+        margin: 4vw auto 6vw
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text p {
+        font-size: 4vw;
+        line-height: 5vw;
+        padding: 0vw 2vw;
+        text-align: center;
+        padding: 0 14vw
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text .app_buttons {
+        width: 100%;
+        max-width: 442px;
+        margin: 5vw auto 10vw
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text .app_buttons>div.android {
+        width: 50%
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text .app_buttons>div.ios {
+        width: 57%
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_text .app_buttons>div img {
+        width: 100%
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone {
+        zoom: .54;
+        height: 250px;
+        left: 11%
+    }
+
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_1,
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_2,
+    .aplicativo .app_baixe_o_app .bg .tpl-center .app_content .app_smartphone .app_img_smartphone_3 {
+        transform: translate(50%, 0%)
+    }
+}
+
+/*# sourceMappingURL=netsuprimentos-page-aplicativo.min.css.map */

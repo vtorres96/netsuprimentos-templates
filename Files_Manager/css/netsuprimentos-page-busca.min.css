@@ -1,0 +1,2309 @@
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#target {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    background: #7d0;
+    box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.2), inset -1px -1px 0 0 rgba(0, 0, 0, 0.05)
+}
+
+[class^="animated-"],
+[class*=" animated-"] {
+    animation-fill-mode: both
+}
+
+@keyframes tada {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.8) rotate(-4deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.2) rotate(4deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.2) rotate(-4deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tada {
+    animation: tada 1s
+}
+
+@keyframes tadaSmall {
+    0% {
+        transform: scale(1)
+    }
+
+    10%,
+    20% {
+        transform: scale(0.9) rotate(-2deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.1) rotate(2deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1) rotate(-2deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+.animated-tadaSmall {
+    animation: tadaSmall 1s
+}
+
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1
+    }
+
+    25%,
+    75% {
+        opacity: 0
+    }
+}
+
+.animated-flash {
+    animation: flash .5s
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    20%,
+    60% {
+        transform: translateX(-6px)
+    }
+
+    40%,
+    80% {
+        transform: translateX(6px)
+    }
+}
+
+.animated-shake {
+    animation: shake .4s
+}
+
+@keyframes pulseUp {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.15)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseUp {
+    animation: pulseUp .25s
+}
+
+@keyframes pulseDown {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(0.85)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-pulseDown {
+    animation: pulseDown .25s
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animated-popIn {
+    animation: popIn 1.2s
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+.animated-popOut {
+    animation: popOut .25s
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.animated-fadeIn {
+    animation: fadeIn .2s
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.animated-fadeOut {
+    animation: fadeOut .2s
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    30% {
+        transform: scale(1)
+    }
+
+    40% {
+        transform: scale(1.08)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(1)
+    }
+
+    70% {
+        transform: scale(1.05)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.blur {
+    -webkit-animation: blur 1s
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        -o-filter: blur(8px);
+        -ms-filter: blur(8px);
+        filter: blur(8px)
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightIn {
+    0% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes sideLeft2RightOut {
+    0% {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -moz-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw)
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+    width: 160px;
+    min-height: 218px;
+    margin: .15rem .1216rem .3rem;
+    padding: 0px;
+    text-align: center
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link {
+    display: inline-block;
+    width: calc(100% - 0.2rem);
+    height: 218px;
+    background: white;
+    border-radius: 6px;
+    color: #0084b3;
+    margin: .1rem;
+    box-shadow: 0 0 5px 0 rgba(102, 102, 102, 0.15)
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-avatar {
+    display: block;
+    text-align: center;
+    margin: .7rem 0.2rem;
+    overflow: hidden;
+    border-radius: 6px
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-avatar img {
+    -webkit-transition: .3s transform;
+    transition: .3s transform;
+    display: inline-block;
+    border-radius: 6px
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    padding: .2rem;
+    overflow: hidden
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-content .nt-nav-list-icon-title {
+    color: #0084b3;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.3rem 0.2rem 0.323rem .3rem;
+    letter-spacing: .04rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link:hover .nt-nav-list-icon-avatar img {
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon.nt-nav-list-icon-fullimage .nt-nav-list-icon-link .nt-nav-list-icon-avatar {
+    max-height: 122px;
+    margin: .2rem 0.2rem
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon.nt-nav-list-icon-fullimage .nt-nav-list-icon-link .nt-nav-list-icon-avatar img {
+    width: 100%;
+    position: relative;
+    margin-top: -12%
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .slick-arrow {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    font-size: 0;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    color: rgba(102, 102, 102, 0.75)
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .slick-arrow::after {
+    display: none
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .slick-arrow.slick-prev:before {
+    font-family: FontAwesome;
+    font-size: 28px;
+    content: '\f104'
+}
+
+.nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .slick-arrow.slick-next:before {
+    font-family: FontAwesome;
+    font-size: 28px;
+    content: '\f105'
+}
+
+@media screen and (max-width: 1200px) {
+    .nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+        width: 16%
+    }
+}
+
+@media screen and (max-width: 1072px) {
+    .nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+        width: 19.3%
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    .nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+        width: 33%;
+        margin: .1rem 0rem
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .nt-box[class*="nt-box-icons-nav-list-icon"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+        width: 48%;
+        margin: .1rem 0
+    }
+}
+
+body.buscaVazia main .tpl-content .tpl-center .search-header {
+    display: block;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ffb400;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+body.buscaVazia main .tpl-content .tpl-center .search-header p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px
+}
+
+body.buscaVazia main .tpl-content .tpl-center .search-header p strong span#termo-buscado {
+    color: #ffb400
+}
+
+body.buscaVazia main .tpl-content .tpl-center .search-header small {
+    font-size: 16px
+}
+
+body.internasComum main .tpl-content .tpl-center,
+body.internasComum main .tpl-header-content .tpl-center {
+    display: flow-root
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews {
+    display: block;
+    width: 100%
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel {
+    display: block;
+    width: 100%;
+    padding: 20px 2%;
+    margin-bottom: 20px;
+    background: none;
+    border-bottom: 2px solid #dedede
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header {
+    display: flex;
+    align-items: center;
+    margin: 0
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div>div,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div>div {
+    padding: 0
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) img,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) img {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) label,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) label {
+    display: block;
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    margin: 0
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2),
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2) {
+    border: 1px solid #dedede;
+    border-width: 0 1px
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage {
+    display: block !important;
+    text-align: center
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage>.yv-white,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage>.yv-white {
+    font-size: 40px !important;
+    font-weight: 500 !important;
+    letter-spacing: .6px;
+    padding: 0 !important;
+    margin-bottom: 10px
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2),
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2) {
+    display: block !important;
+    text-align: center
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2)>.yv-white,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2)>.yv-white {
+    display: block
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3),
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) {
+    width: 58.333333%
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item {
+    display: block
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div:not([style="clear:both;"]),
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div:not([style="clear:both;"]) {
+    display: block
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div:not([style="clear:both;"]):not(:last-child),
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div:not([style="clear:both;"]):not(:last-child) {
+    margin-bottom: 10px
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .stars,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .stars {
+    float: unset !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2%;
+    cursor: default
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .stars .rating-stars .rating,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .stars .rating-stars .rating {
+    display: inline-block !important;
+    width: auto
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .stars .rating-stars .rating .yv-star-color,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .stars .rating-stars .rating .yv-star-color {
+    display: inline-block;
+    vertical-align: middle
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .yv-StoreLocation-bar,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .yv-StoreLocation-bar {
+    display: inline-block;
+    vertical-align: middle;
+    float: unset !important;
+    margin: 0 1% 0 0 !important;
+    border-radius: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .yv-ratingbar-count,
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) .yv-header-item>div .yv-ratingbar-count {
+    display: inline-block;
+    vertical-align: middle !important;
+    line-height: 20px !important;
+    color: #797979;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.8px
+}
+
+body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(4),
+body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(4) {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .titulo-sessao,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
+    text-align: center;
+    font-size: 1.842857em;
+    line-height: 1.21818182em;
+    color: #444
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .titulo-sessao span.term,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao span.term {
+    color: #00bdff;
+    text-transform: capitalize;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: bottom;
+    white-space: nowrap
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .titulo-sessao-bk,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao-bk {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
+    text-align: center;
+    font-size: .83rem;
+    font-weight: 400;
+    line-height: 1.3652em;
+    margin: .4em 6.234em 0;
+    padding: 0px;
+    color: #666;
+    height: auto;
+    -webkit-transition: max-height .3s ease-in-out;
+    -moz-transition: max-height .3s ease-in-out;
+    transition: max-height .3s ease-in-out
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao.nt-collapse,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao.nt-collapse {
+    overflow: hidden;
+    max-height: 2.842em
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao a,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
+    color: #00bdff;
+    text-decoration: underline
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao a:hover,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao a:focus,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a:hover,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a:focus {
+    color: #0c75e8
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao a.same-color-text,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a.same-color-text {
+    color: inherit !important;
+    text-decoration: none !important
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao h2,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao h2 {
+    text-align: center;
+    font-size: .83rem;
+    line-height: 1.3652em;
+    color: inherit;
+    margin: 0em;
+    padding: 0em;
+    font-weight: 400
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao p,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao p {
+    line-height: inherit;
+    padding: 0px;
+    margin: 0 0 .6em 0
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .nt-line-around,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .nt-line-around {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    margin: .2em 0 .4em 0
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper {
+    display: inline-block;
+    position: relative;
+    font-size: .83rem;
+    line-height: 1.3652em;
+    color: #666
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:after,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:after,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:before {
+    border-top: 0.0625rem solid rgba(200, 200, 200, 0.5);
+    content: "";
+    height: .0625rem;
+    position: absolute;
+    top: 50%;
+    width: 10000%
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:before {
+    margin-right: .3125rem;
+    right: 100%
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:after,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .nt-line-around .nt-line-wrapper:after {
+    left: 100%;
+    margin-left: .3125rem
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon,
+body.internasComum main .tpl-header-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+    min-height: 186px;
+    padding: .0rem
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link,
+body.internasComum main .tpl-header-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link {
+    height: 186px
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-avatar,
+body.internasComum main .tpl-header-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-avatar {
+    margin: .2rem 0.2rem
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-content .nt-nav-list-icon-title,
+body.internasComum main .tpl-header-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon .nt-nav-list-icon-link .nt-nav-list-icon-content .nt-nav-list-icon-title {
+    text-transform: none;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    max-height: 38px;
+    vertical-align: middle;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons {
+    position: relative;
+    text-align: center
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .resultado-busca-numero,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .resultado-busca-numero {
+    font-size: .94em;
+    color: #aaa;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -0.34567em;
+    margin-right: .4345em
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter {
+    border: 1px solid #dad8d7;
+    background: #fff;
+    padding: 0.65em .8em;
+    margin: .5em .2em .2em .2em;
+    line-height: 1em;
+    font-size: .9em;
+    font-weight: 500;
+    color: #666;
+    font-variant-ligatures: common-ligatures;
+    border-radius: .654em;
+    text-decoration: none;
+    position: relative;
+    display: inline-block
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByReviewRateDESC,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByNameASC,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByNameDESC,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByReleaseDateDESC,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByReviewRateDESC,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByNameASC,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByNameDESC,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByReleaseDateDESC {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC {
+    background: #CB2F27;
+    padding-left: 2.345em;
+    border-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.07em
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC svg,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC svg {
+    width: 20px;
+    position: absolute;
+    left: 0.5em;
+    top: 0.2em
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC:hover,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC:hover {
+    background: #3c3c3c
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC.active,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByBestDiscountDESC.active {
+    background: #CB2F27
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceASC:before,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceDESC:before,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByTopSaleDESC:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceASC:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceDESC:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByTopSaleDESC:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    margin-right: 0.352em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceASC:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceASC:before {
+    content: "\f107"
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceDESC:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByPriceDESC:before {
+    content: "\f106"
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByTopSaleDESC:before,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.filter-OrderByTopSaleDESC:before {
+    content: "\f006"
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter:hover,
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.active,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter:hover,
+body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .nt-filters a.filter.active {
+    background-color: #00bdff;
+    border-color: rgba(0, 0, 0, 0.3);
+    color: white
+}
+
+body.internasComum main .tpl-content .tpl-center .nt-box .x-btn-saibaMais,
+body.internasComum main .tpl-header-content .tpl-center .nt-box .x-btn-saibaMais {
+    margin: 10px 0px
+}
+
+body.internasComum main .tpl-content .tpl-center .slider-banner-departamento-big,
+body.internasComum main .tpl-header-content .tpl-center .slider-banner-departamento-big {
+    width: 100%;
+    overflow: hidden
+}
+
+body.internasComum main .tpl-content .tpl-center .slider-banner-departamento-big img,
+body.internasComum main .tpl-header-content .tpl-center .slider-banner-departamento-big img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent {
+    margin-top: .5em;
+    display: inline-block;
+    width: 100%
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft {
+    width: 22%;
+    float: left;
+    background: url(/arquivos/loader-admake-filter.gif) no-repeat scroll center transparent;
+    min-height: 100px;
+    margin-bottom: 20px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .overflow,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .overflow {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .titulo-sessao,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .titulo-sessao {
+    color: #00bdff;
+    line-height: 120%;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .busca,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .busca {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .busca input.search,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .busca input.search {
+    border: 1px solid #dad8d7;
+    width: 100%;
+    height: 35px;
+    text-indent: 30px;
+    margin-bottom: 2px;
+    background: #f6f6f6;
+    font-size: 10px;
+    position: relative;
+    background-image: url("/arquivos/icon-lupa-search.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 20px;
+    text-transform: uppercase
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento {
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(102, 102, 102, 0.25);
+    padding: 20px 15px;
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories {
+    margin: 0;
+    margin-bottom: 0px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories a,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories a {
+    display: block;
+    line-height: 140%
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h4,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h3,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h4,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h3 {
+    border: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h4 a,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h3 a,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h4 a,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:nth-child(1) h3 a {
+    padding-top: 0px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:last-child,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item:last-child {
+    margin-bottom: 4px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 {
+    margin: 0 0 0px;
+    border-top: 1px solid #d7d7d7;
+    position: relative;
+    z-index: 0
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 a,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 a,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 a,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 a {
+    padding: 15px 0 10px 10px;
+    position: relative;
+    z-index: 0;
+    font-size: 15px;
+    color: #00bdff;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 a:hover,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 a:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 a:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 a:hover {
+    text-decoration: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 button,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 button,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 button,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 button {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul {
+    max-height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 2px;
+    display: block
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul.even.mCS_destroyed,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul.even.mCS_destroyed {
+    display: none !important
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul li a,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul li a {
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    padding: 5px 30px 5px 10px;
+    display: block;
+    position: relative;
+    width: calc(100% - 15px)
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul li a:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul li a:hover {
+    background-color: #3c3c3c;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset {
+    margin: 0
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset h5,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset h5 {
+    padding: 12px 0 4px 3px !important;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-top: 1px solid #d7d7d7 !important;
+    font-weight: 600 !important;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 0;
+    font-size: 15px;
+    color: #333 !important
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel {
+    max-height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label {
+    font-size: 13px;
+    line-height: 15px;
+    color: #666;
+    text-decoration: none;
+    padding: 6px 30px 8px 25px;
+    display: block;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -web-kit-border-radius: 2px;
+    text-transform: uppercase
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label:hover {
+    background-color: #3c3c3c;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label:last-child,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label:last-child {
+    margin-bottom: 4px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input {
+    margin: 4px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input[type=checkbox],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input[type=checkbox] {
+    margin-right: 0px;
+    margin-left: 0;
+    cursor: pointer;
+    opacity: 0 !important;
+    width: 13px;
+    height: 18px;
+    vertical-align: middle;
+    min-height: auto;
+    line-height: normal;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -10px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input[type=checkbox]+span:before,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input[type=checkbox]+span:before {
+    content: "";
+    background: white;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-top: -7px;
+    visibility: visible;
+    border: 2px solid #999;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 12px;
+    font-size: 15px;
+    text-align: center;
+    color: #052;
+    padding: 0 !important;
+    left: 4px;
+    position: absolute;
+    top: 50%
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input[type=checkbox]:checked+span:before,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset div.wrapperLabel label input[type=checkbox]:checked+span:before {
+    background-color: #00bdff !important;
+    box-shadow: inset 0 0 0 2px white;
+    -webkit-box-shadow: inset 0 0 0 2px white;
+    -moz-box-shadow: inset 0 0 0 2px white;
+    border-color: #00bdff;
+    background-color: #999;
+    cursor: pointer
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_marca.hide-top-border-desktop h5,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_marca.hide-top-border-desktop h5 {
+    border-top: none !important;
+    margin-top: 0px;
+    padding-top: 0px !important
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_tamanho div.wrapperLabel label,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_tamanho div.wrapperLabel label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 48%;
+    padding: 0px 10px 0px 23px;
+    height: 32px;
+    line-height: 31px;
+    margin: 1%;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+    width: auto;
+    float: left
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label {
+    width: 47.2%;
+    float: left;
+    padding: 10px 5px 10px 27px;
+    font-size: 11px;
+    line-height: 12px;
+    margin: 1%;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: inherit;
+    box-shadow: inset 47px 0px 0px -27px #fff, inset 48px 0px 0px -27px rgba(0, 0, 0, 0.2)
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label:hover {
+    box-shadow: inset 0px 0px 0px 2px #fff, inset 47px 0px 0px -26px #fff, inset 48px 0px 0px -27px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(100, 100, 100, 0.5)
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Incolor"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Incolor"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Incolor"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Incolor"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Incolor"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Incolor"] {
+    background: url("/arquivos/bg-transparent.png") center;
+    color: #555;
+    text-shadow: 1px 1px white
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Transparente"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Transparente"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Transparente"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Transparente"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Transparente"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Transparente"] {
+    background: url("/arquivos/bg-transparent.png") center;
+    color: #555;
+    text-shadow: 1px 1px white
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelo"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarelo"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarela"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarela"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarelo"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarela"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelo"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarelo"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarela"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarela"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarelo"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarela"] {
+    background-color: #f3b804;
+    color: #fffdf7
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul"] {
+    background-color: #457fb1;
+    color: #f9fbfc
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Claro"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Claro"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulclaro"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Claro"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Claro"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Claro"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulclaro"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Claro"] {
+    background-color: #9dd0fb;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Marinho"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Marinho"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulmarinho"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Marinho"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Marinho"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Marinho"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulmarinho"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Marinho"] {
+    background-color: #2d3760;
+    color: #b1b9db
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Pastel"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Pastel"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulpastel"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Pastel"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Pastel"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Pastel"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulpastel"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Pastel"] {
+    background-color: #8cd0d3;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Royal"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Royal"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulroyal"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Royal"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul_Royal"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul Royal"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azulroyal"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul Royal"] {
+    background-color: #191970;
+    color: #9f9fe9
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Bege"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Bege"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Bege"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Bege"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Bege"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Bege"] {
+    background-color: #d1bb79;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Branco"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Branco"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Leitoso"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Branca"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Branca"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Branco"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Branca"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Leitoso"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Branco"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Branco"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Leitoso"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Branca"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Branca"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Branco"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Branca"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Leitoso"] {
+    background-color: #FFF;
+    color: gray
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Caqui"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Caqui"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Caqui"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Caqui"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Caqui"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Caqui"] {
+    background-color: #2c1f16;
+    color: #c09b81
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinza"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cinza"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cinza"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinza"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cinza"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cinza"] {
+    background-color: #acb1b7;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinza Claro"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cinza Claro"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinzaclaro"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cinza Claro"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinza Claro"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cinza Claro"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinzaclaro"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cinza Claro"] {
+    background-color: #e4e4e4;
+    color: #656565
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cristal"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cristal"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cristal"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cristal"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cristal"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cristal"] {
+    color: #5f7f8a;
+    background: #f2f5f6;
+    background: -moz-linear-gradient(top, #f2f5f6 0%, #e3eaed 99%);
+    background: -webkit-linear-gradient(top, #f2f5f6 0%, #e3eaed 99%);
+    background: linear-gradient(to bottom, #f2f5f6 0%, #e3eaed 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f5f6', endColorstr='#e3eaed', GradientType=0)
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Fume"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Fume"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Fume"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Fume"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Fume"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Fume"] {
+    background-color: #212c28;
+    color: #99b3a9
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranja"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranja"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja"] {
+    background-color: #df8300;
+    color: #fff2df
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranjacvrd"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja CVRD"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja CVRD"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranjacvrd"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja CVRD"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja CVRD"] {
+    background-color: #e25f27;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Marrom"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Marrom"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Marrom"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Marrom"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Marrom"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Marrom"] {
+    background-color: #7d3b1b;
+    color: #edc0aa
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Marrom_Cacau"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Marrom Cacau"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Marromcacau"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Marrom Cacau"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Marrom_Cacau"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Marrom Cacau"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Marromcacau"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Marrom Cacau"] {
+    background-color: #945e1e;
+    color: #f2dbbf
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Prata"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Prata"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Prata"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Prata"] {
+    background-color: #C0C0C0;
+    color: #414141
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Preto"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Preto"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Preta"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Preta"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Preto"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Preta"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Preto"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Preto"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Preta"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Preta"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Preto"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Preta"] {
+    background-color: #000;
+    color: gray
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Verde"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Verde"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Verde"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Verde"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Verde"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Verde"] {
+    background-color: #36a37e;
+    color: #e2f6ef
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Vermelho"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Vermelho"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Vermelha"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Vermelha"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Vermelho"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Vermelha"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Vermelho"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Vermelho"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Vermelha"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Vermelha"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Vermelho"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Vermelha"] {
+    background-color: #bf3a3a;
+    color: #fefafa
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Rosa"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Rosa"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Rosa"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Rosa"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Rosa"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Rosa"] {
+    background-color: #e4adcd;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Pink"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Pink"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Pink"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Pink"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Pink"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Pink"] {
+    background-color: #fc30e1;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Sortido"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Sortido"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Sortido"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Sortido"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Sortido"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Sortido"] {
+    color: white;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 390% 100%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelo_Manga"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarelo Manga"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelomanga"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarelo Manga"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelo_Manga"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarelo Manga"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelomanga"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarelo Manga"] {
+    background-color: #FFD700;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelo-prata"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarelo / Prata"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarelo / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Amarelo-prata"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Amarelo / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Amarelo / Prata"] {
+    color: #666;
+    border-color: #e2d829;
+    background: #e2d829;
+    background: -moz-linear-gradient(-45deg, #e2d829 49%, #c6c6c6 50%);
+    background: -webkit-linear-gradient(-45deg, #e2d829 49%, #c6c6c6 50%);
+    background: linear-gradient(135deg, #e2d829 49%, #c6c6c6 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2d829', endColorstr='#c6c6c6', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul-prata"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul / Prata"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Azul-prata"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Azul / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Azul / Prata"] {
+    color: white;
+    border-color: #1b4188;
+    background: #1b4188;
+    background: -moz-linear-gradient(-45deg, #1b4188 49%, #c6c6c6 50%);
+    background: -webkit-linear-gradient(-45deg, #1b4188 49%, #c6c6c6 50%);
+    background: linear-gradient(135deg, #1b4188 49%, #c6c6c6 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b4188', endColorstr='#c6c6c6', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinza-prata"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cinza / Prata"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cinza / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Cinza-prata"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Cinza / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Cinza / Prata"] {
+    color: white;
+    border-color: #777;
+    background: #777;
+    background: -moz-linear-gradient(-45deg, #777 49%, #c6c6c6 50%);
+    background: -webkit-linear-gradient(-45deg, #777 49%, #c6c6c6 50%);
+    background: linear-gradient(135deg, #777777 49%, #c6c6c6 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#c6c6c6', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranja-prata"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja / Prata"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranja-prata"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja / Prata"] {
+    color: #666;
+    border-color: #fc5f0e;
+    background: #fc5f0e;
+    background: -moz-linear-gradient(-45deg, #fc5f0e 49%, #c6c6c6 50%);
+    background: -webkit-linear-gradient(-45deg, #fc5f0e 49%, #c6c6c6 50%);
+    background: linear-gradient(135deg, #fc5f0e 49%, #c6c6c6 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5f0e', endColorstr='#c6c6c6', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranja-verde"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja / Verde"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja / Verde"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Laranja-verde"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Laranja / Verde"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Laranja / Verde"] {
+    color: #666;
+    border-color: #fc5f0e;
+    background: #fc5f0e;
+    background: -moz-linear-gradient(-45deg, #fc5f0e 49%, #c8ed48 50%);
+    background: -webkit-linear-gradient(-45deg, #fc5f0e 49%, #c8ed48 50%);
+    background: linear-gradient(135deg, #fc5f0e 49%, #c8ed48 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5f0e', endColorstr='#c8ed48', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Verde-prata"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Verde / Prata"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Verde / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Verde-prata"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Verde / Prata"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Verde / Prata"] {
+    color: #666;
+    border-color: #c8ed48;
+    background: #c8ed48;
+    background: -moz-linear-gradient(-45deg, #c8ed48 49%, #c6c6c6 50%);
+    background: -webkit-linear-gradient(-45deg, #c8ed48 49%, #c6c6c6 50%);
+    background: linear-gradient(135deg, #c8ed48 49%, #c6c6c6 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8ed48', endColorstr='#c6c6c6', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Preta-e-Amarela"]:after,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Preta e Amarela"],
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Preta e Amarela"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[class*="Preta-e-Amarela"]:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[title*="Preta e Amarela"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[data-original-title*="Preta e Amarela"] {
+    color: #ccc;
+    border-color: #000;
+    background: #000;
+    background: -moz-linear-gradient(-45deg, #000 50%, #fff728 52%);
+    background: -webkit-linear-gradient(-45deg, #000 50%, #fff728 52%);
+    background: linear-gradient(135deg, #000000 50%, #fff728 52%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#fff728', GradientType=1);
+    background-position: 2px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[for="5070_Cor_1"],
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator fieldset.filtro_cor div.wrapperLabel label[for="5070_Cor_1"] {
+    background-color: #c8ed48;
+    color: #fff
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .ver-filtros,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .ver-filtros {
+    border: 1px solid #ffc000;
+    padding: 7px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-left: 7px;
+    font-weight: bold;
+    color: #666;
+    display: block;
+    text-align: center;
+    margin-top: 7px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .ver-filtros:hover,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .ver-filtros:focus,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .ver-filtros:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .ver-filtros:focus {
+    color: #ffc000
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .navigation,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .menu-navegue,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-single-navigator,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .navigation,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .menu-navegue,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-single-navigator {
+    display: none !important
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight {
+    width: 76%;
+    float: right
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .confira-todos-produtos,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .confira-todos-produtos {
+    background-color: #00bdff;
+    color: #fff;
+    display: block;
+    width: 250px;
+    margin: 20px auto 40px;
+    text-align: center;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block !important;
+    -webkit-transition: .3s all;
+    transition: .3s all
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .confira-todos-produtos:hover,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .confira-todos-produtos:hover {
+    background-color: #04a0d6
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .confira-todos-produtos .plus,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .confira-todos-produtos .plus {
+    display: block
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight #scrollLoading,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight #scrollLoading {
+    border: #FFD324 solid 2px;
+    margin: 20px auto;
+    line-height: 20px;
+    padding: 5px;
+    width: 100px;
+    display: block !important;
+    background: url("/arquivos/ajax-loader2.gif") no-repeat right center #FFF6BF
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .sub,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .sub {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro {
+    overflow: hidden;
+    clear: both
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .resultado-busca-numero,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .resultado-busca-numero {
+    float: right;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-top: 6px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .filtros,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .filtros {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy {
+    float: right;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 0;
+    margin-right: 3px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ddd
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy label,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy label {
+    height: 22px;
+    line-height: 22px;
+    display: block;
+    font-weight: 400;
+    color: #858585;
+    margin: 0;
+    padding: 0;
+    font-size: 12px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy label:after,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy label:after {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    color: #00bdff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .5em;
+    font-size: 1.25em
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy select,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy select {
+    width: 100%;
+    height: 22px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    display: block;
+    top: 0;
+    left: 0;
+    min-height: 22px
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .vitrine,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .vitrine {
+    margin-top: 1px;
+    overflow: visible !important
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .pager,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .sub:last-child,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .pager,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .sub:last-child {
+    display: none
+}
+
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .searchResultsTime,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .filterBy,
+body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .compare,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .searchResultsTime,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .filterBy,
+body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .compare {
+    display: none
+}
+
+body.is--papelaria_e_escritorio #main .tpl-center .nt-box-icons-nav-list-icon-departamento {
+    display: none
+}
+
+body.resultado-busca .bread-crumb {
+    display: none
+}
+
+body.resultado-busca main .tpl-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
+    margin-top: .3em
+}
+
+body.resultado-colecao main .tpl-content .tpl-center .nt-box.nt-title-category .titulo-sessao span.term {
+    color: #444;
+    text-transform: none;
+    max-width: 100%;
+    overflow: unset;
+    text-overflow: unset;
+    display: inline-block;
+    vertical-align: bottom;
+    white-space: normal
+}
+
+@media screen and (max-width: 900px) {
+    body.busca-vazia .wrapperPrateleiraHome .prateleira li {
+        width: 32.3%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body.busca-vazia .wrapperPrateleiraHome .prateleira li {
+        min-height: 330px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.busca-vazia .wrapperPrateleiraHome .prateleira li {
+        width: 49%;
+        min-height: 390px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body.busca-vazia .wrapperPrateleiraHome .prateleira li {
+        min-height: 345px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body.busca-vazia .wrapperPrateleiraHome .prateleira li {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul {
+        overflow: auto !important;
+        display: block !important
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .titulo-sessao,
+    body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
+        font-size: 1.5842857em;
+        line-height: 1.11818182em;
+        text-align: left
+    }
+
+    body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao,
+    body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
+        margin: 0.4em 0em 0em;
+        text-align: left
+    }
+
+    body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao br,
+    body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao br {
+        display: none
+    }
+
+    body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao h2,
+    body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao h2 {
+        text-align: left
+    }
+
+    body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao p,
+    body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao p {
+        text-align: left
+    }
+
+    body.internasComum main .tpl-content .tpl-center .nt-box.nt-filters-buttons .resultado-busca-numero,
+    body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-filters-buttons .resultado-busca-numero {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        margin-top: 0.5433em;
+        margin-right: 0em;
+        margin-bottom: 0.22em
+    }
+
+    body.internasComum main .tpl-content .tpl-center .nt-filters,
+    body.internasComum main .tpl-header-content .tpl-center .nt-filters {
+        display: none
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft {
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        left: -112%;
+        top: 0;
+        z-index: 9999;
+        background-color: #f5f4f4;
+        float: none;
+        padding: 14px;
+        -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.5)
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .titulo-sessao,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .titulo-sessao {
+        font-size: 14px
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .overflow,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .overflow {
+        display: block;
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        right: -40%;
+        top: 0;
+        background-color: #000;
+        opacity: 0.8
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .overflow button,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .overflow button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 0
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .busca input.search,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .busca input.search {
+        display: none
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: calc(100% - 55px);
+        position: absolute;
+        width: calc(100% - 30px)
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4,
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 {
+        overflow: hidden
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 a,
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 a,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 a,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 a {
+        font-size: 11px;
+        float: left;
+        width: 90%
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 button,
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 button,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h4 button,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item h3 button {
+        display: block;
+        float: right;
+        color: #00bdff;
+        font-size: 18px;
+        width: 10%;
+        margin-top: 5px;
+        background-color: transparent;
+        border: 0
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperLeft .menu-departamento .search-multiple-navigator .menu-categories li.item ul {
+        display: none;
+        max-height: 180px;
+        overflow: auto !important
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight {
+        width: 100%;
+        float: none
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .sub,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .sub {
+        display: block;
+        margin-bottom: .8em
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .filtros,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .filtros {
+        display: block;
+        float: left;
+        vertical-align: middle;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #ddd;
+        height: 24px;
+        width: 49%;
+        text-align: center;
+        line-height: 22px;
+        display: block;
+        font-weight: 400;
+        color: #858585;
+        margin: 0;
+        padding: 0;
+        font-size: 13px
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .filtros:after,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .filtros:after {
+        content: '\f0d7';
+        font-family: FontAwesome;
+        color: #00bdff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: .5em;
+        font-size: 1.25em
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .orderBy {
+        width: 49%;
+        text-align: center
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .resultado-busca-numero,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .resultado-busca-filtro .resultado-busca-numero {
+        float: none;
+        clear: both;
+        margin-right: 0;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 11px;
+        text-align: center
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li,
+    body.internasComum main .tpl-header-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li {
+        width: 24%
+    }
+}
+
+@media screen and (max-width: 760px) {
+    body.internasComum main .tpl-content .tpl-center .nt-box[class*="nt-box-icons-nav-list-icon-"] [class*="nt-icons-nav-list-icon"] .nt-nav-list-icon {
+        padding: .2rem
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li {
+        width: 32.3%
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li {
+        width: 49%
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li .box-item .bloco.imagem {
+        height: auto
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li .box-item .bloco.imagem a.product-image img {
+        width: auto;
+        height: auto
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li .box-item .botao-comprar {
+        zoom: .9;
+        width: 100%;
+        left: 50%;
+        margin: 0px;
+        transform: translateX(-50%);
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 370px) {
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li {
+        width: 49%
+    }
+
+    body.internasComum main .tpl-content .tpl-center .wrapperContent .wrapperRight .prateleira ul li .box-item .botao-comprar {
+        zoom: .9
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    .slider-banner-departamento-big {
+        display: none
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header,
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header {
+        display: block
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div>div,
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div>div {
+        padding: 0
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1),
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) {
+        margin-bottom: 15px
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) label,
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(1) label {
+        display: block;
+        color: #484848;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: .6px;
+        text-align: center;
+        text-rendering: optimizeLegibility;
+        margin: 0
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2),
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2) {
+        margin-bottom: 20px;
+        border: 0
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage,
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage {
+        display: block !important;
+        text-align: center
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage>.yv-white,
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div .yv-cAverage>.yv-white {
+        font-size: 40px !important;
+        font-weight: 500 !important;
+        letter-spacing: .6px;
+        padding: 0 !important;
+        margin-bottom: 10px
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2),
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2) {
+        display: block !important;
+        text-align: center
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2)>.yv-white,
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(2)>div>div:nth-of-type(2)>.yv-white {
+        display: block
+    }
+
+    body.internasComum main .tpl-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3),
+    body.internasComum main .tpl-header-content .tpl-center .yv-seller-reviews .panel>.yv-reviews-header>div:nth-of-type(3) {
+        width: 100%
+    }
+}
+
+/*# sourceMappingURL=netsuprimentos-page-busca.min.css.map */

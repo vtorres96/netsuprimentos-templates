@@ -1,0 +1,126 @@
+.x-main-popup {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute
+}
+
+.x-shadow {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    transition: 200ms ease
+}
+
+.x-shadow--active {
+    opacity: 0.5
+}
+
+.x-popup {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    max-height: 438px;
+    border-top: 3px solid #ffad00;
+    border-radius: 5px;
+    text-align: center
+}
+
+.x-show-popup {
+    display: flex !important;
+    z-index: 99999999;
+    position: fixed
+}
+
+.x-popup--active {
+    display: block !important;
+    position: relative
+}
+
+.x-popup p {
+    font-size: 25px;
+    font-weight: lighter;
+    text-transform: uppercase
+}
+
+.x-popup p:first-of-type {
+    font-weight: 800;
+    font-size: 33px;
+    margin: 5px 0px;
+    text-transform: uppercase
+}
+
+.x-popup p:last-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px
+}
+
+.x-popup select {
+    height: 35px;
+    width: 95%;
+    max-width: 300px;
+    border: solid 2px #ababab;
+    margin-top: 20px
+}
+
+.x-popup input {
+    height: 35px;
+    width: 95%;
+    max-width: 300px;
+    border: solid 2px #ababab;
+    margin-top: 20px
+}
+
+.x-popup input {
+    max-width: 296px;
+    height: 33px
+}
+
+.x-popup .x-btn-envia {
+    background-color: transparent;
+    border: none;
+    margin-top: 17px
+}
+
+.x-btn-close {
+    margin-top: -27px;
+    margin-right: -27px;
+    float: right;
+    cursor: pointer
+}
+
+.x-btn-close img {
+    max-width: 55px
+}
+
+.x-logo {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 260px
+}
+
+.x-tks {
+    height: 420px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: -92px
+}
+
+.x-tks p {
+    font-weight: 800;
+    font-size: 45px !important;
+    text-transform: uppercase
+}
+
+div#om-ek2nozor5pek11je194r {
+    display: none !important
+}

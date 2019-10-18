@@ -1,0 +1,2956 @@
+﻿html body #header .tpl-center .container {
+    width: 100%
+}
+
+html body #footer #extra-footer-bottom .col-copyright {
+    width: 70%
+}
+
+html body .modal-backdrop {
+    display: none !important
+}
+
+html body .has--overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 90;
+    transition: all .2s linear
+}
+
+html body .has--overlay.is--active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .1s linear
+}
+
+html body.account #accountAjaxBusy {
+    position: absolute
+}
+
+html body.account #editar-perfil {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    bottom: unset;
+    left: unset;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 80%;
+    height: auto;
+    max-height: 85%;
+    background: #fff;
+    border: 1px solid #fdb402;
+    overflow-y: auto;
+    outline: none;
+    z-index: 99;
+    padding: 20px 3%;
+    margin: 0;
+    transition: all .4s ease-in-out
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil {
+        width: 95%;
+        padding: 15px 3%
+    }
+}
+
+html body.account #editar-perfil.is--active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s linear
+}
+
+html body.account #editar-perfil::-webkit-scrollbar {
+    width: 8px
+}
+
+html body.account #editar-perfil::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+html body.account #editar-perfil::-webkit-scrollbar-thumb {
+    background: #fdb402
+}
+
+html body.account #editar-perfil::-webkit-scrollbar-thumb:hover {
+    background: #fdb402
+}
+
+html body.account #editar-perfil #profile .modal-header {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px
+}
+
+html body.account #editar-perfil #profile .modal-header button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f14545;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 10px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-header button {
+        top: -5px
+    }
+}
+
+html body.account #editar-perfil #profile .modal-header #myModalLabel {
+    display: block;
+    color: #fdb402;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .2px
+}
+
+html body.account #editar-perfil #profile .modal-body {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px
+}
+
+html body.account #editar-perfil #profile .modal-body #error {
+    position: absolute;
+    top: -40px;
+    display: block;
+    width: 100%;
+    color: #fe4242;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    padding: 0;
+    visibility: visible !important
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form h5 {
+    display: none
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: flex-start
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form #business-data {
+    display: none
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .control-group {
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-name {
+    width: 16%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-name {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-surname {
+    width: 16%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-surname {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-nickname {
+    width: 10%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-nickname {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-cpf {
+    width: 12%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-cpf {
+        width: 100%
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-cpf .controls input {
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-date-of-birth {
+    width: 14%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-date-of-birth {
+        width: 50%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-date-of-birth .controls input {
+    width: 70%;
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-gender {
+    width: 20%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-personal-data-gender {
+        width: 100%
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-corporate-name {
+    width: 32%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-corporate-name {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-fancy-name {
+    width: 20%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-fancy-name {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-business-document {
+    width: 14%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-business-document {
+        width: 100%
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-business-document .controls input {
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-state-registration {
+    width: 12%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-state-registration {
+        width: 100%
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-state-registration .controls input {
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name {
+    width: 100%
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle {
+    display: inline-block;
+    height: 35px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    text-decoration: none;
+    border: 1px solid #fdb402;
+    padding: 0 3%;
+    transition: all .2s linear
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle[data="on"] {
+    background: #fdb402
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle[data="on"]:hover {
+    color: #fdb402;
+    background: #fff;
+    transition: all .1s linear
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle[data="off"] {
+    color: #fdb402;
+    background: #fff;
+    border: 1px solid #fdb402
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle[data="off"]:hover {
+    color: #fff;
+    background: #fdb402;
+    transition: all .1s linear
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle.is--active:before {
+    background: #9F9F9F
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-business-data-name #business-toggle:before {
+    content: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 1%;
+    border: 2px solid #1C1C1C;
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px #9F9F9F
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-email {
+    width: 30%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-email {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-telephone {
+    width: 11%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-telephone {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-telephone .controls input {
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-cellphone {
+    width: 15%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-cellphone {
+        width: 100%
+    }
+}
+
+html body.account #editar-perfil #profile .modal-body .profile-detail-form .form-contact-data-cellphone .controls input {
+    width: 70%;
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group .controls.in--error-radio {
+    border-bottom: 1px solid #fe4242
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group input {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    border-radius: 0;
+    border: 1px solid #c5c5c5;
+    background: #fff;
+    transition: all .2s linear;
+    padding: 0 5%;
+    transition: border .2s linear
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group input.in--error {
+    border-color: #fe4242 !important;
+    transition: all .1s linear
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group input#postalCode {
+    width: 40%;
+    text-align: center
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group input:hover {
+    border-color: #979797
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group input:focus {
+    border-color: #fdb402;
+    transition: all .2s ease-out
+}
+
+html body.account #editar-perfil #profile .modal-body .control-group select {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    padding: 0 10%;
+    border: 1px solid #c5c5c5;
+    border-radius: 0;
+    background: #fdb402;
+    cursor: pointer;
+    background: url("/arquivos/icon-arrow-yellow-sml.png") no-repeat right 10px center
+}
+
+html body.account #editar-perfil #profile .modal-body .control-label {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: initial;
+    letter-spacing: .2px;
+    margin-bottom: 10px
+}
+
+html body.account #editar-perfil #profile .modal-body .controls {
+    display: block;
+    width: 100%
+}
+
+html body.account #editar-perfil #profile .modal-body .controls label.radio {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: initial;
+    letter-spacing: .2px;
+    line-height: 34px;
+    height: 34px
+}
+
+html body.account #editar-perfil #profile .modal-body .controls label.radio+.radio {
+    margin-left: 5%;
+    margin-bottom: 15px
+}
+
+html body.account #editar-perfil #profile .modal-body .controls label.radio input {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    margin: 0 5% 0 0;
+    border: 2px solid #1C1C1C;
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px #9F9F9F;
+    padding: 0;
+    min-height: unset;
+    transition: all .2s ease-in-out
+}
+
+html body.account #editar-perfil #profile .modal-body .controls label.radio input:checked {
+    background: #fdb402;
+    transition: all .1s linear
+}
+
+html body.account #editar-perfil #profile .modal-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-footer {
+        flex-wrap: wrap;
+        padding: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-footer #profile-submit,
+html body.account #editar-perfil #profile .modal-footer .btn-link {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: lowercase;
+    text-align: center;
+    width: 20%;
+    min-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    padding: 0;
+    outline: none;
+    transition: all .2s ease-in;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+
+    html body.account #editar-perfil #profile .modal-footer #profile-submit,
+    html body.account #editar-perfil #profile .modal-footer .btn-link {
+        width: 100%
+    }
+}
+
+html body.account #editar-perfil #profile .modal-footer .btn-link {
+    order: 1;
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: initial;
+    border: 1px solid #cecece;
+    background: #e7e7e7;
+    margin-right: 4%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-footer .btn-link {
+        order: 2;
+        margin: 0
+    }
+}
+
+html body.account #editar-perfil #profile .modal-footer .btn-link:hover {
+    background: #cecece;
+    transition: all .1s ease-out
+}
+
+html body.account #editar-perfil #profile .modal-footer #profile-submit {
+    order: 2;
+    color: #fdb402;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: initial;
+    background: #fff;
+    border: 1px solid #fdb402
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #editar-perfil #profile .modal-footer #profile-submit {
+        order: 1;
+        margin: 0 0 20px
+    }
+}
+
+html body.account #editar-perfil #profile .modal-footer #profile-submit:hover {
+    color: #fff;
+    background: #fdb402;
+    transition: all .1s ease-out
+}
+
+html body.account #address-remove {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    bottom: unset;
+    left: unset;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 80%;
+    height: auto;
+    background: #fff;
+    border: 1px solid #fdb402;
+    overflow-y: auto;
+    outline: none;
+    z-index: 99;
+    padding: 20px 3%;
+    margin: 0;
+    transition: all .4s ease-in-out
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-remove {
+        width: 95%;
+        padding: 15px 3%
+    }
+}
+
+html body.account #address-remove.is--active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s linear
+}
+
+html body.account #address-remove::-webkit-scrollbar {
+    width: 8px
+}
+
+html body.account #address-remove::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+html body.account #address-remove::-webkit-scrollbar-thumb {
+    background: #fdb402
+}
+
+html body.account #address-remove::-webkit-scrollbar-thumb:hover {
+    background: #fdb402
+}
+
+html body.account #address-remove #exclude {
+    width: 100%;
+    outline: none
+}
+
+html body.account #address-remove #exclude .modal-header {
+    display: block;
+    width: 100%;
+    position: relative;
+    border: 0;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+html body.account #address-remove #exclude .modal-header button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f14545;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 10px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer
+}
+
+html body.account #address-remove #exclude .modal-header h3 {
+    color: #fdb402;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center
+}
+
+html body.account #address-remove #exclude .modal-body {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+html body.account #address-remove #exclude .modal-body label {
+    display: block;
+    width: 100%;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: initial
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-remove #exclude .modal-body label {
+        font-weight: 600;
+        line-height: 22px
+    }
+}
+
+html body.account #address-remove #exclude .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0;
+    padding: 0
+}
+
+html body.account #address-remove #exclude .modal-footer input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: initial;
+    background: #de1513;
+    width: 30%;
+    border-radius: 0;
+    margin-right: 3%;
+    padding: 0;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-remove #exclude .modal-footer input {
+        width: 40%
+    }
+}
+
+html body.account #address-remove #exclude .modal-footer button {
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: initial;
+    width: 30%;
+    border-radius: 0;
+    border: 1px solid #cecece;
+    background: #e7e7e7;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-remove #exclude .modal-footer button {
+        width: 40%
+    }
+}
+
+html body.account #address-remove #exclude .modal-footer button:hover {
+    background: #cecece;
+    transition: all .1s ease-out
+}
+
+html body.account #address-edit {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    bottom: unset;
+    left: unset;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 80%;
+    height: 85%;
+    background: #fff;
+    border: 1px solid #fdb402;
+    overflow-y: auto;
+    outline: none;
+    z-index: 99;
+    padding: 20px 3%;
+    margin: 0;
+    transition: all .4s ease-in-out
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit {
+        width: 95%;
+        padding: 15px 3%
+    }
+}
+
+html body.account #address-edit.is--active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s linear
+}
+
+html body.account #address-edit::-webkit-scrollbar {
+    width: 8px
+}
+
+html body.account #address-edit::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+html body.account #address-edit::-webkit-scrollbar-thumb {
+    background: #fdb402
+}
+
+html body.account #address-edit::-webkit-scrollbar-thumb:hover {
+    background: #fdb402
+}
+
+html body.account #address-edit #form-address .modal-header {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px
+}
+
+html body.account #address-edit #form-address .modal-header button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f14545;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 10px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer
+}
+
+html body.account #address-edit #form-address .modal-header #myModalLabel {
+    display: block;
+    color: #fdb402;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .2px
+}
+
+html body.account #address-edit #form-address .modal-body {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px
+}
+
+html body.account #address-edit #form-address .modal-body #error {
+    position: absolute;
+    top: -40px;
+    display: block;
+    width: 100%;
+    color: #fe4242;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    padding: 0;
+    visibility: visible !important
+}
+
+html body.account #address-edit #form-address .modal-body .address-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end
+}
+
+html body.account #address-edit #form-address .modal-body .address-form>div {
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-addressee {
+    width: 28%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-addressee {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-address-type {
+    width: 15%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-address-type {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-cep {
+    width: 23%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-cep {
+        width: 60%
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-street-name {
+    width: 43%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-street-name {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-number {
+    width: 10%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-number {
+        width: 50%;
+        margin-right: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-complement {
+    width: 20%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-complement {
+        width: 100%
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-reference {
+    width: 20%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-reference {
+        width: 100%
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-neighborhood {
+    width: 25%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-neighborhood {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-state {
+    width: 6%;
+    margin-right: 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-state {
+        width: 30%;
+        margin-right: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .address-form-city {
+    width: 25%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-body .address-form-city {
+        width: 100%
+    }
+}
+
+html body.account #address-edit #form-address .modal-body .control-group input {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    border-radius: 0;
+    border: 1px solid #c5c5c5;
+    background: #fff;
+    transition: all .2s linear;
+    padding: 0 5%;
+    transition: border .2s linear
+}
+
+html body.account #address-edit #form-address .modal-body .control-group input.in--error {
+    border-color: #fe4242 !important;
+    transition: all .1s linear
+}
+
+html body.account #address-edit #form-address .modal-body .control-group input#postalCode {
+    width: 40%;
+    text-align: center
+}
+
+html body.account #address-edit #form-address .modal-body .control-group input:hover {
+    border-color: #979797
+}
+
+html body.account #address-edit #form-address .modal-body .control-group input:focus {
+    border-color: #fdb402;
+    transition: all .2s ease-out
+}
+
+html body.account #address-edit #form-address .modal-body .control-group select {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-transform: initial;
+    padding: 0 10%;
+    border: 1px solid #c5c5c5;
+    border-radius: 0;
+    background: #fdb402;
+    cursor: pointer;
+    background: url("/arquivos/icon-arrow-yellow-sml.png") no-repeat right 10px center
+}
+
+html body.account #address-edit #form-address .modal-body .control-label {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: initial;
+    letter-spacing: .2px;
+    margin-bottom: 10px
+}
+
+html body.account #address-edit #form-address .modal-body .control-label .obr {
+    color: #fe4242
+}
+
+html body.account #address-edit #form-address .modal-body .controls {
+    display: block;
+    width: 100%
+}
+
+html body.account #address-edit #form-address .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    border: 0
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-footer {
+        flex-wrap: wrap
+    }
+}
+
+html body.account #address-edit #form-address .modal-footer #form-submit,
+html body.account #address-edit #form-address .modal-footer .btn-link {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: lowercase;
+    text-align: center;
+    width: 20%;
+    min-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    padding: 0;
+    outline: none;
+    transition: all .2s ease-in;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+
+    html body.account #address-edit #form-address .modal-footer #form-submit,
+    html body.account #address-edit #form-address .modal-footer .btn-link {
+        width: 100%
+    }
+}
+
+html body.account #address-edit #form-address .modal-footer .btn-link {
+    order: 1;
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: initial;
+    border: 1px solid #cecece;
+    background: #e7e7e7;
+    margin-right: 4%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-footer .btn-link {
+        order: 2;
+        margin: 0
+    }
+}
+
+html body.account #address-edit #form-address .modal-footer .btn-link:hover {
+    background: #cecece;
+    transition: all .1s ease-out
+}
+
+html body.account #address-edit #form-address .modal-footer #form-submit {
+    order: 2;
+    color: #fdb402;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: initial;
+    background: #fff;
+    border: 1px solid #fdb402
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body.account #address-edit #form-address .modal-footer #form-submit {
+        order: 1;
+        margin: 0 0 20px
+    }
+}
+
+html body.account #address-edit #form-address .modal-footer #form-submit:hover {
+    color: #fff;
+    background: #fdb402;
+    transition: all .1s ease-out
+}
+
+html body .content {
+    display: block;
+    width: 100%;
+    background: #fff
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content {
+        margin-top: 125px
+    }
+}
+
+html body .content__header {
+    display: block;
+    width: 100%;
+    padding: 0 5%;
+    margin: 10px;
+}
+
+html body .content__header .breadcrumb {
+    display: block;
+    width: 100%;
+    padding: 10px 0
+}
+
+html body .content__header .breadcrumb ul li {
+    display: inline-block;
+    vertical-align: middle
+}
+
+html body .content__header .breadcrumb ul li+li:before {
+    content: '\f105';
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 6px;
+    color: #7e7e7e;
+    padding: 0 6px;
+    color: #7e7e7e;
+    font-family: FontAwesome
+}
+
+html body .content__header .breadcrumb ul li:last-of-type a {
+    color: #ffb400;
+    font-weight: 600
+}
+
+html body .content__header .breadcrumb ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 14px
+}
+
+html body .content__header .list-menu {
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+html body .content__header .list-menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    min-width: 360px;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content__header .list-menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: unset
+    }
+}
+
+html body .content__header .list-menu ul li {
+    display: inline-block;
+    vertical-align: middle
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content__header .list-menu ul li {
+        display: block;
+        width: 100%
+    }
+}
+
+html body .content__header .list-menu ul li+li {
+    margin-left: 5%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content__header .list-menu ul li+li {
+        margin: 10px 0 0
+    }
+}
+
+html body .content__header .list-menu ul li a {
+    display: block;
+    color: #ffb400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: initial;
+    padding: 0 10px
+}
+
+html body .content__header .list-menu ul li a.is--active {
+    border-bottom: 5px solid #ffb400
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content__header .list-menu ul li a.is--active {
+        color: #fff;
+        font-weight: 800;
+        background: #ffb400;
+        border-bottom: 0
+    }
+}
+
+html body .content .account__information {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    padding: 0 10% 60px;
+    position: relative;
+    margin-bottom: 60px;
+    transition: all .2s linear;
+    z-index: 0;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .account__information {
+        padding: 0 5% 40px;
+        margin-bottom: 40px
+    }
+}
+
+html body .content .account__information.is--date-active {
+    min-height: 850px;
+    transition: all .1s linear
+}
+
+html body .content .account__information.is--address-active {
+    min-height: 650px;
+    transition: all .1s linear
+}
+
+html body .content .account__profile {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    min-height: 360px;
+    border: 1px solid #ffb400
+}
+
+@media screen and (max-width: 648px) {
+    html body .content .h_search fieldset.busca {
+        margin-top: -6px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .account__profile {
+        width: 100%;
+        margin: 0 0 30px
+    }
+}
+
+html body .content .account__profile>h4 {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    color: #3c3c3c;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 45px;
+    background: #ffb400;
+    border-bottom: 2px solid #fff;
+    padding: 0 4%;
+    margin-bottom: 30px
+}
+
+html body .content .account__profile>h4 a {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: initial;
+    text-decoration: underline
+}
+
+html body .content .account__profile #formMC {
+    display: none;
+    width: 100%;
+    position: relative;
+    padding: 0 10%;
+    margin-bottom: 15px
+}
+
+html body .content .account__profile #formMC>h4 {
+    color: #ffb400;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 45px;
+    border-top: 1px solid #ffb400;
+    padding: 10px 0 0;
+    margin-bottom: 10px
+}
+
+html body .content .account__profile #formMC .form-group {
+    position: relative
+}
+
+html body .content .account__profile #formMC .form-group label {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+
+html body .content .account__profile #formMC .form-group label#mcCnpj-error {
+    position: absolute;
+    bottom: -25px;
+    color: #f73434;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: initial
+}
+
+html body .content .account__profile #formMC .form-group input {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 25px
+}
+
+html body .content .account__profile #formMC .form-group input:focus {
+    border-color: #ffb400
+}
+
+html body .content .account__profile #formMC .btn-default {
+    display: block;
+    width: 100%;
+    height: 35px;
+    color: #787878;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    border: 1px solid #8c8c8c;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out
+}
+
+html body .content .account__profile #formMC .btn-default:hover {
+    color: #fff;
+    background: #ffb400;
+    border-color: #ffb400;
+    transition: all .1s linear
+}
+
+html body .content .account__profile #edit-data-link {
+    display: none
+}
+
+html body .content .account__profile .profile-detail-display>h4 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    color: #3c3c3c;
+    font-size: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 45px;
+    background: #ffb400;
+    border-bottom: 2px solid #fff;
+    padding: 0 4%;
+    margin: 0 0 30px;
+    cursor: text
+}
+
+html body .content .account__profile .profile-detail-display>h4:before {
+    content: 'Meus dados';
+    font-size: 18px
+}
+
+html body .content .account__profile .profile-detail-display>h4 a {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: initial;
+    text-decoration: underline
+}
+
+html body .content .account__profile .profile-detail-display h5 {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: initial;
+    padding: 0 10%;
+    margin-bottom: 15px
+}
+
+html body .content .account__profile .profile-detail-display-email {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: initial;
+    padding: 0 10%;
+    margin-bottom: 30px
+}
+
+html body .content .account__profile .profile-detail-display-info,
+html body .content .account__profile .profile-detail-display-business-info {
+    display: block;
+    width: 80%;
+    padding: 30px 0 40px;
+    margin: 0 10%;
+    border-top: 1px solid #ffb400
+}
+
+html body .content .account__profile .profile-detail-display-info>span,
+html body .content .account__profile .profile-detail-display-business-info>span {
+    display: block;
+    width: 100%;
+    padding: 0
+}
+
+html body .content .account__profile .profile-detail-display-info>span span,
+html body .content .account__profile .profile-detail-display-business-info>span span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+html body .content .account__profile .profile-detail-display-info>span span.title,
+html body .content .account__profile .profile-detail-display-business-info>span span.title {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: initial;
+    letter-spacing: .2px
+}
+
+html body .content .account__profile .profile-detail-display-info>span span.data,
+html body .content .account__profile .profile-detail-display-business-info>span span.data {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: initial;
+    margin-left: 5px
+}
+
+html body .content .account__address {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    min-height: 388.6px;
+    border: 1px solid #ffb400
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .account__address {
+        width: 100%
+    }
+}
+
+html body .content .account__address h4 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    color: #3c3c3c;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 45px;
+    background: #ffb400;
+    border-bottom: 2px solid #fff;
+    padding: 0 4%;
+    margin-bottom: 10px
+}
+
+html body .content .account__address h4 a {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: initial;
+    text-decoration: underline
+}
+
+html body .content .account__address .new-address-link {
+    display: none
+}
+
+html body .content .account__address .address-display-unit {
+    display: block;
+    width: 80%;
+    position: relative;
+    padding: 20px 0;
+    margin: 0 10%
+}
+
+html body .content .account__address .address-display-unit:not(:first-child) {
+    border-top: 1px solid #ffb400
+}
+
+html body .content .account__address .address-display-unit h5 {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: initial;
+    letter-spacing: .2px;
+    margin-bottom: 10px
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .account__address .address-display-unit h5 {
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+}
+
+html body .content .account__address .address-display-unit .edit-address-link {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 0;
+    margin-bottom: 10px
+}
+
+html body .content .account__address .address-display-unit .edit-address-link a {
+    color: #ffb400;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+html body .content .account__address .address-display-unit .edit-address-link a.address-update {
+    display: none;
+    height: 20px;
+    font-size: 0;
+    line-height: 20px;
+    cursor: pointer
+}
+
+html body .content .account__address .address-display-unit .edit-address-link a.address-update:before {
+    content: 'Alterar Endereço';
+    font-size: 12px
+}
+
+html body .content .account__address .address-display-unit .edit-address-link a.delete {
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    line-height: 15px
+}
+
+html body .content .account__address .address-display-unit .edit-address-link a.delete:before {
+    content: "\f00d";
+    display: block;
+    color: #f72424;
+    font-size: 15px;
+    font-family: FontAwesome;
+    text-align: center
+}
+
+html body .content .account__address .address-display-unit-info {
+    display: block;
+    width: 100%;
+    color: #9F9F9F;
+    margin-bottom: 10px
+}
+
+html body .content .account__address .address-display-unit-info span {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 32px
+}
+
+html body .content .orders__information {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    padding: 0 10%;
+    position: relative
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__information {
+        padding: 0 5% 35px
+    }
+}
+
+html body .content .orders__title {
+    display: none;
+    width: 100%;
+    margin-bottom: 40px
+}
+
+html body .content .orders__title h2 {
+    color: #ffb400;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: initial
+}
+
+html body .content .orders__content {
+    display: block;
+    width: 100%;
+    position: relative;
+    border: 1px solid #ffb400;
+    padding: 35px 5%;
+    z-index: 0;
+}
+/* Media-querie Outubro de 2019 */
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content {
+        z-index: 0;
+    }  
+}
+/* início inserido em Outubro 2019 */
+html body .content section.orders__information div h4 {
+    font-weight: bold;
+}
+
+html body .content .orders__content aside.vtex-account__menu.pv9.pv0-m-2.ph9.ph7-m.ph8-l.w-20-m.w-100,
+html body .content .account__profile aside.vtex-account__menu.pv9.pv0-m-2.ph9.ph7-m.ph8-l.w-20-m.w-100 {
+    width: 25%;
+}
+
+html body .content .orders__content .vtex-account__user-info.flex.flex-wrap.items-end.mb7 {
+    flex-wrap: nowrap;
+}
+
+html body .content .orders__content .w-100.mw9.pv7-m.pv9-l.flex {
+    padding-top: 0;
+}
+
+html body .content .orders__content section.vtex-account__page.w-100.w-80-m header,
+html body .content .account__profile section.vtex-account__page.w-100.w-80-m header {
+    padding-top: 0;
+    height: 140px;
+}
+
+html body .content .orders__content main.vtex-account__page-body.vtex-account__orders-list.w-100.pa4-s,
+html body .content .account__profile main.vtex-account__page-body.vtex-account__profile.w-100.pa4-s {
+    padding-top: 0;
+}
+
+html body .content .orders__content .dib.v-mid.fr.max-w-70 {
+    display: contents
+}
+
+html body .content .orders__content span.dtc.v-mid {
+    border: solid 0.5px #000;
+    border-radius: 6px;
+}
+
+html body .content .orders__content .option[type='radio']:checked:after {
+    left: 8px;
+}
+
+html body .content .orders__content h4.db.c-on-base.mb0.fw4.f6.mt0 {
+    font-weight: 100;
+}
+
+html body .content .orders__content .bt, .cartFooter a.cartCheckout {
+    background-color: #fff;
+}
+
+html body .content .orders__content .w-100.f6.fw4.c-on-base {
+    margin: 6px 0;
+}
+
+html body main.vtex-account__page-body.vtex-account__profile.w-100.pa4-s {
+    padding-top: 0px;
+}
+
+html body .content .pb5.pr5-ns.flex-none {
+    width: 100%;
+}
+
+html body .content article.ba.bw1.b--muted-4.br2.flex.flex-column.justify-between {
+    flex-direction: column;
+}
+
+html body .content .lighter.c-muted-2.lh-copy.pv4.w5.h4 {
+    width: 100%;
+}
+
+html body .content main.ph7.pv6 {
+    padding-top: 0px;
+    margin-bottom: 48px;
+}
+
+html body .content a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.f6.fw4.flex.items-center.mb5 {
+    display: none;
+}
+/* fim inserido em Outubro 2019 */
+
+html body .content .orders__content .render-container .page-header h1 {
+    color: #ffb400;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: initial;
+    margin: 0 0 40px
+}
+
+html body .content .orders__content .render-container .page-header .nav {
+    display: none
+}
+
+html body .content .orders__content .render-container .cf.helvetica .heavier-blue {
+    display: block;
+    width: 30%;
+    min-width: 200px;
+    height: 30px;
+    line-height: 30px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: .2px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #3c3c3c;
+    outline: none;
+    margin: 0 0 40px;
+    transition: all .2s ease-in
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-container .cf.helvetica .heavier-blue {
+        width: 100%
+    }
+}
+
+html body .content .orders__content .render-container .cf.helvetica .heavier-blue svg {
+    display: none;
+    fill: #ffb400
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    float: none
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-container .cf.helvetica .w-70-l {
+        width: 100%
+    }
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mid-gray {
+    color: #3c3c3c
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mid-gray.mb2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mid-gray.mt4 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mid-gray.mt4 span {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    text-align: center
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 h5 {
+    display: none;
+    color: #3c3c3c;
+    font-size: 20px;
+    text-transform: initial;
+    margin-bottom: 20px
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list li {
+    border: none
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list li span input {
+    border-color: #9F9F9F;
+    border-radius: 100%;
+    padding: 0
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list li span input:after {
+    background: #ffb400;
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 4px
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list li label {
+    color: #3c3c3c;
+    font-size: 12px
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div .myo-option-disclaimer {
+    border-radius: 0;
+    background: #fff;
+    padding: 0
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div .myo-option-disclaimer ul {
+    padding: 0
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div .myo-option-disclaimer ul li {
+    color: #3c3c3c
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div .myo-option-disclaimer button {
+    display: block;
+    width: auto;
+    height: 40px;
+    color: #fdb402;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: .2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    border: 1px solid #fdb402;
+    background: none;
+    outline: none;
+    padding: 0 4%;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all .2s ease-in
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div .myo-option-disclaimer button:hover {
+    color: #fff;
+    background: #fdb402;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div form label.cancelReason {
+    color: #3c3c3c
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div form textarea {
+    background: transparent;
+    border: 1px solid #3c3c3c;
+    color: #3c3c3c;
+    padding: 20px 10px
+}
+
+html body .content .orders__content .render-container .cf.helvetica .w-70-l .mv4 .list div form textarea:focus {
+    border: 1px solid #3c3c3c
+}
+
+html body .content .orders__content .render-container .cf.helvetica aside.w-30-l {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container {
+    display: block;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .ph0 article {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    min-height: 490px;
+    border: 1px solid #bababa;
+    border-radius: 0;
+    padding: 20px 2.5%;
+    margin: 0 4% 30px 0
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article {
+        width: 100%;
+        margin: 0 0 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article:nth-of-type(2n+2) {
+    margin-right: 0
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .br3 {
+    border-radius: 0
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white {
+    background: none;
+    border-top: 1px solid #bababa;
+    padding: 35px 5% 0;
+    margin: 0
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white {
+        padding: 30px 2% 0
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns>a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    transition: all .2s ease-in-out
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns>a:hover {
+    box-shadow: 0 4px 5px -4px #656565;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-20 {
+    width: 25%;
+    margin-right: 5%
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-20 img {
+    width: 100%;
+    height: auto
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray {
+    width: 70%;
+    padding: 0
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray h4 {
+    display: block;
+    margin: 0 0 20px
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray h4 a {
+    display: block;
+    width: 100%;
+    height: 52px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    outline: none
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray p {
+    display: none;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray p span {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 400
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray>span {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 0;
+    font-weight: 800;
+    letter-spacing: .2px;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-70-ns .w-80.pl3.mid-gray>span span {
+    font-size: 16px
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns {
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-invoice-btn {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto 30px;
+    color: #01b43f;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: .2px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    transition: all .2s ease-in-out
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-invoice-btn {
+        width: 100%;
+        margin: 0 0 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-invoice-btn:hover {
+    border-color: #01b43f;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-invoice-btn>svg {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-invoice-btn>span {
+    display: block;
+    width: 100%;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-invoice-btn>span:before {
+    content: ''
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-reorder-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+    height: 40px;
+    color: #3c3c3c;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3c3c3c;
+    outline: none;
+    margin: 0 4% 20px 0;
+    cursor: pointer;
+    transition: all .2s ease-in
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-reorder-btn {
+        width: 100%;
+        margin: 0 0 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-reorder-btn:hover {
+    color: #fff;
+    background: #3c3c3c;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-reorder-btn>svg {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-reorder-btn>span {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-edit-btn {
+    display: none;
+    vertical-align: middle;
+    width: 48%;
+    height: 40px;
+    color: #3c3c3c;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3c3c3c;
+    outline: none;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: all .2s ease-in
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-edit-btn {
+        width: 100%;
+        margin: 0 0 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-edit-btn:hover {
+    color: #fff;
+    background: #3c3c3c;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-edit-btn>svg {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-edit-btn>span {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-cancel-btn {
+    display: none;
+    width: 100%;
+    height: 40px;
+    color: #e92929;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #e33636;
+    outline: none;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-cancel-btn {
+        margin: 0 0 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-cancel-btn:hover {
+    color: #fff;
+    background: #e33636;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-cancel-btn>svg {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-cancel-btn>span {
+    font-size: 0;
+    font-weight: 600;
+    letter-spacing: .2px
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-cancel-btn>span:before {
+    content: 'Cancelar Pedido';
+    font-size: 14px
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-details-btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fdb402;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: .2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    border: 1px solid #fdb402;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-details-btn {
+        margin: 0
+    }
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-details-btn:hover {
+    color: #fff;
+    background: #fdb402;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .ph0 article .pa3.pa4-l.bg-white .w-30-ns .myo-details-btn>span {
+    display: block;
+    padding: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order {
+    transform: scale(1);
+    border-radius: 0;
+    border: 1px solid #3c3c3c;
+    background: #fff;
+    padding: 20px 3%;
+    margin: 0 0 30px
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order:last-of-type {
+    margin-bottom: 0
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.w-50-ns {
+        display: block;
+        text-align: center;
+        margin: 0 auto 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.w-50-ns .w-100.f7 {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.w-50-ns .w-100.f7 span {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .2px;
+    text-transform: uppercase
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.w-50-ns .db-l.pv0 {
+    display: block;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.w-50-ns .db-l.pv0 span {
+    color: #9F9F9F;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    text-transform: uppercase
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns {
+        display: block;
+        text-align: center;
+        margin: 0
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns .myo-order-id {
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns .myo-order-id {
+        text-align: center
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns .myo-seller-order-id {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns .tr-ns.mt1-ns .dib.br2.pv1.ph2.f7 {
+    display: inline-block;
+    width: auto;
+    min-width: 110px;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 5%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns .tr-ns.mt1-ns .dib.br2.pv1.ph2.f7 {
+        width: 100%
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-collapsed-order .fl-ns.mt2.mt0-ns .tr-ns.mt1-ns .dib.br2.pv1.ph2.f7 span span {
+    display: block;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    padding: 0;
+    height: 45px;
+    line-height: 45px
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .f5.ph4.pv3.br3.bg-washed-yellow.b--gold {
+    border-radius: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .f5.ph4.pv3.br3.bg-washed-yellow.b--gold .fr.hh1.w1.pt1 {
+    padding: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .f5.ph4.pv3.br3.bg-washed-yellow.b--gold .fr.hh1.w1.pt1 path {
+    fill: #ff725c
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header {
+    display: block;
+    width: auto;
+    border: none;
+    background: none;
+    padding: 0 5% 35px
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header {
+        padding: 0 2% 3opx
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-75.w-25-l.w-third-m {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4%;
+    width: 48%;
+    text-align: center
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-75.w-25-l.w-third-m .w-100.f7 {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-75.w-25-l.w-third-m .w-100.f7 span {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .2px;
+    text-transform: uppercase
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-75.w-25-l.w-third-m .db-l.pv0 {
+    display: block;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-75.w-25-l.w-third-m .db-l.pv0 span {
+    color: #9F9F9F;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    text-transform: uppercase
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-75.w-25-l.w-third-m .db-l.pv0 span {
+        line-height: 20px
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl-ns.w-25.w-third-m {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl-ns.w-25.w-third-m .w-100.f7.tl-ns {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl-ns.w-25.w-third-m .w-100.f7.tl-ns span {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .2px;
+    text-transform: uppercase
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl-ns.w-25.w-third-m .db.w-100.f6.tl-ns {
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl-ns.w-25.w-third-m .db.w-100.f6.tl-ns span {
+    color: #9F9F9F;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-transform: uppercase
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-50-ns.w-third-m {
+    display: block;
+    width: 100%;
+    margin-top: 30px
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-50-ns.w-third-m .myo-order-id {
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-50-ns.w-third-m .tr-ns.mt1-ns {
+    display: block;
+    width: 100%;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-50-ns.w-third-m .tr-ns.mt1-ns .pv1.ph2 {
+    display: block;
+    width: auto;
+    min-width: 110px;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-header .fl.w-50-ns.w-third-m .tr-ns.mt1-ns .pv1.ph2 span span {
+    display: block;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    line-height: 45px;
+    height: 45px;
+    padding: 0 4%
+}
+
+html body .content .orders__content .render-provider .container .myo-orders-listing .myo-order-product {
+    display: block;
+    padding: 0 5%;
+    margin-bottom: 35px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+    height: auto
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>a {
+    display: block;
+    width: 30%;
+    min-width: 200px;
+    height: 30px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3c3c3c;
+    outline: none;
+    margin: 0 70% 20px 0;
+    transition: all .2s ease-in
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>a:first-letter {
+    text-transform: uppercase
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>a:hover {
+    color: #fff;
+    background: #3c3c3c;
+    transition: all .1s linear
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>a>svg {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>a>span {
+    display: block;
+    line-height: 30px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-40-ns.pa2.fl {
+    display: inline-block;
+    width: 50%;
+    min-height: 85px;
+    padding: 20px 3%;
+    border: 1px solid #fdb402;
+    border-width: 1px 0 1px 1px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-40-ns.pa2.fl h2 {
+    display: block;
+    width: 100%;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    margin-bottom: 10px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-40-ns.pa2.fl time {
+    display: block;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-40-ns.pa2.fl time>span {
+    display: inline-block;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    margin-right: 25px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-40-ns.pa2.fl time .ph2.pv1.black-70 {
+    display: inline-block;
+    color: #fdb402;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    border-radius: 0;
+    background: none;
+    padding: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-40-ns.pa2.fl time .ph2.pv1.black-70 span {
+    display: block
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section {
+    overflow: auto;
+    min-height: 218px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white {
+    background: none;
+    border: 1px solid #fdb402;
+    border-radius: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .mid-gray,
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white>div .lh-solid,
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .mt3,
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .mb3 {
+    color: #3c3c3c;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-top: 10px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .cf.w-100 hr {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .myo-invoice-btn button {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .myo-invoice-btn .blue {
+    color: #3c3c3c;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .myo-invoice-btn .blue:hover {
+    text-decoration: underline
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order section article>section.bg-white .overflow-hidden {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div {
+    display: block;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar {
+    height: auto;
+    border: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar .pt4 {
+    width: 65%;
+    margin: 0 auto
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__title-font {
+    display: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__text {
+    color: #3c3c3c;
+    font-size: 12px;
+    letter-spacing: .5px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar .light-gray {
+    color: #BABABA
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__blue-circle-color {
+    background-color: #ffb400;
+    border: none;
+    margin-right: 0;
+    margin-left: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__margin,
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__height1 {
+    margin-right: 0;
+    margin-left: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__line {
+    background: transparent;
+    border-color: #BABABA
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__ma-inner-circle {
+    background: #fff url(/arquivos/icon--check.png) center no-repeat
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__ma-inner-circle.br-100.mb1 {
+    border-color: #ffb400
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__ma-inner-circle:before {
+    background: transparent
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__blue-line-color {
+    background: transparent;
+    border-color: #ffb400
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar__grey-circle-color {
+    background: #3c3c3c
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order>div .myo-progress-bar .b--white {
+    border-color: #BABABA
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .flex-column {
+    color: #3c3c3c
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .flex-column .mw-100 .f4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin: 0 0 10px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .flex-column .flex-row-l>div {
+    display: block;
+    width: 100%
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .flex-column .flex-row-l>div .mr2 {
+    display: block;
+    margin: 0 0 10px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .flex-column .flex-row-l>div .bg-light-blue {
+    color: #3c3c3c;
+    font-size: 14px;
+    line-height: 28px;
+    height: 25px;
+    border-radius: 0;
+    background-color: #ffb400;
+    padding: 0 2%;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table {
+    color: #B2B2B2
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table thead tr th {
+    color: #3c3c3c;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table tbody tr td {
+    color: #3c3c3c;
+    font-size: 14px;
+    padding: 0 2%
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table tbody tr td .fl.overflow-hidden.w-80-ns {
+        width: 60%
+    }
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table tbody tr td .myo-product-name {
+    display: -webkit-box;
+    color: #5d5d5d;
+    text-align: left;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    letter-spacing: .3px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table tbody tr td .myo-seller-name {
+    text-align: left;
+    letter-spacing: .5px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .myo-product-table tbody tr.b--light-gray {
+    display: table-row;
+    background: #fff;
+    border: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl {
+    display: inline-block;
+    width: 50%;
+    min-height: 85px;
+    padding: 20px 3%;
+    border: 1px solid #fdb402;
+    border-width: 1px 1px 1px 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 {
+    display: block;
+    line-height: 44px;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li {
+    display: inline-block;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li a {
+    display: block;
+    height: 30px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 30px;
+    outline: none
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li a>span {
+    display: block;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li a>span span {
+    display: block
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li a>span.dib {
+    display: inline-block
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li a>span.light-red {
+    color: #3c3c3c
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li .pointer.dib.f6.link {
+    display: none;
+    color: #737373;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+    height: 30px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li .pointer.dib.f6.link .hh1.w1.top-0 {
+    display: inline-block;
+    vertical-align: middle;
+    mix-blend-mode: luminosity
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li .pointer.dib.f6.link .dib {
+    display: inline-block;
+    vertical-align: middle
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li .pointer.dib.f6.link .tl.ph3.pv2.left-0.absolute {
+    position: absolute;
+    top: unset !important;
+    right: 0;
+    left: unset !important;
+    bottom: -85px;
+    height: auto;
+    max-height: unset;
+    padding: 10px 10%;
+    border-radius: 0;
+    width: 100%;
+    min-width: 200px
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 li .pointer.dib.f6.link .tl.ph3.pv2.left-0.absolute .db.pv1.link.no-underline {
+    display: block;
+    padding: 0;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .myo-view-order .w-60-ns.pa2-ns.fl .list.tr-ns.mt3 .dib-ns.mr4-ns.mb3.mb0-ns a>svg {
+    position: unset;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #3c3c3c;
+    height: 30px;
+    margin: 0
+}
+
+html body .content .orders__content .render-provider .container .pa3.br2.bg-washed-red {
+    border-radius: 0
+}
+
+html body .content .h_search fieldset.busca {
+    padding: 0;
+}
+
+/*# sourceMappingURL=ns-common-account.css.map */
