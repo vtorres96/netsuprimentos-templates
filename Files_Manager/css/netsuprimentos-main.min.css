@@ -4,7 +4,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import "https://clerk.com.br/assets/vtex/netsuprimentos/css/clerk_styles.css";
+/* @import "https://clerk.com.br/assets/vtex/netsuprimentos/css/clerk_styles.css"; */
 
 .modal-open {
     overflow: hidden
@@ -3317,8 +3317,19 @@ textarea {
     font-weight: 800;
     color: #fff;
     border: none;
-    background-color: #fff;
-    cursor: pointer
+    background-color: #ffcc00;
+    cursor: pointer;
+
+    /* 
+        barra de busca
+        display: block;
+        content: 'Antes de finalizar compras com cartão corporativo,certifique-se de comunicar a instituição financeira responsável, evitando futuros transtornos.';
+        width: 50%;
+        margin-left: 31%;
+        font-size: 14px;
+        text-align: justify;
+        font-family: 'Helvetica Neue', Helvita, Arial- sans-serif; 
+    */
 }
 
 .ui-autocomplete {
@@ -4326,12 +4337,14 @@ header .middle a.logo img {
 }
 /* início inserido em Outubro 2019 */
 header .middle .h_search {
-    float: left;
+    display: inline-block;
     width: 42%;
-    height: 40px;
+    height: 36px;
     margin-left: 4%;
-    margin-top: 6px;
-    border: 1px solid #000;
+    margin-top: 8px;
+    /* 
+        borda cinza da barra de busca border: 1px solid #ccc;
+    */
 }
 /* fim inserido em Outubro 2019 */
 
