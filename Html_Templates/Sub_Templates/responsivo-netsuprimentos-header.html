@@ -1,0 +1,106 @@
+<div style="display: none">
+	<vtex.cmc:welcomeMessage />
+</div>
+
+<header id="header">
+	<vtex.cmc:topBannerHeader />
+	<!-- fim top -->
+
+	<div class="middle">
+		<div class="tpl-center">
+
+			<button class="hamburguer"><i class="fa fa-bars" aria-hidden="true"></i></button>
+
+			<a href="/" class="logo">
+				<img src="/arquivos/logo-netsuprimentos_v2.png" alt="Net Suprimentos - O shopping da sua empresa" />
+			</a><!-- fim logo -->
+
+			<div class="h_search">
+				<div class="clerk-search"></div>
+				<div id="search-net-aux" class="hidden">
+					<vtex.cmc:fullTextSearchBox />
+				</div>
+			</div><!-- fim busca -->
+
+			<div class="wrapperRight">
+				<!--<div class="h_televendas">
+                	<span class="tel-greeting"><span class="usr-grt-text">Atendimento</span></span>
+                	<span class="tel-actions">
+                		<span class="usr-link" tabindex="3">
+                		<i class="fa fa-phone" aria-hidden="true"></i>
+                		<span class="tel-act-text">(11) 3004-9515</span></span>
+                		<span class="tel-act-hours">Seg à Sex das 8h às 17:30h</span>
+                	</span>
+                </div>-->
+				<div class="h_televendas">
+					<vtex.cmc:NETChatHeader />
+				</div>
+				<div class="h_myaccount">
+					<span class="usr-greeting">
+						<span class="usr-grt-text">Olá!</span>
+					</span>
+
+					<span class="usr-actions">
+						<a href="/account/" class="usr-link" tabindex="3">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<span class="usr-act-text">Minha conta</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="h_cart">
+					<div class="mini-cart col-mini-cart">
+						<a href="/checkout/#/cart" class="botao-carrinho">
+							<span class="badge bg-danger mini-cart-qty-admake">0</span>
+						</a>
+					</div>
+					<div id="mini-cart-admake-aux" class="hidden">
+						<vtex.cmc:miniCart />
+						<vtex.cmc:AmountItemsInCart />
+					</div>
+				</div>
+			</div><!-- fim direita -->
+		</div><!-- fim tpl-center -->
+	</div><!-- fim middle-->
+
+	<div class="bottom">
+
+		<div class="mobile">
+
+			<div class="h_myaccount">
+				<span class="usr-greeting">
+					<span class="usr-grt-text">Olá!</span>
+				</span>
+
+				<span class="usr-actions">
+					<a href="/account/" class="usr-link" tabindex="3">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span class="usr-act-text">Minha conta</span>
+					</a>
+				</span>
+			</div>
+
+			<!--<div class="h_search">
+                <div class="clerk-search"></div>
+                <div id="search-net-aux" class="hidden">
+                    <vtex.cmc:fullTextSearchBox/>
+                </div>   
+            </div>-->
+
+		</div><!-- FIM MOBILE -->
+
+		<div class="mainMenuV2">
+			<div class="tpl-center">
+				<div class="container">
+					<div class="row">
+						<vtex.cmc:NETmenuHeader />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mainHeaderContentV2-overlay"></div>
+	</div><!-- fim bottom -->
+
+</header>
+
+<div id="extra-banner-regua"></div>
