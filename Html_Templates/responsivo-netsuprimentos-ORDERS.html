@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:contentPlaceHolder id="metatags" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-account.min.css" />
+</head>
+
+<body>
+
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="tpl-center">
+
+                    <div class="left">
+                        <vtex.cmc:menuMinhaConta />
+                    </div>
+
+                    <div class="right">
+                        <div class="user-entry box customer-area">
+                            <div class="col-lg-12">
+                                <h2>Meus Pedidos</h2>
+                                <vtex.cmc:orderList />
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- FIM tpl-center -->
+
+            </div><!-- fim tpl-content -->
+
+        </main><!-- fim main -->
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div><!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/netsuprimentos-pag-account.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-produto.min.css" />
+</head>
+
+<body>
+
+    <!-- <vtex.cmc:productRichSnippets showGoogle="1" /> -->
+
+    <!--- TESTE -->
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <!-- BANNER TOOLBAR -->
+        <div class="banner-toolbar-top">
+            <vtex.cmc:NETBannerHeaderToolbar />
+        </div>
+        <!-- end - BANNER TOOLBAR -->
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="tpl-center">
+                    <vtex.cmc:breadCrumb />
+
+                    <section id="area-a">
+
+                        <!-- Left -->
+                        <div class="left col-net-product-image">
+                            <!-- Título do Produto -->
+                            <div class="product-title-mobile" itemprop="name" style="display:none">
+                                <vtex.cmc:productName />
+                            </div>
+                            <div class="product__image-thumbs">
+                                <vtex.cmc:ProductImage zoom="off" />
+                            </div>
+                            <div class="product__image-main">
+                                <!-- Flags Image -->
+                                <div class="box-flags-produto">
+                                    <div class="flags-colecao">
+                                        <vtex.cmc:hightLight />
+                                    </div>
+                                    <div class="flags-promocao">
+                                        <vtex.cmc:discountHightLight />
+                                    </div>
+                                </div>
+                                <!-- end - Flags Image -->
+                                <vtex.cmc:ProductImage zoom="off" />
+                            </div>
+                        </div>
+                        <!-- end - Left -->
+
+                        <!-- Right -->
+                        <div class="right">
+
+                            <!-- Box Produto Titulo -->
+                            <div class="box-produto-titulo">
+
+                                <!-- Título do Produto -->
+                                <h1 class="box-titulo toPrint" itemprop="name">
+                                    <vtex.cmc:productName />
+                                </h1>
+
+                                <!-- Flags -->
+                                <div class="box-flags-produto">
+                                    <div class="flags-colecao">
+                                        <vtex.cmc:hightLight />
+                                    </div>
+                                    <div class="flags-promocao">
+                                        <vtex.cmc:discountHightLight />
+                                    </div>
+                                </div>
+                                <!-- end - Flags -->
+
+                                <!-- Subtitulo -->
+                                <div class="box-subtitulo">
+
+                                    <!-- Código de Produto -->
+                                    <div class="box-codigo-produto">
+                                        <!-- Marca -->
+                                        <div class="CodMarcaText" title="Marca do Produto">
+                                            Marca: <span itemprop="brand">
+                                                <vtex.cmc:brandName /></span>
+                                        </div>
+                                        <div class="CodReferenceText" title="Código do Produto">
+                                            Cód.: <span itemprop="mpn">
+                                                <vtex.cmc:skuReference /></span>
+                                        </div>
+                                        <!-- <div class="CodFabricanteReferenceText" style="display:none" title="Código do Fabricante">
+				    						Cód. Fabri.: <span class="CodFabricanteReference"><vtex.cmc:productDescriptionShort /></span>
+				    						</div> -->
+                                    </div>
+                                    <!-- end - Código de Produto -->
+
+                                </div>
+                                <!-- end - Subtitulo -->
+
+                                <!-- Inicio Yourviews -->
+                                <!-- Âncora na página do produto (De Preferência sempre manter próximo ao nome do produto)  -->
+                                <div id="yv-review-quickreview"></div>
+                                <!-- <div class="yv-qr"></div> -->
+                                <!-- Final Yourviews -->
+
+                                <!-- Vendedor -->
+                                <div class="box-vendedor-informacao net-product__seller">
+                                    <vtex.cmc:sellerDescription />
+                                </div>
+                                <!-- end - Vendedor -->
+
+                                <div class="net-product__code-ca">
+                                    <div class="net-product__code-ca--link">
+                                        <a href="javascript:void(0)" class="js--ca-link" target="_blank" rel="noopener"
+                                            title="Consultar CA">
+                                            Nº CA <strong class="js--ca-reference" itemprop="mpn"></strong>
+                                        </a>
+                                    </div>
+                                    <div class="net-product__code-ca--pdf">
+                                        <a href="javascript:void(0)" download="" class="js--pdf-to-download"
+                                            rel="noopener">
+                                            <img src="/arquivos/_netsuprimentos--btn-ca-mte-pdf.png"
+                                                style="max-width: 160px;" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end - Box Produto Titulo -->
+
+                            <section id="ns-vitrine__acessorios" style="display: none;">
+                                <vtex:contentPlaceHolder id="Acessorios" />
+                            </section>
+
+                            <div class="net-box-product-calltoaction">
+                                <div class="net-calltoaction-product">
+                                    <div class="net-box-call-to-action">
+                                        <div class="net-box-call-to-action--left">
+                                            <div class="specif">
+                                                <vtex.cmc:skuSelection changeImage="1" />
+                                            </div>
+                                            <!-- <div class="net-btn-qnty" id="net-btn-qnty-view">
+												<span class="title-qnty">Quantidade</span>
+												<div class="net-btn-qnty-box">
+													<div class="btn-toolbar" role="toolbar">
+														<button class="btn btn-default btn-net-default btn-group diminuir-quantidade">-</button>
+														<input size="20" type="text" class="btn-group buy-in-page-quantity" value="1" productindex="0" style="display:block" />
+														<button class="btn btn-default btn-net-default btn-group aumentar-quantidade">+</button>
+													</div>
+												</div>
+											</div> -->
+
+                                            <!-- Valor do Produto -->
+                                            <div class="box-valor-produto toPrint">
+                                                <meta itemprop="priceCurrency" content="BRL" />
+                                                <vtex.cmc:skuPrice />
+                                            </div>
+
+                                            <!-- Parcelas -->
+                                            <div class="box-parcelas">
+                                                <span id="produto-informacoes-parcelas"></span>
+                                                <span class="exibir-parcelas">ver parcelas</span>
+                                                <div id="parcelas-tooltip"></div>
+                                            </div>
+
+                                            <!-- Descrição Breve -->
+                                            <div class="box-descriptions">
+                                                <!-- Ficha Técnica -->
+                                                <div class="box-ficha-tecnica toPrint">
+                                                    <a href="javascript:void();" target="_blank"
+                                                        class="btn-tech-file">Ver
+                                                        ficha técnica do produto</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Frete -->
+                                            <div class="box-frete">
+                                                <!--<vtex.cmc:shippingValue />
+											<script type="text/javascript">
+												$(document).ready( function(){
+													ShippingValue();
+												});
+											</script>-->
+                                                <!-- Aviso de Entrega (BR) -->
+                                                <div class="box-aviso-frete" style="display: none;">
+                                                    <strong>*</strong> Calcule o frete no momento da compra, na página
+                                                    de carrinho.
+                                                </div>
+                                                <div class="product__info-shipping-types">
+                                                    <h4>Frete e prazo de entrega</h4>
+                                                    <!-- <div class="content">
+                                                        <vtex.cmc:shippingValue />
+                                                    </div> -->
+                                                    <form class="product__info-shipping-form">
+                                                        <div class="shipping-form__content">
+                                                            <input type="text" class="js--value-cep"
+                                                                pattern="[0-9]{5}[\-]?[0-9]{3}" name="postalCode"
+                                                                required="" maxlength="9"
+                                                                placeholder="Informe o seu CEP" />
+                                                            <button class="js--submit-cep">OK</button>
+                                                        </div>
+                                                        <div class="shipping-form__find-cep">
+                                                            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
+                                                                target="_blank" rel="noopener">Não sei o meu CEP</a>
+                                                        </div>
+                                                        <div class="shipping-form__error-cep js--error-cep">
+                                                            <p>CEP inválido, tente novamente!</p>
+                                                        </div>
+                                                    </form>
+                                                    <div class="product__info-shipping-result">
+                                                        <div class="result__address">
+                                                            <div class="address-content">
+                                                                <p class="js--shipping-address"></p>
+                                                            </div>
+                                                            <div class="address-change">
+                                                                <button class="js--shipping-change">Alterar CEP</button>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="result__options">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end - Frete -->
+                                        </div>
+
+                                        <div class="net-box-call-to-action--right">
+                                            <!-- Call To Action (Comprar) -->
+                                            <div class="net-box-btn-addcart">
+                                                <div class="net-btn-qnty" id="net-btn-qnty-view">
+                                                    <div class="net-btn-qnty-box">
+                                                        <div class="btn-toolbar" role="toolbar">
+                                                            <input size="20" type="text"
+                                                                class="btn-group buy-in-page-quantity" value="1"
+                                                                productindex="0" style="display:block" />
+                                                            <button
+                                                                class="btn btn-default btn-net-default btn-group aumentar-quantidade">+</button>
+                                                            <button
+                                                                class="btn btn-default btn-net-default btn-group diminuir-quantidade">-</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="net-btn-addcart-box">
+                                                    <a id="net-btn-addcart-view"
+                                                        class="btn btn-default btn-block net-btn net-btn-addcart-green net-btn-addcart-sync">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                        Comprar <small></small>
+                                                    </a>
+                                                    <span class="title-btnaddcart">
+                                                        <i class="fa fa-shield"></i> Compre e Confie. <span
+                                                            class="text-safe">É
+                                                            100% Seguro</span>
+                                                    </span>
+                                                </div>
+                                                <div class="botaoVerdadeiro">
+                                                    <vtex.cmc:BuyInPage />
+                                                </div>
+
+                                                <div class="product__info-payment-types">
+                                                    <button class="js--action-methods">Ver formas de pagamento</button>
+
+                                                    <div class="content js--info-methods">
+                                                        <button class="js--close-methods">X</button>
+                                                        <div class="content__credito">
+                                                            <h5>Cartão de Crédito</h5>
+                                                            <ul>
+                                                                <li class="visa">Visa</li>
+                                                                <li class="mastercard">Mastercard</li>
+                                                                <li class="american-express">American Express</li>
+                                                                <li class="diners-club">Diners Club</li>
+                                                                <li class="elo">Elo</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="content__cartao-debito">
+                                                            <h5>Cartão de Débito</h5>
+                                                            <ul>
+                                                                <li class="visa-electron">Visa</li>
+                                                                <li class="maestro">Mastercard</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="content__debito-bancario">
+                                                            <h5>Débito Bancário</h5>
+                                                            <div class="banks">Bancos</div>
+                                                        </div>
+                                                        <div class="content__boleto">
+                                                            <h5>Boleto Bancário</h5>
+                                                            <ul>
+                                                                <li class="boleto">Boleto</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="content__outras-formas">
+                                                            <h5>Outras formas</h5>
+                                                            <ul>
+                                                                <li class="paypal">Paypal</li>
+                                                                <li class="loterica">Lotérica</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="content__methods-payment">
+                                                            <vtex.cmc:OtherPaymentMethod />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- end - Call To Action (Comprar) -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end - net-box-product-calltoaction -->
+
+                        </div>
+                        <!-- end - Right -->
+
+                        <div class="row net-row-description-product">
+                            <div class="col-lg-12">
+
+                                <div id="compre-junto">
+                                    <!-- vitrine: compre junto -->
+                                    <vtex.cmc:BuyTogether />
+                                </div>
+
+                                <section id="ns-vitrine__similar" style="display: none;">
+                                    <vtex:contentPlaceHolder id="Similares" />
+                                </section>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="descricao">
+                                        <div itemprop="description"
+                                            class="product-info product-info-description toPrint">
+                                            <h2>Descrição do Produto</h2>
+                                            <vtex.cmc:ProductDescription />
+                                        </div>
+
+                                        <div id="net-product-sizetable"
+                                            class="product-info product-info-sizetable toPrint">
+                                            <h2><i class="fa fa-table" aria-hidden="true"></i> Tabela de Medida</h2>
+                                            <vtex.cmc:NETSizeTable />
+                                        </div>
+
+                                        <section id="after-inside-description">
+                                            <vtex:contentPlaceHolder id="after-inside-description" />
+                                        </section>
+
+                                        <div class="product-info product-info-specifs toPrint">
+                                            <h2>Especificações do Produto</h2>
+                                            <div class="product__info-reference" style="display: none;">
+                                                <ul>
+                                                    <li class="code--manufacturer" itemprop="mpn">
+                                                        <strong class="code--term">Cód. Fabri.:</strong>
+                                                        <strong>
+                                                            <vtex.cmc:productDescriptionShort />
+                                                        </strong>
+                                                    </li>
+                                                    <li class="code--ean" itemprop="mpn">
+                                                        <strong class="code--term">EAN.:</strong>
+                                                        <strong class="is--ean-code"></strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-info product-info-specification toPrint">
+                                                <vtex.cmc:productSpecification />
+                                            </div>
+                                            <div class="product-info product-info-dimensions toPrint">
+                                                <vtex.cmc:stockKeepingUnitMeasures />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end - DESCRICAO PRODUTO -->
+                    </section>
+
+                    <section id="after-description">
+                        <vtex:contentPlaceHolder id="after-description" />
+                    </section>
+
+                    <section id="area-callme">
+                        <vtex.cmc:NETCallMe />
+                    </section>
+
+
+                    <!-- Inicio Yourviews ANCORA-->
+                    <!-- Review e Q.A -->
+                    <div class="yv-box yv-box-review">
+                        <h2 class="yv-title">Avaliações do Produto</h2>
+                        <div id="yv-reviews"></div>
+                    </div>
+                    <div class="yv-box yv-box-qa">
+                        <h2 class="yv-title">Dúvidas dos consumidores</h2>
+                        <div class="yv-qa"></div>
+                    </div>
+                    <!-- Final Yourviews -->
+
+                    <section id="area-c">
+
+                    </section>
+
+                    <section id="area-d">
+                        <div class="divs-clerk">
+                            <!-- Clerk - Vitrine Combina -->
+                            <div class="clerk-vitrine-combina"></div>
+                            <!-- Clerk - Vitrine Últimos Vistos -->
+                            <div class="clerk-vitrine-ultimos-vistos"></div>
+                        </div>
+                    </section>
+
+                </div><!-- end - tpl-center -->
+
+            </div><!-- end - tpl-content -->
+
+        </main><!-- end - main -->
+
+        <vtex.cmc:NetNewsletter />
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div><!-- end - tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex.cmc:NSProductJSONLD />
+
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+    <script type="text/javascript" src="/arquivos/netsuprimentos-pag-produto.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var script = document.createElement("script"),
+                head = document.getElementsByTagName("head")[0];
+
+            script.async = 1;
+            script.type = 'text/javascript';
+            script.src = '//admaxium.com/scripts/j.js';
+
+            head.appendChild(script);
+        })();
+    </script>
+
+</body>
+
+</html>

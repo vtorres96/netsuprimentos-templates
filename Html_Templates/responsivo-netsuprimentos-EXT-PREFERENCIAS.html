@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+	<head>
+		<vtex:contentPlaceHolder id="metatags" />
+	    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+	    <link rel="stylesheet" href="/arquivos/enext-net-preferencias.css" />
+	</head>
+
+	<body>
+
+		<div class="tpl-wrapper">
+			<!-- HEADER -->
+			<vtex:template id="responsivo-netsuprimentos-header" />
+			
+			<!-- MAIN -->
+			<main>
+                	<section class="x-title">
+                		<h2>DEFINA SUAS PREFERÊNCIAS</h2>
+                	</section>
+                	
+                	<form class="x-form">
+                	
+                		<section class="x-form__group x-pessoa">
+                			<div class="x-pessoa__title">
+                				<p class="x-subtitle">Você é</p>
+                			</div>
+                
+                			<div class="x-pessoa__options">
+                				<div class="x-pessoa__options--pf">
+                					<input type="radio" name="x-pessoa" id="pessoa-fisica" class="x-pessoa__options--pf--input x-input_form hidden" checked="checked"/>					
+                					<label for="pessoa-fisica">Pessoa Física</label>
+                				</div>
+                
+                				<div class="x-pessoa__options--pj">
+                					<input type="radio" name="x-pessoa" id="pessoa-juridica" class="x-pessoa__options--pj--input x-input_form hidden" />					
+                					<label for="pessoa-juridica">Pessoa Jurídica</label>
+                				</div>
+                			</div>
+                		</section >
+                
+                		<section class="x-form__group x-categorias">
+                			<div class="x-categorias__title">
+                				<p class="x-subtitle"> Selecione as categorias de seu interesse</p>
+                			</div>
+                
+                			<div class="x-categorias__options">
+                				<ul class="x-categorias__options--top">
+                					<li class="x-categorias__options--epis x-categorias--listitem">
+                						<input type="checkbox" name="x-epis" id="epis" class="x-categorias__options-epis--input x-input_form hidden"/>
+                						<label for="epis"> EPIS e Segurança </label>
+                					</li>
+                					<li class="x-categorias__options--higiene x-categorias--listitem">
+                						<input type="checkbox" name="x-higiene" id="higiene" class="x-categorias__options-higiene--input x-input_form hidden"/>
+                						<label for="higiene">Higiene e Limpeza</label>
+                					</li>
+                					<li class="x-categorias__options--food x-categorias--listitem">
+                						<input type="checkbox" name="x-food" id="food" class="x-categorias__options-food--input x-input_form hidden"/>
+                						<label for="food"> Food Service </label>
+                					</li>
+                					<li class="x-categorias__options--ferramentas x-categorias--listitem">
+                						<input type="checkbox" name="x-ferramentas" id="ferramentas" class="x-categorias__options-ferramentas--input x-input_form hidden"/>
+                						<label for="ferramentas"> Ferramentas </label>
+                					</li>
+                					<li class="x-categorias__options--jardim x-categorias--listitem">
+                						<input type="checkbox" name="x-jardim" id="jardim" class="x-categorias__options-jardim--input x-input_form hidden"/>
+                						<label for="jardim">Jardim e Área Externa</label>
+                					</li>
+                				</ul>
+                				<ul class="x-categorias__options--bottom">
+                					<li class="x-categorias__options--informatica x-categorias--listitem">
+                						<input type="checkbox" name="x-informatica" id="informatica" class="x-categorias__options-informatica--input x-input_form hidden"/>
+                						<label for="informatica"> Informática </label>
+                					</li>
+                					<li class="x-categorias__options--automotivo x-categorias--listitem">
+                						<input type="checkbox" name="x-automotivo" id="automotivo" class="x-categorias__options-automotivo--input x-input_form hidden"/>
+                						<label for="automotivo"> Automotivo </label>
+                					</li>
+                					<li class="x-categorias__options--odontologia x-categorias--listitem">
+                						<input type="checkbox" name="x-odontologia" id="odontologia" class="x-categorias__options-odontologia--input x-input_form hidden"/>
+                						<label for="odontologia"> Odontologia </label>
+                					</li>
+                					<li class="x-categorias__options--escritorio x-categorias--listitem">
+                						<input type="checkbox" name="x-escritorio" id="escritorio" class="x-categorias__options-escritorio--input x-input_form hidden"/>
+                						<label for="escritorio"> Escritório </label>
+                					</li>
+                				</ul>
+                			</div>
+                		</section>
+            
+            
+                		<section class="x-form__group x-marcas">
+                			<div class="x-marcas__title">
+                				<p class="x-subtitle"> Selecione as marcas de seu interesse</p>
+                			</div>
+                
+                			<div class="x-marcas__options">
+                				<ul class="x-marcas__options--top">
+                					<li class="x-marcas__options--3m x-marcas--listitem">
+                						<input type="checkbox" name="x-3m" id="3m" class="x-marcas__options-3m--input x-input_form hidden"/>
+                						<label for="3m"></label>
+                					</li>
+                					<li class="x-marcas__options--altacoppo x-marcas--listitem">
+                						<input type="checkbox" name="x-altacoppo" id="altacoppo" class="x-marcas__options-altacoppo--input x-input_form hidden"/>
+                						<label for="altacoppo"></label>
+                					</li>
+                					<li class="x-marcas__options--audax x-marcas--listitem">
+                						<input type="checkbox" name="x-audax" id="audax" class="x-marcas__options-audax--input x-input_form hidden"/>
+                						<label for="audax"></label>
+                					</li>
+                					<li class="x-marcas__options--danny x-marcas--listitem">
+                						<input type="checkbox" name="x-danny" id="danny" class="x-marcas__options-danny--input x-input_form hidden"/>
+                						<label for="danny"></label>
+                					</li>
+                					<li class="x-marcas__options--fujiwara x-marcas--listitem">
+                						<input type="checkbox" name="x-fujiwara" id="fujiwara" class="x-marcas__options-fujiwara--input x-input_form hidden"/>
+                						<label for="fujiwara"></label>
+                					</li>
+                					<li class="x-marcas__options--bralimpia x-marcas--listitem">
+                						<input type="checkbox" name="x-bralimpia" id="bralimpia" class="x-marcas__options-bralimpia--input x-input_form hidden"/>
+                						<label for="bralimpia"></label>
+                					</li>
+                					<li class="x-marcas__options--veja x-marcas--listitem">
+                						<input type="checkbox" name="x-veja" id="veja" class="x-marcas__options-veja--input x-input_form hidden"/>
+                						<label for="veja"></label>
+                					</li>
+                				</ul>
+                				<ul class="x-marcas__options--bottom">
+                					<li class="x-marcas__options--moldex x-marcas--listitem">
+                						<input type="checkbox" name="x-moldex" id="moldex" class="x-marcas__options-moldex--input x-input_form hidden"/>
+                						<label for="moldex"></label>
+                					</li>
+                					<li class="x-marcas__options--marluvas x-marcas--listitem">
+                						<input type="checkbox" name="x-marluvas" id="marluvas" class="x-marcas__options-marluvas--input x-input_form hidden"/>
+                						<label for="marluvas"></label>
+                					</li>
+                					<li class="x-marcas__options--honeywell x-marcas--listitem">
+                						<input type="checkbox" name="x-honeywell" id="honeywell" class="x-marcas__options-honeywell--input x-input_form hidden"/>
+                						<label for="honeywell"></label>
+                					</li>
+                					<li class="x-marcas__options--luvex x-marcas--listitem">
+                						<input type="checkbox" name="x-luvex" id="luvex" class="x-marcas__options-luvex--input x-input_form hidden"/>
+                						<label for="luvex"></label>
+                					</li>
+                					<li class="x-marcas__options--dupont x-marcas--listitem">
+                						<input type="checkbox" name="x-dupont" id="dupont" class="x-marcas__options-dupont--input x-input_form hidden"/>
+                						<label for="dupont"></label>
+                					</li>
+                					<li class="x-marcas__options--soft x-marcas--listitem">
+                						<input type="checkbox" name="x-soft" id="soft" class="x-marcas__options-soft--input x-input_form hidden"/>
+                						<label for="soft"></label>
+                					</li>
+                					<li class="x-marcas__options--mapa x-marcas--listitem">
+                						<input type="checkbox" name="x-mapa" id="mapa" class="x-marcas__options-mapa--input x-input_form hidden"/>
+                						<label for="mapa"></label>
+                					</li>
+                				</ul>
+                			</div>
+                		</section>
+            
+            
+                		<section class="x-form__group x-frequencia" style="display:none;">
+                			<div class="x-frequencia__title">
+                				<p class="x-subtitle">Selecione a frequência de e-mails</p>
+                			</div>
+                
+                			<div class="x-frequencia__options">
+                				<ul class="x-frequencia__options">
+                					<li class="x-frequencia__options--1x x-frequencia--listitem">
+                						<input type="radio" name="x-frequencia" id="1x" class="x-frequencia__options-1x--input x-input_form hidden"/>
+                						<label for="1x"><span>1x</span> por semana </label>
+                					</li>
+                					<li class="x-frequencia__options--2x x-frequencia--listitem">
+                						<input type="radio" name="x-frequencia" id="2x" class="x-frequencia__options-2x--input x-input_form hidden"/>
+                						<label for="2x"><span>2x</span> por semana </label>
+                					</li>
+                					<li class="x-frequencia__options--3x x-frequencia--listitem">
+                						<input type="radio" name="x-frequencia" id="3x" class="x-frequencia__options-3x--input x-input_form hidden"/>
+                						<label for="3x"><span>3x</span> por semana </label>
+                					</li>
+                					<li class="x-frequencia__options--4x x-frequencia--listitem">
+                						<input type="radio" name="x-frequencia" id="4x" class="x-frequencia__options-4x--input x-input_form hidden"/>
+                						<label for="4x"><span>4x</span> ou mais </label>
+                					</li>
+                				</ul>
+                			</div>
+                		</section >
+                
+                
+                		<section class="x-form__group x-email">
+                			<div class="x-email__title">
+                				<p class="x-subtitle">Insira seu e-mail</p>
+                			</div>
+                
+                			<div class="x-email__input">
+                				<input type="email" name="x-email" id="email" class="x-email__input--item"/>
+                			</div>
+                		</section >
+                
+                
+                		<section class="x-form__group x-submit">
+                			<div class="x-submit__input">
+                				<input type="submit" name="x-submit" id="submit" class="x-submit__input--btn"/>
+                			</div>
+                		</section >
+                	</form>
+            </main><!-- fim main -->
+
+			<!-- FOOTER -->
+			<vtex:template id="responsivo-netsuprimentos-footer" />
+
+		</div><!-- fim tpl-wrapper -->
+
+		<!-- SCRIPTS -->
+		<vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+		<script src="/arquivos/enext-net-preferencias.js"></script>
+
+	</body>
+
+</html>

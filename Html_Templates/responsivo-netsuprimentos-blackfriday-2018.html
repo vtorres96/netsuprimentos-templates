@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="google-site-verification" content="7mvV2Xg11M3S7lzgJzoFTwNcTPDxsnNeOhkClGRwuqA" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/enext-slick.css" />
+    <link rel="stylesheet" href="/arquivos/enext-slick-theme.css" />
+    <link rel="stylesheet" href="/arquivos/enext-blackfriday-2018.css" />
+    <link rel="stylesheet" href="/arquivos/enext-blackfriday.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <vtex:template id="responsivo-netsuprimentos-blackfriday-header" />
+
+    <section class="x-container-first">
+        <div class="x-main-banner">
+            <div class='x-title'><img src="/arquivos/20181109-banner-site-home-bf-4.png" /></div>
+        </div>
+        <vtex.cmc:bfnewsLetter />
+        <div class="x-banner-blackfriday">
+            <vtex:contentPlaceHolder id="banner-blackfriday" />
+        </div>
+        <!-- <div class="box-discounts">
+            <div class="box-percents">
+                <div class="x-box-green"><a href=""><img src="/arquivos/bf-10.png" /></a></div>
+                <div class="x-box-blue"><a href=""><img src="/arquivos/bf-30.png" /></a></div>
+                <div class="x-box-light-blue"><a href=""><img src="/arquivos/bf-50.png" /></a></div>
+                <div class="x-box-red"><a href=""><img src="/arquivos/bf-80.png" /></a></div>
+            </div>
+        </div> -->
+    </section>
+
+    <section id="topMarcas" class="slider-marcas">
+        <div class="tpl-center">
+            <div class="section-header">
+                <h2 class="title">As marcas preferidas dos nossos clientes</h2>
+            </div>
+            <div class="slider-wrapper">
+                <vtex.cmc:sliderMarcasBf />
+            </div>
+        </div>
+    </section>
+
+    <div class="x-vitrine">
+        <h2>Informática</h2>
+        <vtex:contentPlaceHolder id="banner-informatica" />
+    </div>
+
+    <div class="x-vitrine">
+        <h2>Calçados de segurança</h2>
+        <vtex:contentPlaceHolder id="banner-calcados" />
+    </div>
+    <div class="x-vitrine">
+        <h2>Dispensers e Papéis</h2>
+        <vtex:contentPlaceHolder id="banner-dispensers" />
+    </div>
+
+    <div class="x-vitrine">
+        <h2>Luvas</h2>
+        <vtex:contentPlaceHolder id="banner-luva" />
+    </div>
+    <div class="x-vitrine">
+        <h2>Proteção Respiratória</h2>
+        <vtex:contentPlaceHolder id="banner-respiro" />
+    </div>
+
+    <div class="x-categorias-desejada">
+        <h2>As Categorias + Desejadas</h2>
+        <vtex:contentPlaceHolder id="banner-blackfriday-categorias" />
+    </div>
+    <div class="x-vitrine">
+        <h2>Recomendações</h2>
+        <vtex:contentPlaceHolder id="banner-recomendacoes" />
+    </div>
+    <div class="x-vitrine">
+        <h2>Últimos Vistos</h2>
+        <vtex:contentPlaceHolder id="banner-ultimosVistos" />
+    </div>
+
+    <div class="x-sobre">
+        <vtex:contentPlaceHolder id="banner-sobre" />
+    </div>
+    <div class="x-aproveitar">
+        <vtex:contentPlaceHolder id="banner-aproveitar" />
+    </div>
+
+    <section class="x-section-three">
+        <vtex.cmc:infoFooterBf />
+    </section>
+
+    <!-- FOOTER -->
+    <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/arquivos/enext-bf18.js"></script>
+
+</body>
+
+</html>

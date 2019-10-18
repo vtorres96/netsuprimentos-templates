@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="robots" content="noindex" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-busca.min.css" />
+</head>
+
+<body>
+
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="tpl-center">
+
+                    <div class="search-header">
+                        <p>Ops! Não encontramos nenhum resultado para sua busca por <strong>"<span id="termo-buscado"
+                                    class="termo-buscado">
+                                    <vtex.cmc:searchTitle /></span>"</strong> :(</p>
+                        <small>Que tal fazer uma nova busca?</small>
+                    </div>
+
+                    <section id="MenuDepartamento">
+                        <div class="nt-box nt-box-icons-nav-list-icon-home">
+                            <div class="section-header">
+                                <h2 class="title">Compre por Departamento e Categorias</h2>
+                            </div>
+                            <div class="nt-icons-nav-list-icon-home">
+                                <vtex.cmc:NetHomeNavListIcons />
+                            </div>
+                        </div>
+                    </section><!-- FIM MenuDepartamento -->
+
+                    <div class="divs-clerk">
+                        <!-- Clerk - Vitrine Recomendacoes -->
+                        <div class="clerk-vitrine-recomendacoes"></div>
+                        <!-- Clerk - Vitrine Mais Vendidos -->
+                        <div class="clerk-vitrine-mais-vendidos"></div>
+                        <!-- Clerk - Vitrine Últimos Vistos -->
+                        <div class="clerk-vitrine-ultimos-vistos"></div>
+                    </div>
+
+                </div><!-- FIM tpl-center -->
+
+            </div><!-- fim tpl-content -->
+
+        </main><!-- fim main -->
+
+        <vtex.cmc:NetNewsletter />
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div><!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+
+</body>
+
+</html>

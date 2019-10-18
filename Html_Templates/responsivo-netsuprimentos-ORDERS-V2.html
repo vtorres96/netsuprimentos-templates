@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:contentPlaceHolder id="metatags" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/ns-common-account.css" />
+</head>
+
+<body>
+
+    <div class="tpl-wrapper">
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <main class="content">
+            <section class="content__header">
+                <div class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/account/orders">Meus Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-menu">
+                    <ul>
+                        <li>
+                            <a href="/account">Alterar Dados</a>
+                        </li>
+                        <li>
+                            <a href="/account/orders" class="is--active">Meus Pedidos</a>
+                        </li>
+                        <li>
+                            <a href="/no-cache/user/logout">Sair da Conta</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="orders__information">
+                <header class="orders__title">
+                    <h4>Meus pedidos</h4>
+                </header>
+                <div class="orders__content">
+                    <vtex.cmc:orderList />
+                </div>
+            </section>
+        </main>
+
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+    </div>
+
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/ns-common-account.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="google-site-verification" content="7mvV2Xg11M3S7lzgJzoFTwNcTPDxsnNeOhkClGRwuqA" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/enext-slick.css" />
+    <link rel="stylesheet" href="/arquivos/enext-slick-theme.css" />
+    <link rel="stylesheet" href="/arquivos/enext-count-down.css" />
+    <link rel="stylesheet" href="/arquivos/enext-blackfriday.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <vtex:template id="responsivo-netsuprimentos-header" />
+    <main>
+        <section class="x-section-one">
+            <vtex.cmc:bfnewsLetter />
+            <div class="x-countDown">
+                <vtex.cmc:countdown />
+            </div>
+        </section>
+        <section class="x-section-two">
+            <div class="x-banner-bf">
+                <img src='/arquivos/banner-bf-captacao.png' />
+            </div>
+        </section>
+        <section class="x-section-three">
+            <vtex.cmc:infoFooterBf />
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script TYPE="text/javascript" src="/arquivos/enext-countdown-bf.js"></script>
+    <script TYPE="text/javascript" src="/arquivos/enext-blackfriday.js"></script>
+</body>
+
+</html>

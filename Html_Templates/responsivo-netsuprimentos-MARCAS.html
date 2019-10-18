@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-marcas.min.css" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-home.min.css" />
+    <style>
+        .net-more-about {
+            background-size: auto;
+        }
+
+        body.page-marcas main #marcas #content_marcas div ul li a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="tpl-center">
+
+                    <vtex.cmc:breadCrumb />
+
+                    <!-- Banner Central -->
+                    <div id="banner_central">
+                        <vtex:contentPlaceHolder id="Banner_Marcas_Title" />
+                    </div>
+                    <!-- end Banner Central -->
+
+                    <section id="topMarcas" class="slider-marcas">
+                        <div class="tpl-center">
+                            <div class="section-header">
+                                <h2 class="title">Top Marcas</h2>
+                                <a href="/marcas" class="vermais">Ver todas</a>
+                            </div>
+                            <div class="slider-wrapper">
+                                <vtex.cmc:sliderMarcas />
+                            </div>
+                        </div>
+                    </section><!-- FIM topMarcas -->
+
+                    <!-- Marcas -->
+                    <div id="marcas">
+
+                        <!-- Div que traz as marcas -->
+                        <div style="display:none;">
+                            <vtex.cmc:departmentNavigator />
+                        </div>
+                        <!-- end Div que traz as marcas -->
+
+                        <!-- Titulo e filtro -->
+                        <div id="title_filtro">
+                            <div class="section-header">
+                                <h2 class="title">Todas as Marcas</h2>
+                            </div>
+                            <div id="filtro">
+                                <ul>
+                                    <li><a class="a" href="#">A - E</a></li>
+                                    <li><a class="f" href="#">F - J</a></li>
+                                    <li><a class="k" href="#">K - O</a></li>
+                                    <li><a class="p" href="#">P - T</a></li>
+                                    <li><a class="u" href="#">U - Y</a></li>
+                                    <li><a class="z" href="#">Z - 123</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end Titulo e filtro -->
+
+                        <!-- Conteudo Marcas -->
+                        <div id="content_marcas">
+
+                            <!-- Divs para letras -->
+                            <div id="a">
+                                <h4>A</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="b">
+                                <h4>B</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="c">
+                                <h4>C</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="d">
+                                <h4>D</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="e">
+                                <h4>E</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="f">
+                                <h4>F</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="g">
+                                <h4>G</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="h">
+                                <h4>H</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="i">
+                                <h4>I</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="j">
+                                <h4>J</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="k">
+                                <h4>K</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="l">
+                                <h4>L</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="m">
+                                <h4>M</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="n">
+                                <h4>N</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="o">
+                                <h4>O</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="p">
+                                <h4>P</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="q">
+                                <h4>Q</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="r">
+                                <h4>R</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="s">
+                                <h4>S</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="t">
+                                <h4>T</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="u">
+                                <h4>U</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="v">
+                                <h4>V</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="x">
+                                <h4>X</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="y">
+                                <h4>Y</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="z">
+                                <h4>Z</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="w">
+                                <h4>W</h4>
+                                <ul></ul>
+                            </div>
+
+                            <div id="123" style="height:300px;">
+                                <h4>123</h4>
+                                <ul></ul>
+                            </div>
+                            <!-- end Divs para letras -->
+
+                        </div> <!-- end Conteudo Marcas -->
+
+                    </div><!-- end Marcas -->
+
+                </div><!-- FIM tpl-center -->
+
+            </div><!-- fim tpl-content -->
+
+        </main><!-- fim main -->
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div><!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/netsuprimentos-pag-marcas.min.js"></script>
+
+</body>
+
+</html>

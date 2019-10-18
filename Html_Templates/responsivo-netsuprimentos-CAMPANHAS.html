@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-busca.min.css" />
+</head>
+
+<body>
+
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="tpl-center">
+
+                    <div class="nt-box nt-title-category" style="margin-top: 10px;">
+                        <h1 class="titulo-sessao">
+                            <vtex:contentPlaceHolder id="title" />
+                        </h1>
+                        <div class="titulo-sessao-bk">
+                            <vtex.cmc:searchTitle />
+                        </div>
+                        <div class="descricao-sessao">
+                            <vtex:contentPlaceHolder id="description" />
+                        </div>
+                        <div class="nt-box nt-box-icons-nav-list-icon-departamento">
+                            <div class="nt-icons-nav-list-icon-departamento">
+                                <vtex:contentPlaceHolder id="navlist" />
+                            </div>
+                        </div>
+                        <div class="nt-box nt-filters-buttons" style="display:none"></div>
+                    </div>
+
+                    <div class="slider-banner-departamento-big">
+                        <div class="container">
+                            <vtex:contentPlaceHolder id="banners-sidebar-departamento-big" />
+                        </div>
+                    </div>
+
+                    <div class="wrapperContent">
+
+                        <div class="wrapperLeft">
+
+                            <div class="wrapperMenu">
+                                <vtex.cmc:searchNavigator />
+                            </div>
+
+                            <div class="overflow"><button></button></div>
+
+                        </div><!-- FIM wrapperLeft -->
+
+                        <div class="wrapperRight">
+
+                            <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="32"
+                                columnCount="32" />
+
+                        </div><!-- FIM wrapperRight -->
+
+                    </div><!-- FIM wrapperContent -->
+                </div><!-- FIM tpl-center -->
+
+            </div><!-- fim tpl-content -->
+
+        </main><!-- fim main -->
+
+        <vtex.cmc:NetNewsletter />
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div><!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/netsuprimentos-pag-busca.min.js"></script>
+</body>
+
+</html>

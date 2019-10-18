@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-busca.min.css" />
+    <link rel="stylesheet" href="/arquivos/enext-general.css?v=99" />
+</head>
+
+<body>
+
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="tpl-center">
+                    <vtex.cmc:breadCrumb />
+
+                    <!-- Inicio Yourviews -->
+                    <div class="yv-seller-reviews"></div>
+                    <!-- Final Yourviews -->
+
+                    <div class="nt-box nt-title-category">
+                        <div class="x-btn-saibaMais">
+                            <h1 class="titulo-sessao">
+                                <vtex.cmc:NSCategoriesTitles />
+                            </h1>
+                            <a href=""><i class="fas fa-plus"></i> Saiba Mais</a>
+                        </div>
+                        <div class="descricao-sessao">
+                            <vtex.cmc:NetDescriptionCategory />
+                        </div>
+                        <div class="nt-box nt-box-icons-nav-list-icon-categoria">
+                            <div class="nt-icons-nav-list-icon-categoria">
+                                <vtex.cmc:NetCategorieNavListIcons />
+                            </div>
+                        </div>
+                        <div class="nt-box nt-filters-buttons"></div>
+                    </div>
+
+                    <div class="slider-banner-departamento-big">
+                        <div class="container">
+                            <vtex:contentPlaceHolder id="banners-sidebar-departamento-big" />
+                        </div>
+                    </div>
+
+                    <div class="wrapperContent">
+
+                        <div class="wrapperLeft">
+
+                            <div class="wrapperMenu">
+                                <vtex.cmc:searchNavigator />
+                            </div>
+
+                            <div class="overflow"><button></button></div>
+
+                        </div><!-- FIM wrapperLeft -->
+
+                        <div class="wrapperRight">
+
+                            <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="16"
+                                columnCount="16" />
+
+                        </div><!-- FIM wrapperRight -->
+
+                        <div class="divs-clerk">
+                            <!-- Clerk - Vitrine Mais Vendidos Categoria -->
+                            <div class="clerk-vitrine-mais-vendidos-categoria"></div>
+                            <!-- Clerk - Vitrine Últimos Vistos -->
+                            <div class="clerk-vitrine-ultimos-vistos"></div>
+                        </div>
+
+                    </div><!-- FIM wrapperContent -->
+                </div><!-- FIM tpl-center -->
+
+            </div><!-- fim tpl-content -->
+
+        </main><!-- fim main -->
+
+        <vtex.cmc:NetNewsletter />
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div><!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script src="/arquivos/netsuprimentos-pag-busca.min.js"></script>
+    <!--<script src="/arquivos/enext-general.js?v=7"></script>-->
+</body>
+
+</html>
