@@ -435,8 +435,8 @@ body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
     height: 75px;
-    width: 80%;
-    border-radius: 200px;
+    width: 60%;
+    border-radius: 5px;
     min-width: 120px
 }
 /* fim Outubro 2019  */
@@ -572,15 +572,6 @@ body.super-loja.audax main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.audax main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.audax main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.audax main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -622,15 +613,6 @@ body.super-loja.altacoppo main .tpl-header-content {
     background: linear-gradient(135deg, #3a94ce 0%, #3e40b6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a94ce', endColorstr='#3e40b6', GradientType=1);
     color: #fff
-}
-
-body.super-loja.altacoppo main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.altacoppo main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.altacoppo main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -676,15 +658,6 @@ body.super-loja.bralimpia main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.bralimpia main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.bralimpia main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.bralimpia main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #ead01d
 }
@@ -726,15 +699,6 @@ body.super-loja.danny main .tpl-header-content {
     background: linear-gradient(135deg, #0f4981 0%, #0a2f53 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f4981', endColorstr='#0a2f53', GradientType=1);
     color: #fff
-}
-
-body.super-loja.danny main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.danny main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.danny main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -780,15 +744,6 @@ body.super-loja.moldex main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.moldex main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.moldex main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.moldex main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -830,15 +785,6 @@ body.super-loja.marluvas main .tpl-header-content {
     background: linear-gradient(135deg, #5d5d5e 0%, #4b4b4c 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d5d5e', endColorstr='#4b4b4c', GradientType=1);
     color: #fff
-}
-
-body.super-loja.marluvas main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.marluvas main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.marluvas main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -884,18 +830,6 @@ body.super-loja.fujiwara main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.fujiwara main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.fujiwara main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em;
-    margin-top: 30px;
-    font-size: 15px;
-    text-align: justify;
-}
-
 body.super-loja.fujiwara main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #f1d911
 }
@@ -937,15 +871,6 @@ body.super-loja.poderosos-do-escritorio main .tpl-header-content {
     background: linear-gradient(135deg, #f6308f 0%, #cd2fc2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6308f', endColorstr='#cd2fc2', GradientType=1);
     color: #fff
-}
-
-body.super-loja.poderosos-do-escritorio main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.poderosos-do-escritorio main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.poderosos-do-escritorio main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -991,18 +916,6 @@ body.super-loja.mmm main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em;
-    font-size: 15px;
-    margin-top: 30px;
-    text-align: justify;
-}
-
 body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #F7E449
 }
@@ -1044,15 +957,6 @@ body.super-loja.santher main .tpl-header-content {
     background: linear-gradient(135deg, #28a6ac 0%, #32b06b 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28A6AC', endColorstr='#32B06B', GradientType=1);
     color: #fff
-}
-
-body.super-loja.santher main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.santher main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.santher main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1098,15 +1002,6 @@ body.super-loja.ingleza main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.ingleza main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.ingleza main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.ingleza main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1148,15 +1043,6 @@ body.super-loja.gojo main .tpl-header-content {
     background: linear-gradient(135deg, #2f84b3 0%, #2f84b3 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F84B3', endColorstr='#2F84B3', GradientType=1);
     color: #fff
-}
-
-body.super-loja.gojo main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.gojo main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.gojo main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1202,15 +1088,6 @@ body.super-loja.unilever main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.unilever main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.unilever main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.unilever main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1252,15 +1129,6 @@ body.super-loja.msa main .tpl-header-content {
     background: linear-gradient(135deg, #1aad6f 0%, #1aad6f 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1AAD6F', endColorstr='#1AAD6F', GradientType=1);
     color: #fff
-}
-
-body.super-loja.msa main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.msa main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.msa main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1306,15 +1174,6 @@ body.super-loja.honeywell main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.honeywell main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.honeywell main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.honeywell main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1356,15 +1215,6 @@ body.super-loja.visca main .tpl-header-content {
     background: linear-gradient(135deg, #fec53b 0%, #fec53b 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEC53B', endColorstr='#FEC53B', GradientType=1);
     color: #000
-}
-
-body.super-loja.visca main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #000
-}
-
-body.super-loja.visca main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #000;
-    max-height: 4.142em
 }
 
 body.super-loja.visca main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1410,15 +1260,6 @@ body.super-loja.becker main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.becker main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.becker main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.becker main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1460,15 +1301,6 @@ body.super-loja.mapa main .tpl-header-content {
     background: linear-gradient(135deg, #053b7d 0%, #053b7d 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#053B7D', endColorstr='#053B7D', GradientType=1);
     color: #fff
-}
-
-body.super-loja.mapa main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.mapa main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
 }
 
 body.super-loja.mapa main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1514,15 +1346,6 @@ body.super-loja.soft main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.soft main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.soft main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em
-}
-
 body.super-loja.soft main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1566,12 +1389,8 @@ body.super-loja.tork main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
 /* inicio Outubro 2019 */
-body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
+body.super-loja main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
     max-height: 4.142em;
     font-size: 15px;
@@ -1623,18 +1442,6 @@ body.super-loja.sticky-shoes main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.sticky-shoes main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.sticky-shoes main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em;
-    margin-top: 30px;
-    text-align: justify;
-    font-size: 15px;
-}
-
 body.super-loja.sticky-shoes main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1678,18 +1485,6 @@ body.super-loja.talge main .tpl-header-content {
     color: #fff
 }
 
-body.super-loja.talge main .tpl-header-content .tpl-center .nt-box.nt-title-category .titulo-sessao {
-    color: #fff
-}
-
-body.super-loja.talge main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
-    color: #fff;
-    max-height: 4.142em;
-    margin-top: 30px;
-    text-align: justify;
-    font-size: 15px;
-}
-
 body.super-loja.talge main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
 }
@@ -1720,7 +1515,7 @@ body.super-loja.audax .mainBrandCategory ul.full li {
 body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12 .box-banner a img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 200px;
     margin: 15px 0 0
 }
 
