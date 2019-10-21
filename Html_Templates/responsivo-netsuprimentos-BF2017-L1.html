@@ -1,320 +1,374 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+	xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
-	<head>
-	    <vtex:template id="responsivo-netsuprimentos-includes-header" />
-	    <link rel="stylesheet" href="/arquivos/netsuprimentos-black-week-2017.min.css?v=1.0.3" />
-	</head>
+<head>
+	<vtex:template id="responsivo-netsuprimentos-includes-header" />
+	<link rel="stylesheet" href="/arquivos/netsuprimentos-black-week-2017.min.css?v=1.0.3" />
+</head>
 
-	<body>
+<body>
+	<!-- inicio social login -->
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '{your-app-id}',
+				cookie: true,
+				xfbml: true,
+				version: 'v4.0'
+			});
+			FB.AppEvents.logPageView();
+		};
 
-		<div class="tpl-wrapper">
-			<!-- HEADER -->
-			<vtex:template id="responsivo-netsuprimentos-header" />
-			
-			<!-- MAIN -->
-			<main id="main">
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) { return; }
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- fim social login -->
+	<div class="tpl-wrapper">
+		<!-- HEADER -->
+		<vtex:template id="responsivo-netsuprimentos-header" />
 
-				<!-- HEADER BF -->
-				<section class="black-week-2017-header">
-					<div class="black-week-2017-top-header">
-						<div class="black-week-2017-container">
-							<div class="black-week-2017-top-header-col1">
-								<div class="black-week-2017-logo">
-									<img src="/arquivos/logo-netsuprimentos-blackweek2017.png" alt="Black Week 2017 para Empresas" />
-								</div>
-							</div>
-							<div class="black-week-2017-top-header-col2">
-								
-							</div>
-						</div>
-					</div>
-					<div class="black-week-2017-bottom-header">
-						<div class="black-week-2017-container">
-							<div class="black-week-2017-bottom-header-col1">
-								<div class="black-week-2017-count-days">
-									<div class="black-week-2017-left-days">
-										<small>faltam:</small>
-										<strong class="count">352 dias</strong>
-									</div>
-									<div class="black-week-2017-calendar">
-										<h4>
-											<strong>20 a 26</strong>
-											<small>de Novembro de 2017</small>
-										</h4>
-									</div>
-								</div>
-							</div>
-							<div class="black-week-2017-bottom-header-col2">
-								<form id="black-week-mailing" class="black-week-mailing" action="#" name="subscribeForm" method="post" novalidate="novalidate">
-									<div class="black-week-mailing-title">
-										<h2>Cadastre-se</h2>
-										<h3>Receba as ofertas exclusivas em primeira mão.</h3>
-									</div>
-									<div class="form-group">
-										<input class="form-control" name="firstName" type="text" placeholder="Digite seu nome" maxlength="200" />
-									</div>
-									<div class="form-group">
-										<input class="form-control" name="email" type="text" placeholder="Digite seu e-mail" maxlength="200" />
-									</div>
-									<div class="form-group">
-										<button class="btn btn-default btn-blackweek-2017" type="submit" name="submit" value="submit">Cadastre-se</button>
-									</div>
-									<div class="black-week-mailing-return">
-									</div>
-								</form>
-								
+		<!-- MAIN -->
+		<main id="main">
+
+			<!-- HEADER BF -->
+			<section class="black-week-2017-header">
+				<div class="black-week-2017-top-header">
+					<div class="black-week-2017-container">
+						<div class="black-week-2017-top-header-col1">
+							<div class="black-week-2017-logo">
+								<img src="/arquivos/logo-netsuprimentos-blackweek2017.png"
+									alt="Black Week 2017 para Empresas" />
 							</div>
 						</div>
-					</div>
-				</section>
-				<!-- end HEADER BF -->
+						<div class="black-week-2017-top-header-col2">
 
-				<!-- ABOUT BF -->
-				<section class="black-week-2017-about-us">
+						</div>
+					</div>
+				</div>
+				<div class="black-week-2017-bottom-header">
 					<div class="black-week-2017-container">
-						<h2 class="black-week-2017-title blue-version"><span>Sobre a Black Week</span></h2>
-						<p class="black-week-2017-paragraph">
-							A Black Week é a semana da maior liquidação do mundo! É uma excelente oportunidade para comprar e aproveitar as melhores promoções e ofertas exclusivas. No Brasil, a promoção sempre aconteceu na última sexta-feira de novembro com o nome <strong>Black Friday</strong>. Nesse ano, a Net Suprimentos expandiu o prazo pensando nos nossos clientes, assim a Black Friday se tornou a <strong>#BlackWeek  Para Empresas - Uma semana inteira com super descontos!</strong>
-						</p>
+						<div class="black-week-2017-bottom-header-col1">
+							<div class="black-week-2017-count-days">
+								<div class="black-week-2017-left-days">
+									<small>faltam:</small>
+									<strong class="count">352 dias</strong>
+								</div>
+								<div class="black-week-2017-calendar">
+									<h4>
+										<strong>20 a 26</strong>
+										<small>de Novembro de 2017</small>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="black-week-2017-bottom-header-col2">
+							<form id="black-week-mailing" class="black-week-mailing" action="#" name="subscribeForm"
+								method="post" novalidate="novalidate">
+								<div class="black-week-mailing-title">
+									<h2>Cadastre-se</h2>
+									<h3>Receba as ofertas exclusivas em primeira mão.</h3>
+								</div>
+								<div class="form-group">
+									<input class="form-control" name="firstName" type="text"
+										placeholder="Digite seu nome" maxlength="200" />
+								</div>
+								<div class="form-group">
+									<input class="form-control" name="email" type="text" placeholder="Digite seu e-mail"
+										maxlength="200" />
+								</div>
+								<div class="form-group">
+									<button class="btn btn-default btn-blackweek-2017" type="submit" name="submit"
+										value="submit">Cadastre-se</button>
+								</div>
+								<div class="black-week-mailing-return">
+								</div>
+							</form>
+
+						</div>
 					</div>
-				</section>
-				<!-- end ABOUT BF -->
+				</div>
+			</section>
+			<!-- end HEADER BF -->
 
-				<!-- FEATURES BF -->
-				<section class="black-week-2017-features">
-					<div class="black-week-2017-container">
-						<h2 class="black-week-2017-title yellow-version"><span>Como aproveitar a Black Week aqui na Net Suprimentos</span></h2>
-						<ul class="black-week-2017-features-list">
-							<li class="black-week-2017-features-item-list">
-								<span>Nossos especialistas estarão prontos para ajudar você</span>
-							</li>
-							<li class="black-week-2017-features-item-list">
-								<span>Você pode deixar seu e-mail aqui na página para receber as ofertas exclusivas</span>
-							</li>
-							<li class="black-week-2017-features-item-list">
-								<span>Aqui você encontra somente lojas confiáveis</span>
-							</li>
-							<li class="black-week-2017-features-item-list">
-								<span>Produto com desconto você vai identificar com o selo Black Week</span>
-							</li>
-							<li class="black-week-2017-features-item-list">
-								<span>Você vai economizar muito com os descontos</span>
-							</li>
-							<li class="black-week-2017-features-item-list">
-								<span>Garanta seu pedido o mais rápido possível, pois os produtos são muito procurados nesse período</span>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- end FEATURES BF -->
-				
-				<!-- BRANDS BF -->
-				<section class="black-week-2017-brands">
-					<div class="black-week-2017-container">
-						<h2 class="black-week-2017-title blue-version"><span>As marcas preferidas dos nossos clientes</span></h2>
-						<ul class="black-week-2017-brands-list">
-							<li class="black-week-2017-brands-item-list">
-								<a href='/3m' title="3M">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-3m.png?v=636014325677870000" alt="3M" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/haws avlis" title="Haws Avlis">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-haws-avlis.png?v=636014325677870000" alt="Haws Avlis" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/marluvas" title="Marluvas">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-marluvas.png?v=635983838351530000" alt="Marluvas" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/fujiwara" title="Fujiwara">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-fujiwara.png?v=635969224962530000" alt="Fujiwara" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/limpeza/poderosos-do-escritorio" title="Reckitt Benckiser">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-reckitt-benckiser.png?v=636014325677870000" alt="Reckitt Benckiser" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/talge" title="Talge">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-talge.png?v=636014325677870000" alt="Talge" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/loja/audax" title="Audax">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-audax.png?v=636014325677870000" alt="Audax" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/ingleza" title="Ingleza">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-ingleza.png?v=636014325677870000" alt="Ingleza" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/big pel" title="Big Pel">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-big-pel.png?v=636014325677870000" alt="Big Pel" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/danny" title="Danny">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-danny.png?v=636014325677870000" alt="Danny" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/vicsa" title="Vicsa">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-vicsa.png?v=636014325677870000" alt="Vicsa" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/ambclean" title="Ambclean">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-ambclean.png?v=636014325677870000" alt="Ambclean" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/du pont" title="Du Pont">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-dupont.png?v=636014325677870000" alt="Du Pont" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/orion" title="Orion">
-									<img src="http://b2bnaweb.vteximg.com.br/arquivos/-logo-seller-orion.png?v=636014325677870000" alt="Orion" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/ergodyne" title="Ergodyne">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-ergodyne.png?v=636014325677870000" alt="Ergodyne" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/luvex" title="Du Pont">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-luvex.png?v=636014325677870000" alt="Luvex" />
-								</a>
-							</li>
-							<li class="black-week-2017-brands-item-list">
-								<a href="/msa" title="MSA">
-									<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-msa.png?v=636014325677870000" alt="MSA" />
-								</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- end BRANDS BF -->
+			<!-- ABOUT BF -->
+			<section class="black-week-2017-about-us">
+				<div class="black-week-2017-container">
+					<h2 class="black-week-2017-title blue-version"><span>Sobre a Black Week</span></h2>
+					<p class="black-week-2017-paragraph">
+						A Black Week é a semana da maior liquidação do mundo! É uma excelente oportunidade para comprar
+						e aproveitar as melhores promoções e ofertas exclusivas. No Brasil, a promoção sempre aconteceu
+						na última sexta-feira de novembro com o nome <strong>Black Friday</strong>. Nesse ano, a Net
+						Suprimentos expandiu o prazo pensando nos nossos clientes, assim a Black Friday se tornou a
+						<strong>#BlackWeek Para Empresas - Uma semana inteira com super descontos!</strong>
+					</p>
+				</div>
+			</section>
+			<!-- end ABOUT BF -->
 
-				<!-- CATEGORIES BF -->
-				<section class="black-week-2017-categories">
-					<div class="black-week-2017-container">
-						<h2 class="black-week-2017-title yellow-version"><span>As Categorias + Desejadas</span></h2>
-						<ul class="black-week-2017-categories-list">
-							<li class="black-week-2017-categories-item-list categorie-celulares-e-smartphones">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-celular"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-celular"></i></span>
-						      </div>
-						      <span>Celulares e Smartphones</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-tablets">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-tablet"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-tablet"></i></span>
-						      </div>
-						      <span>Tablets</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-dispensers-e-papeis-sanitarios">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-papel-toalha"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-papel-toalha"></i></span>
-						      </div>
-						      <span>Dispensers e Papéis Sanitários</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-quimicos-para-limpeza">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-desinfetante"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-desinfetante"></i></span>
-						      </div>
-						      <span>Químicos para Limpeza</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-higienizacao-das-maos">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-higiene_e_limpeza"></i></span>
-						      	<span class="hover"><i class="ns ns-higiene_e_limpeza"></i></span>
-						      </div>
-						      <span>Higienização das Mãos</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-capacetes-de-protecao">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-epis_e_seguranca"></i></span>
-						      	<span class="hover"><i class="ns ns-epis_e_seguranca"></i></span>
-						      </div>
-						      <span>Capacetes de Proteção</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-luvas-de-protecao">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-luva-seguranca"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-luva-seguranca"></i></span>
-						      </div>
-						      <span>Luvas de Segurança</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-calcados-de-seguranca">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-bota"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-bota"></i></span>
-						      </div>
-						      <span>Calçados de Segurança</span>
-						   </li>
-						   <li class="black-week-2017-categories-item-list categoria-protecao-respiratoria">
-						      <div class="black-week-2017-categories-item-circle">
-						      	<span class="out"><i class="ns ns-icon-mascara"></i></span>
-						      	<span class="hover"><i class="ns ns-icon-mascara"></i></span>
-						      </div>
-						      <span>Proteção Respiratória</span>
-						   </li>
-						</ul>
-					</div>
-				</section>
-				<!-- end CATEGORIES BF -->
+			<!-- FEATURES BF -->
+			<section class="black-week-2017-features">
+				<div class="black-week-2017-container">
+					<h2 class="black-week-2017-title yellow-version"><span>Como aproveitar a Black Week aqui na Net
+							Suprimentos</span></h2>
+					<ul class="black-week-2017-features-list">
+						<li class="black-week-2017-features-item-list">
+							<span>Nossos especialistas estarão prontos para ajudar você</span>
+						</li>
+						<li class="black-week-2017-features-item-list">
+							<span>Você pode deixar seu e-mail aqui na página para receber as ofertas exclusivas</span>
+						</li>
+						<li class="black-week-2017-features-item-list">
+							<span>Aqui você encontra somente lojas confiáveis</span>
+						</li>
+						<li class="black-week-2017-features-item-list">
+							<span>Produto com desconto você vai identificar com o selo Black Week</span>
+						</li>
+						<li class="black-week-2017-features-item-list">
+							<span>Você vai economizar muito com os descontos</span>
+						</li>
+						<li class="black-week-2017-features-item-list">
+							<span>Garanta seu pedido o mais rápido possível, pois os produtos são muito procurados nesse
+								período</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- end FEATURES BF -->
 
-				<!-- TIPS BF -->
-				<section class="black-week-2017-tips">
-					<div class="black-week-2017-container">
-						<h2 class="black-week-2017-title white-version"><span>Dicas para você aproveitar</span></h2>
-						<ul class="black-week-2017-tips-list">
-							<li class="black-week-2017-tips-item-list">
-								<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-001.jpg" alt="Aparelhos de Informática de ótima qualidade" />
-								<span>Aparelhos de Informática de ótima qualidade</span>
-							</li>
-							<li class="black-week-2017-tips-item-list">
-								<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-002.jpg" alt="Equipamentos de Proteção para seus colaboradores" />
-								<span>Equipamentos de Proteção para seus colaboradores</span>
-							</li>
-							<li class="black-week-2017-tips-item-list">
-								<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-003.jpg" alt="Produtos de limpeza para sua empresa ficar impecável" />
-								<span>Produtos de limpeza para sua empresa ficar impecável</span>
-							</li>
-							<li class="black-week-2017-tips-item-list">
-								<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-004.jpg" alt="Itens essenciais para  escritório de odontologia" />
-								<span>Itens essenciais para  escritório de odontologia</span>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- end TIPS BF -->
+			<!-- BRANDS BF -->
+			<section class="black-week-2017-brands">
+				<div class="black-week-2017-container">
+					<h2 class="black-week-2017-title blue-version"><span>As marcas preferidas dos nossos clientes</span>
+					</h2>
+					<ul class="black-week-2017-brands-list">
+						<li class="black-week-2017-brands-item-list">
+							<a href='/3m' title="3M">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-3m.png?v=636014325677870000"
+									alt="3M" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/haws avlis" title="Haws Avlis">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-haws-avlis.png?v=636014325677870000"
+									alt="Haws Avlis" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/marluvas" title="Marluvas">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-marluvas.png?v=635983838351530000"
+									alt="Marluvas" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/fujiwara" title="Fujiwara">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-fujiwara.png?v=635969224962530000"
+									alt="Fujiwara" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/limpeza/poderosos-do-escritorio" title="Reckitt Benckiser">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-reckitt-benckiser.png?v=636014325677870000"
+									alt="Reckitt Benckiser" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/talge" title="Talge">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-talge.png?v=636014325677870000"
+									alt="Talge" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/loja/audax" title="Audax">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-audax.png?v=636014325677870000"
+									alt="Audax" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/ingleza" title="Ingleza">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-ingleza.png?v=636014325677870000"
+									alt="Ingleza" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/big pel" title="Big Pel">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-big-pel.png?v=636014325677870000"
+									alt="Big Pel" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/danny" title="Danny">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-danny.png?v=636014325677870000"
+									alt="Danny" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/vicsa" title="Vicsa">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-vicsa.png?v=636014325677870000"
+									alt="Vicsa" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/ambclean" title="Ambclean">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-ambclean.png?v=636014325677870000"
+									alt="Ambclean" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/du pont" title="Du Pont">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-dupont.png?v=636014325677870000"
+									alt="Du Pont" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/orion" title="Orion">
+								<img src="http://b2bnaweb.vteximg.com.br/arquivos/-logo-seller-orion.png?v=636014325677870000"
+									alt="Orion" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/ergodyne" title="Ergodyne">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-ergodyne.png?v=636014325677870000"
+									alt="Ergodyne" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/luvex" title="Du Pont">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-luvex.png?v=636014325677870000"
+									alt="Luvex" />
+							</a>
+						</li>
+						<li class="black-week-2017-brands-item-list">
+							<a href="/msa" title="MSA">
+								<img src="//b2bnaweb.vteximg.com.br/arquivos/-logo-seller-msa.png?v=636014325677870000"
+									alt="MSA" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- end BRANDS BF -->
 
-			</main>
-			<!-- end MAIN -->
+			<!-- CATEGORIES BF -->
+			<section class="black-week-2017-categories">
+				<div class="black-week-2017-container">
+					<h2 class="black-week-2017-title yellow-version"><span>As Categorias + Desejadas</span></h2>
+					<ul class="black-week-2017-categories-list">
+						<li class="black-week-2017-categories-item-list categorie-celulares-e-smartphones">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-celular"></i></span>
+								<span class="hover"><i class="ns ns-icon-celular"></i></span>
+							</div>
+							<span>Celulares e Smartphones</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-tablets">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-tablet"></i></span>
+								<span class="hover"><i class="ns ns-icon-tablet"></i></span>
+							</div>
+							<span>Tablets</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-dispensers-e-papeis-sanitarios">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-papel-toalha"></i></span>
+								<span class="hover"><i class="ns ns-icon-papel-toalha"></i></span>
+							</div>
+							<span>Dispensers e Papéis Sanitários</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-quimicos-para-limpeza">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-desinfetante"></i></span>
+								<span class="hover"><i class="ns ns-icon-desinfetante"></i></span>
+							</div>
+							<span>Químicos para Limpeza</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-higienizacao-das-maos">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-higiene_e_limpeza"></i></span>
+								<span class="hover"><i class="ns ns-higiene_e_limpeza"></i></span>
+							</div>
+							<span>Higienização das Mãos</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-capacetes-de-protecao">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-epis_e_seguranca"></i></span>
+								<span class="hover"><i class="ns ns-epis_e_seguranca"></i></span>
+							</div>
+							<span>Capacetes de Proteção</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-luvas-de-protecao">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-luva-seguranca"></i></span>
+								<span class="hover"><i class="ns ns-icon-luva-seguranca"></i></span>
+							</div>
+							<span>Luvas de Segurança</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-calcados-de-seguranca">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-bota"></i></span>
+								<span class="hover"><i class="ns ns-icon-bota"></i></span>
+							</div>
+							<span>Calçados de Segurança</span>
+						</li>
+						<li class="black-week-2017-categories-item-list categoria-protecao-respiratoria">
+							<div class="black-week-2017-categories-item-circle">
+								<span class="out"><i class="ns ns-icon-mascara"></i></span>
+								<span class="hover"><i class="ns ns-icon-mascara"></i></span>
+							</div>
+							<span>Proteção Respiratória</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- end CATEGORIES BF -->
 
-			<!-- FOOTER -->
-			<vtex:template id="responsivo-netsuprimentos-footer" />
+			<!-- TIPS BF -->
+			<section class="black-week-2017-tips">
+				<div class="black-week-2017-container">
+					<h2 class="black-week-2017-title white-version"><span>Dicas para você aproveitar</span></h2>
+					<ul class="black-week-2017-tips-list">
+						<li class="black-week-2017-tips-item-list">
+							<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-001.jpg"
+								alt="Aparelhos de Informática de ótima qualidade" />
+							<span>Aparelhos de Informática de ótima qualidade</span>
+						</li>
+						<li class="black-week-2017-tips-item-list">
+							<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-002.jpg"
+								alt="Equipamentos de Proteção para seus colaboradores" />
+							<span>Equipamentos de Proteção para seus colaboradores</span>
+						</li>
+						<li class="black-week-2017-tips-item-list">
+							<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-003.jpg"
+								alt="Produtos de limpeza para sua empresa ficar impecável" />
+							<span>Produtos de limpeza para sua empresa ficar impecável</span>
+						</li>
+						<li class="black-week-2017-tips-item-list">
+							<img class="black-week-2017-tips-item-image" src="/arquivos/bw17-image-tip-004.jpg"
+								alt="Itens essenciais para  escritório de odontologia" />
+							<span>Itens essenciais para escritório de odontologia</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- end TIPS BF -->
 
-		</div><!-- end tpl-wrapper -->
+		</main>
+		<!-- end MAIN -->
 
-		<!-- SCRIPTS -->
-		<vtex:template id="responsivo-netsuprimentos-includes-scripts" />
-		<script type="text/javascript" src="/arquivos/netsuprimentos-black-week-2017.min.js?v=1.0.2"></script>
+		<!-- FOOTER -->
+		<vtex:template id="responsivo-netsuprimentos-footer" />
 
-	</body>
+	</div><!-- end tpl-wrapper -->
+
+	<!-- SCRIPTS -->
+	<vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+	<script type="text/javascript" src="/arquivos/netsuprimentos-black-week-2017.min.js?v=1.0.2"></script>
+
+</body>
 
 </html>

@@ -9,17 +9,35 @@
 </head>
 
 <body>
+    <!-- inicio social login -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '{your-app-id}',
+                cookie: true,
+                xfbml: true,
+                version: 'v4.0'
+            });
+            FB.AppEvents.logPageView();
+        };
 
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- fim social login -->
     <div class="tpl-wrapper">
         <!-- HEADER -->
         <vtex:template id="responsivo-netsuprimentos-header" />
 
         <!-- MAIN -->
         <main id="main">
-
             <div class="tpl-header-content">
                 <div class="tpl-center">
-
                     <div class="nt-box nt-header-super-loja">
                         <div class="nt-row">
                             <div class="nt-col-lg-3 nt-col-md-12 nt-col-sm-12">
@@ -30,11 +48,10 @@
                                 </div>
                             </div>
                             <div class="nt-col-lg-9 nt-col-md-12 nt-col-sm-12">
-                                <vtex.cmc:breadCrumb />
                                 <div class="nt-box nt-title-category">
-                                    <h1 class="titulo-sessao">
+                                    <!-- <h1 class="titulo-sessao">
                                         <vtex:contentPlaceHolder id="NetTitleSuperLoja" />
-                                    </h1>
+                                    </h1> -->
                                     <div class="titulo-sessao-bk">
                                         <vtex.cmc:searchTitle />
                                     </div>
@@ -48,15 +65,11 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="nt-col-lg-12 nt-col-md-12 nt-col-sm-12">
                                 <vtex:contentPlaceHolder id="NetAfterBannerSuperLoja" />
                             </div>
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
