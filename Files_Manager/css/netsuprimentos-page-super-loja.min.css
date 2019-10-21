@@ -423,6 +423,7 @@ body.super-loja main .tpl-header-content .nt-box .nt-col-lg-3.nt-col-md-12.nt-co
     min-height: 120px
 }
 
+/* inicio Outubro 2019 */
 body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo-super-loja {
     background: white;
     margin: 0px;
@@ -433,11 +434,12 @@ body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
-    height: 110px;
-    width: 93%;
+    height: 75px;
+    width: 80%;
     border-radius: 200px;
     min-width: 120px
 }
+/* fim Outubro 2019  */
 
 body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo-super-loja .box-banner {
     position: absolute;
@@ -888,7 +890,10 @@ body.super-loja.fujiwara main .tpl-header-content .tpl-center .nt-box.nt-title-c
 
 body.super-loja.fujiwara main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
-    max-height: 4.142em
+    max-height: 4.142em;
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: justify;
 }
 
 body.super-loja.fujiwara main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -992,7 +997,10 @@ body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-catego
 
 body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
-    max-height: 4.142em
+    max-height: 4.142em;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: justify;
 }
 
 body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1562,10 +1570,15 @@ body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-categ
     color: #fff
 }
 
+/* inicio Outubro 2019 */
 body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
-    max-height: 4.142em
+    max-height: 4.142em;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 30px;
 }
+/* fim Outubro 2019 */
 
 body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
     color: #00bdff
@@ -1616,7 +1629,10 @@ body.super-loja.sticky-shoes main .tpl-header-content .tpl-center .nt-box.nt-tit
 
 body.super-loja.sticky-shoes main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
-    max-height: 4.142em
+    max-height: 4.142em;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 15px;
 }
 
 body.super-loja.sticky-shoes main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1668,7 +1684,10 @@ body.super-loja.talge main .tpl-header-content .tpl-center .nt-box.nt-title-cate
 
 body.super-loja.talge main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
-    max-height: 4.142em
+    max-height: 4.142em;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 15px;
 }
 
 body.super-loja.talge main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
