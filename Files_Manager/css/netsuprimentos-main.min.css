@@ -4338,10 +4338,9 @@ header .middle a.logo img {
 /* início inserido em Outubro 2019 */
 header .middle .h_search {
     display: inline-block;
-    width: 42%;
+    width: 40%;
     height: 36px;
-    margin-left: 4%;
-    margin-top: 8px;
+    margin-left: 2%;
     /* 
         borda cinza da barra de busca border: 1px solid #ccc;
     */
@@ -4685,14 +4684,15 @@ header .bottom #mainMenu ul {
     position: relative;
     z-index: 1
 }
-
+/* inicio Outubro 2019 */
 header .bottom #mainMenu ul li {
     align-items: center;
     color: white;
     cursor: pointer;
-    display: flex;
+    /* display: flex; */
     height: 48px;
 }
+/* fim Outubro 2019 */
 
 header .bottom #mainMenu ul li button.seta {
     display: none
