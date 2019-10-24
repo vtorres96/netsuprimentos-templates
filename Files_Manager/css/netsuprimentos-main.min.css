@@ -4270,22 +4270,23 @@ header .top {
     z-index: 3
 }
 
+/* Outubro 2019 */
 header .top a {
     display: block;
     width: 100%;
     height: 100%;
     line-height: 30px;
     text-align: center;
-    background: #a82877;
+    background: #34bfe0;
     outline: none
 }
 
 header .top a span {
     display: inline-block;
     vertical-align: top;
-    color: #fff;
+    color: #3c3c3c;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: .6px;
     text-transform: uppercase;
     margin-right: .5rem
@@ -4294,16 +4295,26 @@ header .top a span {
 header .top a h5 {
     display: inline-block;
     vertical-align: top;
-    color: #fff;
+    color: #3c3c3c;
     font-size: 18px;
     font-weight: 700;
     line-height: unset
 }
 
 header .top a h5 strong {
-    color: #5ce1e6;
+    color: #fff;
     font-weight: 700
 }
+
+header .top a h5 span {
+    text-transform: initial;
+    font-style: italic;
+}
+
+header .top-banner-mobile {
+    display: none;
+}
+/* fim Outubro 2019 */
 
 header .middle {
     background: #fff;
@@ -5168,9 +5179,9 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         margin-top: 0px !important
     }
 
-    header .top a span {
+    /* header .top a span {
         display: none
-    }
+    } */
 
     header .top a h5 {
         font-size: 16px;
@@ -5201,6 +5212,7 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
     }
 
     header .middle a.logo img {
+        margin-left: 22px;
         margin-top: 6px;
         width: 100%;
         height: auto;
@@ -5441,7 +5453,7 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
     }
 
     header .bottom #mainMenu ul li.hasSubmenu {
-        /* display: block; */
+        display: flex;
         clear: both;
         width: 100%;
         height: 50px;
@@ -5505,8 +5517,9 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         left: 0;
         width: 100%;
         height: 58px;
-        padding: 9px 20px;
-        background: #3c3c3c;
+        padding-top: 20px;
+        padding-left: 10px;
+        background: #fff;
         overflow: hidden;
         z-index: 999;
         display: block
@@ -6139,6 +6152,20 @@ html body .has--svg-sprite {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
+    /* inicio Outubro 2019 */
+    header .top-banner-mobile { 
+        display: block;
+    }
+
+    header .top-banner-desktop {
+        display: none;
+    }
+
+    body.home .tpl-wrapper main .tpl-content section#slideHome {
+        margin-bottom: 2px;
+    }
+    /* fim Outubro 2019 */
+
     .net-more-about {
         display: block;
         width: 100%;
@@ -7293,7 +7320,7 @@ html body .has--svg-sprite {
 }
 
 .mCSB_scrollTools .mCSB_draggerRail {
-    width: 8px;
+    width: 10px;
     height: 100%;
     margin: 0 auto;
     -webkit-border-radius: 16px;
