@@ -49,9 +49,6 @@
                             </div>
                             <div class="nt-col-lg-9 nt-col-md-12 nt-col-sm-12">
                                 <div class="nt-box nt-title-category">
-                                    <!-- <h1 class="titulo-sessao">
-                                        <vtex:contentPlaceHolder id="NetTitleSuperLoja" />
-                                    </h1> -->
                                     <div class="titulo-sessao-bk">
                                         <vtex.cmc:searchTitle />
                                     </div>
@@ -60,19 +57,19 @@
                                     </div>
                                     <div class="slider-banner-departamento-big">
                                         <div class="container">
-                                            <!-- <vtex:contentPlaceHolder id="NetBannerSuperLoja" /> -->
+                                            <vtex:contentPlaceHolder id="NetBannerSuperLoja" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Desktop -->
-                            <div class="nt-col-lg-12 nt-col-md-12 nt-col-sm-12 d-none d-sm-block">
+                            <div class="nt-col-lg-12 nt-col-md-12 nt-col-sm-12 slide desktop d-none d-sm-block">
                                 <vtex:contentPlaceHolder id="NetAfterBannerSuperLoja" />
                             </div>
                             <!-- fim Desktop -->
                             <!-- Mobile -->
-                            <div class="nt-col-lg-12 nt-col-md-12 nt-col-sm-12 d-sm-block d-md-none">
-                                <vtex:contentPlaceHolder id="NetBannerSuperLoja" />
+                            <div class="nt-col-lg-12 nt-col-md-12 nt-col-sm-12 slide mobile d-sm-block d-md-none">
+                                <vtex:contentPlaceHolder id="NetAfterBannerSuperLojaMobile" />
                             </div>
                             <!-- fim Mobile -->
                         </div>
@@ -81,53 +78,33 @@
             </div>
 
             <div class="tpl-content">
-
                 <div class="tpl-center">
                     <div class="nt-box nt-filters-buttons"></div>
                     <div class="wrapperContent">
-
                         <div class="wrapperLeft">
-
                             <div class="wrapperMenu">
                                 <vtex.cmc:searchNavigator />
                             </div>
-
                             <div class="overflow"><button></button></div>
-
                         </div><!-- FIM wrapperLeft -->
-
                         <div class="wrapperRight">
-
                             <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="16"
                                 columnCount="16" />
-
                         </div><!-- FIM wrapperRight -->
-
-                        <div class="divs-clerk">
-                            <!-- Clerk - Vitrine Mais Vendidos Categoria -->
-                            <div class="clerk-vitrine-mais-vendidos-categoria"></div>
-                            <!-- Clerk - Vitrine Últimos Vistos -->
-                            <div class="clerk-vitrine-ultimos-vistos"></div>
-                        </div>
-
                     </div><!-- FIM wrapperContent -->
                 </div><!-- FIM tpl-center -->
-
             </div><!-- fim tpl-content -->
 
         </main><!-- fim main -->
-
         <vtex.cmc:NetNewsletter />
-
         <!-- FOOTER -->
         <vtex:template id="responsivo-netsuprimentos-footer" />
-
     </div><!-- fim tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
     <script src="/arquivos/netsuprimentos-pag-busca.min.js"></script>
     <script src="/arquivos/netsuprimentos-pag-super-loja.min.js"></script>
-</body>
 
+</body>
 </html>

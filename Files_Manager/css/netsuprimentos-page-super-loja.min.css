@@ -1409,11 +1409,17 @@ body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo
     min-width: 120px
 }
 
-body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12 .box-banner a img {
+/* Desktop */
+body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.desktop .box-banner a img {
     display: block;
     width: 100%;
     height: auto;
     margin: 15px 0 0
+}
+
+/* Mobile */
+body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.mobile .box-banner a img {
+    display: none;
 }
 /* fim Outubro 2019 */
 
@@ -1542,6 +1548,19 @@ body.super-loja.audax .mainBrandCategory ul.full li {
         justify-items: center;
         align-items: center;
         border-radius: 0px 200px 200px 0px
+    }
+
+    /* Desktop */
+    body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.desktop .box-banner a img {
+        display: none;
+    }
+
+    /* Mobile */
+    body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.mobile .box-banner a img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 15px 0 0
     }
 
     body.super-loja main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
