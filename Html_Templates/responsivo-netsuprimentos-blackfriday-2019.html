@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="google-site-verification" content="7mvV2Xg11M3S7lzgJzoFTwNcTPDxsnNeOhkClGRwuqA" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-home.min.css" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-novidades-banner-home.css" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-blackfriday-2019.css" />
+</head>
+
+<body>
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-blackfriday-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <section id="topMarcas" class="slider-marcas">
+                    <div class="tpl-center">
+                        <div class="section-header">
+                            <h2 class="title">Compre por Marcas</h2>
+                            <a href="/marcas" class="vermais">Ver todas</a>
+                        </div>
+                        <div class="slider-wrapper">
+                            <vtex.cmc:sliderMarcas />
+                        </div>
+                    </div>
+                </section>
+                <!-- FIM topMarcas -->
+
+                <section id="slideHome">
+                    <div class="slide desktop">
+                        <vtex:contentPlaceHolder id="banner-slider" />
+                    </div>
+
+                    <div class="slide mobile">
+                        <vtex:contentPlaceHolder id="banner-slider-mobile" />
+                    </div>
+                </section>
+                <!-- FIM fim slideHome -->
+
+                <vtex.cmc:NSNewsletterHome />
+
+                <section id="banner-informacoes-de-venda">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="banner-informacoes-de-venda" />
+                    </div>
+                </section>
+                <!-- FIM Informações de Venda -->
+
+                <section id="MenuCampanha">
+                    <div class="nt-box nt-box-icons-nav-list-icon-home">
+                        <div class="tpl-center">
+                            <div class="section-header">
+                                <h2 class="title">
+                                    <vtex:contentPlaceHolder id="titulo-menu-campanha" />
+                                </h2>
+                            </div>
+                            <div class="nt-icons-nav-list-icon-home">
+                                <vtex:contentPlaceHolder id="html-menu-campanha" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- FIM MenuCampanha -->
+
+            </div>
+            <!-- FIM TPL-CONTENT -->
+        </main>
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div>
+    <!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script type="text/javascript" src="/arquivos/netsuprimentos-pag-home.min.js"></script>
+
+</body>
+
+</html>
