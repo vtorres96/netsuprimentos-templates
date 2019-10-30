@@ -1,9 +1,8 @@
-@-webkit-keyframes load {
+@keyframes load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -15,7 +14,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -49,25 +47,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.8) rotate(-4deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.2) rotate(4deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.2) rotate(-4deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -81,25 +75,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.9) rotate(-2deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.1) rotate(2deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.1) rotate(-2deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -110,13 +100,11 @@
 }
 
 @keyframes flash {
-
     0%,
     50%,
     100% {
         opacity: 1
     }
-
     25%,
     75% {
         opacity: 0
@@ -128,17 +116,14 @@
 }
 
 @keyframes shake {
-
     0%,
     100% {
         transform: translateX(0)
     }
-
     20%,
     60% {
         transform: translateX(-6px)
     }
-
     40%,
     80% {
         transform: translateX(6px)
@@ -153,11 +138,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.15)
     }
-
     100% {
         transform: scale(1)
     }
@@ -171,11 +154,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(0.85)
     }
-
     100% {
         transform: scale(1)
     }
@@ -189,11 +170,9 @@
     0% {
         transform: scale(0)
     }
-
     50% {
         transform: scale(1.2)
     }
-
     100% {
         transform: scale(1)
     }
@@ -207,11 +186,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.1)
     }
-
     100% {
         transform: scale(0)
     }
@@ -225,7 +202,6 @@
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -239,7 +215,6 @@
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -253,41 +228,34 @@
     0% {
         transform: scale(1)
     }
-
     30% {
         transform: scale(1)
     }
-
     40% {
         transform: scale(1.08)
     }
-
     50% {
         transform: scale(1)
     }
-
     60% {
         transform: scale(1)
     }
-
     70% {
         transform: scale(1.05)
     }
-
     80% {
         transform: scale(1)
     }
-
     100% {
         transform: scale(1)
     }
 }
 
 .blur {
-    -webkit-animation: blur 1s
+    animation: blur 1s
 }
 
-@-webkit-keyframes blur {
+@keyframes blur {
     0% {
         -webkit-filter: blur(8px);
         -moz-filter: blur(8px);
@@ -295,7 +263,6 @@
         -ms-filter: blur(8px);
         filter: blur(8px)
     }
-
     100% {
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
@@ -305,7 +272,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightIn {
+@keyframes sideLeft2RightIn {
     0% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -313,7 +280,6 @@
         -webkit-transform: translateX(-100vw);
         transform: translateX(-100vw)
     }
-
     100% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -323,7 +289,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightOut {
+@keyframes sideLeft2RightOut {
     0% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -331,7 +297,6 @@
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
     100% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -341,15 +306,13 @@
     }
 }
 
-@-webkit-keyframes rainbow {
+@keyframes rainbow {
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -359,11 +322,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -373,11 +334,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -387,11 +346,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -1495,8 +1452,8 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05)
@@ -1566,8 +1523,8 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05)
@@ -2154,7 +2111,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(top, #f2f5f6 0%, #e3eaed 99%);
     background: -webkit-linear-gradient(top, #f2f5f6 0%, #e3eaed 99%);
     background: linear-gradient(to bottom, #f2f5f6 0%, #e3eaed 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f5f6', endColorstr='#e3eaed', GradientType=0)
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2f5f6', endColorstr='#e3eaed', GradientType=0)
 }
 
 body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--left .sku-selector-container .topic.Cor li span label[class*="Fume"]:after,
@@ -2270,7 +2227,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #e2d829 49%, #c6c6c6 50%);
     background: -webkit-linear-gradient(-45deg, #e2d829 49%, #c6c6c6 50%);
     background: linear-gradient(135deg, #e2d829 49%, #c6c6c6 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2d829', endColorstr='#c6c6c6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e2d829', endColorstr='#c6c6c6', GradientType=1);
     background-position: 2px
 }
 
@@ -2283,7 +2240,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #1b4188 49%, #c6c6c6 50%);
     background: -webkit-linear-gradient(-45deg, #1b4188 49%, #c6c6c6 50%);
     background: linear-gradient(135deg, #1b4188 49%, #c6c6c6 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b4188', endColorstr='#c6c6c6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1b4188', endColorstr='#c6c6c6', GradientType=1);
     background-position: 2px
 }
 
@@ -2296,7 +2253,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #777 49%, #c6c6c6 50%);
     background: -webkit-linear-gradient(-45deg, #777 49%, #c6c6c6 50%);
     background: linear-gradient(135deg, #777777 49%, #c6c6c6 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#c6c6c6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#c6c6c6', GradientType=1);
     background-position: 2px
 }
 
@@ -2309,7 +2266,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #fc5f0e 49%, #c6c6c6 50%);
     background: -webkit-linear-gradient(-45deg, #fc5f0e 49%, #c6c6c6 50%);
     background: linear-gradient(135deg, #fc5f0e 49%, #c6c6c6 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5f0e', endColorstr='#c6c6c6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fc5f0e', endColorstr='#c6c6c6', GradientType=1);
     background-position: 2px
 }
 
@@ -2322,7 +2279,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #fc5f0e 49%, #c8ed48 50%);
     background: -webkit-linear-gradient(-45deg, #fc5f0e 49%, #c8ed48 50%);
     background: linear-gradient(135deg, #fc5f0e 49%, #c8ed48 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5f0e', endColorstr='#c8ed48', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fc5f0e', endColorstr='#c8ed48', GradientType=1);
     background-position: 2px
 }
 
@@ -2335,7 +2292,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #c8ed48 49%, #c6c6c6 50%);
     background: -webkit-linear-gradient(-45deg, #c8ed48 49%, #c6c6c6 50%);
     background: linear-gradient(135deg, #c8ed48 49%, #c6c6c6 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8ed48', endColorstr='#c6c6c6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#c8ed48', endColorstr='#c6c6c6', GradientType=1);
     background-position: 2px
 }
 
@@ -2348,7 +2305,7 @@ body.produto main .tpl-center section#area-a .right .net-box-product-calltoactio
     background: -moz-linear-gradient(-45deg, #000 50%, #fff728 52%);
     background: -webkit-linear-gradient(-45deg, #000 50%, #fff728 52%);
     background: linear-gradient(135deg, #000000 50%, #fff728 52%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#fff728', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#fff728', GradientType=1);
     background-position: 2px
 }
 
@@ -3164,7 +3121,7 @@ body.produto main .tpl-center section #compre-junto #divCompreJunto table tr:hov
     background: -moz-linear-gradient(top, #fff 0, #f2f2f2 100%);
     background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
     background: linear-gradient(to bottom top, #ffffff 0%, #f2f2f2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white3', GradientType=0)
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white3', GradientType=0)
 }
 
 body.produto main .tpl-center section #compre-junto #divCompreJunto table tr td.itemA,
@@ -3314,8 +3271,8 @@ body.produto main .tpl-center #ns-vitrine__acessorios .prateleira h2 {
 }
 
 
-
 /* Início inserido em Outubro 2019  */
+
 body.produto main .tpl-center #ns-vitrine__acessorios .prateleira>ul {
     display: block;
     width: 95%;
@@ -3335,12 +3292,17 @@ body.produto main .tpl-center #ns-vitrine__acessorios .prateleira ul fieldset {
     position: absolute;
     margin: -12% 5px;
 }
+
+
 /* início último fieldset que sempre é gerado fora da ul */
+
 body.produto main .tpl-center #ns-vitrine__acessorios .prateleira fieldset {
     display: flex;
     position: absolute;
     margin: -12% 20px;
 }
+
+
 /* fim último fieldset que sempre é gerado fora da ul */
 
 body.produto main .tpl-center #ns-vitrine__acessorios .prateleira {
@@ -3359,8 +3321,9 @@ body.produto main .tpl-center #ns-vitrine__acessorios .prateleira .box-preco-atu
     width: 30%;
     margin-top: 2%;
 }
-/* Fim inserido em Outubro 2019 */
 
+
+/* Fim inserido em Outubro 2019 */
 
 body.produto main .tpl-center #ns-vitrine__acessorios .prateleira>ul li .box-item {
     background: none;
@@ -3939,7 +3902,7 @@ body.produto .product__info-shipping-result .result__options {
 }
 
 body.produto .product__info-shipping-result .result__options::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
     background-color: #fbfbfb
 }
 
@@ -4722,37 +4685,30 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
     body.produto {
         padding-bottom: 20px
     }
-
     body.produto main .tpl-center section#area-a {
         margin-top: 20px
     }
-
     body.produto main .tpl-center section#area-a .net-row-description-product .col-lg-12 {
         padding-left: 0;
         padding-right: 0
     }
-
     body.produto main .tpl-center section#area-a .net-row-description-product .col-lg-12 .product-info {
         padding: 0 !important
     }
-
     body.produto main .tpl-center section#area-a .net-row-description-product .box-product-info-video {
         width: 100%;
         height: 100%;
         padding: 0px;
         margin-bottom: 15px
     }
-
     body.produto main .tpl-center section#area-a .net-row-description-product.net-row-description-product-with-sizetable .product-info.product-info-specifs {
         float: none;
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .net-row-description-product.net-row-description-product-with-sizetable .product-info.product-info-sizetable {
         float: none;
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .left {
         width: 100%;
         margin-left: 0;
@@ -4760,25 +4716,20 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         float: none;
         overflow: hidden
     }
-
     body.produto main .tpl-center section#area-a .left .product-title-mobile {
         display: block !important
     }
-
     body.produto main .tpl-center section#area-a .left .apresentacao {
         display: block
     }
-
     body.produto main .tpl-center section#area-a .left .apresentacao #image {
         display: block;
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .left .apresentacao ul.thumbs li .ProductYoutubeVideo iframe {
         width: 100%;
         min-height: 272px
     }
-
     body.produto main .tpl-center section#area-a .right {
         width: 100%;
         margin-left: 0;
@@ -4786,43 +4737,34 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         margin-top: 20px;
         float: none
     }
-
     body.produto main .tpl-center section#area-a .right h1.box-titulo {
         display: none !important
     }
-
     body.produto main .tpl-center section#area-a .right h1.box-titulo .productName {
         font-size: 22px
     }
-
     body.produto main .tpl-center section#area-a .right .box-subtitulo .box-codigo-produto {
         display: block
     }
-
     body.produto main .tpl-center section#area-a .right .box-subtitulo .box-codigo-produto>div {
         display: block !important;
         width: 100%;
         line-height: 16px
     }
-
     body.produto main .tpl-center section#area-a .right .box-subtitulo .box-codigo-produto>div:after {
         display: none
     }
-
     body.produto main .tpl-center section#area-a .right .box-subtitulo .box-review-and-codigo-produto {
         display: block;
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .right .box-subtitulo .box-review-and-codigo-produto .box-resumo-avaliacao {
         display: block;
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .box-frete #calculoFrete .contentWrapper .content fieldset .prefixo .find-cep {
         font-size: 11px
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .box-frete #calculoFrete .contentWrapper .content .freight-values {
         width: 100%;
         position: relative;
@@ -4831,11 +4773,9 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         z-index: 0;
         min-width: unset
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .box-frete #calculoFrete .contentWrapper .content .freight-values table {
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product {
         position: static;
         float: none;
@@ -4847,7 +4787,6 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         padding: 0;
         margin-top: 20px
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-btn-addcart {
         position: fixed;
         right: 0;
@@ -4858,27 +4797,22 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         background: white;
         padding: 10px
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-btn-addcart .btn.net-btn-addcart-green {
         width: 100%
     }
-
     body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-logo-partners-secure {
         display: none;
         margin-top: 10px
     }
-
     body.produto main .tpl-center section#area-callme {
         float: left;
         border-top: 90px solid #ffc000;
         padding: 20px;
         margin: 50px 0 20px
     }
-
     body.produto main .tpl-center section#area-callme .alert {
         margin-left: 0px
     }
-
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-avatar {
         height: 139px;
         position: relative;
@@ -4889,71 +4823,55 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         top: 0px;
         left: 0px
     }
-
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-avatar .avatar {
         margin-top: -159px
     }
-
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-body {
         padding-left: 0px
     }
-
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-body .col-firstname,
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-body .col-email,
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-body .col-type,
     body.produto main .tpl-center section #widgetNetEspecialista.widget-Especialista .widget-Especialista-body .col-btns {
         width: 100%
     }
-
     body.produto main .tpl-center section#area-c {
         padding: 10px
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira>ul {
         width: 80%
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira>ul li .box-item .bloco.imagem {
         width: 25%
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira>ul li .box-item .product-name {
         width: 70%
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira>ul li .box-item .price {
         left: 30%
     }
-
     /* inicio media max-width: 940px produto compativel Outubro */
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira ul fieldset {
         margin: -55px -20px;
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira fieldset {
         margin: -55px 15px;
     }
-
     /* fim media max-width: 940px produto compativel Outubro */
-
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira .box-preco-atualizado {
         width: 100%;
         text-align: right;
         margin: 15px 0 0
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira .box-preco-atualizado dl {
         display: inline-block;
         vertical-align: middle;
         margin-right: 5%
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira .box-preco-atualizado dl .selected-value {
         width: auto;
         margin: 0
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira .box-preco-atualizado .btn-batch-buy {
         width: auto
     }
@@ -4979,18 +4897,15 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
     body.produto .tpl-center section #compre-junto table tbody tr {
         border-bottom: 3px solid rgba(0, 0, 0, 0.05) !important
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td {
         text-align: center
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td a {
         float: none;
         width: 100%;
         margin-left: 0px !important;
         margin-right: 0px !important
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td a img {
         width: 100px;
         height: 100px;
@@ -4999,7 +4914,6 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         max-width: 100%;
         vertical-align: middle
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td h3 {
         text-align: center;
         float: none;
@@ -5007,21 +4921,17 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         margin-left: 0 !important;
         margin-right: 0 !important
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td .wrapperSelect {
         text-align: center
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td .wrapperSelect .selectFake {
         text-align: center
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.itemA {
         width: 100% !important;
         clear: both;
         display: block
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.plus {
         width: 100% !important;
         padding-top: 40px;
@@ -5029,17 +4939,14 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         clear: both;
         display: block
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.plus:before {
         margin: 0 auto
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.itemB {
         width: 100% !important;
         clear: both;
         display: block
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.equal {
         width: 100% !important;
         padding-top: 40px;
@@ -5047,18 +4954,15 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         clear: both;
         display: block
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.equal:before {
         margin: 0 auto
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy {
         width: 100% !important;
         clear: both;
         display: block;
         text-align: center !important
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .porApenas {
         display: block;
         clear: both;
@@ -5066,29 +4970,24 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         color: #999;
         font-style: 14px
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .valorTotal {
         font-size: 32px;
         font-weight: 800
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .valorDividido {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 300
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .valorDividido strong {
         font-weight: 800
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .valorDividido+strong {
         text-transform: uppercase;
         margin-top: 10px;
         font-size: 12px;
         display: block
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .comprar-junto button {
         background-color: #00c853;
         -moz-transition: all 0.3s;
@@ -5104,15 +5003,12 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         border: 0;
         cursor: pointer
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .comprar-junto button:hover {
         background-color: #00a946
     }
-
     body.produto .tpl-center section #compre-junto table tbody tr td.buy .more {
         display: none
     }
-
     body.produto a.click-chat-atendimento.controlCH.controlCH-custom.click-chat-atendimento-product-page {
         display: block !important;
         width: 100% !important;
@@ -5127,70 +5023,57 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
     html body.produto {
         padding-bottom: 160px
     }
-
     html body.produto main .tpl-center section#area-a .left {
         padding: 10px;
         margin-bottom: 0
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main {
         display: block;
         width: 100%;
         margin-bottom: 20px
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .box-flags-produto {
         top: 3.8em
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .thumbs,
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .has--main-thumbs {
         padding: 0
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .thumbs>li:not(.slick-slide),
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .has--main-thumbs>li:not(.slick-slide) {
         min-width: 280px;
         transition: min-width .2s linear
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .thumbs .js--product-video,
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .has--main-thumbs .js--product-video {
         min-height: 350px;
         z-index: -1;
         padding: 0 5%
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .slick-arrow {
         width: 40px;
         height: 40px
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .slick-arrow.slick-prev {
         left: 0;
         background-color: rgba(231, 231, 231, 0.9)
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-main .apresentacao .slick-arrow.slick-next {
         right: 0;
         background-color: rgba(231, 231, 231, 0.9)
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs {
         display: none
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .slick-list,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs .slick-list {
         display: block;
         margin: 0 15%
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .slick-list .slick-track,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs .slick-list .slick-track {
         transform: unset
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs>li,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .slick-slide,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs>li,
@@ -5201,7 +5084,6 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         border: 1px solid #fff;
         transition: all .2s linear
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs>li.slick-current,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .slick-slide.slick-current,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs>li.slick-current,
@@ -5209,7 +5091,6 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         border-color: #ffd324;
         transition: all .1s linear
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs>li a,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .slick-slide a,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs>li a,
@@ -5219,7 +5100,6 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         height: 100%;
         outline: none
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs>li a img,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .slick-slide a img,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs>li a img,
@@ -5227,39 +5107,32 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         width: 100%;
         height: auto
     }
-
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .thumbs .js--product-video-thumb img,
     html body.produto main .tpl-center section#area-a .left .product__image-thumbs .apresentacao .has--thumbs .js--product-video-thumb img {
         width: 100%;
         height: auto;
         cursor: pointer
     }
-
     html body.produto main .tpl-center section#area-a .right {
         padding: 10px
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--left {
         display: block;
         width: 100%;
         padding-right: 0;
         border: 0
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--left .product__info-shipping-result .result__options {
         max-height: 160px
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right {
         width: 100%;
         padding-left: 0
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .js--action-methods.is--active:after {
         transform: rotate(0);
         transition: transform .3s linear
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .js--action-methods:after {
         content: '';
         display: inline-block;
@@ -5271,7 +5144,6 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         transition: transform .4s ease-in-out;
         margin-left: 10px
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .content {
         position: unset;
         top: unset;
@@ -5279,49 +5151,46 @@ body.produto.departament-904 main .tpl-center section#area-a .net-row-descriptio
         right: unset;
         min-width: unset
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .content.is--active {
         padding: 10px 2%;
         margin: 5px 0
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .content .js--close-methods {
         display: none
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .content__cartao-debito,
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart .product__info-payment-types .content__boleto {
         margin-right: 5%
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart.produto-esgotado {
         position: relative
     }
-
     html body.produto main .tpl-center section#area-a .right .net-box-product-calltoaction .net-calltoaction-product .net-box-call-to-action--right .net-box-btn-addcart.produto-esgotado .notifyme {
         width: 100%
     }
-
     html body.produto .yv-box {
         position: relative;
         overflow: hidden
     }
 }
 
+
 /* inicio media-querie criado para tablet */
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira ul fieldset {
         margin: -55px -20px;
     }
-
     body.produto main .tpl-center section #ns-vitrine__acessorios .prateleira fieldset {
         margin: -55px 15px;
     }
-
     .h_search fieldset.busca {
         margin-top: 0;
     }
 }
+
+
 /* fim media-querie criado para tablet */
+
 
 /*# sourceMappingURL=netsuprimentos-page-produto.min.css.map */

@@ -1,9 +1,8 @@
-@-webkit-keyframes load {
+@keyframes load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -15,7 +14,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -49,25 +47,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.8) rotate(-4deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.2) rotate(4deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.2) rotate(-4deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -81,25 +75,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.9) rotate(-2deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.1) rotate(2deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.1) rotate(-2deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -110,13 +100,11 @@
 }
 
 @keyframes flash {
-
     0%,
     50%,
     100% {
         opacity: 1
     }
-
     25%,
     75% {
         opacity: 0
@@ -128,17 +116,14 @@
 }
 
 @keyframes shake {
-
     0%,
     100% {
         transform: translateX(0)
     }
-
     20%,
     60% {
         transform: translateX(-6px)
     }
-
     40%,
     80% {
         transform: translateX(6px)
@@ -153,11 +138,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.15)
     }
-
     100% {
         transform: scale(1)
     }
@@ -171,11 +154,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(0.85)
     }
-
     100% {
         transform: scale(1)
     }
@@ -189,11 +170,9 @@
     0% {
         transform: scale(0)
     }
-
     50% {
         transform: scale(1.2)
     }
-
     100% {
         transform: scale(1)
     }
@@ -207,11 +186,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.1)
     }
-
     100% {
         transform: scale(0)
     }
@@ -225,7 +202,6 @@
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -239,7 +215,6 @@
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -253,41 +228,34 @@
     0% {
         transform: scale(1)
     }
-
     30% {
         transform: scale(1)
     }
-
     40% {
         transform: scale(1.08)
     }
-
     50% {
         transform: scale(1)
     }
-
     60% {
         transform: scale(1)
     }
-
     70% {
         transform: scale(1.05)
     }
-
     80% {
         transform: scale(1)
     }
-
     100% {
         transform: scale(1)
     }
 }
 
 .blur {
-    -webkit-animation: blur 1s
+    animation: blur 1s
 }
 
-@-webkit-keyframes blur {
+@keyframes blur {
     0% {
         -webkit-filter: blur(8px);
         -moz-filter: blur(8px);
@@ -295,7 +263,6 @@
         -ms-filter: blur(8px);
         filter: blur(8px)
     }
-
     100% {
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
@@ -305,7 +272,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightIn {
+@keyframes sideLeft2RightIn {
     0% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -313,7 +280,6 @@
         -webkit-transform: translateX(-100vw);
         transform: translateX(-100vw)
     }
-
     100% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -323,7 +289,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightOut {
+@keyframes sideLeft2RightOut {
     0% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -331,7 +297,6 @@
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
     100% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -341,15 +306,13 @@
     }
 }
 
-@-webkit-keyframes rainbow {
+@keyframes rainbow {
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -359,11 +322,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -373,11 +334,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -387,11 +346,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -858,8 +815,8 @@ body.orders .tpl-wrapper main .tpl-center .right .row.address-display .address-u
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -910,8 +867,8 @@ body.orders .tpl-wrapper main .tpl-center .right .row.address-display .delete {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -1093,19 +1050,16 @@ body.orders .tpl-wrapper main#main .tpl-center .vtex-bootstrap .ordergroup {
         margin-top: 80px;
         margin-bottom: 20px
     }
-
     body.account .tpl-wrapper main .tpl-center .right {
         width: 100%;
         float: none;
         clear: both
     }
-
     body.account .tpl-wrapper main .tpl-center .right .col-lg-7 {
         width: 100%;
         float: none;
         overflow: hidden
     }
-
     body.account .tpl-wrapper main .tpl-center .right .col-lg-5 {
         width: 100%;
         float: none;
@@ -1115,18 +1069,17 @@ body.orders .tpl-wrapper main#main .tpl-center .vtex-bootstrap .ordergroup {
 }
 
 @media screen and (max-width: 600px) {
-
     body.account .modal,
     body.orders .modal {
         width: 96%;
         margin-left: 0;
         left: 2%
     }
-
     body.account .modal.in,
     body.orders .modal.in {
         top: 1% !important
     }
 }
+
 
 /*# sourceMappingURL=netsuprimentos-page-account.min.css.map */

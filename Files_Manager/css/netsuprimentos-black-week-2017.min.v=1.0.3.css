@@ -665,7 +665,7 @@ body.black-week-2017 main section.black-week-2017-categories ul.black-week-2017-
     -webkit-transform-style: preserve-3d;
     -ms-transition: .6s;
     -moz-transition: .6s;
-    -moz-transform: perspective(1000px);
+    transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transition: .6s;
@@ -1700,27 +1700,22 @@ body.black-week-2017.landing main section.black-week-2017-categories ul.black-we
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo {
         text-align: center
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-top-header .black-week-2017-top-header-col1 .black-week-2017-logo img {
         width: 100%;
         max-width: 480px
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-container {
         padding-left: 0px;
         padding-right: 0px
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1,
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 {
         width: 100%
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days {
         text-align: center;
         margin-left: -50px
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col2 form#black-week-mailing {
         text-align: center;
         position: relative;
@@ -1732,57 +1727,48 @@ body.black-week-2017.landing main section.black-week-2017-categories ul.black-we
     body.black-week-2017 {
         overflow-x: hidden
     }
-
     body.black-week-2017 main h2.black-week-2017-title {
         width: auto;
         margin: 0 auto 10px;
         display: block
     }
-
     body.black-week-2017 main h2.black-week-2017-title span {
         font-size: 1.3rem
     }
-
     body.black-week-2017 main h2.black-week-2017-title span:before,
     body.black-week-2017 main h2.black-week-2017-title span:after {
         display: none
     }
-
     body.black-week-2017 main p.black-week-2017-paragraph {
         text-align: center;
         font-size: 0.9rem;
         line-height: 1.4rem
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days {
         width: 100%
     }
-
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days:before,
     body.black-week-2017 main section.black-week-2017-header .black-week-2017-bottom-header .black-week-2017-bottom-header-col1 .black-week-2017-count-days .black-week-2017-left-days:after {
         display: none
     }
-
     body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item {
         display: block;
         text-align: center;
         width: auto
     }
-
     body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item .banner-bw-left,
     body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item .banner-bw-right {
         display: block;
         text-align: center;
         width: auto
     }
-
     body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item b.product-name {
         padding-left: 0px
     }
-
     body.black-week-2017.landing .slider-blackweek .slider-banner-produto .box-item span.price {
         padding-left: 0px
     }
 }
+
 
 /*# sourceMappingURL=netsuprimentos-black-week-2017.min.css.map */

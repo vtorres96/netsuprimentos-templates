@@ -1,9 +1,8 @@
-@-webkit-keyframes load {
+@keyframes load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -15,7 +14,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -49,25 +47,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.8) rotate(-4deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.2) rotate(4deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.2) rotate(-4deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -81,25 +75,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.9) rotate(-2deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.1) rotate(2deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.1) rotate(-2deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -110,13 +100,11 @@
 }
 
 @keyframes flash {
-
     0%,
     50%,
     100% {
         opacity: 1
     }
-
     25%,
     75% {
         opacity: 0
@@ -128,17 +116,14 @@
 }
 
 @keyframes shake {
-
     0%,
     100% {
         transform: translateX(0)
     }
-
     20%,
     60% {
         transform: translateX(-6px)
     }
-
     40%,
     80% {
         transform: translateX(6px)
@@ -153,11 +138,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.15)
     }
-
     100% {
         transform: scale(1)
     }
@@ -171,11 +154,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(0.85)
     }
-
     100% {
         transform: scale(1)
     }
@@ -189,11 +170,9 @@
     0% {
         transform: scale(0)
     }
-
     50% {
         transform: scale(1.2)
     }
-
     100% {
         transform: scale(1)
     }
@@ -207,11 +186,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.1)
     }
-
     100% {
         transform: scale(0)
     }
@@ -225,7 +202,6 @@
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -239,7 +215,6 @@
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -253,41 +228,34 @@
     0% {
         transform: scale(1)
     }
-
     30% {
         transform: scale(1)
     }
-
     40% {
         transform: scale(1.08)
     }
-
     50% {
         transform: scale(1)
     }
-
     60% {
         transform: scale(1)
     }
-
     70% {
         transform: scale(1.05)
     }
-
     80% {
         transform: scale(1)
     }
-
     100% {
         transform: scale(1)
     }
 }
 
 .blur {
-    -webkit-animation: blur 1s
+    animation: blur 1s
 }
 
-@-webkit-keyframes blur {
+@keyframes blur {
     0% {
         -webkit-filter: blur(8px);
         -moz-filter: blur(8px);
@@ -295,7 +263,6 @@
         -ms-filter: blur(8px);
         filter: blur(8px)
     }
-
     100% {
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
@@ -305,7 +272,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightIn {
+@keyframes sideLeft2RightIn {
     0% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -313,7 +280,6 @@
         -webkit-transform: translateX(-100vw);
         transform: translateX(-100vw)
     }
-
     100% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -323,7 +289,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightOut {
+@keyframes sideLeft2RightOut {
     0% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -331,7 +297,6 @@
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
     100% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -341,15 +306,13 @@
     }
 }
 
-@-webkit-keyframes rainbow {
+@keyframes rainbow {
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -359,11 +322,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -373,11 +334,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -387,11 +346,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -550,7 +507,7 @@ body.super-loja.audax main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #104281 0%, #0a2b54 100%);
     background: -webkit-linear-gradient(-45deg, #104281 0%, #0a2b54 100%);
     background: linear-gradient(135deg, #104281 0%, #0a2b54 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#104281', endColorstr='#0a2b54', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#104281', endColorstr='#0a2b54', GradientType=1);
     color: #fff
 }
 
@@ -567,7 +524,7 @@ body.super-loja.audax main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #104281 0%, #0a2b54 100%);
     background: -webkit-linear-gradient(-45deg, #104281 0%, #0a2b54 100%);
     background: linear-gradient(135deg, #104281 0%, #0a2b54 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#104281', endColorstr='#0a2b54', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#104281', endColorstr='#0a2b54', GradientType=1);
     color: #fff
 }
 
@@ -593,7 +550,7 @@ body.super-loja.altacoppo main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #3a94ce 0%, #3e40b6 100%);
     background: -webkit-linear-gradient(-45deg, #3a94ce 0%, #3e40b6 100%);
     background: linear-gradient(135deg, #3a94ce 0%, #3e40b6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a94ce', endColorstr='#3e40b6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3a94ce', endColorstr='#3e40b6', GradientType=1);
     color: #fff
 }
 
@@ -610,7 +567,7 @@ body.super-loja.altacoppo main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #3a94ce 0%, #3e40b6 100%);
     background: -webkit-linear-gradient(-45deg, #3a94ce 0%, #3e40b6 100%);
     background: linear-gradient(135deg, #3a94ce 0%, #3e40b6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a94ce', endColorstr='#3e40b6', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3a94ce', endColorstr='#3e40b6', GradientType=1);
     color: #fff
 }
 
@@ -636,7 +593,7 @@ body.super-loja.bralimpia main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #0097d7 0%, #0054a1 100%);
     background: -webkit-linear-gradient(-45deg, #0097d7 0%, #0054a1 100%);
     background: linear-gradient(135deg, #0097d7 0%, #0054a1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0097d7', endColorstr='#0054a1', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0097d7', endColorstr='#0054a1', GradientType=1);
     color: #fff
 }
 
@@ -653,7 +610,7 @@ body.super-loja.bralimpia main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #0097d7 0%, #0054a1 100%);
     background: -webkit-linear-gradient(-45deg, #0097d7 0%, #0054a1 100%);
     background: linear-gradient(135deg, #0097d7 0%, #0054a1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0097d7', endColorstr='#0054a1', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0097d7', endColorstr='#0054a1', GradientType=1);
     color: #fff
 }
 
@@ -679,7 +636,7 @@ body.super-loja.danny main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #0f4981 0%, #0a2f53 100%);
     background: -webkit-linear-gradient(-45deg, #0f4981 0%, #0a2f53 100%);
     background: linear-gradient(135deg, #0f4981 0%, #0a2f53 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f4981', endColorstr='#0a2f53', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0f4981', endColorstr='#0a2f53', GradientType=1);
     color: #fff
 }
 
@@ -696,7 +653,7 @@ body.super-loja.danny main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #0f4981 0%, #0a2f53 100%);
     background: -webkit-linear-gradient(-45deg, #0f4981 0%, #0a2f53 100%);
     background: linear-gradient(135deg, #0f4981 0%, #0a2f53 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f4981', endColorstr='#0a2f53', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0f4981', endColorstr='#0a2f53', GradientType=1);
     color: #fff
 }
 
@@ -722,7 +679,7 @@ body.super-loja.moldex main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #5474a9 0%, #435d87 100%);
     background: -webkit-linear-gradient(-45deg, #5474a9 0%, #435d87 100%);
     background: linear-gradient(135deg, #5474a9 0%, #435d87 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5474a9', endColorstr='#435d87', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5474a9', endColorstr='#435d87', GradientType=1);
     color: #fff
 }
 
@@ -739,7 +696,7 @@ body.super-loja.moldex main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #5474a9 0%, #435d87 100%);
     background: -webkit-linear-gradient(-45deg, #5474a9 0%, #435d87 100%);
     background: linear-gradient(135deg, #5474a9 0%, #435d87 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5474a9', endColorstr='#435d87', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5474a9', endColorstr='#435d87', GradientType=1);
     color: #fff
 }
 
@@ -765,7 +722,7 @@ body.super-loja.marluvas main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #5d5d5e 0%, #4b4b4c 100%);
     background: -webkit-linear-gradient(-45deg, #5d5d5e 0%, #4b4b4c 100%);
     background: linear-gradient(135deg, #5d5d5e 0%, #4b4b4c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d5d5e', endColorstr='#4b4b4c', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5d5d5e', endColorstr='#4b4b4c', GradientType=1);
     color: #fff
 }
 
@@ -782,7 +739,7 @@ body.super-loja.marluvas main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #5d5d5e 0%, #4b4b4c 100%);
     background: -webkit-linear-gradient(-45deg, #5d5d5e 0%, #4b4b4c 100%);
     background: linear-gradient(135deg, #5d5d5e 0%, #4b4b4c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d5d5e', endColorstr='#4b4b4c', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5d5d5e', endColorstr='#4b4b4c', GradientType=1);
     color: #fff
 }
 
@@ -808,7 +765,7 @@ body.super-loja.fujiwara main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #297363 0%, #16655d 100%);
     background: -webkit-linear-gradient(-45deg, #297363 0%, #16655d 100%);
     background: linear-gradient(135deg, #297363 0%, #16655d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#297363', endColorstr='#16655d', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#297363', endColorstr='#16655d', GradientType=1);
     color: #fff
 }
 
@@ -825,7 +782,7 @@ body.super-loja.fujiwara main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #297363 0%, #16655d 100%);
     background: -webkit-linear-gradient(-45deg, #297363 0%, #16655d 100%);
     background: linear-gradient(135deg, #297363 0%, #16655d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#297363', endColorstr='#16655d', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#297363', endColorstr='#16655d', GradientType=1);
     color: #fff
 }
 
@@ -851,7 +808,7 @@ body.super-loja.poderosos-do-escritorio main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #f6308f 0%, #cd2fc2 100%);
     background: -webkit-linear-gradient(-45deg, #f6308f 0%, #cd2fc2 100%);
     background: linear-gradient(135deg, #f6308f 0%, #cd2fc2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6308f', endColorstr='#cd2fc2', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f6308f', endColorstr='#cd2fc2', GradientType=1);
     color: #fff
 }
 
@@ -868,7 +825,7 @@ body.super-loja.poderosos-do-escritorio main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #f6308f 0%, #cd2fc2 100%);
     background: -webkit-linear-gradient(-45deg, #f6308f 0%, #cd2fc2 100%);
     background: linear-gradient(135deg, #f6308f 0%, #cd2fc2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6308f', endColorstr='#cd2fc2', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f6308f', endColorstr='#cd2fc2', GradientType=1);
     color: #fff
 }
 
@@ -894,7 +851,7 @@ body.super-loja.mmm main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #9D1920 0%, #711217 100%);
     background: -webkit-linear-gradient(-45deg, #9D1920 0%, #711217 100%);
     background: linear-gradient(135deg, #9d1920 0%, #711217 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9D1920', endColorstr='#711217', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9D1920', endColorstr='#711217', GradientType=1);
     color: #fff
 }
 
@@ -911,7 +868,7 @@ body.super-loja.mmm main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #9D1920 0%, #711217 100%);
     background: -webkit-linear-gradient(-45deg, #9D1920 0%, #711217 100%);
     background: linear-gradient(135deg, #9d1920 0%, #711217 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9D1920', endColorstr='#711217', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9D1920', endColorstr='#711217', GradientType=1);
     color: #fff
 }
 
@@ -937,7 +894,7 @@ body.super-loja.santher main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #28A6AC 0%, #32B06B 100%);
     background: -webkit-linear-gradient(-45deg, #28A6AC 0%, #32B06B 100%);
     background: linear-gradient(135deg, #28a6ac 0%, #32b06b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28A6AC', endColorstr='#32B06B', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#28A6AC', endColorstr='#32B06B', GradientType=1);
     color: #fff
 }
 
@@ -954,7 +911,7 @@ body.super-loja.santher main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #28A6AC 0%, #32B06B 100%);
     background: -webkit-linear-gradient(-45deg, #28A6AC 0%, #32B06B 100%);
     background: linear-gradient(135deg, #28a6ac 0%, #32b06b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28A6AC', endColorstr='#32B06B', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#28A6AC', endColorstr='#32B06B', GradientType=1);
     color: #fff
 }
 
@@ -980,7 +937,7 @@ body.super-loja.ingleza main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #1564B2 0%, #223575 100%);
     background: -webkit-linear-gradient(-45deg, #1564B2 0%, #223575 100%);
     background: linear-gradient(135deg, #1564b2 0%, #223575 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1564B2', endColorstr='#223575', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1564B2', endColorstr='#223575', GradientType=1);
     color: #fff
 }
 
@@ -997,7 +954,7 @@ body.super-loja.ingleza main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #1564B2 0%, #223575 100%);
     background: -webkit-linear-gradient(-45deg, #1564B2 0%, #223575 100%);
     background: linear-gradient(135deg, #1564b2 0%, #223575 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1564B2', endColorstr='#223575', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1564B2', endColorstr='#223575', GradientType=1);
     color: #fff
 }
 
@@ -1023,7 +980,7 @@ body.super-loja.gojo main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #2F84B3 0%, #2F84B3 100%);
     background: -webkit-linear-gradient(-45deg, #2F84B3 0%, #2F84B3 100%);
     background: linear-gradient(135deg, #2f84b3 0%, #2f84b3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F84B3', endColorstr='#2F84B3', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#2F84B3', endColorstr='#2F84B3', GradientType=1);
     color: #fff
 }
 
@@ -1040,7 +997,7 @@ body.super-loja.gojo main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #2F84B3 0%, #2F84B3 100%);
     background: -webkit-linear-gradient(-45deg, #2F84B3 0%, #2F84B3 100%);
     background: linear-gradient(135deg, #2f84b3 0%, #2f84b3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F84B3', endColorstr='#2F84B3', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#2F84B3', endColorstr='#2F84B3', GradientType=1);
     color: #fff
 }
 
@@ -1066,7 +1023,7 @@ body.super-loja.unilever main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #0F6AB0 0%, #0F6AB0 100%);
     background: -webkit-linear-gradient(-45deg, #0F6AB0 0%, #0F6AB0 100%);
     background: linear-gradient(135deg, #0f6ab0 0%, #0f6ab0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0F6AB0', endColorstr='#0F6AB0', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0F6AB0', endColorstr='#0F6AB0', GradientType=1);
     color: #fff
 }
 
@@ -1083,7 +1040,7 @@ body.super-loja.unilever main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #0F6AB0 0%, #0F6AB0 100%);
     background: -webkit-linear-gradient(-45deg, #0F6AB0 0%, #0F6AB0 100%);
     background: linear-gradient(135deg, #0f6ab0 0%, #0f6ab0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0F6AB0', endColorstr='#0F6AB0', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0F6AB0', endColorstr='#0F6AB0', GradientType=1);
     color: #fff
 }
 
@@ -1109,7 +1066,7 @@ body.super-loja.msa main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #1AAD6F 0%, #1AAD6F 100%);
     background: -webkit-linear-gradient(-45deg, #1AAD6F 0%, #1AAD6F 100%);
     background: linear-gradient(135deg, #1aad6f 0%, #1aad6f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1AAD6F', endColorstr='#1AAD6F', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1AAD6F', endColorstr='#1AAD6F', GradientType=1);
     color: #fff
 }
 
@@ -1126,7 +1083,7 @@ body.super-loja.msa main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #1AAD6F 0%, #1AAD6F 100%);
     background: -webkit-linear-gradient(-45deg, #1AAD6F 0%, #1AAD6F 100%);
     background: linear-gradient(135deg, #1aad6f 0%, #1aad6f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1AAD6F', endColorstr='#1AAD6F', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1AAD6F', endColorstr='#1AAD6F', GradientType=1);
     color: #fff
 }
 
@@ -1152,7 +1109,7 @@ body.super-loja.honeywell main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #E11224 0%, #E11224 100%);
     background: -webkit-linear-gradient(-45deg, #E11224 0%, #E11224 100%);
     background: linear-gradient(135deg, #e11224 0%, #e11224 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E11224', endColorstr='#E11224', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#E11224', endColorstr='#E11224', GradientType=1);
     color: #fff
 }
 
@@ -1169,7 +1126,7 @@ body.super-loja.honeywell main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #E11224 0%, #E11224 100%);
     background: -webkit-linear-gradient(-45deg, #E11224 0%, #E11224 100%);
     background: linear-gradient(135deg, #e11224 0%, #e11224 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E11224', endColorstr='#E11224', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#E11224', endColorstr='#E11224', GradientType=1);
     color: #fff
 }
 
@@ -1195,7 +1152,7 @@ body.super-loja.visca main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #FEC53B 0%, #FEC53B 100%);
     background: -webkit-linear-gradient(-45deg, #FEC53B 0%, #FEC53B 100%);
     background: linear-gradient(135deg, #fec53b 0%, #fec53b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEC53B', endColorstr='#FEC53B', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FEC53B', endColorstr='#FEC53B', GradientType=1);
     color: #000
 }
 
@@ -1212,7 +1169,7 @@ body.super-loja.visca main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #FEC53B 0%, #FEC53B 100%);
     background: -webkit-linear-gradient(-45deg, #FEC53B 0%, #FEC53B 100%);
     background: linear-gradient(135deg, #fec53b 0%, #fec53b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEC53B', endColorstr='#FEC53B', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FEC53B', endColorstr='#FEC53B', GradientType=1);
     color: #000
 }
 
@@ -1238,7 +1195,7 @@ body.super-loja.becker main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #2C70A4 0%, #112349 100%);
     background: -webkit-linear-gradient(-45deg, #2C70A4 0%, #112349 100%);
     background: linear-gradient(135deg, #2c70a4 0%, #112349 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2C70A4', endColorstr='#112349', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#2C70A4', endColorstr='#112349', GradientType=1);
     color: #fff
 }
 
@@ -1255,7 +1212,7 @@ body.super-loja.becker main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #2C70A4 0%, #112349 100%);
     background: -webkit-linear-gradient(-45deg, #2C70A4 0%, #112349 100%);
     background: linear-gradient(135deg, #2c70a4 0%, #112349 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2C70A4', endColorstr='#112349', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#2C70A4', endColorstr='#112349', GradientType=1);
     color: #fff
 }
 
@@ -1281,7 +1238,7 @@ body.super-loja.mapa main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #053B7D 0%, #053B7D 100%);
     background: -webkit-linear-gradient(-45deg, #053B7D 0%, #053B7D 100%);
     background: linear-gradient(135deg, #053b7d 0%, #053b7d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#053B7D', endColorstr='#053B7D', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#053B7D', endColorstr='#053B7D', GradientType=1);
     color: #fff
 }
 
@@ -1298,7 +1255,7 @@ body.super-loja.mapa main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #053B7D 0%, #053B7D 100%);
     background: -webkit-linear-gradient(-45deg, #053B7D 0%, #053B7D 100%);
     background: linear-gradient(135deg, #053b7d 0%, #053b7d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#053B7D', endColorstr='#053B7D', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#053B7D', endColorstr='#053B7D', GradientType=1);
     color: #fff
 }
 
@@ -1324,7 +1281,7 @@ body.super-loja.soft main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #6EC057 0%, #78D456 100%);
     background: -webkit-linear-gradient(-45deg, #6EC057 0%, #78D456 100%);
     background: linear-gradient(135deg, #6ec057 0%, #78d456 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6EC057', endColorstr='#78D456', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6EC057', endColorstr='#78D456', GradientType=1);
     color: #fff
 }
 
@@ -1341,7 +1298,7 @@ body.super-loja.soft main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #6EC057 0%, #78D456 100%);
     background: -webkit-linear-gradient(-45deg, #6EC057 0%, #78D456 100%);
     background: linear-gradient(135deg, #6ec057 0%, #78d456 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6EC057', endColorstr='#78D456', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6EC057', endColorstr='#78D456', GradientType=1);
     color: #fff
 }
 
@@ -1366,11 +1323,13 @@ body.super-loja.tork main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #335c85 0%, #254360 100%);
     background: -webkit-linear-gradient(-45deg, #335c85 0%, #254360 100%);
     background: #fff;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#335c85', endColorstr='#254360', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#335c85', endColorstr='#254360', GradientType=1);
     color: #fff;
 }
 
+
 /* inicio Outubro 2019 */
+
 body.super-loja main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
     color: #fff;
     max-height: 4.142em;
@@ -1388,7 +1347,7 @@ body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-categ
     color: #335c85;
 }
 
-body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao.nt-collapse, 
+body.internasComum main .tpl-content .tpl-center .nt-box.nt-title-category .descricao-sessao.nt-collapse,
 body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao.nt-collapse {
     overflow: unset;
 }
@@ -1409,7 +1368,9 @@ body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo
     min-width: 120px
 }
 
+
 /* Desktop */
+
 body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.desktop .box-banner a img {
     display: block;
     width: 100%;
@@ -1417,10 +1378,14 @@ body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.desktop .box-bann
     margin: 15px 0 0
 }
 
+
 /* Mobile */
+
 body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.mobile .box-banner a img {
     display: none;
 }
+
+
 /* fim Outubro 2019 */
 
 body.super-loja.tork main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1436,7 +1401,7 @@ body.super-loja.tork main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #335c85 0%, #254360 100%);
     background: -webkit-linear-gradient(-45deg, #335c85 0%, #254360 100%);
     background: linear-gradient(135deg, #335c85 0%, #254360 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#335c85', endColorstr='#254360', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#335c85', endColorstr='#254360', GradientType=1);
     color: #fff
 }
 
@@ -1462,7 +1427,7 @@ body.super-loja.sticky-shoes main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #252A6C 0%, #181b46 100%);
     background: -webkit-linear-gradient(-45deg, #252A6C 0%, #181b46 100%);
     background: linear-gradient(135deg, #252a6c 0%, #181b46 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#252A6C', endColorstr='#181b46', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#252A6C', endColorstr='#181b46', GradientType=1);
     color: #fff
 }
 
@@ -1479,7 +1444,7 @@ body.super-loja.sticky-shoes main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #252A6C 0%, #181b46 100%);
     background: -webkit-linear-gradient(-45deg, #252A6C 0%, #181b46 100%);
     background: linear-gradient(135deg, #252a6c 0%, #181b46 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#252A6C', endColorstr='#181b46', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#252A6C', endColorstr='#181b46', GradientType=1);
     color: #fff
 }
 
@@ -1505,7 +1470,7 @@ body.super-loja.talge main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #f79637 0%, #f17c0a 100%);
     background: -webkit-linear-gradient(-45deg, #f79637 0%, #f17c0a 100%);
     background: linear-gradient(135deg, #f79637 0%, #f17c0a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f79637', endColorstr='#f17c0a', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f79637', endColorstr='#f17c0a', GradientType=1);
     color: #fff
 }
 
@@ -1522,7 +1487,7 @@ body.super-loja.talge main .mainBrandCategory .slick-arrow {
     background: -moz-linear-gradient(-45deg, #f79637 0%, #f17c0a 100%);
     background: -webkit-linear-gradient(-45deg, #f79637 0%, #f17c0a 100%);
     background: linear-gradient(135deg, #f79637 0%, #f17c0a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f79637', endColorstr='#f17c0a', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f79637', endColorstr='#f17c0a', GradientType=1);
     color: #fff
 }
 
@@ -1540,7 +1505,6 @@ body.super-loja.audax .mainBrandCategory ul.full li {
     body.super-loja main .tpl-header-content .nt-box.nt-title-category .titulo-sessao {
         margin-top: .245em
     }
-
     /* inicío Outubro 2019 */
     body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo-super-loja {
         width: 190px;
@@ -1549,12 +1513,10 @@ body.super-loja.audax .mainBrandCategory ul.full li {
         align-items: center;
         border-radius: 0px 200px 200px 0px
     }
-
     /* Desktop */
     body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.desktop .box-banner a img {
         display: none;
     }
-
     /* Mobile */
     body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.mobile .box-banner a img {
         display: block;
@@ -1562,29 +1524,18 @@ body.super-loja.audax .mainBrandCategory ul.full li {
         height: auto;
         margin: 15px 0 0
     }
-
     body.super-loja main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao {
         margin-top: 0;
     }
-
     body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12 .box-banner a img {
         width: 100%;
         margin: 0
     }
     /* fim Outubro 2019 */
-
     body.super-loja.tork #main .nt-header-super-loja .nt-title-category .descricao-sessao {
         max-height: unset
     }
-
-    body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12 .box-banner a {
-        display: block;
-        width: 100%;
-        min-height: 90px;
-        position: relative;
-        overflow: hidden;
-        margin: 10px 0 0
-    }
 }
+
 
 /*# sourceMappingURL=netsuprimentos-page-super-loja.min.css.map */

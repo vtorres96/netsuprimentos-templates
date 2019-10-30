@@ -1,9 +1,8 @@
-@-webkit-keyframes load {
+@keyframes load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -15,7 +14,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -49,25 +47,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.8) rotate(-4deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.2) rotate(4deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.2) rotate(-4deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -81,25 +75,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.9) rotate(-2deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.1) rotate(2deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.1) rotate(-2deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -110,13 +100,11 @@
 }
 
 @keyframes flash {
-
     0%,
     50%,
     100% {
         opacity: 1
     }
-
     25%,
     75% {
         opacity: 0
@@ -128,17 +116,14 @@
 }
 
 @keyframes shake {
-
     0%,
     100% {
         transform: translateX(0)
     }
-
     20%,
     60% {
         transform: translateX(-6px)
     }
-
     40%,
     80% {
         transform: translateX(6px)
@@ -153,11 +138,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.15)
     }
-
     100% {
         transform: scale(1)
     }
@@ -171,11 +154,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(0.85)
     }
-
     100% {
         transform: scale(1)
     }
@@ -189,11 +170,9 @@
     0% {
         transform: scale(0)
     }
-
     50% {
         transform: scale(1.2)
     }
-
     100% {
         transform: scale(1)
     }
@@ -207,11 +186,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.1)
     }
-
     100% {
         transform: scale(0)
     }
@@ -225,7 +202,6 @@
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -239,7 +215,6 @@
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -253,41 +228,34 @@
     0% {
         transform: scale(1)
     }
-
     30% {
         transform: scale(1)
     }
-
     40% {
         transform: scale(1.08)
     }
-
     50% {
         transform: scale(1)
     }
-
     60% {
         transform: scale(1)
     }
-
     70% {
         transform: scale(1.05)
     }
-
     80% {
         transform: scale(1)
     }
-
     100% {
         transform: scale(1)
     }
 }
 
 .blur {
-    -webkit-animation: blur 1s
+    animation: blur 1s
 }
 
-@-webkit-keyframes blur {
+@keyframes blur {
     0% {
         -webkit-filter: blur(8px);
         -moz-filter: blur(8px);
@@ -295,7 +263,6 @@
         -ms-filter: blur(8px);
         filter: blur(8px)
     }
-
     100% {
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
@@ -305,7 +272,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightIn {
+@keyframes sideLeft2RightIn {
     0% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -313,7 +280,6 @@
         -webkit-transform: translateX(-100vw);
         transform: translateX(-100vw)
     }
-
     100% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -323,7 +289,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightOut {
+@keyframes sideLeft2RightOut {
     0% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -331,7 +297,6 @@
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
     100% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -341,15 +306,13 @@
     }
 }
 
-@-webkit-keyframes rainbow {
+@keyframes rainbow {
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -359,11 +322,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -373,11 +334,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -387,11 +346,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -926,7 +883,6 @@
     .vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup {
         flex-basis: calc(100% - 10px)
     }
-
     .vendananet .seja_parceiro .seja_parceiro_form form .inputField.plataforma label .inputGroup+.inputGroup {
         margin-left: 0
     }
@@ -1169,17 +1125,14 @@
         opacity: 1;
         transform: translateX(0px) scale(1)
     }
-
     25% {
         opacity: 0;
         transform: translateX(10px) scale(0.9)
     }
-
     26% {
         opacity: 0;
         transform: translateX(-10px) scale(0.9)
     }
-
     55% {
         opacity: 1;
         transform: translateX(0px) scale(1)
@@ -1190,7 +1143,6 @@
     from {
         transform: rotate(0deg)
     }
-
     to {
         transform: rotate(360deg)
     }
@@ -1202,12 +1154,10 @@
         width: 100%;
         max-width: 470px
     }
-
     body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item .porque_vender_na_net_list_item_image {
         width: 100% !important;
         height: 320px !important
     }
-
     body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step1,
     body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step2,
     body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item.step3,
@@ -1216,7 +1166,6 @@
         flex-direction: column !important;
         margin: 0px !important
     }
-
     body.vendananet .porque_vender_na_net .porque_vender_na_net_list .porque_vender_na_net_list_item_content .porque_vender_na_net_list_item_txt {
         font-size: 30px !important;
         line-height: 31px !important;
@@ -1227,11 +1176,9 @@
         padding: 18px !important;
         margin: 0 !important
     }
-
     body.vendananet .seja_parceiro {
         margin-top: -170px
     }
-
     body.vendananet .seja_parceiro ul {
         display: flex;
         flex-direction: column;
@@ -1240,7 +1187,6 @@
         counter-reset: page;
         margin-top: 20px
     }
-
     body.vendananet .seja_parceiro ul li {
         margin-bottom: 40px
     }
@@ -1250,34 +1196,27 @@
     body.vendananet .bg_venda_com_a_net {
         height: 80vh
     }
-
     body.vendananet .bg_venda_com_a_net .bg_venda_com_a_net_stripes {
         height: 80vh
     }
-
     body.vendananet .bg_venda_com_a_net .tpl-center h1 {
         font-size: 40px;
         line-height: 50px
     }
-
     body.vendananet .bg_venda_com_a_net .tpl-center h2 {
         font-size: 14px
     }
-
     body.vendananet .porque_vender_na_net h2 {
         font-size: 36px;
         line-height: 46px
     }
-
     body.vendananet .porque_vender_na_net h2 strong {
         font-size: 42px
     }
-
     body.vendananet .seja_parceiro h2 {
         font-size: 36px;
         line-height: 46px
     }
-
     body.vendananet .seja_parceiro h2 strong {
         font-size: 42px
     }
@@ -1288,41 +1227,33 @@
         font-size: 30px;
         line-height: 40px
     }
-
     body.vendananet .bg_venda_com_a_net .tpl-center h2 {
         font-size: 12px
     }
-
     body.vendananet .porque_vender_na_net h2 {
         font-size: 26px;
         line-height: 36px
     }
-
     body.vendananet .porque_vender_na_net h2 strong {
         font-size: 32px
     }
-
     body.vendananet .seja_parceiro h2 {
         font-size: 26px;
         line-height: 36px
     }
-
     body.vendananet .seja_parceiro h2 strong {
         font-size: 32px
     }
-
     body.vendananet .seja_parceiro ul li {
         font-size: 20px;
         line-height: 30px
     }
-
     body.vendananet .seja_parceiro .seja_parceiro_form>p {
         text-align: center;
         font-size: 26px;
         margin-top: 50px;
         margin-bottom: 20px
     }
-
     body.vendananet .seja_parceiro .seja_parceiro_form form .inputField {
         flex-basis: calc(100% - 10px) !important
     }
@@ -1340,5 +1271,6 @@
         margin: 0 !important
     }
 }
+
 
 /*# sourceMappingURL=netsuprimentos-page-venda-na-net.min.css.map */
