@@ -1,61 +1,16 @@
 <div style="display: none">
     <vtex.cmc:welcomeMessage />
 </div>
-<div class="x-main-popup">
-    <div class="x-shadow"></div>
-    <div class="x-popup">
-        <a class="x-btn-close"><img src="/arquivos/btn-close.png" /></a>
-        <img class="x-logo" src="/arquivos/logonetWhite.png" />
-        <p>já tá indo embora?</p>
-        <p>Nos Ajude a Melhorar</p><br />
-        <p>Nos conte porque está saindo:</p>
-        <form class="x-popup-form">
-            <select name="motivo" required="">
-                <option value="">-- Selecione --</option>
-                <option>Vou comprar mais tarde</option>
-                <option>Estava somente navegando/pesquisando</option>
-                <option>Não achei o produto que estava buscando</option>
-                <option>Prazo de entrega longo</option>
-                <option>Preço do frete</option>
-                <option>Preço do produto</option>
-                <option>Forma de pagamento</option>
-                <option>Navegabilidade</option>
-            </select><br />
-            <input name="email" type="email" required="" placeholder="Seu email" />
-            <select type="text" name="segmento" required="">
-                <option value="" disable="">Segmento</option>
-                <option>Alimentos e bebidas</option>
-                <option>Vestuário e calçados</option>
-                <option>Construção e Reforma</option>
-                <option>Saúde e Bem estar</option>
-                <option>Educação</option>
-                <option>Varejo</option>
-                <option>Governamental</option>
-                <option>ONG</option>
-                <option>Turismo</option>
-                <option>Moda e Beleza</option>
-                <option>Automotivo</option>
-                <option>Informática</option>
-            </select>
-            <button class="x-btn-envia"><img src="/arquivos/button-footer.png" /></button>
-        </form>
-        <div class="x-tks">
-            <p></p>
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-    var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
-    _trustvox_shelf_rate.push(['_storeId', '2076']);
-    _trustvox_shelf_rate.push(['_productContainer', '.prateleira.vitrine']);
-</script>
-<script type="text/javascript" async="true" src="//s3-sa-east-1.amazonaws.com/trustvox-rate-widget-js/widget.js">
-</script>
 
 <header id="header">
-
-    <div class="top">
-    </div><!-- fim top -->
+    <!-- inicio topBanner -->
+    <div class="top-banner-desktop">
+        <vtex.cmc:topBannerHeader />
+    </div>
+    <div class="top-banner-mobile">
+        <vtex.cmc:topBannerHeaderMobile />
+    </div>
+    <!-- fim topBanner -->
 
     <div class="middle">
         <div class="tpl-center">
@@ -64,13 +19,15 @@
 
             <a href="/" class="logo">
                 <img src="/arquivos/logonetWhite.png" alt="Net Suprimentos - O shopping da sua empresa" />
-            </a><!-- fim logo -->
+            </a>
+            <!-- fim logo -->
 
             <div class="h_search">
                 <div id="search-net-aux" class="hidden">
                     <vtex.cmc:fullTextSearchBox />
                 </div>
-            </div><!-- fim busca -->
+            </div>
+            <!-- fim busca -->
 
             <div class="wrapperRight">
                 <!--<div class="h_televendas">
@@ -83,29 +40,18 @@
                 	</span>
                 </div>-->
                 <div class="h_televendas">
-                    <a class="click-chat-atendimento controlCH controlCH-custom" module="Chat"
-                        onclick="window.open('//netsuprimentos.neoassist.com/?th=chatpopup', 'Chat' , 'Location =NO,status=no,scrollbars=no,width=400,height=555,resizable=no,top=30,left=30,scrollbars=no,Titlebar=no,maximized=no');"
-                        href="javascript:void(0);" style="display: block;">
-                        <span class="tel-greeting"><span class="usr-grt-text" style="padding-left: 6px;">Chat
-                                com</span></span>
-                        <span class="tel-actions">
-                            <span class="usr-link" tabindex="3">
-                                <i class="fa fa-comments-o" aria-hidden="true"></i>
-                                <span class="tel-act-text">Especialistas</span></span>
-                            <span class="tel-act-hours">Seg à Sex das 8h às 17:30h</span>
-                        </span>
-                    </a>
+                    <vtex.cmc:NETChatHeader />
                 </div>
                 <div class="h_myaccount">
                     <span class="usr-greeting">
-                        <span class="usr-grt-text">Olá!</span>
+						<span class="usr-grt-text">Olá!</span>
                     </span>
 
                     <span class="usr-actions">
-                        <a href="/account/" class="usr-link" tabindex="3">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <span class="usr-act-text">Minha conta</span>
-                        </a>
+						<a href="/account/" class="usr-link" tabindex="3">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<span class="usr-act-text">Minha conta</span>
+                    </a>
                     </span>
                 </div>
 
@@ -120,9 +66,12 @@
                         <vtex.cmc:AmountItemsInCart />
                     </div>
                 </div>
-            </div><!-- fim direita -->
-        </div><!-- fim tpl-center -->
-    </div><!-- fim middle-->
+            </div>
+            <!-- fim direita -->
+        </div>
+        <!-- fim tpl-center -->
+    </div>
+    <!-- fim middle-->
 
     <div class="bottom">
 
@@ -130,14 +79,14 @@
 
             <div class="h_myaccount">
                 <span class="usr-greeting">
-                    <span class="usr-grt-text">Olá!</span>
+					<span class="usr-grt-text">Olá!</span>
                 </span>
 
                 <span class="usr-actions">
-                    <a href="/account/" class="usr-link" tabindex="3">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <span class="usr-act-text">Minha conta</span>
-                    </a>
+					<a href="/account/" class="usr-link" tabindex="3">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span class="usr-act-text">Minha conta</span>
+                </a>
                 </span>
             </div>
 
@@ -147,19 +96,21 @@
                 </div>   
             </div>-->
 
-        </div><!-- FIM MOBILE -->
+        </div>
+        <!-- FIM MOBILE -->
 
         <div class="mainMenuV2">
             <div class="tpl-center">
                 <div class="container">
                     <div class="row">
-                        <vtex.cmc:netMenuHeaderBf />
+                        <vtex.cmc:NETmenuHeader />
                     </div>
                 </div>
             </div>
         </div>
         <div class="mainHeaderContentV2-overlay"></div>
-    </div><!-- fim bottom -->
+    </div>
+    <!-- fim bottom -->
 
 </header>
 
