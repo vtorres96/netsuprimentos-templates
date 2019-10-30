@@ -6,12 +6,10 @@ header .top a {
     background: #3c3c3c;
 }
 
-header .top a span {
-    color: #fff;
-}
-
+header .top a span,
 header .top a h5 {
     color: #fff;
+    display: none;
 }
 
 header .middle {
