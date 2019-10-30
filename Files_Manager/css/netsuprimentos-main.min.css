@@ -4,7 +4,6 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/* @import "https://clerk.com.br/assets/vtex/netsuprimentos/css/clerk_styles.css"; */
 
 .modal-open {
     overflow: hidden
@@ -136,7 +135,6 @@
         max-width: 500px;
         margin: 30px auto
     }
-
     .modal-sm {
         max-width: 300px
     }
@@ -159,7 +157,7 @@
 [class^="ns-"],
 [class*=" ns-"] {
     font-family: "FontNetSuprimentos" !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -276,12 +274,11 @@
     animation: fa-spin 1s infinite steps(8)
 }
 
-@-webkit-keyframes fa-spin {
+@keyframes fa-spin {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -293,7 +290,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -301,35 +297,35 @@
 }
 
 .ns-rotate-90 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg)
 }
 
 .ns-rotate-180 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
 }
 
 .ns-rotate-270 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg)
 }
 
 .ns-flip-horizontal {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
     -webkit-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1)
 }
 
 .ns-flip-vertical {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
     -webkit-transform: scale(1, -1);
     -ms-transform: scale(1, -1);
     transform: scale(1, -1)
@@ -856,7 +852,7 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.1);
     font-family: "FontNetSuprimentos" !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -916,12 +912,11 @@
     left: -1px
 }
 
-@-webkit-keyframes load {
+@keyframes load {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -933,7 +928,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -967,25 +961,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.8) rotate(-4deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.2) rotate(4deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.2) rotate(-4deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -999,25 +989,21 @@
     0% {
         transform: scale(1)
     }
-
     10%,
     20% {
         transform: scale(0.9) rotate(-2deg)
     }
-
     30%,
     50%,
     70%,
     90% {
         transform: scale(1.1) rotate(2deg)
     }
-
     40%,
     60%,
     80% {
         transform: scale(1.1) rotate(-2deg)
     }
-
     100% {
         transform: scale(1) rotate(0)
     }
@@ -1028,13 +1014,11 @@
 }
 
 @keyframes flash {
-
     0%,
     50%,
     100% {
         opacity: 1
     }
-
     25%,
     75% {
         opacity: 0
@@ -1046,17 +1030,14 @@
 }
 
 @keyframes shake {
-
     0%,
     100% {
         transform: translateX(0)
     }
-
     20%,
     60% {
         transform: translateX(-6px)
     }
-
     40%,
     80% {
         transform: translateX(6px)
@@ -1071,11 +1052,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.15)
     }
-
     100% {
         transform: scale(1)
     }
@@ -1089,11 +1068,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(0.85)
     }
-
     100% {
         transform: scale(1)
     }
@@ -1107,11 +1084,9 @@
     0% {
         transform: scale(0)
     }
-
     50% {
         transform: scale(1.2)
     }
-
     100% {
         transform: scale(1)
     }
@@ -1125,11 +1100,9 @@
     0% {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.1)
     }
-
     100% {
         transform: scale(0)
     }
@@ -1143,7 +1116,6 @@
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -1157,7 +1129,6 @@
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -1171,41 +1142,34 @@
     0% {
         transform: scale(1)
     }
-
     30% {
         transform: scale(1)
     }
-
     40% {
         transform: scale(1.08)
     }
-
     50% {
         transform: scale(1)
     }
-
     60% {
         transform: scale(1)
     }
-
     70% {
         transform: scale(1.05)
     }
-
     80% {
         transform: scale(1)
     }
-
     100% {
         transform: scale(1)
     }
 }
 
 .blur {
-    -webkit-animation: blur 1s
+    animation: blur 1s
 }
 
-@-webkit-keyframes blur {
+@keyframes blur {
     0% {
         -webkit-filter: blur(8px);
         -moz-filter: blur(8px);
@@ -1213,7 +1177,6 @@
         -ms-filter: blur(8px);
         filter: blur(8px)
     }
-
     100% {
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
@@ -1223,7 +1186,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightIn {
+@keyframes sideLeft2RightIn {
     0% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -1231,7 +1194,6 @@
         -webkit-transform: translateX(-100vw);
         transform: translateX(-100vw)
     }
-
     100% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -1241,7 +1203,7 @@
     }
 }
 
-@-webkit-keyframes sideLeft2RightOut {
+@keyframes sideLeft2RightOut {
     0% {
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
@@ -1249,7 +1211,6 @@
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
     100% {
         -moz-transform: translateX(-100vw);
         -o-transform: translateX(-100vw);
@@ -1259,15 +1220,13 @@
     }
 }
 
-@-webkit-keyframes rainbow {
+@keyframes rainbow {
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -1277,11 +1236,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -1291,11 +1248,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -1305,11 +1260,9 @@
     0% {
         background-position: 0% 82%
     }
-
     50% {
         background-position: 100% 19%
     }
-
     100% {
         background-position: 0% 82%
     }
@@ -1788,7 +1741,6 @@ section#topMarcas .slider-wrapper .slick-list a {
     background: #fff;
     margin: 0 5px;
     text-align: center;
-    padding: 1rem .6rem;
     border-radius: 5px;
     box-shadow: 0 0 5px 0 rgba(102, 102, 102, 0.15)
 }
@@ -1844,7 +1796,9 @@ section#topMarcas .slick-arrow.slick-next:before {
     border-bottom: none;
     padding-bottom: .2rem;
     margin-bottom: .4rem;
-    margin-top: 0.6rem
+    margin-top: 0.6rem;
+    /* escondendo Comprar por Marcas e ver todas >> */
+    display: none;
 }
 
 .section-header .title {
@@ -1883,11 +1837,9 @@ section#topMarcas .slick-arrow.slick-next:before {
     .section-header {
         padding-bottom: 12px
     }
-
     .section-header .title {
         font-size: 18px
     }
-
     .section-header a {
         font-size: 12px
     }
@@ -1909,11 +1861,10 @@ textarea {
     min-height: 34px
 }
 
-@-webkit-keyframes sk-scaleout {
+@keyframes sk-scaleout {
     0% {
         -webkit-transform: scale(0)
     }
-
     100% {
         -webkit-transform: scale(1);
         opacity: 0
@@ -1925,7 +1876,6 @@ textarea {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -1951,6 +1901,8 @@ body {
 
 body .tpl-wrapper .tpl-center {
     width: 1170px;
+    /* teste novo menu - 
+    width: 1200px; */
     margin: 0 auto
 }
 
@@ -2099,25 +2051,21 @@ h6,
 }
 
 @media all and (max-width: 767px) {
-
     h1,
     .h1 {
         font-size: 2.35714286em;
         line-height: 1.36363636em
     }
-
     h2,
     .h2 {
         font-size: 1.78571429em;
         line-height: 1.5em
     }
-
     h3,
     .h3 {
         font-size: 1.35714286em;
         line-height: 1.85714286em
     }
-
     .lead {
         font-size: 1.35714286em;
         line-height: 1.36842105em
@@ -2401,169 +2349,131 @@ h6,
         flex-grow: 1;
         max-width: 100%
     }
-
     .nt-col-sm-auto {
         flex: 0 0 auto;
         width: auto;
         max-width: none
     }
-
     .nt-col-sm-1 {
         flex: 0 0 8.3333333333%;
         max-width: 8.3333333333%
     }
-
     .nt-col-sm-2 {
         flex: 0 0 16.6666666667%;
         max-width: 16.6666666667%
     }
-
     .nt-col-sm-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-
     .nt-col-sm-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%
     }
-
     .nt-col-sm-5 {
         flex: 0 0 41.6666666667%;
         max-width: 41.6666666667%
     }
-
     .nt-col-sm-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-
     .nt-col-sm-7 {
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%
     }
-
     .nt-col-sm-8 {
         flex: 0 0 66.6666666667%;
         max-width: 66.6666666667%
     }
-
     .nt-col-sm-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-
     .nt-col-sm-10 {
         flex: 0 0 83.3333333333%;
         max-width: 83.3333333333%
     }
-
     .nt-col-sm-11 {
         flex: 0 0 91.6666666667%;
         max-width: 91.6666666667%
     }
-
     .nt-col-sm-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
-
     .nt-order-sm-first {
         order: -1
     }
-
     .nt-order-sm-1 {
         order: 1
     }
-
     .nt-order-sm-2 {
         order: 2
     }
-
     .nt-order-sm-3 {
         order: 3
     }
-
     .nt-order-sm-4 {
         order: 4
     }
-
     .nt-order-sm-5 {
         order: 5
     }
-
     .nt-order-sm-6 {
         order: 6
     }
-
     .nt-order-sm-7 {
         order: 7
     }
-
     .nt-order-sm-8 {
         order: 8
     }
-
     .nt-order-sm-9 {
         order: 9
     }
-
     .nt-order-sm-10 {
         order: 10
     }
-
     .nt-order-sm-11 {
         order: 11
     }
-
     .nt-order-sm-12 {
         order: 12
     }
-
     .nt-offset-sm-0 {
         margin-left: 0
     }
-
     .nt-offset-sm-1 {
         margin-left: 8.3333333333%
     }
-
     .nt-offset-sm-2 {
         margin-left: 16.6666666667%
     }
-
     .nt-offset-sm-3 {
         margin-left: 25%
     }
-
     .nt-offset-sm-4 {
         margin-left: 33.3333333333%
     }
-
     .nt-offset-sm-5 {
         margin-left: 41.6666666667%
     }
-
     .nt-offset-sm-6 {
         margin-left: 50%
     }
-
     .nt-offset-sm-7 {
         margin-left: 58.3333333333%
     }
-
     .nt-offset-sm-8 {
         margin-left: 66.6666666667%
     }
-
     .nt-offset-sm-9 {
         margin-left: 75%
     }
-
     .nt-offset-sm-10 {
         margin-left: 83.3333333333%
     }
-
     .nt-offset-sm-11 {
         margin-left: 91.6666666667%
     }
@@ -2575,169 +2485,131 @@ h6,
         flex-grow: 1;
         max-width: 100%
     }
-
     .nt-col-md-auto {
         flex: 0 0 auto;
         width: auto;
         max-width: none
     }
-
     .nt-col-md-1 {
         flex: 0 0 8.3333333333%;
         max-width: 8.3333333333%
     }
-
     .nt-col-md-2 {
         flex: 0 0 16.6666666667%;
         max-width: 16.6666666667%
     }
-
     .nt-col-md-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-
     .nt-col-md-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%
     }
-
     .nt-col-md-5 {
         flex: 0 0 41.6666666667%;
         max-width: 41.6666666667%
     }
-
     .nt-col-md-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-
     .nt-col-md-7 {
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%
     }
-
     .nt-col-md-8 {
         flex: 0 0 66.6666666667%;
         max-width: 66.6666666667%
     }
-
     .nt-col-md-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-
     .nt-col-md-10 {
         flex: 0 0 83.3333333333%;
         max-width: 83.3333333333%
     }
-
     .nt-col-md-11 {
         flex: 0 0 91.6666666667%;
         max-width: 91.6666666667%
     }
-
     .nt-col-md-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
-
     .nt-order-md-first {
         order: -1
     }
-
     .nt-order-md-1 {
         order: 1
     }
-
     .nt-order-md-2 {
         order: 2
     }
-
     .nt-order-md-3 {
         order: 3
     }
-
     .nt-order-md-4 {
         order: 4
     }
-
     .nt-order-md-5 {
         order: 5
     }
-
     .nt-order-md-6 {
         order: 6
     }
-
     .nt-order-md-7 {
         order: 7
     }
-
     .nt-order-md-8 {
         order: 8
     }
-
     .nt-order-md-9 {
         order: 9
     }
-
     .nt-order-md-10 {
         order: 10
     }
-
     .nt-order-md-11 {
         order: 11
     }
-
     .nt-order-md-12 {
         order: 12
     }
-
     .nt-offset-md-0 {
         margin-left: 0
     }
-
     .nt-offset-md-1 {
         margin-left: 8.3333333333%
     }
-
     .nt-offset-md-2 {
         margin-left: 16.6666666667%
     }
-
     .nt-offset-md-3 {
         margin-left: 25%
     }
-
     .nt-offset-md-4 {
         margin-left: 33.3333333333%
     }
-
     .nt-offset-md-5 {
         margin-left: 41.6666666667%
     }
-
     .nt-offset-md-6 {
         margin-left: 50%
     }
-
     .nt-offset-md-7 {
         margin-left: 58.3333333333%
     }
-
     .nt-offset-md-8 {
         margin-left: 66.6666666667%
     }
-
     .nt-offset-md-9 {
         margin-left: 75%
     }
-
     .nt-offset-md-10 {
         margin-left: 83.3333333333%
     }
-
     .nt-offset-md-11 {
         margin-left: 91.6666666667%
     }
@@ -2749,169 +2621,131 @@ h6,
         flex-grow: 1;
         max-width: 100%
     }
-
     .nt-col-lg-auto {
         flex: 0 0 auto;
         width: auto;
         max-width: none
     }
-
     .nt-col-lg-1 {
         flex: 0 0 8.3333333333%;
-        max-width: 8.3333333333%
+        max-width: 8.3333333333%;
     }
-
     .nt-col-lg-2 {
         flex: 0 0 16.6666666667%;
-        max-width: 16.6666666667%
+        max-width: 16.6666666667%;
     }
-
     .nt-col-lg-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-
     .nt-col-lg-4 {
         flex: 1 0 24.333333%;
         max-width: 33.3333333333%
     }
-
     .nt-col-lg-5 {
         flex: 0 0 41.6666666667%;
         max-width: 41.6666666667%
     }
-
     .nt-col-lg-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-
     .nt-col-lg-7 {
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%
     }
-
     .nt-col-lg-8 {
         flex: 0 0 66.6666666667%;
         max-width: 66.6666666667%
     }
-
     .nt-col-lg-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-
     .nt-col-lg-10 {
         flex: 0 0 83.3333333333%;
         max-width: 83.3333333333%
     }
-
     .nt-col-lg-11 {
         flex: 0 0 91.6666666667%;
         max-width: 91.6666666667%
     }
-
     .nt-col-lg-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
-
     .nt-order-lg-first {
         order: -1
     }
-
     .nt-order-lg-1 {
         order: 1
     }
-
     .nt-order-lg-2 {
         order: 2
     }
-
     .nt-order-lg-3 {
         order: 3
     }
-
     .nt-order-lg-4 {
         order: 4
     }
-
     .nt-order-lg-5 {
         order: 5
     }
-
     .nt-order-lg-6 {
         order: 6
     }
-
     .nt-order-lg-7 {
         order: 7
     }
-
     .nt-order-lg-8 {
         order: 8
     }
-
     .nt-order-lg-9 {
         order: 9
     }
-
     .nt-order-lg-10 {
         order: 10
     }
-
     .nt-order-lg-11 {
         order: 11
     }
-
     .nt-order-lg-12 {
         order: 12
     }
-
     .nt-offset-lg-0 {
         margin-left: 0
     }
-
     .nt-offset-lg-1 {
         margin-left: 8.3333333333%
     }
-
     .nt-offset-lg-2 {
         margin-left: 16.6666666667%
     }
-
     .nt-offset-lg-3 {
         margin-left: 25%
     }
-
     .nt-offset-lg-4 {
         margin-left: 33.3333333333%
     }
-
     .nt-offset-lg-5 {
         margin-left: 41.6666666667%
     }
-
     .nt-offset-lg-6 {
         margin-left: 50%
     }
-
     .nt-offset-lg-7 {
         margin-left: 58.3333333333%
     }
-
     .nt-offset-lg-8 {
         margin-left: 66.6666666667%
     }
-
     .nt-offset-lg-9 {
         margin-left: 75%
     }
-
     .nt-offset-lg-10 {
         margin-left: 83.3333333333%
     }
-
     .nt-offset-lg-11 {
         margin-left: 91.6666666667%
     }
@@ -2923,169 +2757,131 @@ h6,
         flex-grow: 1;
         max-width: 100%
     }
-
     .nt-col-xl-auto {
         flex: 0 0 auto;
         width: auto;
         max-width: none
     }
-
     .nt-col-xl-1 {
         flex: 0 0 8.3333333333%;
         max-width: 8.3333333333%
     }
-
     .nt-col-xl-2 {
         flex: 0 0 16.6666666667%;
         max-width: 16.6666666667%
     }
-
     .nt-col-xl-3 {
         flex: 0 0 25%;
         max-width: 25%
     }
-
     .nt-col-xl-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%
     }
-
     .nt-col-xl-5 {
         flex: 0 0 41.6666666667%;
         max-width: 41.6666666667%
     }
-
     .nt-col-xl-6 {
         flex: 0 0 50%;
         max-width: 50%
     }
-
     .nt-col-xl-7 {
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%
     }
-
     .nt-col-xl-8 {
         flex: 0 0 66.6666666667%;
         max-width: 66.6666666667%
     }
-
     .nt-col-xl-9 {
         flex: 0 0 75%;
         max-width: 75%
     }
-
     .nt-col-xl-10 {
         flex: 0 0 83.3333333333%;
         max-width: 83.3333333333%
     }
-
     .nt-col-xl-11 {
         flex: 0 0 91.6666666667%;
         max-width: 91.6666666667%
     }
-
     .nt-col-xl-12 {
         flex: 0 0 100%;
         max-width: 100%
     }
-
     .nt-order-xl-first {
         order: -1
     }
-
     .nt-order-xl-1 {
         order: 1
     }
-
     .nt-order-xl-2 {
         order: 2
     }
-
     .nt-order-xl-3 {
         order: 3
     }
-
     .nt-order-xl-4 {
         order: 4
     }
-
     .nt-order-xl-5 {
         order: 5
     }
-
     .nt-order-xl-6 {
         order: 6
     }
-
     .nt-order-xl-7 {
         order: 7
     }
-
     .nt-order-xl-8 {
         order: 8
     }
-
     .nt-order-xl-9 {
         order: 9
     }
-
     .nt-order-xl-10 {
         order: 10
     }
-
     .nt-order-xl-11 {
         order: 11
     }
-
     .nt-order-xl-12 {
         order: 12
     }
-
     .nt-offset-xl-0 {
         margin-left: 0
     }
-
     .nt-offset-xl-1 {
         margin-left: 8.3333333333%
     }
-
     .nt-offset-xl-2 {
         margin-left: 16.6666666667%
     }
-
     .nt-offset-xl-3 {
         margin-left: 25%
     }
-
     .nt-offset-xl-4 {
         margin-left: 33.3333333333%
     }
-
     .nt-offset-xl-5 {
         margin-left: 41.6666666667%
     }
-
     .nt-offset-xl-6 {
         margin-left: 50%
     }
-
     .nt-offset-xl-7 {
         margin-left: 58.3333333333%
     }
-
     .nt-offset-xl-8 {
         margin-left: 66.6666666667%
     }
-
     .nt-offset-xl-9 {
         margin-left: 75%
     }
-
     .nt-offset-xl-10 {
         margin-left: 83.3333333333%
     }
-
     .nt-offset-xl-11 {
         margin-left: 91.6666666667%
     }
@@ -3297,11 +3093,12 @@ textarea {
 
 .busca .fulltext-search-box {
     position: relative;
-    width: 84%;
-    height: 40px;
+    width: 88%;
+    height: 34px;
     float: left;
     padding: 10px 20px;
     border: none;
+    border-radius: 0 4px 4px 0 !important;
     background-color: #fff;
     color: #9b9b9c;
     text-transform: uppercase
@@ -3314,12 +3111,10 @@ textarea {
     float: left;
     padding: 0;
     font-size: 12px;
-    font-weight: 800;
-    color: #fff;
+    color: #000;
     border: none;
     background-color: #ffcc00;
     cursor: pointer;
-
     /* 
         barra de busca
         display: block;
@@ -4270,7 +4065,9 @@ header .top {
     z-index: 3
 }
 
+
 /* Outubro 2019 */
+
 header .top a {
     display: block;
     width: 100%;
@@ -4314,6 +4111,8 @@ header .top a h5 span {
 header .top-banner-mobile {
     display: none;
 }
+
+
 /* fim Outubro 2019 */
 
 header .middle {
@@ -4346,16 +4145,22 @@ header .middle a.logo img {
     position: relative;
     max-width: 204px
 }
+
+
 /* início inserido em Outubro 2019 */
+
 header .middle .h_search {
     display: inline-block;
     width: 40%;
-    height: 36px;
+    height: 34px;
+    /* margin-top: 6px; */
     margin-left: 2%;
     /* 
         borda cinza da barra de busca border: 1px solid #ccc;
     */
 }
+
+
 /* fim inserido em Outubro 2019 */
 
 header .middle .h_search .clerk_input_group {
@@ -4368,6 +4173,8 @@ header .middle .h_search .clerk_input_group input.clerk-input {
 }
 
 header .middle .wrapperRight {
+    /* teste novo menu - */
+    /* width: 38%; */
     float: right
 }
 
@@ -4376,7 +4183,21 @@ header .middle .wrapperRight .h_myaccount {
     width: 110px;
     margin-top: 7px;
     margin-right: 14px
+    /* teste novo menu */
+    /* margin-right: 0; */
 }
+
+
+/* teste novo menu */
+
+
+/* header .middle .wrapperRight .h_myaccount .account-v1 { */
+
+
+/* margin-right: 12px     */
+
+
+/* } */
 
 header .middle .wrapperRight .h_myaccount .usr-greeting {
     font-size: 17px;
@@ -4410,13 +4231,31 @@ header .middle .wrapperRight .h_myaccount .usr-actions a i {
     margin-top: -17px
 }
 
+
+/* inicio Outubro 2019 */
+
 header .middle .wrapperRight .h_televendas {
     float: left;
-    width: 146px;
+    width: 145px;
     position: relative;
-    margin-top: 9px;
+    margin-top: 7px;
     margin-right: 14px;
+    /* teste novo menu - */
+    /* margin-right: 0; */
     transition: all .2s linear
+}
+
+
+/* header .middle .wrapperRight .h_televendas.atendimento {
+    margin-right: 0;
+} */
+
+
+/* fim Outubro 2019 */
+
+i.fa-user.fas.new-account {
+    font-size: 25px;
+    margin-top: 2px;
 }
 
 header .middle .wrapperRight .h_televendas:hover .modal__contact {
@@ -4604,6 +4443,8 @@ header .middle .wrapperRight .h_televendas .modal__contact footer strong {
 header .middle .wrapperRight .h_cart {
     float: right;
     width: 89px;
+    /* teste novo menu -*/
+    /* width: 62px; */
     margin-top: 0px;
     text-align: right
 }
@@ -4618,6 +4459,8 @@ header .middle .wrapperRight .h_cart .col-mini-cart a.botao-carrinho {
     display: block;
     height: 48px;
     width: 32px;
+    /* teste novo menu -
+    width: 30px */
     border: 20px;
     background: url(/arquivos/bg-carrinho-de-compras.png) left center no-repeat
 }
@@ -4666,7 +4509,7 @@ header .bottom.ativo {
 }
 
 header .bottom.animate {
-    webkit-transition: margin-top .3s ease-out;
+    transition: margin-top .3s ease-out;
     -moz-transition: margin-top .3s ease-out;
     -o-transition: margin-top .3s ease-out;
     transition: margin-top .3s ease-out
@@ -4695,7 +4538,10 @@ header .bottom #mainMenu ul {
     position: relative;
     z-index: 1
 }
+
+
 /* inicio Outubro 2019 */
+
 header .bottom #mainMenu ul li {
     align-items: center;
     color: white;
@@ -4703,6 +4549,8 @@ header .bottom #mainMenu ul li {
     /* display: flex; */
     height: 48px;
 }
+
+
 /* fim Outubro 2019 */
 
 header .bottom #mainMenu ul li button.seta {
@@ -4721,7 +4569,7 @@ header .bottom #mainMenu ul li a {
 
 header .bottom #mainMenu ul li a.topLevelLink {
     color: inherit;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-decoration: none
 }
 
@@ -4759,7 +4607,7 @@ header .bottom #mainMenu ul li.menuOfertas {
     background: linear-gradient(to bottom, #fc9700 0%, #f47200 100%);
     background-position: -80px -20px;
     background-size: 290px;
-    filter: progid \:DXImageTransform \.Microsoft \.gradient(startColorstr="$color-fc9700", endColorstr="$color-f47200", GradientType=0);
+    filter: progid \: DXImageTransform \.Microsoft \.gradient(startColorstr="$color-fc9700", endColorstr="$color-f47200", GradientType=0);
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
@@ -4885,7 +4733,7 @@ header .bottom #mainMenu ul li .submenu::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #6d6d6d;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2)
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2)
 }
 
 header .bottom #mainMenu ul li .submenu::-webkit-scrollbar-thumb:window-inactive {
@@ -5095,7 +4943,6 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
     header .middle .wrapperRight .h_televendas {
         display: none !important
     }
-
     header .bottom #mainMenu ul li .submenu {
         min-width: 100%;
         max-width: 100%
@@ -5113,35 +4960,29 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         padding-top: 53px
     }
-
     header.ativo {
         top: 0px !important;
         margin-top: 0px !important
     }
-
     header.ativo .middle .h_search {
         margin-top: -17px
     }
-
     header.ativo .bottom {
         position: fixed;
         width: calc(100vw - 150px);
         min-width: 258px;
         height: 130vh
     }
-
     header.ativo .bottom .mainMenuV2 {
         position: relative;
         z-index: 3;
         background: inherit;
         height: 100vh
     }
-
     header.ativo .bottom.ativo {
         top: 0px !important;
         margin-top: 0px !important
     }
-
     header .bottom {
         position: fixed;
         width: calc(100vw - 150px);
@@ -5166,33 +5007,33 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         animation-name: sideLeft2RightOut;
         animation-fill-mode: forwards
     }
-
     header .bottom .mainMenuV2 {
         position: relative;
         z-index: 3;
         background: inherit;
         height: 100vh;
     }
-
     header .bottom.ativo {
         top: 0px !important;
         margin-top: 0px !important
     }
-
     /* header .top a span {
         display: none
     } */
-
     header .top a h5 {
         font-size: 16px;
         font-weight: 600
     }
-
     header .middle {
         height: 92px;
         overflow: visible
     }
-
+    .h_search fieldset.busca {
+        margin-top: 0 !important;
+    }
+    .busca .fulltext-search-box {
+        width: 84% !important;
+    }
     header .middle button.hamburguer {
         display: block;
         float: left;
@@ -5200,25 +5041,21 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         border: 0;
         background-color: transparent
     }
-
     header .middle button.hamburguer i {
         font-size: 26px;
         color: #3c3c3c
     }
-
     header .middle a.logo {
         width: 160px;
         margin-left: 20px
     }
-
     header .middle a.logo img {
-        margin-left: 22px;
+        /* margin-left: 22px; */
         margin-top: 6px;
-        width: 100%;
+        width: 204px;
         height: auto;
         top: 0px
     }
-
     header .middle .h_search {
         display: block;
         position: absolute;
@@ -5230,59 +5067,48 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         border-top: 1px solid rgba(0, 0, 0, 0.05);
         background: #fff
     }
-
     header .middle .h_search .clerk_input_group {
         top: 0px !important
     }
-
     header .middle .h_search .clerk_input_group input.clerk-input {
         width: 100% !important;
         border: none;
         border-radius: 0px
     }
-
     header .middle .h_search .clerk_input_group button.clerk-search-btn {
         top: 0px;
         right: 0px;
         height: 100%;
         border-radius: 0px !important
     }
-
     header .middle .wrapperRight {
         margin-top: 0
     }
-
     header .middle .wrapperRight .h_myaccount {
         display: none
     }
-
     header .middle .wrapperRight .h_cart {
         margin-top: 0;
         width: 80%
     }
-
     header .middle .wrapperRight .h_cart .col-mini-cart {
         height: 40px
     }
-
     header .middle .wrapperRight .h_cart .col-mini-cart a.botao-carrinho {
         height: 41px;
         float: right;
-        margin-right: 35px
+        margin-right: 30px
     }
-
     header .middle .wrapperRight .h_cart .col-mini-cart a.botao-carrinho .mini-cart-qty-admake {
         padding: 5px 0px;
         min-width: 25px;
         font-size: 12px
     }
-
     header.header-active .bottom {
         left: 0%
     }
-
     header.header-active .bottom.animate {
-        webkit-transition: none;
+        transition: none;
         -moz-transition: none;
         -o-transition: none;
         transition: none;
@@ -5303,26 +5129,21 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         animation-name: sideLeft2RightIn;
         animation-fill-mode: forwards
     }
-
     header.header-active .bottom #mainMenu ul li span.submenu {
         border: none
     }
-
     header.header-active .bottom #mainMenu ul li span.submenu.active {
         left: 0%
     }
-
     header.header-active .bottom #mainMenu ul li span.submenu.animate {
-        webkit-transition: none;
+        transition: none;
         -moz-transition: none;
         -o-transition: none;
         transition: none
     }
-
     header .bottom {
         z-index: 99999
     }
-
     header .bottom .mainHeaderContentV2-overlay {
         background: #000;
         position: fixed;
@@ -5333,13 +5154,11 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         opacity: 0;
         z-index: 0
     }
-
     header .bottom .mainHeaderContentV2-overlay.active {
         display: block;
         opacity: 0.6;
         z-index: -1
     }
-
     header .bottom .mainHeaderContentV2-overlay button {
         position: absolute;
         background-color: transparent;
@@ -5351,7 +5170,6 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         border: 0;
         display: block
     }
-
     header .bottom .mobile {
         display: block;
         background-color: #ffb400;
@@ -5360,14 +5178,12 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         padding: 10px 20px;
         overflow: hidden
     }
-
     header .bottom .mobile .h_myaccount {
         float: left;
         width: 100%;
         margin-top: 0px;
         color: #fff
     }
-
     header .bottom .mobile .h_myaccount .usr-greeting {
         font-size: 17px;
         font-weight: 500;
@@ -5375,14 +5191,12 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         display: block;
         padding-left: 28px
     }
-
     header .bottom .mobile .h_myaccount .usr-actions {
         font-size: 13px;
         font-weight: 500;
         color: #3c3c3c;
         display: block
     }
-
     header .bottom .mobile .h_myaccount .usr-actions a i {
         float: left;
         display: flex;
@@ -5394,25 +5208,21 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         text-shadow: -1px 0 rgba(255, 255, 255, 0.1);
         margin-top: -17px
     }
-
     header .bottom .mobile .h_search {
         width: 100%;
         clear: both;
         display: block;
         margin-top: 20px
     }
-
     header .bottom .mobile .h_search .clerk_input_group {
         top: 0px !important;
         right: 0px !important;
         width: 100% !important
     }
-
     header .bottom .mobile .h_search .clerk_input_group input.clerk-input {
         width: 100% !important;
         font-size: 10px !important
     }
-
     header .bottom #mainMenu {
         z-index: 99999;
         overflow: auto;
@@ -5420,38 +5230,31 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         padding-top: 5px;
         padding-bottom: 5px
     }
-
     header .bottom #mainMenu::-webkit-scrollbar {
         width: 8px
     }
-
     header .bottom #mainMenu::-webkit-scrollbar-track {
         background: rgba(0, 0, 0, 0.1);
         -webkit-border-radius: 10px;
         border-radius: 10px
     }
-
     header .bottom #mainMenu::-webkit-scrollbar-thumb {
         -webkit-border-radius: 10px;
         border-radius: 10px;
         background: #6d6d6d;
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2)
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2)
     }
-
     header .bottom #mainMenu::-webkit-scrollbar-thumb:window-inactive {
         background: #6d6d6d
     }
-
     header .bottom #mainMenu ul {
         display: block;
         z-index: 99999;
         position: static
     }
-
     header .bottom #mainMenu ul li {
         padding: 0 0 0 3px
     }
-
     header .bottom #mainMenu ul li.hasSubmenu {
         display: flex;
         clear: both;
@@ -5460,24 +5263,19 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         margin-top: 0px;
         position: initial
     }
-
     header .bottom #mainMenu ul li.hasSubmenu a.topLevelLink .ns {
         color: rgba(255, 255, 255, 0.5)
     }
-
     header .bottom #mainMenu ul li.hasSubmenu:hover {
         color: #fff;
         background-color: #3c3c3c
     }
-
     header .bottom #mainMenu ul li.hasSubmenu:hover a .ns {
         color: #ffb400
     }
-
     header .bottom #mainMenu ul li.hasSubmenu:hover span.submenu {
         display: block !important
     }
-
     header .bottom #mainMenu ul li button.seta {
         display: block;
         width: 40px;
@@ -5488,7 +5286,6 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         background-color: transparent;
         position: relative
     }
-
     header .bottom #mainMenu ul li button.seta i {
         color: #ffb400;
         font-size: 22px;
@@ -5497,7 +5294,6 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         top: 0px;
         position: relative
     }
-
     header .bottom #mainMenu ul li span.submenu {
         display: block;
         position: absolute;
@@ -5510,7 +5306,6 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         padding-top: 0;
         padding: 20px
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep {
         position: absolute;
         top: 0;
@@ -5524,7 +5319,6 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         z-index: 999;
         display: block
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep button {
         float: left;
         width: 10%;
@@ -5534,17 +5328,14 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         background-color: transparent;
         position: relative
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep button i {
         left: inherit;
         right: 0px
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep button i.fa-arrow-circle-left {
         color: #ffb400;
         font-size: 22px
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep a {
         width: 87%;
         height: 40px;
@@ -5557,13 +5348,11 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         position: relative;
         padding-left: 10px
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep a:before {
         content: '';
         display: block;
         margin-right: 35px
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep a .ns,
     header .bottom #mainMenu ul li span.submenu .topDep a .fa {
         color: #ffb400;
@@ -5574,11 +5363,9 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         background-color: transparent;
         font-size: 40px
     }
-
     header .bottom #mainMenu ul li span.submenu .topDep a .fa {
         font-size: 28px
     }
-
     header .bottom #mainMenu ul li span.submenu .categorias {
         position: absolute;
         top: 64px;
@@ -5587,39 +5374,32 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         overflow-x: hidden;
         overflow-y: auto
     }
-
     header .bottom #mainMenu ul li span.submenu .categorias span.column {
         width: 100%;
         padding-left: 0;
         border-left: 0;
         overflow: hidden
     }
-
     header .bottom #mainMenu ul li span.submenu .categorias span.column span.group {
         width: 100%;
         min-width: 100%;
         overflow: hidden
     }
-
     header .bottom #mainMenu ul li span.submenu .categorias span.column span.group a.title {
         margin-bottom: 5px;
         padding: 5px 0px 5px 0px
     }
-
     header .bottom #mainMenu ul li span.submenu .categorias span.column span.group a:not(.title):not(.seeMore) {
         padding: 5px 0px 5px 20px;
         margin-bottom: 0;
         margin-right: 0
     }
-
     header .bottom #mainMenu ul li.menuOfertas {
         background-size: 20px
     }
-
     header .bottom #mainMenu ul li.superMarcas {
         padding: 0 0 0 35px
     }
-
     header .bottom #mainMenu ul li.superMarcas .submenu {
         right: unset;
         left: -100%;
@@ -5627,25 +5407,20 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         max-width: 100%;
         background: #f5f4f4
     }
-
     header .bottom #mainMenu ul li.superMarcas .submenu .brands .brand {
         max-width: 86px
     }
-
     header .bottom #mainMenu ul li.superMarcas .submenu .brands .brand a {
         width: 100%;
         float: left
     }
-
     header .bottom #mainMenu ul li.superMarcas button.seta i {
         color: #fff
     }
-
     header .bottom #mainMenu ul li a {
         width: 80%;
         float: left
     }
-
     header .bottom #mainMenu ul li a span.label.label-info {
         right: 0 !important
     }
@@ -6153,29 +5928,30 @@ html body .has--svg-sprite {
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
     /* inicio Outubro 2019 */
-    header .top-banner-mobile { 
+    header .top-banner-mobile {
         display: block;
     }
-
     header .top-banner-desktop {
         display: none;
     }
-
     body.home .tpl-wrapper main .tpl-content section#slideHome {
         margin-bottom: 2px;
     }
+    .h_search fieldset.busca {
+        margin-top: 0 !important;
+    }
+    .busca .fulltext-search-box {
+        width: 84% !important;
+    }
     /* fim Outubro 2019 */
-
     .net-more-about {
         display: block;
         width: 100%;
         margin-bottom: 0
     }
-
     .net-more-about__content {
         padding: 30px 4%
     }
-
     .net-more-about__content p {
         display: block;
         color: #fff;
@@ -6184,66 +5960,52 @@ html body .has--svg-sprite {
         line-height: 18px;
         letter-spacing: .3px
     }
-
     .net-more-about__content p+p {
         margin-top: 20px
     }
-
     .net-more-about__content p strong {
         font-weight: 800
     }
-
     .net-more-about__content p a {
         color: #ffc107;
         font-weight: 700;
         transition: all .2s ease-in-out
     }
-
     .net-more-about__content p a:hover {
         text-decoration: underline
     }
-
     .net-more-about__content p a.same-color-text {
         color: #fff
     }
-
     .net-more-about__content p a.same-color-text:hover {
         text-decoration: none
     }
-
     .net-footer {
         display: block;
         width: 100%
     }
-
     .net-footer__content {
         padding: 30px 4%
     }
-
     .net-footer__information:not(:last-of-type) {
         margin-bottom: 20px
     }
-
     .net-footer__information .--inline {
         display: block;
         margin-bottom: 20px
     }
-
     .net-footer__information .--inline.is--active .js--action-footer-drop:after {
         transform: rotate(0);
         transition: all .1s linear
     }
-
     .net-footer__information h3 {
         border-bottom: 1px solid #737373;
         padding-bottom: 10px;
         margin-bottom: 15px
     }
-
     .net-footer__information .js--action-footer-drop {
         position: relative
     }
-
     .net-footer__information .js--action-footer-drop:after {
         content: '';
         position: absolute;
@@ -6257,65 +6019,51 @@ html body .has--svg-sprite {
         margin: auto;
         transition: all .2s ease-in-out
     }
-
     .net-footer__navigation {
         display: block
     }
-
     .net-footer__institutional {
         display: block;
         width: 100%;
         margin-right: 0
     }
-
     .net-footer__institutional>li+li {
         margin-left: 0
     }
-
     .net-footer__institutional>li ul {
         display: none;
         padding: 0 5%
     }
-
     .net-footer__payment {
         display: block;
         width: 100%
     }
-
     .net-footer__payment>li+li {
         margin-left: 0
     }
-
     .net-footer__payment>li ul li {
         margin: 0 2% 10px 0
     }
-
     .net-footer__payment>li ul li:last-of-type {
         margin: 0 0 10px 0
     }
-
     .net-footer__payment>li ul li+li {
         margin-left: 0
     }
-
     .net-footer__stamps {
         display: block;
         width: 100%
     }
-
     .net-footer__stamps>div+div {
         margin-left: 0
     }
-
     .net-footer__stamps--apps a {
         display: block;
         text-indent: -999em
     }
-
     .net-footer__stamps--apps a svg {
         display: none
     }
-
     .net-footer__stamps--apps a svg .icon--google-play,
     .net-footer__stamps--apps a svg .icon--app-store {
         display: block;
@@ -6323,15 +6071,12 @@ html body .has--svg-sprite {
         max-width: 90px;
         height: 50px
     }
-
     .net-footer__stamps--social {
         margin-bottom: 0
     }
-
     .net-footer__stamps--platform a {
         margin-top: 0
     }
-
     .net-footer__stamps--platform a .icon--vtex {
         max-width: 100px;
         height: 60px;
@@ -6787,7 +6532,6 @@ html body .has--svg-sprite {
     .prateleira ul li {
         width: 32.3%
     }
-
     .prateleira ul li .box-item .bloco.imagem a.product-image img {
         width: auto;
         max-width: auto
@@ -6798,7 +6542,6 @@ html body .has--svg-sprite {
     .prateleira ul li .box-item .botao-comprar .quant {
         display: none
     }
-
     .prateleira ul li .box-item .botao-comprar .botao-comprar-assync {
         width: calc(100% - 11px);
         height: 42px;
@@ -6808,11 +6551,9 @@ html body .has--svg-sprite {
         text-align: center;
         border-radius: 4px
     }
-
     .prateleira ul li .box-item .botao-comprar .botao-comprar-assync:before {
         display: none
     }
-
     .prateleira ul li .box-item .botao-comprar .botao-comprar-assync .wrapper-buy-button-asynchronous .add a {
         text-align: center;
         padding-right: 0px;
@@ -6888,34 +6629,27 @@ html body .has--svg-sprite {
     .notfound {
         margin-bottom: 30px
     }
-
     .notfound .top {
         border: none;
         padding: 0 3%
     }
-
     .notfound-left,
     .notfound-right {
         width: 100%
     }
-
     .notfound-left {
         margin-bottom: 20px
     }
-
     .notfound-left .icon {
         font-size: 52px
     }
-
     .notfound-left h3 {
         font-size: 1rem
     }
-
     .notfound-right .search {
         width: 290px;
         margin: 0 auto 20px
     }
-
     .notfound-right p {
         width: 60%;
         font-size: 0.8rem;
@@ -7100,7 +6834,7 @@ html body .has--svg-sprite {
     background: -moz-linear-gradient(top, #fff 0, #e5e5e5 100%);
     background: -webkit-linear-gradient(top, #fff 0, #e5e5e5 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
     margin-bottom: 3px
 }
 
@@ -7209,7 +6943,6 @@ html body .has--svg-sprite {
     #modal-carrinho .modal-dialog {
         width: calc(100% - 20px) !important
     }
-
     #modal-carrinho .modal-body #orders_form_table tbody tr td.minicart_productName span {
         display: -webkit-box;
         -webkit-line-clamp: 3;
@@ -7217,11 +6950,9 @@ html body .has--svg-sprite {
         overflow: hidden;
         text-overflow: ellipsis
     }
-
     #modal-carrinho .modal-footer {
         display: block
     }
-
     #modal-carrinho .modal-footer #buy-in-page-button-product-view {
         float: left;
         width: 100%;
@@ -7229,7 +6960,6 @@ html body .has--svg-sprite {
         clear: left;
         max-width: 100%
     }
-
     #modal-carrinho .modal-footer #link-continuar-comprando {
         display: none;
         float: right;
@@ -8905,7 +8635,6 @@ html body .has--svg-sprite {
     .nt-box.nt-newsletter .nt-newsletter-subtitle {
         margin-bottom: 0.9em
     }
-
     .nt-box.nt-newsletter form {
         position: relative;
         margin-top: 0px;
@@ -8915,12 +8644,10 @@ html body .has--svg-sprite {
         text-align: center;
         margin: 0px
     }
-
     .nt-box.nt-newsletter form>div {
         margin: .473em 0em .5em;
         padding: 0px
     }
-
     .nt-box.nt-newsletter form .alert.alert-success {
         text-align: center;
         width: 100%
@@ -8931,25 +8658,21 @@ html body .has--svg-sprite {
     .nt-newsletter {
         padding: 25px 4%
     }
-
     .nt-newsletter__title {
         display: block;
         width: 100%;
         margin: 0 0 20px
     }
-
     .nt-newsletter__form {
         display: block;
         width: 100%
     }
-
     .nt-newsletter__form--name,
     .nt-newsletter__form--email {
         display: block;
         width: 100%;
         margin: 0 0 15px
     }
-
     .nt-newsletter__form--name label.error,
     .nt-newsletter__form--email label.error {
         position: relative;
@@ -8960,33 +8683,27 @@ html body .has--svg-sprite {
         letter-spacing: .3px;
         margin: 5px 0 0
     }
-
     .nt-newsletter__form--segment {
         display: block;
         width: 100%;
         margin: 0 0 15px
     }
-
     .nt-newsletter__form--button {
         display: block;
         width: 100%
     }
-
     .nt-newsletter__form--warning {
         position: relative;
         bottom: unset;
         display: block;
         margin: 20px 0 0
     }
-
     .nt-modal__close {
         background: #ffc100
     }
-
     .nt-modal__newsletter {
         width: 95%
     }
-
     .nt-modal__newsletter--warning {
         display: flex;
         align-items: center;
@@ -8996,7 +8713,6 @@ html body .has--svg-sprite {
         padding: 50px 2%;
         margin: auto
     }
-
     .nt-modal__newsletter--warning p {
         color: #fff;
         font-size: 14px;
@@ -9011,44 +8727,37 @@ html body .has--svg-sprite {
         width: 100%;
         transition: all .2s ease-in-out
     }
-
     .nt-modal__newsletter--warning p.is--active {
         visibility: visible;
         opacity: 1;
         height: auto;
         transition: all .1s linear
     }
-
     .nt-modal__newsletter--warning p.--success {
         color: #4bb122
     }
-
     .nt-modal__newsletter--warning p.--error {
         color: #ff3939
     }
 }
 
-@-webkit-keyframes scale {
+@keyframes scale {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
-
     1% {
         -webkit-transform: scale(0.8);
         transform: scale(0.8)
     }
-
     45% {
         -webkit-transform: scale(1.03);
         transform: scale(1.03)
     }
-
     80% {
         -webkit-transform: scale(1.01);
         transform: scale(1.01)
     }
-
     to {
         -webkit-transform: scale(1);
         transform: scale(1)
@@ -9060,22 +8769,18 @@ html body .has--svg-sprite {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
-
     1% {
         -webkit-transform: scale(0.8);
         transform: scale(0.8)
     }
-
     45% {
         -webkit-transform: scale(1.03);
         transform: scale(1.03)
     }
-
     80% {
         -webkit-transform: scale(1.01);
         transform: scale(1.01)
     }
-
     to {
         -webkit-transform: scale(1);
         transform: scale(1)
@@ -9087,22 +8792,18 @@ html body .has--svg-sprite {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
-
     1% {
         -webkit-transform: scale(0.8);
         transform: scale(0.8)
     }
-
     45% {
         -webkit-transform: scale(1.03);
         transform: scale(1.03)
     }
-
     80% {
         -webkit-transform: scale(1.01);
         transform: scale(1.01)
     }
-
     to {
         -webkit-transform: scale(1);
         transform: scale(1)
@@ -9114,22 +8815,18 @@ html body .has--svg-sprite {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
-
     1% {
         -webkit-transform: scale(0.8);
         transform: scale(0.8)
     }
-
     45% {
         -webkit-transform: scale(1.03);
         transform: scale(1.03)
     }
-
     80% {
         -webkit-transform: scale(1.01);
         transform: scale(1.01)
     }
-
     to {
         -webkit-transform: scale(1);
         transform: scale(1)
@@ -9586,11 +9283,9 @@ html body .has--svg-sprite {
     .nt-modal__close {
         background: #ffc100
     }
-
     .nt-modal__newsletter {
         width: 95%
     }
-
     .nt-modal__newsletter--warning {
         display: flex;
         align-items: center;
@@ -9600,7 +9295,6 @@ html body .has--svg-sprite {
         padding: 50px 2%;
         margin: auto
     }
-
     .nt-modal__newsletter--warning p {
         color: #fff;
         font-size: 14px;
@@ -9615,53 +9309,43 @@ html body .has--svg-sprite {
         width: 100%;
         transition: all .2s ease-in-out
     }
-
     .nt-modal__newsletter--warning p.is--active {
         visibility: visible;
         opacity: 1;
         height: auto;
         transition: all .1s linear
     }
-
     .nt-modal__newsletter--warning p.--success {
         color: #4bb122
     }
-
     .nt-modal__newsletter--warning p.--error {
         color: #ff3939
     }
-
     .nt-modal__seller {
         width: 95%;
         max-height: 90vh
     }
-
     .nt-modal__seller--content {
         padding: 25px 5% 40px
     }
-
     .nt-modal__seller--content .js--seller-avaliation .avaliation__content {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: end
     }
-
     .nt-modal__seller--content .js--seller-avaliation .avaliation__content-information {
         width: 100%;
         text-align: left;
         margin: 0 0 15px
     }
-
     .nt-modal__seller--content .js--seller-avaliation .avaliation__content-information .js--avaliation-rating {
         text-align: left
     }
-
     .nt-modal__seller--left {
         width: 100%;
         margin: 0 0 15px
     }
-
     .nt-modal__seller--right {
         width: 100%
     }
@@ -9739,4 +9423,512 @@ body .clerk-img-spin {
     }
 }
 
+
 /*# sourceMappingURL=netsuprimentos-main.min.css.map */
+
+.nt-modal__preload {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nt-modal__newsletter {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    width: 60%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    z-index: 9990;
+    outline: none;
+    margin: 0 auto;
+}
+
+.nt-modal__newsletter.is--active {
+    position: static;
+    height: auto;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    -webkit-animation: scale 0.3s ease-in-out;
+    animation: scale 0.3s ease-in-out;
+    will-change: transform;
+    transition: animation 0.2s linear, opacity 0.2s linear;
+}
+
+.nt-modal__newsletter--warning {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 50px 2%;
+    margin: auto;
+}
+
+.nt-modal__newsletter--warning p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: initial;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.nt-modal__newsletter--warning p.is--active {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transition: all 0.1s linear;
+}
+
+.nt-modal__newsletter--warning p.--success {
+    color: #4bb122;
+}
+
+.nt-modal__newsletter--warning p.--error,
+.nt-modal__newsletter--warning p.--error-id {
+    color: #ff3939;
+}
+
+.nt-modal__seller {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: -20px;
+    width: 60%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 45vw;
+    z-index: 9990;
+    outline: none;
+    margin: 0 auto;
+}
+
+.nt-modal__seller.is--active {
+    position: relative;
+    top: unset;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    will-change: transform;
+    -webkit-animation: scale 0.3s ease-in-out;
+    animation: scale 0.3s ease-in-out;
+    transition: opacity 0.2s linear;
+}
+
+.nt-modal__seller--content {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #f9f9f9;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+    padding: 30px 4%;
+    margin: auto;
+}
+
+.nt-modal__seller--content.is--active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nt-modal__seller--content .js--seller-page {
+    display: none;
+    vertical-align: middle;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 0 0 #fff;
+    transition: all 0.2s linear;
+}
+
+.nt-modal__seller--content .js--seller-page:hover {
+    box-shadow: 0 6px 5px -5px #eec96e;
+}
+
+.nt-modal__seller--content .js--seller-page strong {
+    color: #ffc100;
+}
+
+.nt-modal__seller--title,
+.nt-modal__seller--cnpj,
+.nt-modal__seller--avaliation,
+.nt-modal__seller--description {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: opacity 0.1s linear;
+}
+
+.nt-modal__seller--title.has--content,
+.nt-modal__seller--cnpj.has--content,
+.nt-modal__seller--avaliation.has--content,
+.nt-modal__seller--description.has--content {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+.nt-modal__seller--title.has--content .avaliation__content,
+.nt-modal__seller--cnpj.has--content .avaliation__content,
+.nt-modal__seller--avaliation.has--content .avaliation__content,
+.nt-modal__seller--description.has--content .avaliation__content {
+    display: flex;
+}
+
+.nt-modal__seller--title>strong,
+.nt-modal__seller--cnpj>strong,
+.nt-modal__seller--avaliation>strong,
+.nt-modal__seller--description>strong {
+    display: block;
+    width: 100%;
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
+}
+
+.nt-modal__seller--title>p,
+.nt-modal__seller--cnpj>p,
+.nt-modal__seller--avaliation>p,
+.nt-modal__seller--description>p {
+    color: #6b6b6b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    text-align: left;
+    text-transform: initial;
+}
+
+.nt-modal__seller--left {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.nt-modal__seller--right {
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+}
+
+.nt-modal__seller--title {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.nt-modal__seller--title h5 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffc100;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    padding: 0 2%;
+    border-bottom: 2px solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nt-modal__seller--title a {
+    display: none;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+.nt-modal__seller--title a img {
+    display: block;
+    width: 100%;
+    max-width: 70px;
+    mix-blend-mode: multiply;
+}
+
+.nt-modal__seller--cnpj {
+    display: block;
+    width: 100%;
+}
+
+.nt-modal__seller--avaliation .avaliation__content {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-information {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15%;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-information .js--avaliation-rating {
+    display: block;
+    color: #f7af00;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-shadow: 2px -1px 4px #e6e6e6;
+    margin-bottom: 15px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-information .js--avaliation-stars-general {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-information .js--avaliation-stars-general svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-information>p {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-information>p .js--avaliation-qtdy-general {
+    font-size: 15px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-rating {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-rating .stars-list {
+    display: block;
+    width: 100%;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-rating .stars-list li {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-rating .stars-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-rating .stars-list li svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.nt-modal__seller--avaliation .avaliation__content-rating .stars-list li strong {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 0.5rem;
+}
+
+.nt-modal__seller--description.has--content {
+    margin-top: 20px;
+}
+
+.nt-modal__seller--description .js--seller-description {
+    font-weight: 400;
+}
+
+.nt-modal .svg--modal-sellers #stars--full,
+.nt-modal .svg--modal-sellers #stars--half,
+.nt-modal .svg--modal-sellers #stars--empty {
+    fill: #ffc100;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    .nt-modal__close {
+        background: #ffc100;
+    }
+    .nt-modal__newsletter {
+        width: 95%;
+    }
+    .nt-modal__newsletter--warning {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        background: #f9f9f9;
+        padding: 50px 2%;
+        margin: auto;
+    }
+    .nt-modal__newsletter--warning p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        text-transform: initial;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+    .nt-modal__newsletter--warning p.is--active {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        transition: all 0.1s linear;
+    }
+    .nt-modal__newsletter--warning p.--success {
+        color: #4bb122;
+    }
+    .nt-modal__newsletter--warning p.--error {
+        color: #ff3939;
+    }
+    .nt-modal__seller {
+        width: 95%;
+        max-height: 90vh;
+    }
+    .nt-modal__seller--content {
+        padding: 25px 5% 40px;
+    }
+    .nt-modal__seller--content .js--seller-avaliation .avaliation__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: end;
+    }
+    .nt-modal__seller--content .js--seller-avaliation .avaliation__content-information {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 15px;
+    }
+    .nt-modal__seller--content .js--seller-avaliation .avaliation__content-information .js--avaliation-rating {
+        text-align: left;
+    }
+    .nt-modal__seller--left {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+    .nt-modal__seller--right {
+        width: 100%;
+    }
+}
+
+body .clerk-title {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #838383;
+    text-transform: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body a.clerk-livesearch-powered {
+    display: none !important;
+}
+
+body .clerk-root.product-page {
+    background: transparent;
+    width: 1170px;
+    margin: 5px auto;
+    position: relative;
+    padding: 0px;
+}
+
+body .clerk-root.product-page .clerk-title {
+    width: 100%;
+    margin: 0px;
+    font-weight: 500;
+}
+
+body .clerk-flag-discount {
+    text-align: center;
+}
+
+body .clerk-image-front {
+    width: auto;
+    max-width: 178px;
+    height: 100%;
+    max-height: 178px;
+    text-align: center;
+    border: 0;
+    opacity: 1;
+    background: #fff;
+    transition: 0.3s all;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0px;
+}
+
+body .clerk-img-spin {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 0 !important;
+    right: 0px;
+    border: 0 !important;
+}
+
+@media screen and (max-width: 1170px) {
+    body.page-product .clerk-root.product-page {
+        width: 100%;
+    }
+}
