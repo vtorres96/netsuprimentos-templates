@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     var presentDate = new Date();
     var day = 23 - (presentDate.getDate() + 1);
 
@@ -6,23 +6,23 @@ $(document).ready(function () {
     var minute = 59 - presentDate.getMinutes();
     var second = 59 - presentDate.getSeconds();
     if (day < 10) {
-        day = toString('0' + (23 - (presentDate.getDate() + 1)));
+        day = toString("0" + (23 - (presentDate.getDate() + 1)));
     }
     if (hour < 10) {
-        hour = '0' + (23 - presentDate.getHours());
+        hour = "0" + (23 - presentDate.getHours());
     }
     if (minute < 10) {
-        minute = toString('0' + (59 - presentDate.getMinutes()));
+        minute = toString("0" + (59 - presentDate.getMinutes()));
     }
     if (second < 10) {
-        second = toString('0' + (59 - presentDate.getSeconds()));
+        second = toString("0" + (59 - presentDate.getSeconds()));
     }
-    var timeString = day + ':' + hour + ':' + minute + ':' + second;
+    var timeString = day + ":" + hour + ":" + minute + ":" + second;
     console.log(timeString);
     var flip = new FlipClock({
         isCountdown: true,
         startTime: timeString,
-        containerElement: $('.countdown'),
+        containerElement: $(".countdown"),
         face: {
             days: {
                 maxValue: 31
@@ -45,7 +45,7 @@ $(document).ready(function () {
  * @param options
  * @constructor
  */
-FlipClock = function (options) {
+FlipClock = function(options) {
     this.tickInterval = false;
     this.digitSelectors = [];
     this.options = this.createConfig(options);
@@ -58,22 +58,22 @@ FlipClock = function (options) {
  * @param options - config object
  * @returns options merged config objects
  */
-FlipClock.prototype.createConfig = function (options) {
+FlipClock.prototype.createConfig = function(options) {
     return $.extend({}, this.getDefaultConfig(), options);
 };
 
 /**
  * returns default config object
  */
-FlipClock.prototype.getDefaultConfig = function () {
+FlipClock.prototype.getDefaultConfig = function() {
     return {
         tickDuration: 1000,
         isCountdown: false,
-        startTime: '23:59:51',
-        maxTime: '23:59:59',
-        minTime: '00:00:00',
-        containerElement: $('.container'),
-        segmentSelectorPrefix: 'flipclock-',
+        startTime: "23:59:51",
+        maxTime: "23:59:59",
+        minTime: "00:00:00",
+        containerElement: $(".container"),
+        segmentSelectorPrefix: "flipclock-",
         face: {
             hours: {
                 maxValue: 23
@@ -91,11 +91,16 @@ FlipClock.prototype.getDefaultConfig = function () {
 /**
  * check browser feature support
  */
-FlipClock.prototype.initFeatureDetection = function () {
-    $.support.transition = (function () {
+FlipClock.prototype.initFeatureDetection = function() {
+    $.support.transition = (function() {
         var thisBody = document.body || document.documentElement,
             thisStyle = thisBody.style,
-            support = thisStyle.transition !== undefined || thisStyle.WebkitTransition !== undefined || thisStyle.MozTransition !== undefined || thisStyle.MsTransition !== undefined || thisStyle.OTransition !== undefined;
+            support =
+            thisStyle.transition !== undefined ||
+            thisStyle.WebkitTransition !== undefined ||
+            thisStyle.MozTransition !== undefined ||
+            thisStyle.MsTransition !== undefined ||
+            thisStyle.OTransition !== undefined;
         return support;
     })();
 };
@@ -105,8 +110,12 @@ FlipClock.prototype.initFeatureDetection = function () {
  * @param feature
  * @returns {*}
  */
-FlipClock.prototype.isFeatureSupported = function (feature) {
-    if (feature && typeof $.support !== undefined && typeof $.support[feature] !== undefined) {
+FlipClock.prototype.isFeatureSupported = function(feature) {
+    if (
+        feature &&
+        typeof $.support !== undefined &&
+        typeof $.support[feature] !== undefined
+    ) {
         return $.support[feature];
     }
 
@@ -116,7 +125,7 @@ FlipClock.prototype.isFeatureSupported = function (feature) {
 /**
  * init
  */
-FlipClock.prototype.init = function () {
+FlipClock.prototype.init = function() {
     this.options.containerElement.empty();
 
     if (this.tickInterval !== false) {
@@ -135,33 +144,45 @@ FlipClock.prototype.init = function () {
 /**
  * setupFallbacks
  */
-FlipClock.prototype.setupFallbacks = function () {
+FlipClock.prototype.setupFallbacks = function() {
     this.initFeatureDetection();
 
-    if (this.isFeatureSupported('transition')) {
-        $('ul.flip li:first-child', this.options.containerElement).css("z-index", 2);
+    if (this.isFeatureSupported("transition")) {
+        $("ul.flip li:first-child", this.options.containerElement).css(
+            "z-index",
+            2
+        );
     } else {
         // < IE9 can't do css animations (@keyframe) - need to fix z-index here since we're setting z-indices inside the keyframe-steps
-        $('ul.flip li:first-child', this.options.containerElement).css("z-index", 3);
+        $("ul.flip li:first-child", this.options.containerElement).css(
+            "z-index",
+            3
+        );
 
         // < IE9 doesn't understand nth-child css selector => fallback class that has to be addressed via css separatly
-        $('ul.flip:nth-child(2n+2):not(:last-child)', this.options.containerElement).addClass('nth-child-2np2-notlast');
+        $(
+            "ul.flip:nth-child(2n+2):not(:last-child)",
+            this.options.containerElement
+        ).addClass("nth-child-2np2-notlast");
     }
 };
 
 /**
  * Sets digit dimensions based on its containers height
  */
-FlipClock.prototype.setDimensions = function () {
+FlipClock.prototype.setDimensions = function() {
     var flipHeight = this.options.containerElement.height(),
         flipWidth = flipHeight / 1.5;
 
-    $('ul.flip', this.options.containerElement).css({
-        width: flipWidth,
-        fontSize: (flipHeight - 10) + 'px'
-    }).find('li').css({
-        lineHeight: (flipHeight) + 'px'
-    });
+    $("ul.flip", this.options.containerElement)
+        .css({
+            width: flipWidth,
+            fontSize: flipHeight - 10 + "px"
+        })
+        .find("li")
+        .css({
+            lineHeight: flipHeight + "px"
+        });
 };
 
 /**
@@ -169,25 +190,33 @@ FlipClock.prototype.setDimensions = function () {
  * @param faceSegmentGroupName
  * @returns {Array}
  */
-FlipClock.prototype.createSegment = function (faceSegmentGroupName) {
+FlipClock.prototype.createSegment = function(faceSegmentGroupName) {
     var faceSegmentGroup = this.options.face[faceSegmentGroupName],
-        segmentSelectorAddons = ['-ten', '-one'],
+        segmentSelectorAddons = ["-ten", "-one"],
         rounded = Math.ceil(faceSegmentGroup.maxValue / 10),
         segment = [];
 
     if (faceSegmentGroup.maxValue / 10 > 1) {
         segment = [{
-            selector: this.options.segmentSelectorPrefix + faceSegmentGroupName + segmentSelectorAddons[0],
-            ticks: rounded
-        }, {
-            selector: this.options.segmentSelectorPrefix + faceSegmentGroupName + segmentSelectorAddons[1],
-            ticks: 10
-        }];
+                selector: this.options.segmentSelectorPrefix +
+                    faceSegmentGroupName +
+                    segmentSelectorAddons[0],
+                ticks: rounded
+            },
+            {
+                selector: this.options.segmentSelectorPrefix +
+                    faceSegmentGroupName +
+                    segmentSelectorAddons[1],
+                ticks: 10
+            }
+        ];
     } else {
         segment = [{
-            selector: this.options.segmentSelectorPrefix + faceSegmentGroupName + segmentSelectorAddons[1],
+            selector: this.options.segmentSelectorPrefix +
+                faceSegmentGroupName +
+                segmentSelectorAddons[1],
             ticks: 10
-        }]
+        }];
     }
 
     return segment;
@@ -196,20 +225,28 @@ FlipClock.prototype.createSegment = function (faceSegmentGroupName) {
 /**
  * Appends the markup for each digit to the container
  */
-FlipClock.prototype.appendMarkupToContainer = function () {
+FlipClock.prototype.appendMarkupToContainer = function() {
     var baseZIndex = 0;
 
     for (var faceSegmentGroup in this.options.face) {
-        this.options.face[faceSegmentGroup].segments = this.createSegment(faceSegmentGroup);
+        this.options.face[faceSegmentGroup].segments = this.createSegment(
+            faceSegmentGroup
+        );
 
-        for (var i = 0; i < this.options.face[faceSegmentGroup].segments.length; i++) {
-            var faceSegmentElement = this.createFaceSegment(this.options.face[faceSegmentGroup].segments[i]);
+        for (
+            var i = 0; i < this.options.face[faceSegmentGroup].segments.length; i++
+        ) {
+            var faceSegmentElement = this.createFaceSegment(
+                this.options.face[faceSegmentGroup].segments[i]
+            );
 
-            this.digitSelectors.push(this.options.face[faceSegmentGroup].segments[i].selector);
+            this.digitSelectors.push(
+                this.options.face[faceSegmentGroup].segments[i].selector
+            );
             this.options.containerElement.append(faceSegmentElement);
 
             // assign common data-attribute to segments of the same group
-            faceSegmentElement.data('face-segment-group', faceSegmentGroup);
+            faceSegmentElement.data("face-segment-group", faceSegmentGroup);
             faceSegmentElement.addClass(faceSegmentGroup);
             faceSegmentElement.css("z-index", baseZIndex++);
         }
@@ -230,9 +267,9 @@ FlipClock.prototype.appendMarkupToContainer = function () {
  * @param faceSegment
  * @returns {*|jQuery|HTMLElement}
  */
-FlipClock.prototype.createFaceSegment = function (faceSegment) {
-    var faceElement = $('<ul>', {
-        "class": "flip " + faceSegment.selector
+FlipClock.prototype.createFaceSegment = function(faceSegment) {
+    var faceElement = $("<ul>", {
+        class: "flip " + faceSegment.selector
     });
 
     for (var i = 0; i < faceSegment.ticks; i++) {
@@ -249,24 +286,33 @@ FlipClock.prototype.createFaceSegment = function (faceSegment) {
  * @param digit
  * @returns {string}
  */
-FlipClock.prototype.createFaceDigit = function (digit) {
-    var digitInnerFragment = '<div class="shadow"></div><div class="inn">' + digit + '</div>';
+FlipClock.prototype.createFaceDigit = function(digit) {
+    var digitInnerFragment =
+        '<div class="shadow"></div><div class="inn">' + digit + "</div>";
 
-    return '<li data-digit=' + digit + ' ><span>' +
-        '<div class="up">' + digitInnerFragment + '</div>' +
-        '<div class="down">' + digitInnerFragment + '</div>' +
-        '</span></li>';
+    return (
+        "<li data-digit=" +
+        digit +
+        " ><span>" +
+        '<div class="up">' +
+        digitInnerFragment +
+        "</div>" +
+        '<div class="down">' +
+        digitInnerFragment +
+        "</div>" +
+        "</span></li>"
+    );
 };
 
 /**
  * Starts the clock
  */
-FlipClock.prototype.start = function () {
+FlipClock.prototype.start = function() {
     this.setToTime(this.options.startTime);
 
     var self = this;
 
-    this.tickInterval = setInterval(function () {
+    this.tickInterval = setInterval(function() {
         self.tick();
     }, this.options.tickDuration);
 };
@@ -274,7 +320,7 @@ FlipClock.prototype.start = function () {
 /**
  * Stops the Clock after the current interval is finished
  */
-FlipClock.prototype.stop = function () {
+FlipClock.prototype.stop = function() {
     clearInterval(this.tickInterval);
 };
 
@@ -282,13 +328,19 @@ FlipClock.prototype.stop = function () {
  * Resets to 00:00:00....
  * needed when using this as an actual clock - e.g. can reset to 0 after 23:59:59
  */
-FlipClock.prototype.resetDigits = function () {
-    this.options.containerElement.removeClass('play');
+FlipClock.prototype.resetDigits = function() {
+    this.options.containerElement.removeClass("play");
 
     for (var i = 0; i < this.digitSelectors.length; i++) {
-        var active = $(this.getDigitSelectorByIndex(i) + ".current", this.options.containerElement),
+        var active = $(
+                this.getDigitSelectorByIndex(i) + ".current",
+                this.options.containerElement
+            ),
             all = $(this.getDigitSelectorByIndex(i), this.options.containerElement),
-            first = $(this.getDigitSelectorByIndex(i) + ":first-child", this.options.containerElement);
+            first = $(
+                this.getDigitSelectorByIndex(i) + ":first-child",
+                this.options.containerElement
+            );
 
         all.eq(0).addClass("clockFix");
         all.removeClass("current");
@@ -299,23 +351,29 @@ FlipClock.prototype.resetDigits = function () {
         active.addClass("previous");
     }
 
-    this.options.containerElement.addClass('play');
+    this.options.containerElement.addClass("play");
 };
 
 /**
  * Sets the clock to a time based on passed string
  * @param time {string} 00:00:00...
  */
-FlipClock.prototype.setToTime = function (time) {
-    var timeArray = time.replace(/:/g, '').split('').reverse();
+FlipClock.prototype.setToTime = function(time) {
+    var timeArray = time
+        .replace(/:/g, "")
+        .split("")
+        .reverse();
 
     for (var i = 0; i < this.digitSelectors.length; i++) {
-        var digit = $(this.getDigitSelectorByIndex(i), this.options.containerElement).eq(parseInt(timeArray[i]));
+        var digit = $(
+            this.getDigitSelectorByIndex(i),
+            this.options.containerElement
+        ).eq(parseInt(timeArray[i]));
 
-        this.options.containerElement.removeClass('play');
+        this.options.containerElement.removeClass("play");
 
         digit.addClass("current");
-        this.options.containerElement.addClass('play');
+        this.options.containerElement.addClass("play");
     }
 };
 
@@ -323,26 +381,32 @@ FlipClock.prototype.setToTime = function (time) {
  * Set Segment to its maximum value
  * @param segmentGroupName
  */
-FlipClock.prototype.setFaceSegmentGroupMaxValue = function (segmentGroupName) {
+FlipClock.prototype.setFaceSegmentGroupMaxValue = function(segmentGroupName) {
     var self = this;
     var group = this.getFaceSegmentGroupDom(segmentGroupName);
 
-    group.each(function (idx) {
-        self.options.containerElement.removeClass('play');
+    group.each(function(idx) {
+        self.options.containerElement.removeClass("play");
 
-        var maxValue = self.options.face[segmentGroupName].maxValue.toString().split('');
+        var maxValue = self.options.face[segmentGroupName].maxValue
+            .toString()
+            .split("");
 
-        $(this).find('li.current').removeClass('current');
-        $(this).find('li[data-digit="' + maxValue[idx] + '"]').addClass('current');
+        $(this)
+            .find("li.current")
+            .removeClass("current");
+        $(this)
+            .find('li[data-digit="' + maxValue[idx] + '"]')
+            .addClass("current");
 
-        self.options.containerElement.addClass('play');
+        self.options.containerElement.addClass("play");
     });
 };
 
 /**
  * actual callback for the tick/interval
  */
-FlipClock.prototype.tick = function () {
+FlipClock.prototype.tick = function() {
     this.doTick(0);
 };
 
@@ -350,14 +414,14 @@ FlipClock.prototype.tick = function () {
  * Returns current time as int
  * @returns {Number}
  */
-FlipClock.prototype.getCurrentTime = function () {
+FlipClock.prototype.getCurrentTime = function() {
     var currentTime = [];
 
-    $('li.current', this.options.containerElement).each(function () {
-        currentTime.push($(this).data('digit'));
+    $("li.current", this.options.containerElement).each(function() {
+        currentTime.push($(this).data("digit"));
     });
 
-    return parseInt(currentTime.join(''), 10);
+    return parseInt(currentTime.join(""), 10);
 };
 
 /**
@@ -365,8 +429,8 @@ FlipClock.prototype.getCurrentTime = function () {
  * @param digitIndex
  * @returns {string}
  */
-FlipClock.prototype.getDigitSelectorByIndex = function (digitIndex) {
-    return 'ul.' + this.digitSelectors[digitIndex] + ' li';
+FlipClock.prototype.getDigitSelectorByIndex = function(digitIndex) {
+    return "ul." + this.digitSelectors[digitIndex] + " li";
 };
 
 /**
@@ -374,8 +438,10 @@ FlipClock.prototype.getDigitSelectorByIndex = function (digitIndex) {
  * @param digitElement
  * @returns {*}
  */
-FlipClock.prototype.getFaceSegmentGroupNameByDigitElement = function (digitElement) {
-    return digitElement.parent().data('face-segment-group');
+FlipClock.prototype.getFaceSegmentGroupNameByDigitElement = function(
+    digitElement
+) {
+    return digitElement.parent().data("face-segment-group");
 };
 
 /**
@@ -383,8 +449,10 @@ FlipClock.prototype.getFaceSegmentGroupNameByDigitElement = function (digitEleme
  * @param digitElement
  * @returns {*}
  */
-FlipClock.prototype.getFaceSegmentByDigitElement = function (digitElement) {
-    return this.options.face[this.getFaceSegmentGroupNameByDigitElement(digitElement)];
+FlipClock.prototype.getFaceSegmentByDigitElement = function(digitElement) {
+    return this.options.face[
+        this.getFaceSegmentGroupNameByDigitElement(digitElement)
+    ];
 };
 
 /**
@@ -392,8 +460,8 @@ FlipClock.prototype.getFaceSegmentByDigitElement = function (digitElement) {
  * @param segmentGroupName
  * @returns {*|jQuery|HTMLElement}
  */
-FlipClock.prototype.getFaceSegmentGroupDom = function (segmentGroupName) {
-    return $('.' + segmentGroupName, this.options.containerElement)
+FlipClock.prototype.getFaceSegmentGroupDom = function(segmentGroupName) {
+    return $("." + segmentGroupName, this.options.containerElement);
 };
 
 /**
@@ -401,8 +469,11 @@ FlipClock.prototype.getFaceSegmentGroupDom = function (segmentGroupName) {
  * @param segmentGroupName
  * @returns {*|jQuery|HTMLElement}
  */
-FlipClock.prototype.getCurrentDigitDom = function (segmentGroupName) {
-    return $('.' + segmentGroupName + ' li.current', this.options.containerElement)
+FlipClock.prototype.getCurrentDigitDom = function(segmentGroupName) {
+    return $(
+        "." + segmentGroupName + " li.current",
+        this.options.containerElement
+    );
 };
 
 /**
@@ -410,22 +481,24 @@ FlipClock.prototype.getCurrentDigitDom = function (segmentGroupName) {
  * @param digitElement
  * @returns {string}
  */
-FlipClock.prototype.getCurrentFaceSegmentGroupValue = function (digitElement) {
-    var segmentGroupName = this.getFaceSegmentGroupNameByDigitElement(digitElement),
+FlipClock.prototype.getCurrentFaceSegmentGroupValue = function(digitElement) {
+    var segmentGroupName = this.getFaceSegmentGroupNameByDigitElement(
+            digitElement
+        ),
         values = [];
 
-    this.getCurrentDigitDom(segmentGroupName).each(function (idx) {
-        values[idx] = $(this).data('digit');
+    this.getCurrentDigitDom(segmentGroupName).each(function(idx) {
+        values[idx] = $(this).data("digit");
     });
 
-    return values.join('');
+    return values.join("");
 };
 
 /**
  * handles the tick logic
  * @param digitIndex
  */
-FlipClock.prototype.doTick = function (digitIndex) {
+FlipClock.prototype.doTick = function(digitIndex) {
     var nextDigit, pseudoSelector;
 
     // check if we reached maxTime and start over at 00:00:00
@@ -434,7 +507,7 @@ FlipClock.prototype.doTick = function (digitIndex) {
         return;
     }
 
-    this.options.containerElement.removeClass('play');
+    this.options.containerElement.removeClass("play");
 
     if (this.options.isCountdown === true) {
         pseudoSelector = ":first-child";
@@ -442,14 +515,23 @@ FlipClock.prototype.doTick = function (digitIndex) {
         pseudoSelector = ":last-child";
     }
 
-    var activeDigit = $(this.getDigitSelectorByIndex(digitIndex) + ".current", this.options.containerElement);
+    var activeDigit = $(
+        this.getDigitSelectorByIndex(digitIndex) + ".current",
+        this.options.containerElement
+    );
 
     if (activeDigit.html() == undefined) {
         if (this.options.isCountdown) {
-            activeDigit = $(this.getDigitSelectorByIndex(digitIndex) + ":last-child", this.options.containerElement);
+            activeDigit = $(
+                this.getDigitSelectorByIndex(digitIndex) + ":last-child",
+                this.options.containerElement
+            );
             nextDigit = activeDigit.prev("li");
         } else {
-            activeDigit = $(this.getDigitSelectorByIndex(digitIndex), this.options.containerElement).eq(0);
+            activeDigit = $(
+                this.getDigitSelectorByIndex(digitIndex),
+                this.options.containerElement
+            ).eq(0);
             nextDigit = activeDigit.next("li");
         }
 
@@ -457,7 +539,10 @@ FlipClock.prototype.doTick = function (digitIndex) {
 
         nextDigit.addClass("current");
     } else if (activeDigit.is(pseudoSelector)) {
-        $(this.getDigitSelectorByIndex(digitIndex), this.options.containerElement).removeClass("previous");
+        $(
+            this.getDigitSelectorByIndex(digitIndex),
+            this.options.containerElement
+        ).removeClass("previous");
 
         // countdown target reached, halt
         if (this.options.isCountdown === true && this.isMinTimeReached()) {
@@ -469,9 +554,15 @@ FlipClock.prototype.doTick = function (digitIndex) {
 
         if (this.options.isCountdown === true) {
             activeDigit.addClass("countdownFix");
-            activeDigit = $(this.getDigitSelectorByIndex(digitIndex) + ":last-child", this.options.containerElement);
+            activeDigit = $(
+                this.getDigitSelectorByIndex(digitIndex) + ":last-child",
+                this.options.containerElement
+            );
         } else {
-            activeDigit = $(this.getDigitSelectorByIndex(digitIndex), this.options.containerElement).eq(0);
+            activeDigit = $(
+                this.getDigitSelectorByIndex(digitIndex),
+                this.options.containerElement
+            ).eq(0);
             activeDigit.addClass("clockFix");
         }
 
@@ -482,7 +573,10 @@ FlipClock.prototype.doTick = function (digitIndex) {
             this.doTick(digitIndex + 1);
         }
     } else {
-        $(this.getDigitSelectorByIndex(digitIndex), this.options.containerElement).removeClass("previous");
+        $(
+            this.getDigitSelectorByIndex(digitIndex),
+            this.options.containerElement
+        ).removeClass("previous");
 
         activeDigit.addClass("previous").removeClass("current");
 
@@ -498,10 +592,12 @@ FlipClock.prototype.doTick = function (digitIndex) {
     // set segment to maxValue if it would move past it
     var group = this.getFaceSegmentByDigitElement(activeDigit);
     if (this.getCurrentFaceSegmentGroupValue(activeDigit) > group.maxValue) {
-        this.setFaceSegmentGroupMaxValue(this.getFaceSegmentGroupNameByDigitElement(activeDigit));
+        this.setFaceSegmentGroupMaxValue(
+            this.getFaceSegmentGroupNameByDigitElement(activeDigit)
+        );
     }
 
-    this.options.containerElement.addClass('play');
+    this.options.containerElement.addClass("play");
     this.cleanZIndexFix(activeDigit, this.digitSelectors[digitIndex]);
 };
 
@@ -509,16 +605,22 @@ FlipClock.prototype.doTick = function (digitIndex) {
  * isMaxTimeReached
  * @returns {boolean}
  */
-FlipClock.prototype.isMaxTimeReached = function () {
-    return this.getCurrentTime() >= parseInt(this.options.maxTime.replace(/:/g, ''), 10);
+FlipClock.prototype.isMaxTimeReached = function() {
+    return (
+        this.getCurrentTime() >=
+        parseInt(this.options.maxTime.replace(/:/g, ""), 10)
+    );
 };
 
 /**
  * isMinTimeReached
  * @returns {boolean}
  */
-FlipClock.prototype.isMinTimeReached = function () {
-    return this.getCurrentTime() <= parseInt(this.options.minTime.replace(/:/g, ''), 10);
+FlipClock.prototype.isMinTimeReached = function() {
+    return (
+        this.getCurrentTime() <=
+        parseInt(this.options.minTime.replace(/:/g, ""), 10)
+    );
 };
 
 /**
@@ -527,11 +629,18 @@ FlipClock.prototype.isMinTimeReached = function () {
  * @param activeDigit
  * @param selector
  */
-FlipClock.prototype.cleanZIndexFix = function (activeDigit, selector) {
+FlipClock.prototype.cleanZIndexFix = function(activeDigit, selector) {
     if (this.options.isCountdown === true) {
-        var fix = $('.' + selector + ' .countdownFix', this.options.containerElement);
+        var fix = $(
+            "." + selector + " .countdownFix",
+            this.options.containerElement
+        );
 
-        if (fix.length > 0 && !fix.hasClass("previous") && !fix.hasClass("current")) {
+        if (
+            fix.length > 0 &&
+            !fix.hasClass("previous") &&
+            !fix.hasClass("current")
+        ) {
             fix.removeClass("countdownFix");
         }
     } else {
