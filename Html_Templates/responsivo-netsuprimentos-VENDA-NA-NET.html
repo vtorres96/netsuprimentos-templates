@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <title>Venda na Net Suprimentos e Potencialize sua Receita no B2B</title>
@@ -9,27 +8,6 @@
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <div class="tpl-wrapper">
         <!-- HEADER -->
         <vtex:template id="responsivo-netsuprimentos-header" />
@@ -105,8 +83,7 @@
                                 </div>
                                 <div class="porque_vender_na_net_list_item_content">
                                     <div class="porque_vender_na_net_list_item_txt">
-                                        <strong>Especialistas Online</strong> para dúvidas técnicas e compra mais
-                                        assertiva
+                                        <strong>Especialistas Online</strong> para dúvidas técnicas e compra mais assertiva
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +95,7 @@
                                 </div>
                                 <div class="porque_vender_na_net_list_item_content">
                                     <div class="porque_vender_na_net_list_item_txt">
-                                        <strong>Facilidade de Integração:</strong> Commerce Switch, Integração de
-                                        Produtos com o Marketplace VTEX
+                                        <strong>Facilidade de Integração:</strong> Commerce Switch, Integração de Produtos com o Marketplace VTEX
                                     </div>
                                 </div>
                             </div>
@@ -130,8 +106,7 @@
 
                 <!-- TORNE-SE UM PARCEIRO -->
                 <section class="seja_parceiro">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920px"
-                        height="177px">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920px" height="177px">
                         <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
                             d="M0.000,177.000 L1920.000,41.000 L1920.000,-0.000 L0.000,-0.000 L0.000,177.000 Z" />
                     </svg>
@@ -197,50 +172,49 @@
                                         <div class="inputGroup">
                                             <input id="vtex" type="radio" name="x-input-radio" value="vtex" />
                                             <label for="vtex">Vtex</label>
-                                        </div>
-                                        <div class="inputGroup">
-                                            <input id="dmCommerce" type="radio" name="x-input-radio"
-                                                value="dmCommerce" />
-                                            <label for="dmCommerce">DM Commerce</label>
-                                        </div>
-                                        <div class="inputGroup">
-                                            <input id="outras" type="radio" name="x-input-radio" value="outras" />
-                                            <label for="outras">Outra</label>
-                                        </div>
-                                        <input type="text" required="required" placeholder="Qual?" name="plataforma" />
-                                    </label>
                                 </div>
-                                <div class="inputField contato">
-                                    <label>
+                                <div class="inputGroup">
+                                    <input id="dmCommerce" type="radio" name="x-input-radio" value="dmCommerce" />
+                                    <label for="dmCommerce">DM Commerce</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input id="outras" type="radio" name="x-input-radio" value="outras" />
+                                    <label for="outras">Outra</label>
+                                </div>
+                                <input type="text" required="required" placeholder="Qual?" name="plataforma" />
+                                </label>
+                        </div>
+                        <div class="inputField contato">
+                            <label>
                                         <p>Nome para Contato</p>
                                         <small>Ex: José Carlos</small>
                                         <input type="text" required="required" name="contato" placeholder="" />
                                     </label>
-                                </div>
-                                <div class="inputField cargo">
-                                    <label>
+                        </div>
+                        <div class="inputField cargo">
+                            <label>
                                         <p>Cargo</p>
                                         <small>Ex: Gerente de Relacionamento</small>
                                         <input type="text" required="required" name="cargo" placeholder="" />
                                     </label>
-                                </div>
-                                <div class="inputField telefone">
-                                    <label>
+                        </div>
+                        <div class="inputField telefone">
+                            <label>
                                         <p>Telefone</p>
                                         <input type="tel" required="required" name="telefone"
                                             placeholder="(11) 0000-0000" />
                                     </label>
-                                </div>
-                                <div class="inputField email">
-                                    <label>
+                        </div>
+                        <div class="inputField email">
+                            <label>
                                         <p>E-mail</p>
                                         <small>Ex: jose@netsuprimentos.com.br</small>
                                         <input type="email" required="required" name="email"
                                             placeholder="seu@email.com.br" />
                                     </label>
-                                </div>
-                                <div class="inputButtons">
-                                    <label>
+                        </div>
+                        <div class="inputButtons">
+                            <label>
                                         <button>
                                             <span class="text">Enviar Dados</span>
                                             <i class="fa fa-spinner" aria-hidden="true"></i>
@@ -250,20 +224,21 @@
                                                     stroke-width="6" /></svg>
                                         </button>
                                     </label>
-                                </div>
-                            </form>
                         </div>
-
+                        </form>
                     </div>
-                </section>
 
             </div>
-        </main>
+            </section>
 
-        <!-- FOOTER -->
-        <vtex:template id="responsivo-netsuprimentos-footer" />
+    </div>
+    </main>
 
-    </div><!-- fim tpl-wrapper -->
+    <!-- FOOTER -->
+    <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div>
+    <!-- fim tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />

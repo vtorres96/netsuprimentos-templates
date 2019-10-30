@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <vtex:template id="responsivo-netsuprimentos-includes-header" />
@@ -9,27 +8,6 @@
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <div class="tpl-wrapper">
         <!-- HEADER -->
         <vtex:template id="responsivo-netsuprimentos-header" />
@@ -86,20 +64,26 @@
                                 <vtex.cmc:searchNavigator />
                             </div>
                             <div class="overflow"><button></button></div>
-                        </div><!-- FIM wrapperLeft -->
+                        </div>
+                        <!-- FIM wrapperLeft -->
                         <div class="wrapperRight">
-                            <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="16"
-                                columnCount="16" />
-                        </div><!-- FIM wrapperRight -->
-                    </div><!-- FIM wrapperContent -->
-                </div><!-- FIM tpl-center -->
-            </div><!-- fim tpl-content -->
+                            <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="16" columnCount="16" />
+                        </div>
+                        <!-- FIM wrapperRight -->
+                    </div>
+                    <!-- FIM wrapperContent -->
+                </div>
+                <!-- FIM tpl-center -->
+            </div>
+            <!-- fim tpl-content -->
 
-        </main><!-- fim main -->
+        </main>
+        <!-- fim main -->
         <vtex.cmc:NetNewsletter />
         <!-- FOOTER -->
         <vtex:template id="responsivo-netsuprimentos-footer" />
-    </div><!-- fim tpl-wrapper -->
+    </div>
+    <!-- fim tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
@@ -107,4 +91,5 @@
     <script src="/arquivos/netsuprimentos-pag-super-loja.min.js"></script>
 
 </body>
+
 </html>

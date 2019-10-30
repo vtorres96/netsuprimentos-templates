@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <meta name="google-site-verification" content="7mvV2Xg11M3S7lzgJzoFTwNcTPDxsnNeOhkClGRwuqA" />
@@ -12,27 +11,6 @@
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <!-- HEADER -->
     <vtex:template id="responsivo-netsuprimentos-header" />
     <main>

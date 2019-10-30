@@ -1,362 +1,334 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-	xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
-	<vtex:template id="responsivo-netsuprimentos-includes-header" />
-	<link rel="stylesheet" href="/arquivos/netsuprimentos-black-week-2017.min.css?v=1.0.7" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-black-week-2017.min.css?v=1.0.7" />
 </head>
 
 <body>
-	<!-- inicio social login -->
-	<script>
-		window.fbAsyncInit = function () {
-			FB.init({
-				appId: '{your-app-id}',
-				cookie: true,
-				xfbml: true,
-				version: 'v4.0'
-			});
-			FB.AppEvents.logPageView();
-		};
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-header" />
 
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) { return; }
-			js = d.createElement(s); js.id = id;
-			js.src = "https://connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<!-- fim social login -->
-	<div class="tpl-wrapper">
-		<!-- HEADER -->
-		<vtex:template id="responsivo-netsuprimentos-header" />
+        <!-- MAIN -->
+        <main id="main">
 
-		<!-- MAIN -->
-		<main id="main">
-
-			<!-- HEADER BF -->
-			<section class="black-week-2017-header">
-				<div class="black-week-2017-top-header">
-					<div class="black-week-2017-container" style="max-width: 890px;">
-						<div class="black-week-2017-top-header-col1">
-							<div class="black-week-2017-logo">
-								<img src="/arquivos/logo-netsuprimentos-blackweek2017-prorrogada.png"
-									alt="Black Week 2017 para Empresas - Prorrogada" />
-								<h4>
-									<small>Até</small><strong> 03 de Dezembro </strong><small>de 2017.</small>
-									<br /><small style="font-size: .8rem;line-height: 1.4rem;color: #ccc;">ou enquanto
+            <!-- HEADER BF -->
+            <section class="black-week-2017-header">
+                <div class="black-week-2017-top-header">
+                    <div class="black-week-2017-container" style="max-width: 890px;">
+                        <div class="black-week-2017-top-header-col1">
+                            <div class="black-week-2017-logo">
+                                <img src="/arquivos/logo-netsuprimentos-blackweek2017-prorrogada.png" alt="Black Week 2017 para Empresas - Prorrogada" />
+                                <h4>
+                                    <small>Até</small><strong> 03 de Dezembro </strong><small>de 2017.</small>
+                                    <br /><small style="font-size: .8rem;line-height: 1.4rem;color: #ccc;">ou enquanto
 										durarem os estoques.</small>
-								</h4>
-							</div>
-						</div>
-						<div class="black-week-2017-top-header-col2">
-							<div class="black-week-2017-regulamento ">
-								<a href="/regulamento/black-week-2017/">Ler Regulamento</a>
-							</div>
-							<ul class="features-black-week-2017">
-								<li><span class="text-highlight">Frete Grátis*</span> para compras acima de
-									<strong>R$300,00</strong></li>
-								<li>até <strong style="font-size: 2rem;line-height: 2rem;">80%</strong> de Desconto</li>
-								<li>até <strong>3X</strong> sem juros</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="black-week-2017-bottom-header">
-					<div class="black-week-2017-container">
-						<div class="black-week-2017-bottom-header-col1">
-							<div class="black-week-2017-count-days">
-								<div class="black-week-2017-left-days-2">
-									<small><i class="fa fa-clock-o" aria-hidden="true"></i> acaba em:</small>
-									<strong class="count">7 dias</strong>
-								</div>
-							</div>
-						</div>
-						<div class="black-week-2017-bottom-header-col2">
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="black-week-2017-top-header-col2">
+                            <div class="black-week-2017-regulamento ">
+                                <a href="/regulamento/black-week-2017/">Ler Regulamento</a>
+                            </div>
+                            <ul class="features-black-week-2017">
+                                <li><span class="text-highlight">Frete Grátis*</span> para compras acima de
+                                    <strong>R$300,00</strong></li>
+                                <li>até <strong style="font-size: 2rem;line-height: 2rem;">80%</strong> de Desconto</li>
+                                <li>até <strong>3X</strong> sem juros</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="black-week-2017-bottom-header">
+                    <div class="black-week-2017-container">
+                        <div class="black-week-2017-bottom-header-col1">
+                            <div class="black-week-2017-count-days">
+                                <div class="black-week-2017-left-days-2">
+                                    <small><i class="fa fa-clock-o" aria-hidden="true"></i> acaba em:</small>
+                                    <strong class="count">7 dias</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="black-week-2017-bottom-header-col2">
 
 
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end HEADER BF -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end HEADER BF -->
 
-			<!-- MENU BF -->
-			<section class="black-week-2017-menu">
-				<div class="black-week-2017-container">
-					<nav>
-						<ul>
-							<li>
-								<a href="/black-week-2017/ate-80-off" class="fl-nav-01">
-									<span>Descontos de <strong>até 80%</strong></span>
-								</a>
-							</li>
-							<li>
-								<a href="/black-week-2017/ate-50-off" class="fl-nav-01">
-									<span>Descontos de <strong>até 50%</strong></span>
-								</a>
-							</li>
-							<li>
-								<a href="/black-week-2017/ate-30-off" class="fl-nav-01">
-									<span>Descontos de <strong>até 30%</strong></span>
-								</a>
-							</li>
-							<li>
-								<a href="/black-week-2017/ate-10-off" class="fl-nav-01">
-									<span>Descontos de <strong>até 10%</strong></span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="blackweek-shipping">
-						<i class="shipping-icon-black-week"></i>
-						<div class="slider-shipping">
-							<div class="item-shipping">
-								<span>Frete Grátis para compras acima de <strong>R$300,00</strong>*</span>
-								<small>*Produtos vendidos e entregues por <strong>BUNZL HIGIENE</strong> **Confira
+            <!-- MENU BF -->
+            <section class="black-week-2017-menu">
+                <div class="black-week-2017-container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/black-week-2017/ate-80-off" class="fl-nav-01">
+                                    <span>Descontos de <strong>até 80%</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/black-week-2017/ate-50-off" class="fl-nav-01">
+                                    <span>Descontos de <strong>até 50%</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/black-week-2017/ate-30-off" class="fl-nav-01">
+                                    <span>Descontos de <strong>até 30%</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/black-week-2017/ate-10-off" class="fl-nav-01">
+                                    <span>Descontos de <strong>até 10%</strong></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="blackweek-shipping">
+                        <i class="shipping-icon-black-week"></i>
+                        <div class="slider-shipping">
+                            <div class="item-shipping">
+                                <span>Frete Grátis para compras acima de <strong>R$300,00</strong>*</span>
+                                <small>*Produtos vendidos e entregues por <strong>BUNZL HIGIENE</strong> **Confira
 									Regiões</small>
-							</div>
-							<div class="item-shipping">
-								<span>Frete Grátis para compras acima de <strong>R$300,00</strong>*</span>
-								<small>*Produtos vendidos e entregues por <strong>PROT-CAP</strong> **Confira
+                            </div>
+                            <div class="item-shipping">
+                                <span>Frete Grátis para compras acima de <strong>R$300,00</strong>*</span>
+                                <small>*Produtos vendidos e entregues por <strong>PROT-CAP</strong> **Confira
 									Regiões</small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- END - MENU BF -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END - MENU BF -->
 
-			<!-- BANNER PRODUCTS BF -->
-			<div class="slider-blackweek">
-				<vtex:contentPlaceHolder id="SliderProdutos" />
-			</div>
-			<!-- end BANNER PRODUCTS BF -->
+            <!-- BANNER PRODUCTS BF -->
+            <div class="slider-blackweek">
+                <vtex:contentPlaceHolder id="SliderProdutos" />
+            </div>
+            <!-- end BANNER PRODUCTS BF -->
 
-			<!-- BRANDS BF -->
-			<section class="black-week-2017-brands">
-				<div class="black-week-2017-container">
-					<h2 class="black-week-2017-title blue-version"><span>As marcas preferidas dos nossos clientes</span>
-					</h2>
-					<vtex:contentPlaceHolder id="BrandsBlackWeek" />
-				</div>
-			</section>
-			<!-- end BRANDS BF -->
+            <!-- BRANDS BF -->
+            <section class="black-week-2017-brands">
+                <div class="black-week-2017-container">
+                    <h2 class="black-week-2017-title blue-version"><span>As marcas preferidas dos nossos clientes</span>
+                    </h2>
+                    <vtex:contentPlaceHolder id="BrandsBlackWeek" />
+                </div>
+            </section>
+            <!-- end BRANDS BF -->
 
-			<!-- PERCENTS BF -->
-			<section class="black-week-2017-percents">
-				<div class="black-week-2017-container">
-					<div class="blackweek-colecao blackweek-colecao-porcentagem">
-						<h2 class="blackweek-title">Escolha seu Desconto</h2>
-						<!-- Nav tabs -->
-						<ul id="BlackWeekColecaoPorcentagem" class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="">
-								<a href="/black-week-2017/ate-80-off" aria-controls="Colecao80" role="tab"
-									data-toggle="tab"><span class="number"><small>até</small> 80%</span> de Desconto</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="/black-week-2017/ate-50-off" aria-controls="Colecao50" role="tab"
-									data-toggle="tab"><span class="number"><small>até</small> 50%</span> de Desconto</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="/black-week-2017/ate-30-off" aria-controls="Colecao30" role="tab"
-									data-toggle="tab"><span class="number"><small>até</small> 30%</span> de Desconto</a>
-							</li>
-							<li role="presentation" class="">
-								<a href="/black-week-2017/ate-10-off" aria-controls="Colecao10" role="tab"
-									data-toggle="tab"><span class="number"><small>até</small> 10%</span> de Desconto</a>
-							</li>
-						</ul>
-						<!-- Tab -->
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="Colecao80">
-								<div class="vitrine-blackweek">
-									<!-- Coleção -->
-									<vtex:contentPlaceHolder id="Colecao80" />
-									<a class="blackweek-showall" href="/black-week-2017/ate70"><i
+            <!-- PERCENTS BF -->
+            <section class="black-week-2017-percents">
+                <div class="black-week-2017-container">
+                    <div class="blackweek-colecao blackweek-colecao-porcentagem">
+                        <h2 class="blackweek-title">Escolha seu Desconto</h2>
+                        <!-- Nav tabs -->
+                        <ul id="BlackWeekColecaoPorcentagem" class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="">
+                                <a href="/black-week-2017/ate-80-off" aria-controls="Colecao80" role="tab" data-toggle="tab"><span class="number"><small>até</small> 80%</span> de Desconto</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="/black-week-2017/ate-50-off" aria-controls="Colecao50" role="tab" data-toggle="tab"><span class="number"><small>até</small> 50%</span> de Desconto</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="/black-week-2017/ate-30-off" aria-controls="Colecao30" role="tab" data-toggle="tab"><span class="number"><small>até</small> 30%</span> de Desconto</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="/black-week-2017/ate-10-off" aria-controls="Colecao10" role="tab" data-toggle="tab"><span class="number"><small>até</small> 10%</span> de Desconto</a>
+                            </li>
+                        </ul>
+                        <!-- Tab -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="Colecao80">
+                                <div class="vitrine-blackweek">
+                                    <!-- Coleção -->
+                                    <vtex:contentPlaceHolder id="Colecao80" />
+                                    <a class="blackweek-showall" href="/black-week-2017/ate70"><i
 											class="fa fa-plus-circle" aria-hidden="true"></i><span>Ver todos os
 											produtos</span></a>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="Colecao50">
-								<div class="vitrine-blackweek">
-									<!-- Coleção -->
-									<vtex:contentPlaceHolder id="Colecao50" />
-									<a class="blackweek-showall" href="/black-week-2017/ate40"><i
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="Colecao50">
+                                <div class="vitrine-blackweek">
+                                    <!-- Coleção -->
+                                    <vtex:contentPlaceHolder id="Colecao50" />
+                                    <a class="blackweek-showall" href="/black-week-2017/ate40"><i
 											class="fa fa-plus-circle" aria-hidden="true"></i><span>Ver todos os
 											produtos</span></a>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="Colecao30">
-								<div class="vitrine-blackweek">
-									<!-- Coleção -->
-									<vtex:contentPlaceHolder id="Colecao30" />
-									<a class="blackweek-showall" href="/black-week-2017/ate20"><i
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="Colecao30">
+                                <div class="vitrine-blackweek">
+                                    <!-- Coleção -->
+                                    <vtex:contentPlaceHolder id="Colecao30" />
+                                    <a class="blackweek-showall" href="/black-week-2017/ate20"><i
 											class="fa fa-plus-circle" aria-hidden="true"></i><span>Ver todos os
 											produtos</span></a>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="Colecao10">
-								<div class="vitrine-blackweek">
-									<!-- Coleção -->
-									<vtex:contentPlaceHolder id="Colecao10" />
-									<a class="blackweek-showall" href="/black-week-2017/ate20"><i
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="Colecao10">
+                                <div class="vitrine-blackweek">
+                                    <!-- Coleção -->
+                                    <vtex:contentPlaceHolder id="Colecao10" />
+                                    <a class="blackweek-showall" href="/black-week-2017/ate20"><i
 											class="fa fa-plus-circle" aria-hidden="true"></i><span>Ver todos os
 											produtos</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end PERCENTS BF -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end PERCENTS BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<div class="black-week-2017-prateleira-box">
-						<vtex:contentPlaceHolder id="BWPrateleira1" />
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <div class="black-week-2017-prateleira-box">
+                        <vtex:contentPlaceHolder id="BWPrateleira1" />
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<div class="black-week-2017-prateleira-box">
-						<vtex:contentPlaceHolder id="BWPrateleira2" />
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <div class="black-week-2017-prateleira-box">
+                        <vtex:contentPlaceHolder id="BWPrateleira2" />
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<div class="black-week-2017-prateleira-box">
-						<vtex:contentPlaceHolder id="BWPrateleira3" />
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <div class="black-week-2017-prateleira-box">
+                        <vtex:contentPlaceHolder id="BWPrateleira3" />
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<div class="black-week-2017-prateleira-box">
-						<vtex:contentPlaceHolder id="BWPrateleira4" />
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <div class="black-week-2017-prateleira-box">
+                        <vtex:contentPlaceHolder id="BWPrateleira4" />
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
-			<!-- BANNER PRODUCTS BF -->
-			<div class="slider-blackweek">
-				<vtex:contentPlaceHolder id="SliderProdutos2" />
-			</div>
-			<!-- end BANNER PRODUCTS BF -->
+            <!-- BANNER PRODUCTS BF -->
+            <div class="slider-blackweek">
+                <vtex:contentPlaceHolder id="SliderProdutos2" />
+            </div>
+            <!-- end BANNER PRODUCTS BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<div class="black-week-2017-prateleira-box">
-						<vtex:contentPlaceHolder id="BWPrateleira5" />
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <div class="black-week-2017-prateleira-box">
+                        <vtex:contentPlaceHolder id="BWPrateleira5" />
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
-			<!-- CATEGORIES BF -->
-			<section class="black-week-2017-categories">
-				<div class="black-week-2017-container">
-					<h2 class="black-week-2017-title yellow-version"><span>As Categorias + Desejadas</span></h2>
-					<vtex:contentPlaceHolder id="CategoriesBlackWeek" />
-				</div>
-			</section>
-			<!-- end CATEGORIES BF -->
+            <!-- CATEGORIES BF -->
+            <section class="black-week-2017-categories">
+                <div class="black-week-2017-container">
+                    <h2 class="black-week-2017-title yellow-version"><span>As Categorias + Desejadas</span></h2>
+                    <vtex:contentPlaceHolder id="CategoriesBlackWeek" />
+                </div>
+            </section>
+            <!-- end CATEGORIES BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<!-- Clerk - Vitrine Ultimos Vistos -->
-					<div class="tpl-center">
-						<div class="clerk-vitrine-recomendacoes"></div>
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <!-- Clerk - Vitrine Ultimos Vistos -->
+                    <div class="tpl-center">
+                        <div class="clerk-vitrine-recomendacoes"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
-			<!-- PRATELEIRA BF -->
-			<section class="black-week-2017-prateleira">
-				<div class="black-week-2017-container">
-					<!-- Clerk - Vitrine Ultimos Vistos -->
-					<div class="tpl-center">
-						<div class="clerk-vitrine-ultimos-vistos"></div>
-					</div>
-				</div>
-			</section>
-			<!-- end PRATELEIRA BF -->
+            <!-- PRATELEIRA BF -->
+            <section class="black-week-2017-prateleira">
+                <div class="black-week-2017-container">
+                    <!-- Clerk - Vitrine Ultimos Vistos -->
+                    <div class="tpl-center">
+                        <div class="clerk-vitrine-ultimos-vistos"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- end PRATELEIRA BF -->
 
 
-			<!-- ABOUT BF -->
-			<section class="black-week-2017-about-us">
-				<div class="black-week-2017-container">
-					<h2 class="black-week-2017-title blue-version"><span>Sobre a Black Week</span></h2>
-					<p class="black-week-2017-paragraph">
-						A Black Week é a semana da maior liquidação do mundo! É uma excelente oportunidade para comprar
-						e aproveitar as melhores promoções e ofertas exclusivas. No Brasil, a promoção sempre aconteceu
-						na última sexta-feira de novembro com o nome <strong>Black Friday</strong>. Nesse ano, a Net
-						Suprimentos expandiu o prazo pensando nos nossos clientes, assim a Black Friday se tornou a
-						<strong>#BlackWeek Para Empresas - Uma semana inteira com super descontos!</strong>
-					</p>
-				</div>
-			</section>
-			<!-- end ABOUT BF -->
+            <!-- ABOUT BF -->
+            <section class="black-week-2017-about-us">
+                <div class="black-week-2017-container">
+                    <h2 class="black-week-2017-title blue-version"><span>Sobre a Black Week</span></h2>
+                    <p class="black-week-2017-paragraph">
+                        A Black Week é a semana da maior liquidação do mundo! É uma excelente oportunidade para comprar e aproveitar as melhores promoções e ofertas exclusivas. No Brasil, a promoção sempre aconteceu na última sexta-feira de novembro com o nome <strong>Black Friday</strong>.
+                        Nesse ano, a Net Suprimentos expandiu o prazo pensando nos nossos clientes, assim a Black Friday se tornou a
+                        <strong>#BlackWeek Para Empresas - Uma semana inteira com super descontos!</strong>
+                    </p>
+                </div>
+            </section>
+            <!-- end ABOUT BF -->
 
-			<!-- FEATURES BF -->
-			<section class="black-week-2017-features">
-				<div class="black-week-2017-container">
-					<h2 class="black-week-2017-title yellow-version"><span>Como aproveitar a Black Week aqui na Net
+            <!-- FEATURES BF -->
+            <section class="black-week-2017-features">
+                <div class="black-week-2017-container">
+                    <h2 class="black-week-2017-title yellow-version"><span>Como aproveitar a Black Week aqui na Net
 							Suprimentos</span></h2>
-					<ul class="black-week-2017-features-list">
-						<li class="black-week-2017-features-item-list">
-							<span>Nossos especialistas estarão prontos para ajudar você</span>
-						</li>
-						<li class="black-week-2017-features-item-list">
-							<span>Você pode deixar seu e-mail aqui na página para receber as ofertas exclusivas</span>
-						</li>
-						<li class="black-week-2017-features-item-list">
-							<span>Aqui você encontra somente lojas confiáveis</span>
-						</li>
-						<li class="black-week-2017-features-item-list">
-							<span>Produto com desconto você vai identificar com o selo Black Week</span>
-						</li>
-						<li class="black-week-2017-features-item-list">
-							<span>Você vai economizar muito com os descontos</span>
-						</li>
-						<li class="black-week-2017-features-item-list">
-							<span>Garanta seu pedido o mais rápido possível, pois os produtos são muito procurados nesse
+                    <ul class="black-week-2017-features-list">
+                        <li class="black-week-2017-features-item-list">
+                            <span>Nossos especialistas estarão prontos para ajudar você</span>
+                        </li>
+                        <li class="black-week-2017-features-item-list">
+                            <span>Você pode deixar seu e-mail aqui na página para receber as ofertas exclusivas</span>
+                        </li>
+                        <li class="black-week-2017-features-item-list">
+                            <span>Aqui você encontra somente lojas confiáveis</span>
+                        </li>
+                        <li class="black-week-2017-features-item-list">
+                            <span>Produto com desconto você vai identificar com o selo Black Week</span>
+                        </li>
+                        <li class="black-week-2017-features-item-list">
+                            <span>Você vai economizar muito com os descontos</span>
+                        </li>
+                        <li class="black-week-2017-features-item-list">
+                            <span>Garanta seu pedido o mais rápido possível, pois os produtos são muito procurados nesse
 								período</span>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- end FEATURES BF -->
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end FEATURES BF -->
 
-		</main>
-		<!-- end MAIN -->
+        </main>
+        <!-- end MAIN -->
 
-		<!-- FOOTER -->
-		<vtex:template id="responsivo-netsuprimentos-footer" />
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
 
-	</div><!-- end tpl-wrapper -->
+    </div>
+    <!-- end tpl-wrapper -->
 
-	<!-- SCRIPTS -->
-	<vtex:template id="responsivo-netsuprimentos-includes-scripts" />
-	<script type="text/javascript" src="/arquivos/netsuprimentos-black-week-2017.min.js?v=1.0.5"></script>
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script type="text/javascript" src="/arquivos/netsuprimentos-black-week-2017.min.js?v=1.0.5"></script>
 
 </body>
 

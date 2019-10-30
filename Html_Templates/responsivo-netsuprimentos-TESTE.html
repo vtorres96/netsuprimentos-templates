@@ -1,36 +1,16 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <vtex:template id="responsivo-netsuprimentos-includes-header" />
     <link rel="stylesheet" href="/arquivos/netsuprimentos-page-sistema.min.css" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-main-teste.min.css" />
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <div class="tpl-wrapper">
         <!-- HEADER -->
-        <vtex:template id="responsivo-netsuprimentos-header" />
+        <vtex:template id="responsivo-netsuprimentos-header-teste" />
 
         <!-- MAIN -->
         <main id="main">
@@ -39,14 +19,18 @@
                     <div class="search-header">
                         <p>Página Tester</p>
                     </div>
-                </div><!-- FIM tpl-center -->
-            </div><!-- fim tpl-content -->
-        </main><!-- fim main -->
+                </div>
+                <!-- FIM tpl-center -->
+            </div>
+            <!-- fim tpl-content -->
+        </main>
+        <!-- fim main -->
 
         <!-- FOOTER -->
         <vtex:template id="responsivo-netsuprimentos-footer" />
 
-    </div><!-- fim tpl-wrapper -->
+    </div>
+    <!-- fim tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />

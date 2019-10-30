@@ -1,37 +1,14 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
     <vtex:template id="responsivo-netsuprimentos-includes-header" />
     <link rel="stylesheet" href="/arquivos/netsuprimentos-page-busca.min.css" />
     <link rel="stylesheet" href="/arquivos/enext-general.css?v=99" />
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <div class="tpl-wrapper">
         <!-- HEADER -->
         <vtex:template id="responsivo-netsuprimentos-header" />
@@ -82,14 +59,15 @@
 
                             <div class="overflow"><button></button></div>
 
-                        </div><!-- FIM wrapperLeft -->
+                        </div>
+                        <!-- FIM wrapperLeft -->
 
                         <div class="wrapperRight">
 
-                            <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="16"
-                                columnCount="16" />
+                            <vtex.cmc:searchResult layout="1a9d90fc-6248-4a5c-a6df-31178990ee79" itemCount="16" columnCount="16" />
 
-                        </div><!-- FIM wrapperRight -->
+                        </div>
+                        <!-- FIM wrapperRight -->
 
                         <div class="divs-clerk">
                             <!-- Clerk - Vitrine Mais Vendidos Categoria -->
@@ -98,19 +76,24 @@
                             <div class="clerk-vitrine-ultimos-vistos"></div>
                         </div>
 
-                    </div><!-- FIM wrapperContent -->
-                </div><!-- FIM tpl-center -->
+                    </div>
+                    <!-- FIM wrapperContent -->
+                </div>
+                <!-- FIM tpl-center -->
 
-            </div><!-- fim tpl-content -->
+            </div>
+            <!-- fim tpl-content -->
 
-        </main><!-- fim main -->
+        </main>
+        <!-- fim main -->
 
         <vtex.cmc:NetNewsletter />
 
         <!-- FOOTER -->
         <vtex:template id="responsivo-netsuprimentos-footer" />
 
-    </div><!-- fim tpl-wrapper -->
+    </div>
+    <!-- fim tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />

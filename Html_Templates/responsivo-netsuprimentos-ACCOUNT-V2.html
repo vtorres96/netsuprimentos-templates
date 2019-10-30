@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <vtex:contentPlaceHolder id="metatags" />
@@ -9,27 +8,6 @@
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <div class="tpl-wrapper">
         <vtex:template id="responsivo-netsuprimentos-header" />
 
@@ -65,55 +43,45 @@
                     <form method="POST" id="formMC">
                         <div class="form-group">
                             <label for="mcNome">Nome</label>
-                            <input type="text" class="form-control" name="mcNome" id="mcNome"
-                                placeholder="Digite seu nome" data-target="#firstName" />
+                            <input type="text" class="form-control" name="mcNome" id="mcNome" placeholder="Digite seu nome" data-target="#firstName" />
                         </div>
                         <div class="form-group">
                             <label for="mcSobrenome">Sobrenome</label>
-                            <input type="text" class="form-control" name="mcSobrenome" id="mcSobrenome"
-                                placeholder="Digite seu sobrenome" data-target="#lastName" />
+                            <input type="text" class="form-control" name="mcSobrenome" id="mcSobrenome" placeholder="Digite seu sobrenome" data-target="#lastName" />
                         </div>
                         <div class="form-group">
                             <label for="mcCPF">CPF</label>
-                            <input type="text" class="form-control" name="mcCPF" id="mcCPF" placeholder="000.000.000-00"
-                                data-target="#document" />
+                            <input type="text" class="form-control" name="mcCPF" id="mcCPF" placeholder="000.000.000-00" data-target="#document" />
                         </div>
                         <div class="form-group">
                             <label for="mcEmail">Email</label>
-                            <input type="email" class="form-control" name="mcEmail" id="mcEmail"
-                                placeholder="Digite seu email" data-target="#email" />
+                            <input type="email" class="form-control" name="mcEmail" id="mcEmail" placeholder="Digite seu email" data-target="#email" />
                         </div>
 
                         <h4>Dados Jurídicos</h4>
                         <div class="form-group">
                             <label for="mcNomeEmpresa">Razão Social</label>
-                            <input type="text" class="form-control" name="mcNomeEmpresa" id="mcNomeEmpresa"
-                                placeholder="Digite o nome de sua empresa" data-target="#corporateName" />
+                            <input type="text" class="form-control" name="mcNomeEmpresa" id="mcNomeEmpresa" placeholder="Digite o nome de sua empresa" data-target="#corporateName" />
                         </div>
                         <div class="form-group">
                             <label for="mcEstado">Nome Fantasia</label>
-                            <input type="text" class="form-control" name="mcEstado" id="mcEstado"
-                                placeholder="Digite o nome fantasia" data-target="#fancyName" />
+                            <input type="text" class="form-control" name="mcEstado" id="mcEstado" placeholder="Digite o nome fantasia" data-target="#fancyName" />
                         </div>
                         <div class="form-group">
                             <label for="mcCnpj">CNPJ</label>
-                            <input type="text" class="form-control" name="mcCnpj" id="mcCnpj"
-                                placeholder="00.000.000/0000-00" data-target="#businessDocument" />
+                            <input type="text" class="form-control" name="mcCnpj" id="mcCnpj" placeholder="00.000.000/0000-00" data-target="#businessDocument" />
                         </div>
                         <div class="form-group">
                             <label for="mcCidade">Inscr. Estadual</label>
-                            <input type="text" class="form-control" name="mcCidade" id="mcCidade"
-                                placeholder="Inscr. Estadual" data-target="#stateRegistration" />
+                            <input type="text" class="form-control" name="mcCidade" id="mcCidade" placeholder="Inscr. Estadual" data-target="#stateRegistration" />
                         </div>
                         <div class="form-group">
                             <label for="mcTelefone">Telefone</label>
-                            <input type="tel" class="form-control" name="mcTelefone" id="mcTelefone"
-                                placeholder="(00) 0000-0000" data-target="#homePhone" />
+                            <input type="tel" class="form-control" name="mcTelefone" id="mcTelefone" placeholder="(00) 0000-0000" data-target="#homePhone" />
                         </div>
                         <div class="form-group">
                             <label for="mcTelefone">Telefone Comercial</label>
-                            <input type="tel" class="form-control" name="mcTelefone" id="mcTelefone"
-                                placeholder="(00) 0000-0000" data-target="#businessPhone" />
+                            <input type="tel" class="form-control" name="mcTelefone" id="mcTelefone" placeholder="(00) 0000-0000" data-target="#businessPhone" />
                         </div>
                         <button type="submit" class="btn btn-default enviaCM">Salvar</button>
                     </form>
@@ -133,6 +101,17 @@
     <script src="/arquivos/netsuprimentos-account-external-plugins.min.js?v=8G6FfRNN"></script>
     <script src="/arquivos/netsuprimentos-myaccount-functions.min.js?v=OnnN9Js7"></script>
     <script src="/arquivos/ns-common-account.js"></script>
+    <script>
+        $(document).ready(setTimeout(function() {
+            let headerGerado = $("header")[2];
+            let novo = $("<div/>");
+            let antigo = $(headerGerado);
+            console.log("trocou");
+            antigo.before(novo);
+            novo.append(antigo.children());
+            antigo.remove();
+        }, 8000));
+    </script>
 </body>
 
 </html>

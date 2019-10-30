@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <vtex:template id="responsivo-netsuprimentos-includes-header" />
@@ -8,31 +7,9 @@
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
-
     <!-- <vtex.cmc:productRichSnippets showGoogle="1" /> -->
 
-    <!--- TESTE -->
+
     <div class="tpl-wrapper">
         <!-- HEADER -->
         <vtex:template id="responsivo-netsuprimentos-header" />
@@ -137,16 +114,13 @@
 
                                 <div class="net-product__code-ca">
                                     <div class="net-product__code-ca--link">
-                                        <a href="javascript:void(0)" class="js--ca-link" target="_blank" rel="noopener"
-                                            title="Consultar CA">
+                                        <a href="javascript:void(0)" class="js--ca-link" target="_blank" rel="noopener" title="Consultar CA">
                                             Nº CA <strong class="js--ca-reference" itemprop="mpn"></strong>
                                         </a>
                                     </div>
                                     <div class="net-product__code-ca--pdf">
-                                        <a href="javascript:void(0)" download="" class="js--pdf-to-download"
-                                            rel="noopener">
-                                            <img src="/arquivos/_netsuprimentos--btn-ca-mte-pdf.png"
-                                                style="max-width: 160px;" />
+                                        <a href="javascript:void(0)" download="" class="js--pdf-to-download" rel="noopener">
+                                            <img src="/arquivos/_netsuprimentos--btn-ca-mte-pdf.png" style="max-width: 160px;" />
                                         </a>
                                     </div>
                                 </div>
@@ -193,8 +167,7 @@
                                             <div class="box-descriptions">
                                                 <!-- Ficha Técnica -->
                                                 <div class="box-ficha-tecnica toPrint">
-                                                    <a href="javascript:void();" target="_blank"
-                                                        class="btn-tech-file">Ver
+                                                    <a href="javascript:void();" target="_blank" class="btn-tech-file">Ver
                                                         ficha técnica do produto</a>
                                                 </div>
                                             </div>
@@ -209,8 +182,7 @@
 											</script>-->
                                                 <!-- Aviso de Entrega (BR) -->
                                                 <div class="box-aviso-frete" style="display: none;">
-                                                    <strong>*</strong> Calcule o frete no momento da compra, na página
-                                                    de carrinho.
+                                                    <strong>*</strong> Calcule o frete no momento da compra, na página de carrinho.
                                                 </div>
                                                 <div class="product__info-shipping-types">
                                                     <h4>Frete e prazo de entrega</h4>
@@ -219,15 +191,11 @@
                                                     </div> -->
                                                     <form class="product__info-shipping-form">
                                                         <div class="shipping-form__content">
-                                                            <input type="text" class="js--value-cep"
-                                                                pattern="[0-9]{5}[\-]?[0-9]{3}" name="postalCode"
-                                                                required="" maxlength="9"
-                                                                placeholder="Informe o seu CEP" />
+                                                            <input type="text" class="js--value-cep" pattern="[0-9]{5}[\-]?[0-9]{3}" name="postalCode" required="" maxlength="9" placeholder="Informe o seu CEP" />
                                                             <button class="js--submit-cep">OK</button>
                                                         </div>
                                                         <div class="shipping-form__find-cep">
-                                                            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
-                                                                target="_blank" rel="noopener">Não sei o meu CEP</a>
+                                                            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" target="_blank" rel="noopener">Não sei o meu CEP</a>
                                                         </div>
                                                         <div class="shipping-form__error-cep js--error-cep">
                                                             <p>CEP inválido, tente novamente!</p>
@@ -257,22 +225,16 @@
                                                 <div class="net-btn-qnty" id="net-btn-qnty-view">
                                                     <div class="net-btn-qnty-box">
                                                         <div class="btn-toolbar" role="toolbar">
-                                                            <input size="20" type="text"
-                                                                class="btn-group buy-in-page-quantity" value="1"
-                                                                productindex="0" style="display:block" />
-                                                            <button
-                                                                class="btn btn-default btn-net-default btn-group aumentar-quantidade">+</button>
-                                                            <button
-                                                                class="btn btn-default btn-net-default btn-group diminuir-quantidade">-</button>
+                                                            <input size="20" type="text" class="btn-group buy-in-page-quantity" value="1" productindex="0" style="display:block" />
+                                                            <button class="btn btn-default btn-net-default btn-group aumentar-quantidade">+</button>
+                                                            <button class="btn btn-default btn-net-default btn-group diminuir-quantidade">-</button>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="net-btn-addcart-box">
-                                                    <a id="net-btn-addcart-view"
-                                                        class="btn btn-default btn-block net-btn net-btn-addcart-green net-btn-addcart-sync">
-                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                        Comprar <small></small>
+                                                    <a id="net-btn-addcart-view" class="btn btn-default btn-block net-btn net-btn-addcart-green net-btn-addcart-sync">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar <small></small>
                                                     </a>
                                                     <span class="title-btnaddcart">
                                                         <i class="fa fa-shield"></i> Compre e Confie. <span
@@ -355,14 +317,12 @@
 
                                 <div class="tab-content">
                                     <div class="tab-pane" id="descricao">
-                                        <div itemprop="description"
-                                            class="product-info product-info-description toPrint">
+                                        <div itemprop="description" class="product-info product-info-description toPrint">
                                             <h2>Descrição do Produto</h2>
                                             <vtex.cmc:ProductDescription />
                                         </div>
 
-                                        <div id="net-product-sizetable"
-                                            class="product-info product-info-sizetable toPrint">
+                                        <div id="net-product-sizetable" class="product-info product-info-sizetable toPrint">
                                             <h2><i class="fa fa-table" aria-hidden="true"></i> Tabela de Medida</h2>
                                             <vtex.cmc:NETSizeTable />
                                         </div>
@@ -397,7 +357,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- end - DESCRICAO PRODUTO -->
+                        </div>
+                        <!-- end - DESCRICAO PRODUTO -->
                     </section>
 
                     <section id="after-description">
@@ -434,28 +395,31 @@
                         </div>
                     </section>
 
-                </div><!-- end - tpl-center -->
+                </div>
+                <!-- end - tpl-center -->
 
-            </div><!-- end - tpl-content -->
+            </div>
+            <!-- end - tpl-content -->
 
-        </main><!-- end - main -->
+        </main>
+        <!-- end - main -->
 
         <vtex.cmc:NetNewsletter />
 
         <!-- FOOTER -->
         <vtex:template id="responsivo-netsuprimentos-footer" />
 
-    </div><!-- end - tpl-wrapper -->
+    </div>
+    <!-- end - tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex.cmc:NSProductJSONLD />
 
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
     <script type="text/javascript" src="/arquivos/netsuprimentos-pag-produto.min.js"></script>
     <script type="text/javascript">
-        (function () {
+        (function() {
             var script = document.createElement("script"),
                 head = document.getElementsByTagName("head")[0];
 

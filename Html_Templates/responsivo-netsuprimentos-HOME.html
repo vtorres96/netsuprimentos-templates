@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
     <meta name="google-site-verification" content="7mvV2Xg11M3S7lzgJzoFTwNcTPDxsnNeOhkClGRwuqA" />
@@ -10,27 +9,6 @@
 </head>
 
 <body>
-    <!-- inicio social login -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '{your-app-id}',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fim social login -->
     <div class="tpl-wrapper">
         <!-- HEADER -->
         <vtex:template id="responsivo-netsuprimentos-header" />
@@ -48,7 +26,8 @@
                     <div class="slide mobile">
                         <vtex:contentPlaceHolder id="banner-slider-mobile" />
                     </div>
-                </section><!-- FIM fim slideHome -->
+                </section>
+                <!-- FIM fim slideHome -->
 
                 <vtex.cmc:NSNewsletterHome />
 
@@ -56,7 +35,8 @@
                     <div class="tpl-center">
                         <vtex:contentPlaceHolder id="banner-informacoes-de-venda" />
                     </div>
-                </section><!-- FIM Informações de Venda -->
+                </section>
+                <!-- FIM Informações de Venda -->
 
                 <section id="MenuCampanha">
                     <div class="nt-box nt-box-icons-nav-list-icon-home">
@@ -71,7 +51,8 @@
                             </div>
                         </div>
                     </div>
-                </section><!-- FIM MenuCampanha -->
+                </section>
+                <!-- FIM MenuCampanha -->
 
                 <section id="topMarcas" class="slider-marcas">
                     <div class="tpl-center">
@@ -85,17 +66,8 @@
                     </div>
                 </section>
                 <!-- FIM topMarcas -->
-
-                <!-- Banner (Wide) #1
-				<section id="banner-largo-1" class="banner-largo">
-					<div class="tpl-center">
-						<div class="banner">
-							<vtex:contentPlaceHolder id="banner-largo-1" />
-						</div>
-					</div>
-				</section> 
-			     -->
-            </div><!-- FIM TPL-CONTENT -->
+            </div>
+            <!-- FIM TPL-CONTENT -->
         </main>
 
         <!-- Inicio Yourviews -->
@@ -106,7 +78,8 @@
         <!-- FOOTER -->
         <vtex:template id="responsivo-netsuprimentos-footer" />
 
-    </div><!-- fim tpl-wrapper -->
+    </div>
+    <!-- fim tpl-wrapper -->
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
