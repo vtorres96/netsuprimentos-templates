@@ -3093,7 +3093,7 @@ textarea {
 
 .busca .fulltext-search-box {
     position: relative;
-    width: 88%;
+    width: 84%;
     height: 34px;
     float: left;
     padding: 10px 20px;
@@ -3107,7 +3107,7 @@ textarea {
 .busca .btn-buscar {
     position: relative;
     width: 16%;
-    height: 40px;
+    height: 34px;
     float: left;
     padding: 0;
     font-size: 12px;
@@ -5032,7 +5032,7 @@ header .bottom #mainMenu ul li .submenu .nt-box.nt-menu-ads .nt-content .nt-btn:
         margin-top: 0 !important;
     }
     .busca .fulltext-search-box {
-        width: 84% !important;
+        width: 82% !important;
     }
     header .middle button.hamburguer {
         display: block;
@@ -5941,7 +5941,7 @@ html body .has--svg-sprite {
         margin-top: 0 !important;
     }
     .busca .fulltext-search-box {
-        width: 84% !important;
+        width: 82% !important;
     }
     /* fim Outubro 2019 */
     .net-more-about {

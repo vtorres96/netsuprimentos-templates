@@ -542,7 +542,6 @@ html body.account #editar-perfil #profile .modal-footer .btn-link {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
-
     html body.account #editar-perfil #profile .modal-footer #profile-submit,
     html body.account #editar-perfil #profile .modal-footer .btn-link {
         width: 100%
@@ -1101,7 +1100,6 @@ html body.account #address-edit #form-address .modal-footer .btn-link {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
-
     html body.account #address-edit #form-address .modal-footer #form-submit,
     html body.account #address-edit #form-address .modal-footer .btn-link {
         width: 100%
@@ -1170,13 +1168,13 @@ html body .content__header {
     display: block;
     width: 100%;
     padding: 0 5%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 html body .content__header .breadcrumb {
     display: block;
     width: 100%;
-    padding: 10px 0
+    padding: 5px 0 10px 0
 }
 
 html body .content__header .breadcrumb ul li {
@@ -1264,7 +1262,7 @@ html body .content__header .list-menu ul li a {
     color: #ffb400;
     font-size: 16px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 40px;
     text-decoration: none;
     text-transform: initial;
     padding: 0 10px
@@ -1716,13 +1714,19 @@ html body .content .orders__content {
     padding: 35px 5%;
     z-index: 0;
 }
+
+
 /* Media-querie Outubro de 2019 */
+
 @media only screen and (min-width: 100px) and (max-width: 768px) {
     html body .content .orders__content {
         z-index: 0;
-    }  
+    }
 }
+
+
 /* início inserido em Outubro 2019 */
+
 html body .content section.orders__information div h4 {
     font-weight: bold;
 }
@@ -1743,7 +1747,7 @@ html body .content .orders__content .w-100.mw9.pv7-m.pv9-l.flex {
 html body .content .orders__content section.vtex-account__page.w-100.w-80-m header,
 html body .content .account__profile section.vtex-account__page.w-100.w-80-m header {
     padding-top: 0;
-    height: 140px;
+    height: 126px;
 }
 
 html body .content .orders__content main.vtex-account__page-body.vtex-account__orders-list.w-100.pa4-s,
@@ -1768,7 +1772,8 @@ html body .content .orders__content h4.db.c-on-base.mb0.fw4.f6.mt0 {
     font-weight: 100;
 }
 
-html body .content .orders__content .bt, .cartFooter a.cartCheckout {
+html body .content .orders__content .bt,
+.cartFooter a.cartCheckout {
     background-color: #fff;
 }
 
@@ -1800,6 +1805,18 @@ html body .content main.ph7.pv6 {
 html body .content a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.f6.fw4.flex.items-center.mb5 {
     display: none;
 }
+
+
+/* tirando espaçamento no topo
+    html body .content .w-100.mw9.pv7-m.pv9-l.flex {
+    padding-top: 2rem !important;
+} */
+
+html body .content .vtex-pageHeader__container.pa5.pa7-ns {
+    padding-top: 0 !important;
+}
+
+
 /* fim inserido em Outubro 2019 */
 
 html body .content .orders__content .render-container .page-header h1 {
@@ -2952,5 +2969,6 @@ html body .content .orders__content .render-provider .container .pa3.br2.bg-wash
 html body .content .h_search fieldset.busca {
     padding: 0;
 }
+
 
 /*# sourceMappingURL=ns-common-account.css.map */
