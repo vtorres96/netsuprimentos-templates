@@ -81,7 +81,15 @@
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
     <script type="text/javascript" src="/arquivos/netsuprimentos-pag-home.min.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+           $("#ModalNewsletter").click(function(){ 
+               setTimeout(function(){
+                   location.replace("https://www.netsuprimentos.com.br/obrigado"); 
+               }, 8000);
+           }); 
+        });	
+     </script>
 </body>
 
 </html>
