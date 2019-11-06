@@ -52,21 +52,6 @@
 
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
     <script src="/arquivos/ns-common-account.js"></script>
-    <script>
-        $(document).ready(setTimeout(function() {
-            setInterval(trocaHeaderPorDiv, 3000)
-
-            function trocaHeaderPorDiv() {
-                let headerGerado = $("header")[2];
-                let novo = $("<div/>");
-                let antigo = $(headerGerado);
-                console.log("trocou");
-                antigo.before(novo);
-                novo.append(antigo.children());
-                antigo.remove();
-            }
-        }, 3000));
-    </script>
 </body>
 
 </html>

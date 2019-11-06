@@ -2970,5 +2970,7 @@ html body .content .h_search fieldset.busca {
     padding: 0;
 }
 
-
+html body .content ul.list.tl.tr-ns.ma0.pa0-s li.db.dib-ns.mb5.mb0-ns a.no-underline {
+    display: none;
+}
 /*# sourceMappingURL=ns-common-account.css.map */

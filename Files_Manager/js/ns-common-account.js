@@ -185,31 +185,44 @@
     })
   );
 
-// alterando tag header gerada da página account para div
-//  $(document).ready(setTimeout(function() {
-//     let headerGerado = $("header")[2];
-//     let novo = $("<div>");
-//     let antigo = $(headerGerado);
-//     console.log("trocou");
-//     antigo.before(novo);
-//     novo.append(antigo.children());
-//     antigo.remove();
-// }, 5000));
+$(document).ready(
+  setTimeout(function() {
+    setInterval(trocaHeaderPorDiv, 2000);
+    setInterval(limiteMaximoDadosPessoaisPF, 2000);
+    setInterval(limiteMaximoDadosPessoaisPJ, 2000);
+    setInterval(limiteMaximoDadosPessoaisEndereco, 2000);
 
-// (function() {
-//   var limite = 10;
+    function trocaHeaderPorDiv() {
+      let headerGerado = $("header")[2];
+      let novo = $("<div/>");
+      let antigo = $(headerGerado);
+      antigo.before(novo);
+      novo.append(antigo.children());
+      antigo.remove();
+    }
 
-//   function limitaInput(input) {
-//     if (input.value.length > limite) {
-//       input.value = input.value.substr(0, limite);
-//     }
-//   }
+    function limiteMaximoDadosPessoaisPF() {
+      $("[name=firstName]").attr("maxlength", "50");
+      $("[name=lastName]").attr("maxlength", "50");
+      $("[name=document]").attr("maxlength", "14");
+      $("[name=homePhone]").attr("maxlength", "15");
+    }
 
-//   $(document).on("propertychange change keyup", "", function() {
-//     if (this.timerLimitInput) {
-//       clearTimeout(this.timer);
-//     }
+    function limiteMaximoDadosPessoaisPJ() {
+      $("[name=corporateName]").attr("maxlength", "50");
+      $("[name=corporateDocument]").attr("maxlength", "18");
+      $("[name=businessPhone]").attr("maxlength", "15");
+      $("[name=stateRegistration]").attr("maxlength", "18");
+      $("[name=tradeName]").attr("maxlength", "30");
+    }
 
-//     this.timerLimitInput = setTimeout(limitaInput, 10, this); //Timeout para evitar conflitos
-//   });
-// })();
+    function limiteMaximoDadosPessoaisEndereco() {
+      $(".vtex-address-form__street :input").attr("maxlength", "80");
+      $(".vtex-address-form__number :input").attr("maxlength", "30");
+      $(".vtex-address-form__complement :input").attr("maxlength", "50");
+      $(".vtex-address-form__neighborhood :input").attr("maxlength", "30");
+      $(".vtex-address-form__city :input").attr("maxlength", "30");
+      $(".vtex-address-form__receiverName :input").attr("maxlength", "80");
+    }
+  }, 2000)
+);
