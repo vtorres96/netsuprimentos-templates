@@ -188,21 +188,22 @@
 
 $(document).ready(
   setTimeout(function() {
-    setInterval(limiteMaximoDadosPessoaisPF, 2000);
-    setInterval(limiteMaximoDadosPessoaisPJ, 2000);
-    setInterval(limiteMaximoDadosPessoaisEndereco, 2000);
+    setInterval(limiteMaximoDadosPessoaisPF, 1000);
+    setInterval(limiteMaximoDadosPessoaisPJ, 1000);
+    setInterval(limiteMaximoDadosPessoaisEndereco, 1000);
 
     function limiteMaximoDadosPessoaisPF() {
-      $("#client-first-name").attr("maxlength", "50");
-      $("#client-last-name").attr("maxlength", "50");
+      $("#client-first-name").attr("maxlength", "25");
+      $("#client-last-name").attr("maxlength", "25");
       $("#client-document").attr("maxlength", "14");
       $("#client-phone").attr("maxlength", "15");
     }
 
     function limiteMaximoDadosPessoaisPJ() {
       $("#client-company-name").attr("maxlength", "50");
+      $("#client-company-nickname").attr("maxlength", "20");
       $("#client-company-ie").attr("maxlength", "18");
-      $("#client-company-document").attr("maxlength", "18");
+      $("#client-company-document").attr("maxlength", "15");
     }
 
     function limiteMaximoDadosPessoaisEndereco() {
@@ -213,5 +214,5 @@ $(document).ready(
       $("#ship-city").attr("maxlength", "30");
       $("#ship-name").attr("maxlength", "80");
     }
-  }, 2000)
+  }, 1000)
 );

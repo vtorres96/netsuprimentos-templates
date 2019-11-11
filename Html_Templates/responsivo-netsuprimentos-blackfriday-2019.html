@@ -85,8 +85,9 @@
         $(document).ready(function() {
            $("#ModalNewsletter").click(function(){ 
                setTimeout(function(){
-                   location.replace("https://www.netsuprimentos.com.br/obrigado"); 
-               }, 8000);
+                   console.log("clicou");
+                   $(location).attr('href',"https://www.netsuprimentos.com.br/obrigado");
+               }, 6000);
            }); 
         });	
      </script>

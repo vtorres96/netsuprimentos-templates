@@ -202,8 +202,8 @@ $(document).ready(
     }
 
     function limiteMaximoDadosPessoaisPF() {
-      $("[name=firstName]").attr("maxlength", "50");
-      $("[name=lastName]").attr("maxlength", "50");
+      $("[name=firstName]").attr("maxlength", "25");
+      $("[name=lastName]").attr("maxlength", "25");
       $("[name=document]").attr("maxlength", "14");
       $("[name=homePhone]").attr("maxlength", "15");
     }
@@ -213,7 +213,7 @@ $(document).ready(
       $("[name=corporateDocument]").attr("maxlength", "18");
       $("[name=businessPhone]").attr("maxlength", "15");
       $("[name=stateRegistration]").attr("maxlength", "18");
-      $("[name=tradeName]").attr("maxlength", "30");
+      $("[name=tradeName]").attr("maxlength", "20");
     }
 
     function limiteMaximoDadosPessoaisEndereco() {

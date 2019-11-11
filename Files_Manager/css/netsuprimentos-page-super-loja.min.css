@@ -761,10 +761,10 @@ body.super-loja.fujiwara .bread-crumb ul li a:hover {
 }
 
 body.super-loja.fujiwara main .tpl-header-content {
-    background: #297363;
-    background: -moz-linear-gradient(-45deg, #297363 0%, #16655d 100%);
-    background: -webkit-linear-gradient(-45deg, #297363 0%, #16655d 100%);
-    background: linear-gradient(135deg, #297363 0%, #16655d 100%);
+    background: #f5f4f4;
+    background: -moz-linear-gradient(-45deg, #f5f4f4 0%, #f5f4f4 100%);
+    background: -webkit-linear-gradient(-45deg, #f5f4f4 0%, #f5f4f4 100%);
+    background: linear-gradient(135deg, #f5f4f4 0%, #f5f4f4 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#297363', endColorstr='#16655d', GradientType=1);
     color: #fff
 }
@@ -847,12 +847,11 @@ body.super-loja.mmm .bread-crumb ul li a:hover {
 }
 
 body.super-loja.mmm main .tpl-header-content {
-    background: #9D1920;
-    background: -moz-linear-gradient(-45deg, #9D1920 0%, #711217 100%);
-    background: -webkit-linear-gradient(-45deg, #9D1920 0%, #711217 100%);
-    background: linear-gradient(135deg, #9d1920 0%, #711217 100%);
+    background: -moz-linear-gradient(-45deg, #f5f4f4 0%, #f5f4f4 100%);
+    background: -webkit-linear-gradient(-45deg, #f5f4f4 0%, #f5f4f4 100%);
+    background: linear-gradient(135deg, #f5f4f4 0%, #f5f4f4 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9D1920', endColorstr='#711217', GradientType=1);
-    color: #fff
+    color: #000;
 }
 
 body.super-loja.mmm main .tpl-header-content .tpl-center .nt-box.nt-title-category .descricao-sessao a {
@@ -1322,7 +1321,7 @@ body.super-loja.tork .bread-crumb ul li a:hover {
 body.super-loja.tork main .tpl-header-content {
     background: -moz-linear-gradient(-45deg, #335c85 0%, #254360 100%);
     background: -webkit-linear-gradient(-45deg, #335c85 0%, #254360 100%);
-    background: #fff;
+    background: #f5f4f4;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#335c85', endColorstr='#254360', GradientType=1);
     color: #fff;
 }
@@ -1353,7 +1352,7 @@ body.internasComum main .tpl-header-content .tpl-center .nt-box.nt-title-categor
 }
 
 body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo-super-loja {
-    background: white;
+    background: #f5f4f4;
     margin: 0px;
     padding: 4px;
     border: none;
@@ -1368,7 +1367,10 @@ body.super-loja main .tpl-header-content .nt-box.nt-box-logo-super-loja .nt-logo
     min-width: 120px
 }
 
-
+/* Description */
+body.super-loja main .tpl-header-content .descricao-sessao.nt-collapse p {
+    color: #000;
+}
 /* Desktop */
 
 body.super-loja.tork #main .nt-header-super-loja .nt-col-lg-12.desktop .box-banner a img {
@@ -1467,9 +1469,9 @@ body.super-loja.talge .bread-crumb ul li a:hover {
 
 body.super-loja.talge main .tpl-header-content {
     background: #f79637;
-    background: -moz-linear-gradient(-45deg, #f79637 0%, #f17c0a 100%);
-    background: -webkit-linear-gradient(-45deg, #f79637 0%, #f17c0a 100%);
-    background: linear-gradient(135deg, #f79637 0%, #f17c0a 100%);
+    background: -moz-linear-gradient(-45deg, #f5f4f4 0%, #f5f4f4 100%);
+    background: -webkit-linear-gradient(-45deg, #f5f4f4 0%, #f5f4f4 100%);
+    background: linear-gradient(135deg, #f5f4f4 0%, #f5f4f4 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f79637', endColorstr='#f17c0a', GradientType=1);
     color: #fff
 }
