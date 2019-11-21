@@ -47,5 +47,5 @@ campoBusca.onkeyup = function(e) {
           .join("");
         listaProdutosFiltrados.innerHTML = productsMap;
       });
-  }, 400);
+  }, 100);
 };
