@@ -1,8 +1,11 @@
-busca.onkeyup = function(e) {
+campoBusca.onkeyup = function(e) {
   var valorDigitado = this.value;
+  var listaProdutosFiltrados = document.querySelector(
+    "#listaProdutosFiltrados"
+  );
 
-  if (!valorDigitado) {
-    return;
+  if (!valorDigitado || valorDigitado.length <= 0) {
+    listaProdutosFiltrados.innerHTML = "";
   }
 
   if (e.key === "Backspace") {
@@ -26,51 +29,25 @@ busca.onkeyup = function(e) {
     )
       .then(response => response.json())
       .then(response => {
-        Object.entries(response.products).forEach(([key, value]) => {
-          console.log(
-            " value nome => " + value.name + " value preco => " + value.price
-          );
-        });
+        var products = Object.entries(response.products);
+
+        var productsMap = [];
+
+        productsMap = products
+          .map(([key, product]) => {
+            var htmlTarefa = `
+            <a href="https://netsuprimentos.com.br/${product.url}" target="blank">
+                <li class="list-group-item">
+                    <div><img class="d-inline-block" src="https://b2bnaweb.vteximg.com.br/${product.images.default}" width="50" height="50"/></div>
+                    <div>${product.name}</div>
+                    <div>R$ ${product.price}</div>
+                </li>
+            </a>
+           `;
+            return htmlTarefa;
+          })
+          .join("");
+        listaProdutosFiltrados.innerHTML = productsMap;
       });
-
-    // Search
-    // let valorDigitado = "cartucho";
-    // const createSlug = str => {
-    //   const stringWithoutSpecialCaracters = str.replace(/[^\w\s]/gi, "");
-    //   const stringWithOneSpace = stringWithoutSpecialCaracters.replace(
-    //     /\s\s+/g,
-    //     " "
-    //   );
-    //   const stringWithoutSpaces = stringWithOneSpace.replace(/ /g, "-");
-    //   const loweredString = stringWithoutSpaces.toLowerCase();
-
-    //   return loweredString;
-    // };
-    // fetch(
-    //   "https://api.linximpulse.com/engage/search/v3/search?apiKey=netsuprimentos&secretKey=kYmCE9OyMNmhZuOOcZlacQ==&terms=" +
-    //     valorDigitado,
-    //   {
-    //     method: "GET",
-    //     headers: {
-    //       Accept: "application/json",
-    //       "Content-Type": "application/json"
-    //     }
-    //   }
-    // )
-    //   .then(response => response.json())
-    //   .then(response => {
-    //     Object.entries(response.products).forEach(([key, value]) => {
-    //       console.log(
-    //         "urlProduct => " +
-    //           value.url +
-    //           "\n" +
-    //           " value nome => " +
-    //           value.name +
-    //           "\n" +
-    //           " value preco => " +
-    //           value.price
-    //       );
-    //     });
-    //   });
-  }, 500);
+  }, 100);
 };

@@ -45,7 +45,15 @@ header .bottom {
     background: #000;
 }
 
+div.tpl-wrapper main#main  div.tpl-content section#MenuCampanha 
+.nt-box .nt-row .nt-flex.nt-col-12.nt-col-md-4.nt-col-lg-4 img {
+    max-width: 100%;
+}
 
+div.tpl-wrapper main#main  div.tpl-content section#MenuCampanha 
+.nt-box div.tpl-center {
+    padding: 50px 0;
+}
 /* lista de categorias */
 
 ul.slick-dots {

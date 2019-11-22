@@ -4,8 +4,8 @@ campoBusca.onkeyup = function(e) {
     "#listaProdutosFiltrados"
   );
 
-  if (!valorDigitado) {
-    return;
+  if (!valorDigitado || valorDigitado.length <= 0) {
+    listaProdutosFiltrados.innerHTML = "";
   }
 
   if (e.key === "Backspace") {
@@ -36,12 +36,14 @@ campoBusca.onkeyup = function(e) {
         productsMap = products
           .map(([key, product]) => {
             var htmlTarefa = `
-            <a href="https://netsuprimentos.com.br/${product.url}" target="blank">
-                <li class="list-group-item">
-                    ${product.name}
-                </li>
-            </a>
-           `;
+              <a href="https://netsuprimentos.com.br/${product.url}" target="blank">
+                  <li class="list-group-item">
+                      <div><img class="d-inline-block" src="https://b2bnaweb.vteximg.com.br/${product.images.default}" width="50" height="50"/></div>
+                      <div>${product.name}</div>
+                      <div>R$ ${product.price}</div>
+                  </li>
+              </a>
+            `;
             return htmlTarefa;
           })
           .join("");
@@ -49,3 +51,14 @@ campoBusca.onkeyup = function(e) {
       });
   }, 100);
 };
+
+function getFocus() {
+  var valorDigitado = document.querySelector("#campoBusca").value;
+  var listaProdutosFiltrados = document.querySelector(
+    "#listaProdutosFiltrados"
+  );
+
+  if (!valorDigitado || valorDigitado.length <= 0) {
+    console.log("pegou foco e não digitou nada");
+  }
+}

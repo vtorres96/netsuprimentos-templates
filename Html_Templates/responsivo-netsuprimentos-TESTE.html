@@ -16,15 +16,20 @@
         <main id="main">
             <div class="tpl-content">
                 <div class="tpl-center">
-                    <div class="search-header row" style="padding: 200px 0;">
-                        <p>Página Tester</p>
-                        <h2>Filtrar Produtos</h2>
-                        <div class="form-group">
-                            <label for="campoBusca">Digite algo</label>
-                            <input id="campoBusca" class="form-control" type="text">
+                    <h2>Filtrar Produtos</h2>
+                    <div class="row">
+                        <div class="nt-col-lg-12 nt-col-md-12 nt-col-12">
+                            <div class="nt-col-lg-6 nt-col-md-6 nt-col-12 form-group">
+                                <label for="campoBusca">Digite algo</label>
+                                <input id="campoBusca" class="form-control" type="text">
+                            </div>
                         </div>
-
-                        <ul id="listaTarefasFiltradas" class="list-group"></ul>
+                    
+                        <div class="nt-col-lg-12 nt-col-md-12 nt-col-12">
+                            <div class="nt-col-lg-6 nt-col-md-6 nt-col-12">
+                                <ul id="listaProdutosFiltrados" class="list-group "></ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- FIM tpl-center -->
@@ -41,44 +46,7 @@
 
     <!-- SCRIPTS -->
     <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
-    <script>
-        campoBusca.onkeyup = function(e) {
-            var valorDigitado = this.value;
-
-            if (!valorDigitado) {
-                return;
-            }
-
-            if (e.key === "Backspace") {
-                return;
-            }
-
-            window.clearInterval(window.espera);
-
-            window.espera = setTimeout(function() {          
-                // AutoComplete
-                fetch(
-                "https://api.linximpulse.com/engage/search/v3/autocompletes?apiKey=netsuprimentos&secretKey=kYmCE9OyMNmhZuOOcZlacQ==&prefix=" +
-                    valorDigitado,
-                    {
-                        method: "GET",
-                        headers: {
-                        Accept: "application/json",
-                        "Content-Type": "application/json"
-                        }
-                    }
-                )
-                .then(response => response.json())
-                .then(response => {
-                    Object.entries(response.products).forEach(([key, value]) => {
-                    console.log(
-                        " value nome => " + value.name + " value preco => " + value.price
-                    );
-                    });
-                });
-            }, 400);
-        };
-    </script>
+    <script src="/arquivos/testeBusca.js"></script>
 </body>
 
 </html>
