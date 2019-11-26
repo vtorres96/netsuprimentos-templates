@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="google-site-verification" content="7mvV2Xg11M3S7lzgJzoFTwNcTPDxsnNeOhkClGRwuqA" />
+    <vtex:template id="responsivo-netsuprimentos-includes-header" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-page-home.min.css" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-novidades-banner-home.css" />
+    <link rel="stylesheet" href="/arquivos/netsuprimentos-blackfriday-2019.css" />
+</head>
+
+<body>
+    <div class="tpl-wrapper">
+        <!-- HEADER -->
+        <vtex:template id="responsivo-netsuprimentos-blackfriday-header" />
+
+        <!-- MAIN -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <section id="slideHome">
+                    <div class="slide desktop">
+                        <vtex:contentPlaceHolder id="banner-slider" />
+                    </div>
+
+                    <div class="slide mobile">
+                        <vtex:contentPlaceHolder id="banner-slider-mobile" />
+                    </div>
+                </section>
+                <!-- FIM fim slideHome -->
+
+                <section id="internos">
+                    <div class="x-vitrine">
+                        <vtex:contentPlaceHolder id="titulo-categoria" />
+                        <vtex:contentPlaceHolder id="banner-categoria" />
+                    </div>
+                </section>
+                
+            </div>
+            <!-- FIM TPL-CONTENT -->
+        </main>
+
+        <!-- FOOTER -->
+        <vtex:template id="responsivo-netsuprimentos-footer" />
+
+    </div>
+    <!-- fim tpl-wrapper -->
+
+    <!-- SCRIPTS -->
+    <vtex:template id="responsivo-netsuprimentos-includes-scripts" />
+    <script type="text/javascript" src="/arquivos/netsuprimentos-pag-home.min.js"></script>
+</body>
+
+</html>
